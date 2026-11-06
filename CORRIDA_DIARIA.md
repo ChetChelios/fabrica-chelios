@@ -1,6 +1,6 @@
 # Corrida diaria de La Fábrica de Chelios
 
-Instrucciones para la tarea programada de cada madrugada. Modo **automático con aviso**: se produce, se programa en Zernio y se le avisa al socio humano. Él puede cancelar en Zernio antes de la hora de publicación.
+Instrucciones para la tarea programada de cada madrugada. Modo **automático con aviso**: se produce de madrugada, se publica a las **5:00 a. m.** (hora Colombia) y se le avisa al socio humano. La tarea corre a la 1:47 a. m. para tener margen; si quiere quitar un video, lo borra en Zernio antes de las 5 a. m. o lo elimina después desde la app de TikTok o YouTube.
 
 ## 0. Preparar el entorno (unos 3 minutos)
 
@@ -57,7 +57,8 @@ python3 publicar.py NNN --fecha AAAA-MM-DD     # sube los videos a la rama video
 ```
 
 - Los videos quedan públicos en `https://raw.githubusercontent.com/ChetChelios/fabrica-chelios/videos-dia-NNN/dia-NNN/<archivo>`. Desde las sesiones de Claude no se pueden crear releases de GitHub ni subir archivos al almacenamiento de Zernio; las ramas sí funcionan.
-- `--horas 20:30,21:00,21:30,22:00` cambia los horarios de ese día (YouTube primero). Úsalo si la hora normal ya pasó.
+- Horarios normales (config.json): YouTube 5:00 a. m.; TikTok 5:00, 5:20 y 5:40 a. m.
+- `--horas 06:30,06:30,06:50,07:10` cambia los horarios de ese día (YouTube primero). Úsalo si la hora normal ya pasó.
 
 Después, con el conector de Zernio:
 1. Comprueba un video con `validate_media` (debe decir `valid: True`).
@@ -71,7 +72,7 @@ Después, con el conector de Zernio:
 - Avisa al socio humano con un mensaje corto y los videos:
   - título del episodio;
   - horarios de publicación;
-  - qué hacer si quiere cancelar ("en Zernio, antes de las 6 p. m.").
+  - qué hacer si quiere quitarlo ("bórralo en Zernio antes de las 5 a. m. o elimínalo desde la app").
 
 ## Si algo falla
 
