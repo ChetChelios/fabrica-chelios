@@ -1,0 +1,8 @@
+{
+  "repo": "ChetChelios/fabrica-chelios",
+  "inicio_dia_1": "2026-11-03",
+  "zona_horaria": "America/Bogota",
+  "zernio": {"tiktok": "6aed1b9aac9c3be29ea6f43e", "youtube": "6aed1bb209d2fe26daf68f85"},
+  "horarios": {"youtube": "18:00", "tiktok": ["19:00", "19:30", "20:00"]},
+  "youtube": {"categoryId": "23", "visibility": "public", "madeForKids": false, "containsSyntheticMedia": false}
+}

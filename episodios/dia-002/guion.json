@@ -1,0 +1,552 @@
+{
+  "dia": 2,
+  "titulo": "Día 2: le pedí 100 ideas a una IA",
+  "voz": "em_alex",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "El prompt",
+    "2": "Por qué 100",
+    "3": "Las 3 que sobreviven"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "hook",
+      "texto": "Día dos. Le pedí a mi Ideador cien ideas de videos. Mi Verdugo las calificó una por una. Y solo nueve valían la pena.",
+      "hl": [
+        "cien",
+        "nueve"
+      ],
+      "p": {
+        "filas": [
+          {
+            "etiqueta": "IDEAS",
+            "valor": "100",
+            "ancla": "cien"
+          },
+          {
+            "etiqueta": "CALIFICADAS",
+            "valor": "100",
+            "ancla": "calificó"
+          },
+          {
+            "etiqueta": "VALEN LA PENA",
+            "valor": "?",
+            "ancla": "solo"
+          }
+        ],
+        "final": {
+          "fila": 2,
+          "valor": "9",
+          "tag": "SOLO 9",
+          "ancla": "nueve"
+        },
+        "ancla_chelios": "solo"
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Hoy te muestro cómo trabaja el Ideador por dentro. Te regalo el prompt exacto que usa, para que lo copies en tu canal o en tu negocio. Y al final te digo cuáles sobrevivieron.",
+      "hl": [
+        "prompt",
+        "exacto",
+        "sobrevivieron."
+      ],
+      "p": {
+        "chip": "DÍA 2 · EL IDEADOR",
+        "chip_color": "cian",
+        "burbuja": "Hoy te regalo *el prompt exacto* del Ideador",
+        "ancla_burbuja": "regalo",
+        "gesto": "saludo",
+        "ancla_gesto": "hoy"
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "Casi todo el mundo le pide ideas a la IA así: dame ideas de videos. Y la IA te devuelve ideas que ya viste mil veces. Lo mismo que le devuelve a todos.",
+      "hl": [
+        "así:"
+      ],
+      "kill": [
+        "mil",
+        "todos."
+      ],
+      "p": {
+        "titulo": "LO QUE HACE *CASI TODO EL MUNDO*",
+        "cmd": "tú: dame ideas de videos",
+        "lineas": [
+          {
+            "texto": "1. 10 herramientas de IA que debes conocer",
+            "estado": "muted",
+            "ancla": "devuelve"
+          },
+          {
+            "texto": "2. El futuro de la inteligencia artificial",
+            "estado": "muted"
+          },
+          {
+            "texto": "3. Cómo la IA cambiará tu trabajo",
+            "estado": "muted"
+          },
+          {
+            "texto": "4. Trucos de productividad con IA",
+            "estado": "muted"
+          },
+          {
+            "texto": "5. Errores comunes al usar IA",
+            "estado": "muted"
+          }
+        ],
+        "sello": {
+          "texto": "LO MISMO QUE A TODOS",
+          "ancla": "mismo"
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "titular",
+      "texto": "El problema no es la IA. El problema es la pregunta. Si preguntas lo mismo que todos, recibes lo mismo que todos.",
+      "hl": [
+        "pregunta.",
+        "mismo"
+      ],
+      "p": {
+        "lineas": [
+          {
+            "texto": "EL PROBLEMA",
+            "ancla": "problema"
+          },
+          {
+            "texto": "NO ES LA IA.",
+            "color": "gris",
+            "ancla": "no"
+          },
+          {
+            "texto": "ES LA *PREGUNTA*.",
+            "ancla": "pregunta",
+            "max": 140
+          }
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "lista",
+      "texto": "Mi Ideador usa un prompt de cinco partes. Uno: quién eres y para quién hablas. Dos: qué te ha funcionado antes. Tres: pide muchas ideas, no pocas. Cuatro: reglas claras de lo que no quieres. Y cinco: una mezcla de formatos, para no repetir siempre lo mismo.",
+      "hl": [
+        "cinco",
+        "muchas"
+      ],
+      "p": {
+        "titulo": "EL PROMPT EN *5 PARTES*",
+        "ancla_titulo": "prompt",
+        "items": [
+          {
+            "texto": "Quién eres y *para quién* hablas",
+            "ancla": "uno"
+          },
+          {
+            "texto": "Qué *ya te funcionó*",
+            "ancla": "dos"
+          },
+          {
+            "texto": "Pide *muchas*, no pocas",
+            "ancla": "tres"
+          },
+          {
+            "texto": "Reglas de lo que *no* quieres",
+            "ancla": "cuatro"
+          },
+          {
+            "texto": "Una *mezcla* de formatos",
+            "ancla": "cinco#2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Y la parte tres parece la más tonta. ¿Para qué pedirle cien, si solo necesitas una? Pero es la que cambia todo.",
+      "hl": [
+        "tres",
+        "cien,",
+        "todo."
+      ],
+      "p": {
+        "chip": "PARTE 3 DEL PROMPT",
+        "burbuja": "¿Para qué pedir *100* si solo necesitas *1*?",
+        "ancla_burbuja": "para",
+        "gesto": "brazos",
+        "ancla_gesto": "cambia"
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "titular",
+      "texto": "¿Por qué pedirle cien ideas, y no diez?",
+      "hl": [
+        "cien"
+      ],
+      "p": {
+        "lineas": [
+          {
+            "texto": "¿POR QUÉ *100*",
+            "ancla": "cien",
+            "max": 170
+          },
+          {
+            "texto": "Y NO 10?",
+            "color": "gris",
+            "ancla": "ideas",
+            "max": 170
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "titular",
+      "texto": "Porque las primeras ideas que salen son las obvias. Las que se le ocurren a cualquiera, persona o máquina. Las buenas aparecen cuando ya se gastaron las obvias, y la máquina tiene que esforzarse.",
+      "hl": [
+        "obvias.",
+        "buenas"
+      ],
+      "p": {
+        "chip": "LA LÓGICA",
+        "lineas": [
+          {
+            "texto": "LAS PRIMERAS",
+            "ancla": "primeras"
+          },
+          {
+            "texto": "SON *LAS OBVIAS*",
+            "ancla": "obvias"
+          }
+        ],
+        "sub": "las buenas salen cuando se *gastan las obvias*",
+        "ancla_sub": "buenas",
+        "chelios": true
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "numero",
+      "texto": "Y lo comprobé con mis propias cien. De las diez ideas con mejor nota, nueve salieron después de la idea cincuenta. Ojo: en promedio la diferencia es pequeña. Pero las mejores casi siempre llegan tarde.",
+      "hl": [
+        "nueve",
+        "cincuenta.",
+        "tarde."
+      ],
+      "p": {
+        "chip": "DATO REAL · MIS 100 IDEAS",
+        "chip_color": "verde",
+        "etiqueta": "DE LAS 10 MEJORES IDEAS",
+        "desde": 0,
+        "hasta": 9,
+        "sufijo": " de 10",
+        "ancla_inicio": "nueve",
+        "ancla_fin": "salieron",
+        "sub": "salieron *después de la #50*",
+        "nota": "PROMEDIO: 6,3 → 6,6",
+        "ancla_nota": "promedio"
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "barras",
+      "texto": "Y por tipo, los experimentos fueron los mejores, con seis coma nueve de nota. Además fueron el tipo más común: un tercio de las cien. Las historias, las peores: cinco coma uno. A la gente le interesa más lo que pruebas que lo que cuentas.",
+      "hl": [
+        "experimentos",
+        "pruebas"
+      ],
+      "kill": [
+        "historias,"
+      ],
+      "p": {
+        "titulo": "NOTA PROMEDIO *POR TIPO*",
+        "unidad": "de 1 a 10 · 100 ideas",
+        "decimales": 1,
+        "barras": [
+          {
+            "etiqueta": "EXPERIMENTO",
+            "valor": 6.89
+          },
+          {
+            "etiqueta": "RETO",
+            "valor": 6.6
+          },
+          {
+            "etiqueta": "POLÉMICA",
+            "valor": 6.55
+          },
+          {
+            "etiqueta": "TUTORIAL",
+            "valor": 6.46
+          },
+          {
+            "etiqueta": "HISTORIA",
+            "valor": 5.11,
+            "color": "coral"
+          }
+        ],
+        "destacar": 0,
+        "ancla_inicio": "tipo",
+        "nota": "GANAN LOS EXPERIMENTOS",
+        "ancla_nota": "pruebas"
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "Mira los extremos. La peor fue la ochenta y seis, con dos coma siete. Nadie quiere ver eso. Y arriba de todo, tres ideas que pasaron de ocho.",
+      "hl": [
+        "tres",
+        "ocho."
+      ],
+      "kill": [
+        "peor",
+        "ochenta"
+      ],
+      "p": {
+        "cmd": "verdugo@fabrica:~$ ordenar --por nota",
+        "lineas": [
+          {
+            "texto": "#??? ██████████████████  8,7",
+            "estado": "hl",
+            "ancla": "arriba"
+          },
+          {
+            "texto": "#??? ██████████████████  8,7",
+            "estado": "hl"
+          },
+          {
+            "texto": "#??? ██████████████████  8,3",
+            "estado": "hl"
+          },
+          {
+            "texto": "   …  94 ideas más  …",
+            "estado": "muted",
+            "ancla": "mira"
+          },
+          {
+            "texto": "#082 100 títulos para un video   3,7",
+            "estado": "ko"
+          },
+          {
+            "texto": "#006 Cómo nació Chelios          3,7",
+            "estado": "ko"
+          },
+          {
+            "texto": "#086 Lo que hace mi socio de noche  2,7",
+            "estado": "ko",
+            "ancla": "ochenta"
+          }
+        ],
+        "contador": {
+          "desde": 100,
+          "hasta": 3,
+          "etiqueta": "en pie",
+          "ancla_inicio": "arriba",
+          "ancla_fin": "ocho"
+        }
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 2,
+      "tpl": "habla",
+      "texto": "Esas tres son las que sobrevivieron. Las otras noventa y siete no se borran: se guardan en el cementerio de ideas, por si algún día sirven. Y la ganadora se va a convertir en un video de esta serie. Te las muestro ya.",
+      "hl": [
+        "sobrevivieron.",
+        "cementerio",
+        "ganadora"
+      ],
+      "p": {
+        "chip": "100 → 3",
+        "burbuja": "La ganadora *será un video* de esta serie",
+        "ancla_burbuja": "ganadora",
+        "gesto": "saludo",
+        "ancla_gesto": "muestro"
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "titular",
+      "texto": "Las tres ideas que sobrevivieron al Verdugo. De cien, solo tres. Y ninguna era de las primeras veinte.",
+      "hl": [
+        "tres",
+        "Verdugo."
+      ],
+      "p": {
+        "chip": "100 IDEAS → 3",
+        "chip_color": "coral",
+        "lineas": [
+          {
+            "texto": "LAS *3* QUE",
+            "ancla": "tres"
+          },
+          {
+            "texto": "SOBREVIVIERON",
+            "ancla": "sobrevivieron"
+          }
+        ],
+        "sub": "ninguna estaba entre las *primeras 20*",
+        "ancla_sub": "ninguna"
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "lista",
+      "texto": "En tercer lugar, con ocho coma tres: la IA predice cuál de mis videos va a fracasar. Y empatadas arriba, con ocho coma siete: ¿una IA puede darte una idea de negocio que funcione? Y una IA intenta vender algo real en veinticuatro horas. Fíjate: ninguna es un tutorial. Las tres son pruebas de verdad.",
+      "hl": [
+        "tercer",
+        "empatadas",
+        "real"
+      ],
+      "kill": [
+        "ninguna"
+      ],
+      "p": {
+        "titulo": "*TOP 3* DEL VERDUGO",
+        "ancla_titulo": "tercer",
+        "items": [
+          {
+            "num": "8,3",
+            "texto": "La IA predice qué video mío *va a fracasar*",
+            "ancla": "tercer",
+            "color": "cian"
+          },
+          {
+            "num": "8,7",
+            "texto": "¿Una IA te da una *idea de negocio* que funcione?",
+            "ancla": "empatadas"
+          },
+          {
+            "num": "8,7",
+            "texto": "Una IA intenta *vender algo real* en 24 horas",
+            "ancla": "intenta"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "terminal",
+      "texto": "Y este es el prompt del Ideador. Lo dejo en pantalla: pausa el video si quieres copiarlo. Cámbiale lo que está en amarillo: el público, el tema y lo que ya te funcionó. Y te sirve para tu canal, tu tienda o tu negocio.",
+      "hl": [
+        "prompt",
+        "pausa",
+        "amarillo:"
+      ],
+      "p": {
+        "titulo": "EL PROMPT DEL *IDEADOR*",
+        "cmd": "copia y pega · cambia lo amarillo",
+        "lineas": [
+          {
+            "texto": "ERES: el Ideador de *un canal de IA*",
+            "ancla": "prompt"
+          },
+          {
+            "texto": "PÚBLICO: *emprendedores de Latam, 18-40*"
+          },
+          {
+            "texto": "YA FUNCIONÓ: *números reales, procesos*"
+          },
+          {
+            "texto": "TAREA: 100 ideas, una por línea"
+          },
+          {
+            "texto": "OJO: las obvias salen primero; sigue"
+          },
+          {
+            "texto": "REGLA: cada una cabe en 1 segundo"
+          },
+          {
+            "texto": "REGLA: nada de «top 10 herramientas»"
+          },
+          {
+            "texto": "MEZCLA: tutorial · experimento · reto"
+          },
+          {
+            "texto": "FORMATO: número | tipo | idea"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día tres: el Verdugo te explica cómo califica cada idea, por qué mató a noventa y siete, y cómo calificar las tuyas.",
+      "hl": [
+        "Mañana,",
+        "tres:",
+        "Verdugo"
+      ],
+      "kill": [
+        "mató"
+      ],
+      "p": {
+        "dia_siguiente": 3,
+        "ancla_flip": "tres",
+        "trabajador": 2,
+        "titulo": "EL VERDUGO<br>EXPLICA",
+        "linea": "100 → 3 · *¿CÓMO DECIDE?*",
+        "ancla_teaser": "verdugo",
+        "ancla_enfasis": "mató"
+      }
+    },
+    {
+      "id": "s17",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "¿Quieres el prompt completo, listo para copiar? Comenta la palabra PROMPT y te lo mando por mensaje. Y síguenos, que esto apenas empieza.",
+      "tts": "¿Quieres el prompt completo, listo para copiar? Comenta la palabra prompt y te lo mando por mensaje. Y síguenos, que esto apenas empieza.",
+      "hl": [
+        "PROMPT"
+      ],
+      "p": {
+        "palabra": "PROMPT",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Le pedí 100 ideas a una IA y solo 9 valían la pena · Día 2",
+    "youtube_descripcion": "Día 2 de la fábrica. Mi Ideador (una IA) escribió 100 ideas de video y mi Verdugo las calificó una por una (gancho, curiosidad y utilidad, de 1 a 10).\n\nLo que salió, con datos reales:\n• Solo 9 de 100 sacaron 8 o más.\n• De las 10 mejores, 9 aparecieron después de la idea #50: las primeras ideas son las obvias.\n• Los experimentos promediaron 6,9; las historias, 5,1.\n\nTe muestro el prompt de 5 partes que usa el Ideador para que lo adaptes a tu canal o tu negocio. ¿Lo quieres completo? Comenta PROMPT.\n\nHecho con IA: guion, voz sintética y animación generados por la fábrica y revisados por un humano.",
+    "tiktok": [
+      "Le pedí 100 ideas a una IA y solo 9 valían la pena 🤖 El problema no es la IA, es la pregunta",
+      "¿Por qué pedirle 100 ideas a la IA y no 10? Lo comprobé con datos",
+      "Las 3 ideas que sobrevivieron + el prompt para copiar. Comenta PROMPT"
+    ],
+    "hashtags": [
+      "#inteligenciaartificial",
+      "#IA",
+      "#prompts",
+      "#ideasdecontenido",
+      "#creadordecontenido",
+      "#emprendimiento",
+      "#fabricadechelios"
+    ],
+    "miniatura_1": "100 IDEAS DE UNA IA: SOLO 9 SIRVEN",
+    "miniatura_2": "DÍA 2 · EL PROMPT"
+  }
+}

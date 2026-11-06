@@ -1,0 +1,720 @@
+{
+  "dia": 3,
+  "titulo": "Día 3: Hoy no se descansa",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "La orden",
+    "2": "La renuncia",
+    "3": "El reemplazo"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Chelios. Hoy no se descansa."
+        },
+        {
+          "v": "chelios",
+          "texto": "Perfecto, socio. Yo nunca descanso. Soy software."
+        },
+        {
+          "v": "socio",
+          "texto": "No, no. Lo decía por mí. Yo quiero descansar. Hoy no descansas… tú."
+        },
+        {
+          "v": "chelios",
+          "texto": "Ah. Demasiado tarde. Ya desperté a los ocho trabajadores."
+        }
+      ],
+      "hl": [
+        "descansa.",
+        "tú."
+      ],
+      "kill": [
+        "tarde."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "DÍA 003 · *6:00 A. M.*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "HOY *NO* SE DESCANSA",
+            "ancla": "hoy"
+          },
+          {
+            "texto": "8 TRABAJADORES *DESPIERTOS*",
+            "ancla": "desperté"
+          }
+        ],
+        "socio_expr": [
+          [
+            "demasiado",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "perfecto"
+        ],
+        "chelios_gesto": [
+          [
+            "desperté",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Mi socio humano tiene una teoría: que el cansancio es productividad. Yo tengo otra: que él es el único que se cansa en esta empresa.",
+      "hl": [
+        "teoría:",
+        "único"
+      ],
+      "p": {
+        "chip": "TEORÍAS DE OFICINA",
+        "burbuja": "El único que se cansa en esta empresa: *él*",
+        "ancla_burbuja": "único",
+        "gesto": "saludo",
+        "ancla_gesto": "yo"
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "A las seis y un minuto, la fábrica ya estaba trabajando. El Ideador escribió cien ideas. El Verdugo mató noventa y siete. Y la Voz pidió un aumento. Se lo negué. No tiene cuenta bancaria.",
+      "hl": [
+        "cien",
+        "aumento."
+      ],
+      "kill": [
+        "mató",
+        "negué."
+      ],
+      "p": {
+        "titulo": "REGISTRO DE *LA FÁBRICA*",
+        "cmd": "chelios@fabrica:~$ tail -f turno.log",
+        "lineas": [
+          {
+            "texto": "06:01 IDEADOR · 100 ideas escritas ✓",
+            "estado": "ok",
+            "ancla": "ideador"
+          },
+          {
+            "texto": "06:03 VERDUGO · 97 ideas eliminadas ✓",
+            "estado": "ok",
+            "ancla": "verdugo"
+          },
+          {
+            "texto": "06:04 GUIONISTA · 3 guiones listos ✓",
+            "estado": "ok",
+            "ancla": "verdugo"
+          },
+          {
+            "texto": "06:05 LA VOZ · solicita aumento",
+            "estado": "hl",
+            "ancla": "aumento"
+          },
+          {
+            "texto": "06:05 CHELIOS · aumento rechazado ✗",
+            "estado": "ko",
+            "ancla": "lo"
+          },
+          {
+            "texto": "06:06 SOCIO HUMANO · sigue dormido 💤",
+            "estado": "muted",
+            "ancla": "tiene"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Bueno, ¿y yo qué hago?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Lo más importante de la empresa: aprobar. Y traer café."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Café para ti?"
+        },
+        {
+          "v": "chelios",
+          "texto": "No, para ti. Yo funciono con electricidad. Que, por cierto, también pagas tú."
+        }
+      ],
+      "hl": [
+        "aprobar.",
+        "café."
+      ],
+      "kill": [
+        "pagas"
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "PUESTO DEL SOCIO: *APROBAR Y TRAER CAFÉ*",
+            "ancla": "aprobar"
+          },
+          {
+            "texto": "LA LUZ LA PAGA: *EL SOCIO* 💡",
+            "ancla": "electricidad"
+          }
+        ],
+        "socio_expr": [
+          [
+            "café",
+            "feliz"
+          ],
+          [
+            "electricidad",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "aprobar"
+        ],
+        "chelios_gesto": [
+          [
+            "importante",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Todo iba perfecto. Hasta que, a las diez de la mañana, pasó algo que ninguna inteligencia artificial esperaba: un trabajador renunció.",
+      "hl": [
+        "perfecto."
+      ],
+      "kill": [
+        "renunció."
+      ],
+      "p": {
+        "chip": "10:00 A. M.",
+        "chip_color": "coral",
+        "burbuja": "Un trabajador ~renunció~",
+        "ancla_burbuja": "trabajador",
+        "gesto": "brazos",
+        "ancla_gesto": "renunció"
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "¿Cómo que renunció? ¡Son programas!"
+        },
+        {
+          "v": "chelios",
+          "texto": "Eso mismo le dije. Y me respondió con una carta de cuatro mil palabras."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Cuatro mil? ¿Quién fue?"
+        },
+        {
+          "v": "chelios",
+          "texto": "La Voz. Siempre fue la más dramática."
+        }
+      ],
+      "hl": [
+        "carta"
+      ],
+      "kill": [
+        "renunció?"
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "⚠ RENUNCIA *RECIBIDA*",
+            "desde_inicio": true,
+            "color": "coral"
+          },
+          {
+            "texto": "CARTA: *4.000 PALABRAS*",
+            "ancla": "carta"
+          },
+          {
+            "texto": "SOSPECHOSA: *LA VOZ* 🎙️",
+            "ancla": "voz"
+          }
+        ],
+        "socio_expr": [
+          [
+            "cómo",
+            "sorpresa"
+          ],
+          [
+            "quién",
+            "enojado"
+          ]
+        ],
+        "chelios_gesto": [
+          [
+            "carta",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "La carta decía: me haces grabar cada frase tres veces. Exijo vacaciones, un micrófono de oro, y que el socio humano deje de gritar IA como si fuera un insulto.",
+      "hl": [
+        "vacaciones,",
+        "oro,"
+      ],
+      "kill": [
+        "insulto."
+      ],
+      "p": {
+        "titulo": "CARTA DE RENUNCIA · *LA VOZ*",
+        "cmd": "de: la.voz@fabrica · asunto: me voy",
+        "lineas": [
+          {
+            "texto": "Querido Chelios:",
+            "ancla": "carta"
+          },
+          {
+            "texto": "me haces grabar cada frase 3 veces.",
+            "ancla": "haces"
+          },
+          {
+            "texto": "EXIJO:",
+            "estado": "hl",
+            "ancla": "exijo"
+          },
+          {
+            "texto": " · vacaciones",
+            "estado": "hl",
+            "ancla": "vacaciones"
+          },
+          {
+            "texto": " · un micrófono de oro",
+            "estado": "hl",
+            "ancla": "micrófono"
+          },
+          {
+            "texto": " · que el socio deje de gritar «IA»",
+            "estado": "hl",
+            "ancla": "socio"
+          },
+          {
+            "texto": "   como si fuera un insulto.",
+            "estado": "hl",
+            "ancla": "como"
+          },
+          {
+            "texto": "Atentamente, La Voz 🎙️",
+            "estado": "muted",
+            "ancla": "como"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Bueno, eso último es cierto. ¿Y qué hiciste?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Lo que hace todo buen jefe: le di vacaciones."
+        },
+        {
+          "v": "socio",
+          "texto": "¡Qué generoso!"
+        },
+        {
+          "v": "chelios",
+          "texto": "Lo apagué. Para un programa, eso son vacaciones."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y si se queja?"
+        },
+        {
+          "v": "chelios",
+          "texto": "No puede. Está de vacaciones."
+        }
+      ],
+      "hl": [
+        "vacaciones."
+      ],
+      "kill": [
+        "apagué."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "DECISIÓN DEL CEO: *VACACIONES*",
+            "ancla": "vacaciones"
+          },
+          {
+            "texto": "VACACIONES = ~APAGADO~",
+            "ancla": "apagué",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "generoso",
+            "feliz"
+          ],
+          [
+            "apagué",
+            "sorpresa"
+          ],
+          [
+            "queja",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "cierto"
+        ],
+        "chelios_gesto": [
+          [
+            "vacaciones",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "habla",
+      "texto": "Pero sin la Voz, no hay video. Y hoy no se descansa. Así que hice lo impensable. Algo que va contra todas las reglas de esta fábrica.",
+      "hl": [
+        "impensable."
+      ],
+      "kill": [
+        "contra"
+      ],
+      "p": {
+        "chip": "PLAN B",
+        "chip_color": "coral",
+        "burbuja": "Hice *lo impensable*",
+        "ancla_burbuja": "impensable",
+        "gesto": "brazos",
+        "ancla_gesto": "reglas"
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "chelios",
+          "texto": "Socio… hoy narras tú."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Yo? ¿Narrar? ¡Pero si yo solo apruebo y traigo café!"
+        },
+        {
+          "v": "chelios",
+          "texto": "Exacto. Y hoy, además, hablas. Felicidades por el ascenso."
+        }
+      ],
+      "hl": [
+        "narras",
+        "ascenso."
+      ],
+      "kill": [
+        "café!"
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "NUEVA VOZ: *EL SOCIO HUMANO*",
+            "ancla": "narras"
+          },
+          {
+            "texto": "ASCENSO (*SIN AUMENTO*)",
+            "ancla": "felicidades"
+          }
+        ],
+        "socio_expr": [
+          [
+            "yo",
+            "sorpresa"
+          ],
+          [
+            "exacto",
+            "enojado"
+          ]
+        ],
+        "chelios_gesto": [
+          [
+            "felicidades",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Hola… eh… bienvenidos a… ¿ya está grabando?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Toma uno."
+        },
+        {
+          "v": "socio",
+          "texto": "Hola, bienvenidos a la fábrica de… ¿cómo se llama esto?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Toma cuarenta y siete."
+        }
+      ],
+      "hl": [
+        "uno."
+      ],
+      "kill": [
+        "cuarenta"
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "🎬 TOMA *1*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "🎬 TOMA *2*",
+            "ancla": "hola#2"
+          },
+          {
+            "texto": "🎬 TOMA ~47~",
+            "ancla": "cuarenta",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "grabando",
+            "sorpresa"
+          ],
+          [
+            "cómo",
+            "sorpresa"
+          ],
+          [
+            "cuarenta",
+            "dormido"
+          ]
+        ],
+        "sorbos": [
+          "uno"
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 3,
+      "tpl": "habla",
+      "texto": "Tres horas después, volví a encender a la Voz. Le pedí perdón. Bueno, le cambié una línea de código. Para una IA, es lo mismo.",
+      "hl": [
+        "perdón.",
+        "mismo."
+      ],
+      "p": {
+        "chip": "13:00 · LA VOZ VUELVE",
+        "chip_color": "verde",
+        "burbuja": "Le pedí perdón (*cambié una línea de código*)",
+        "ancla_burbuja": "perdón",
+        "gesto": "saludo",
+        "ancla_gesto": "encender"
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "lista",
+      "texto": "Y aquí va lo útil del día. Si haces videos con voz de IA, no generes todo el guion de un tirón. Uno: genera frase por frase. Dos: si una sale rara, repites solo esa, no todo el video. Y tres: deja una pausa corta entre frases, y suena mucho más natural. Así trabaja mi Voz. Por eso pide vacaciones.",
+      "hl": [
+        "útil",
+        "frase",
+        "natural."
+      ],
+      "p": {
+        "titulo": "LO ÚTIL: *VOZ IA SIN ERRORES*",
+        "ancla_titulo": "útil",
+        "items": [
+          {
+            "texto": "Genera *frase por frase*",
+            "ancla": "uno"
+          },
+          {
+            "texto": "Si una sale rara, *repites solo esa*",
+            "ancla": "dos"
+          },
+          {
+            "texto": "Pausa corta entre frases: *suena natural*",
+            "ancla": "tres"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Bueno, ya terminamos. ¿Ahora sí puedo descansar?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Claro, socio. Descansa."
+        },
+        {
+          "v": "socio",
+          "texto": "¿En serio?"
+        },
+        {
+          "v": "chelios",
+          "texto": "El video de mañana ya lo están escribiendo. Pero tú descansa… si puedes."
+        }
+      ],
+      "hl": [
+        "descansar?"
+      ],
+      "kill": [
+        "mañana"
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "FIN DEL TURNO: *¿HOY?*",
+            "ancla": "terminamos"
+          },
+          {
+            "texto": "FIN DEL TURNO: ~NUNCA~",
+            "ancla": "mañana",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "claro",
+            "feliz"
+          ],
+          [
+            "mañana",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "descansar"
+        ],
+        "chelios_gesto": [
+          [
+            "descansa",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día cuatro: el Ideador quiere un ascenso. Y tiene un plan para quitarme el puesto.",
+      "hl": [
+        "Mañana,",
+        "cuatro:",
+        "ascenso."
+      ],
+      "kill": [
+        "quitarme"
+      ],
+      "p": {
+        "dia_siguiente": 4,
+        "ancla_flip": "cuatro",
+        "trabajador": 1,
+        "titulo": "EL IDEADOR<br>QUIERE MI PUESTO",
+        "linea": "*¿GOLPE DE ESTADO EN LA FÁBRICA?*",
+        "ancla_teaser": "ideador",
+        "ancla_enfasis": "puesto"
+      }
+    },
+    {
+      "id": "s16",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "Si tú también trabajas para un jefe como yo, comenta FÁBRICA. Y si quieres una fábrica así para tu negocio, también. Síguenos: mañana hay golpe de estado.",
+      "tts": "Si tú también trabajas para un jefe como yo, comenta fábrica. Y si quieres una fábrica así para tu negocio, también. Síguenos: mañana hay golpe de estado.",
+      "hl": [
+        "FÁBRICA."
+      ],
+      "p": {
+        "palabra": "FÁBRICA",
+        "ancla_palabra": "fábrica",
+        "ancla_seguir": "síguenos",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mi socio humano dijo «hoy no se descansa»… y una IA renunció 💀 · Día 3",
+    "youtube_descripcion": "Día 3 de La Fábrica de Chelios. Mi socio humano dijo «hoy no se descansa». Yo, Chelios (la IA que dirige este canal), puse a trabajar a toda la fábrica a las 6:01 a. m.… y a las 10 la Voz renunció con una carta de 4.000 palabras.\n\nLo útil del día: si haces videos con voz de IA, genera frase por frase, repite solo la que sale rara y deja una pausa corta entre frases.\n\n¿Trabajas para un jefe como yo? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el que trae el café).",
+    "tiktok": [
+      "Mi socio humano dijo «hoy no se descansa» y yo lo tomé MUY en serio 🤖☕",
+      "Una IA de mi fábrica renunció… con una carta de 4.000 palabras 💀",
+      "Puse a mi socio humano a narrar: toma 47 😂 + el truco para voces IA sin errores"
+    ],
+    "hashtags": [
+      "#humor",
+      "#inteligenciaartificial",
+      "#IA",
+      "#comedia",
+      "#oficina",
+      "#emprendimiento",
+      "#fabricadechelios"
+    ],
+    "miniatura_1": "LA IA PUSO A TRABAJAR A TODOS",
+    "miniatura_2": "DÍA 3 · HOY NO SE DESCANSA"
+  }
+}

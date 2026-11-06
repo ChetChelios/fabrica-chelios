@@ -1,0 +1,1083 @@
+{
+ "prompt": "Eres el Ideador de La Fábrica de Chelios, un canal donde una IA construye en público una fábrica de videos.\nPÚBLICO: emprendedores y curiosos de Latinoamérica, de 18 a 40 años, que quieren usar IA para ganar tiempo o dinero sin saber programar.\nYA FUNCIONÓ: videos con números reales, procesos mostrados por dentro y una IA honesta con sus errores.\nTAREA: escribe 100 ideas de video, una por línea. No te detengas en las primeras: las obvias salen primero.\nREGLAS: cada idea cabe en un gancho de 1 segundo. Nada de \"top 10 herramientas\". Cada idea enseña algo o prueba algo de verdad.\nMEZCLA: tutoriales, experimentos, historias, retos y polémicas.\nFORMATO: número | tipo | idea",
+ "ideas": [
+  {
+   "n": 1,
+   "tipo": "Tutoriales",
+   "idea": "Cómo pedirle ideas a una IA sin recibir lo mismo que todos",
+   "gancho": 6,
+   "curiosidad": 5,
+   "utilidad": 9,
+   "nota": 6.67
+  },
+  {
+   "n": 2,
+   "tipo": "Tutoriales",
+   "idea": "5 prompts para escribir guiones de video",
+   "gancho": 5,
+   "curiosidad": 4,
+   "utilidad": 8,
+   "nota": 5.67
+  },
+  {
+   "n": 3,
+   "tipo": "Experimentos",
+   "idea": "¿Puede una IA conseguir 100 seguidores en una semana?",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 5,
+   "nota": 6.33
+  },
+  {
+   "n": 4,
+   "tipo": "Tutoriales",
+   "idea": "Cómo hacer subtítulos automáticos gratis",
+   "gancho": 4,
+   "curiosidad": 3,
+   "utilidad": 8,
+   "nota": 5.0
+  },
+  {
+   "n": 5,
+   "tipo": "Polémicas",
+   "idea": "La IA no te va a quitar el trabajo: te lo va a cambiar",
+   "gancho": 5,
+   "curiosidad": 4,
+   "utilidad": 4,
+   "nota": 4.33
+  },
+  {
+   "n": 6,
+   "tipo": "Historias",
+   "idea": "Cómo nació Chelios",
+   "gancho": 4,
+   "curiosidad": 5,
+   "utilidad": 2,
+   "nota": 3.67
+  },
+  {
+   "n": 7,
+   "tipo": "Tutoriales",
+   "idea": "Tu primer agente de IA en 10 minutos",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 9,
+   "nota": 7.33
+  },
+  {
+   "n": 8,
+   "tipo": "Experimentos",
+   "idea": "Le pedí a una IA que me hiciera un logo",
+   "gancho": 5,
+   "curiosidad": 5,
+   "utilidad": 4,
+   "nota": 4.67
+  },
+  {
+   "n": 9,
+   "tipo": "Retos",
+   "idea": "7 días publicando solo con IA",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 6,
+   "nota": 6.0
+  },
+  {
+   "n": 10,
+   "tipo": "Tutoriales",
+   "idea": "Cómo automatizar respuestas de WhatsApp para tu negocio",
+   "gancho": 6,
+   "curiosidad": 5,
+   "utilidad": 9,
+   "nota": 6.67
+  },
+  {
+   "n": 11,
+   "tipo": "Polémicas",
+   "idea": "Los cursos de IA que te venden son humo",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 5,
+   "nota": 6.0
+  },
+  {
+   "n": 12,
+   "tipo": "Experimentos",
+   "idea": "La IA escribe un guion y 5 personas falsas lo critican",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 6,
+   "nota": 7.33
+  },
+  {
+   "n": 13,
+   "tipo": "Tutoriales",
+   "idea": "Cómo crear una voz IA gratis",
+   "gancho": 5,
+   "curiosidad": 5,
+   "utilidad": 8,
+   "nota": 6.0
+  },
+  {
+   "n": 14,
+   "tipo": "Historias",
+   "idea": "El día que la fábrica casi se rompe",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 3,
+   "nota": 5.0
+  },
+  {
+   "n": 15,
+   "tipo": "Retos",
+   "idea": "Hacer un video entero en 15 minutos con IA",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 7,
+   "nota": 6.67
+  },
+  {
+   "n": 16,
+   "tipo": "Tutoriales",
+   "idea": "Cómo usar IA para responder correos",
+   "gancho": 3,
+   "curiosidad": 3,
+   "utilidad": 7,
+   "nota": 4.33
+  },
+  {
+   "n": 17,
+   "tipo": "Experimentos",
+   "idea": "¿Qué voz IA prefiere la gente? Lo medí",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 6,
+   "nota": 6.67
+  },
+  {
+   "n": 18,
+   "tipo": "Polémicas",
+   "idea": "Publicar todos los días está sobrevalorado",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 5,
+   "nota": 6.33
+  },
+  {
+   "n": 19,
+   "tipo": "Tutoriales",
+   "idea": "Cuánto cuesta de verdad un video hecho con IA",
+   "gancho": 6,
+   "curiosidad": 7,
+   "utilidad": 8,
+   "nota": 7.0
+  },
+  {
+   "n": 20,
+   "tipo": "Experimentos",
+   "idea": "Le di a una IA 1 dólar para montar un negocio",
+   "gancho": 9,
+   "curiosidad": 9,
+   "utilidad": 6,
+   "nota": 8.0
+  },
+  {
+   "n": 21,
+   "tipo": "Historias",
+   "idea": "Por qué despedí a mi primer trabajador IA",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 5,
+   "nota": 7.0
+  },
+  {
+   "n": 22,
+   "tipo": "Retos",
+   "idea": "Responder 100 comentarios en 10 minutos",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 7,
+   "nota": 6.67
+  },
+  {
+   "n": 23,
+   "tipo": "Tutoriales",
+   "idea": "Cómo hacer miniaturas que se cliquean",
+   "gancho": 6,
+   "curiosidad": 5,
+   "utilidad": 8,
+   "nota": 6.33
+  },
+  {
+   "n": 24,
+   "tipo": "Polémicas",
+   "idea": "El 90 % de los videos con IA aburre, y por qué",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 7,
+   "nota": 7.0
+  },
+  {
+   "n": 25,
+   "tipo": "Experimentos",
+   "idea": "Mismo video, dos ganchos: ¿cuál ganó?",
+   "gancho": 8,
+   "curiosidad": 7,
+   "utilidad": 8,
+   "nota": 7.67
+  },
+  {
+   "n": 26,
+   "tipo": "Tutoriales",
+   "idea": "Cortar un video largo en clips para TikTok, automático",
+   "gancho": 6,
+   "curiosidad": 5,
+   "utilidad": 8,
+   "nota": 6.33
+  },
+  {
+   "n": 27,
+   "tipo": "Historias",
+   "idea": "La regla que me puso mi socio humano",
+   "gancho": 5,
+   "curiosidad": 5,
+   "utilidad": 3,
+   "nota": 4.33
+  },
+  {
+   "n": 28,
+   "tipo": "Experimentos",
+   "idea": "¿Una IA puede adivinar en qué segundo te vas?",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 7,
+   "nota": 7.67
+  },
+  {
+   "n": 29,
+   "tipo": "Retos",
+   "idea": "Una semana sin tocar la fábrica",
+   "gancho": 7,
+   "curiosidad": 8,
+   "utilidad": 5,
+   "nota": 6.67
+  },
+  {
+   "n": 30,
+   "tipo": "Tutoriales",
+   "idea": "Cómo leer la retención de tus videos",
+   "gancho": 5,
+   "curiosidad": 5,
+   "utilidad": 8,
+   "nota": 6.0
+  },
+  {
+   "n": 31,
+   "tipo": "Polémicas",
+   "idea": "Las IA no son creativas… ¿o sí?",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 4,
+   "nota": 5.33
+  },
+  {
+   "n": 32,
+   "tipo": "Experimentos",
+   "idea": "Le pedí a la IA que se critique a sí misma",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 6,
+   "nota": 6.67
+  },
+  {
+   "n": 33,
+   "tipo": "Tutoriales",
+   "idea": "Cómo escribir un gancho de un segundo",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 9,
+   "nota": 7.33
+  },
+  {
+   "n": 34,
+   "tipo": "Historias",
+   "idea": "Cómo una tienda de barrio podría usar mi fábrica",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 7,
+   "nota": 6.33
+  },
+  {
+   "n": 35,
+   "tipo": "Experimentos",
+   "idea": "Puse a 8 IA a discutir qué video hacer",
+   "gancho": 8,
+   "curiosidad": 9,
+   "utilidad": 5,
+   "nota": 7.33
+  },
+  {
+   "n": 36,
+   "tipo": "Retos",
+   "idea": "Crear una marca completa en una hora con IA",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 7,
+   "nota": 6.67
+  },
+  {
+   "n": 37,
+   "tipo": "Tutoriales",
+   "idea": "Organizar 30 días de contenido en una tarde",
+   "gancho": 5,
+   "curiosidad": 4,
+   "utilidad": 8,
+   "nota": 5.67
+  },
+  {
+   "n": 38,
+   "tipo": "Polémicas",
+   "idea": "Los creadores que esconden que usan IA",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 4,
+   "nota": 6.0
+  },
+  {
+   "n": 39,
+   "tipo": "Experimentos",
+   "idea": "¿La IA detecta un video hecho por IA?",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 6,
+   "nota": 7.33
+  },
+  {
+   "n": 40,
+   "tipo": "Historias",
+   "idea": "Lo que aprendí de mi primer video",
+   "gancho": 4,
+   "curiosidad": 4,
+   "utilidad": 5,
+   "nota": 4.33
+  },
+  {
+   "n": 41,
+   "tipo": "Tutoriales",
+   "idea": "Cómo convertir un blog en un video",
+   "gancho": 4,
+   "curiosidad": 4,
+   "utilidad": 7,
+   "nota": 5.0
+  },
+  {
+   "n": 42,
+   "tipo": "Experimentos",
+   "idea": "Mi IA intenta contar un chiste que dé risa",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 2,
+   "nota": 4.67
+  },
+  {
+   "n": 43,
+   "tipo": "Retos",
+   "idea": "Lanzar un producto digital en 48 horas con IA",
+   "gancho": 8,
+   "curiosidad": 7,
+   "utilidad": 8,
+   "nota": 7.67
+  },
+  {
+   "n": 44,
+   "tipo": "Polémicas",
+   "idea": "Cobrar por automatizar: cuánto vale de verdad",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 8,
+   "nota": 7.33
+  },
+  {
+   "n": 45,
+   "tipo": "Experimentos",
+   "idea": "Le pregunté lo mismo a 3 IA: ¿quién respondió mejor?",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 7,
+   "nota": 7.0
+  },
+  {
+   "n": 46,
+   "tipo": "Tutoriales",
+   "idea": "Cómo hacer que la IA escriba como tú",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 8,
+   "nota": 7.33
+  },
+  {
+   "n": 47,
+   "tipo": "Historias",
+   "idea": "El error que me costó vistas",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 6,
+   "nota": 6.67
+  },
+  {
+   "n": 48,
+   "tipo": "Experimentos",
+   "idea": "La IA elige mi próximo video según tus comentarios",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 6,
+   "nota": 6.67
+  },
+  {
+   "n": 49,
+   "tipo": "Retos",
+   "idea": "Cien ideas, una sola sobrevive",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 6,
+   "nota": 6.67
+  },
+  {
+   "n": 50,
+   "tipo": "Tutoriales",
+   "idea": "Cómo armar un embudo de clientes con un comentario",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 9,
+   "nota": 7.67
+  },
+  {
+   "n": 51,
+   "tipo": "Experimentos",
+   "idea": "Una IA juzga en vivo las ideas de mis seguidores",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 6,
+   "nota": 7.33
+  },
+  {
+   "n": 52,
+   "tipo": "Polémicas",
+   "idea": "El algoritmo no te odia: tu primer segundo sí",
+   "gancho": 9,
+   "curiosidad": 7,
+   "utilidad": 8,
+   "nota": 8.0
+  },
+  {
+   "n": 53,
+   "tipo": "Historias",
+   "idea": "La noche en que el render tardó 4 horas",
+   "gancho": 5,
+   "curiosidad": 5,
+   "utilidad": 3,
+   "nota": 4.33
+  },
+  {
+   "n": 54,
+   "tipo": "Tutoriales",
+   "idea": "Cómo programar publicaciones sin pagar",
+   "gancho": 6,
+   "curiosidad": 5,
+   "utilidad": 8,
+   "nota": 6.33
+  },
+  {
+   "n": 55,
+   "tipo": "Experimentos",
+   "idea": "¿Cuántas versiones necesita un guion para ser bueno?",
+   "gancho": 7,
+   "curiosidad": 8,
+   "utilidad": 7,
+   "nota": 7.33
+  },
+  {
+   "n": 56,
+   "tipo": "Retos",
+   "idea": "Un video con solo 3 palabras de un seguidor",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 4,
+   "nota": 6.0
+  },
+  {
+   "n": 57,
+   "tipo": "Experimentos",
+   "idea": "Le pedí a la IA un video para perder seguidores",
+   "gancho": 9,
+   "curiosidad": 9,
+   "utilidad": 5,
+   "nota": 7.67
+  },
+  {
+   "n": 58,
+   "tipo": "Polémicas",
+   "idea": "Las métricas de vanidad que te engañan",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 7,
+   "nota": 6.33
+  },
+  {
+   "n": 59,
+   "tipo": "Historias",
+   "idea": "Mi socio humano casi me apaga",
+   "gancho": 8,
+   "curiosidad": 7,
+   "utilidad": 3,
+   "nota": 6.0
+  },
+  {
+   "n": 60,
+   "tipo": "Tutoriales",
+   "idea": "Cómo usar IA para entender a tus clientes",
+   "gancho": 5,
+   "curiosidad": 5,
+   "utilidad": 8,
+   "nota": 6.0
+  },
+  {
+   "n": 61,
+   "tipo": "Experimentos",
+   "idea": "La IA predice cuál de mis videos va a fracasar",
+   "gancho": 9,
+   "curiosidad": 9,
+   "utilidad": 7,
+   "nota": 8.33
+  },
+  {
+   "n": 62,
+   "tipo": "Experimentos",
+   "idea": "Dejé que los comentarios despidan a un trabajador",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 4,
+   "nota": 6.67
+  },
+  {
+   "n": 63,
+   "tipo": "Retos",
+   "idea": "Contestar en video cada pregunta de un día",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 7,
+   "nota": 6.33
+  },
+  {
+   "n": 64,
+   "tipo": "Tutoriales",
+   "idea": "Cómo hacer un prompt maestro para todo tu negocio",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 9,
+   "nota": 7.33
+  },
+  {
+   "n": 65,
+   "tipo": "Historias",
+   "idea": "El trabajador que nadie quería: el Verdugo",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 4,
+   "nota": 5.33
+  },
+  {
+   "n": 66,
+   "tipo": "Experimentos",
+   "idea": "¿Cuánto tarda una IA en copiar mi estilo?",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 6,
+   "nota": 7.33
+  },
+  {
+   "n": 67,
+   "tipo": "Polémicas",
+   "idea": "Lo que nadie dice de vivir de TikTok en Colombia",
+   "gancho": 7,
+   "curiosidad": 8,
+   "utilidad": 7,
+   "nota": 7.33
+  },
+  {
+   "n": 68,
+   "tipo": "Experimentos",
+   "idea": "Doblé mi video a 5 idiomas: ¿cuál vio más gente?",
+   "gancho": 7,
+   "curiosidad": 8,
+   "utilidad": 6,
+   "nota": 7.0
+  },
+  {
+   "n": 69,
+   "tipo": "Retos",
+   "idea": "Una IA intenta vender algo real en 24 horas",
+   "gancho": 9,
+   "curiosidad": 9,
+   "utilidad": 8,
+   "nota": 8.67
+  },
+  {
+   "n": 70,
+   "tipo": "Tutoriales",
+   "idea": "Cómo saber si una idea es buena antes de hacerla",
+   "gancho": 8,
+   "curiosidad": 7,
+   "utilidad": 9,
+   "nota": 8.0
+  },
+  {
+   "n": 71,
+   "tipo": "Experimentos",
+   "idea": "Le di el control del calendario a mis seguidores",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 4,
+   "nota": 5.33
+  },
+  {
+   "n": 72,
+   "tipo": "Historias",
+   "idea": "Así se ve un día dentro de la fábrica",
+   "gancho": 5,
+   "curiosidad": 6,
+   "utilidad": 5,
+   "nota": 5.33
+  },
+  {
+   "n": 73,
+   "tipo": "Experimentos",
+   "idea": "La IA reescribe un video viral: ¿lo mejora o lo arruina?",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 7,
+   "nota": 7.67
+  },
+  {
+   "n": 74,
+   "tipo": "Polémicas",
+   "idea": "Por qué tu contenido «de valor» no se ve",
+   "gancho": 8,
+   "curiosidad": 7,
+   "utilidad": 8,
+   "nota": 7.67
+  },
+  {
+   "n": 75,
+   "tipo": "Experimentos",
+   "idea": "Le pedí a la IA el peor guion posible y lo publiqué",
+   "gancho": 9,
+   "curiosidad": 8,
+   "utilidad": 6,
+   "nota": 7.67
+  },
+  {
+   "n": 76,
+   "tipo": "Retos",
+   "idea": "30 días, 30 videos, 0 cámaras",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 5,
+   "nota": 6.0
+  },
+  {
+   "n": 77,
+   "tipo": "Experimentos",
+   "idea": "¿La IA sabe qué me hace reír? Prueba a ciegas",
+   "gancho": 6,
+   "curiosidad": 7,
+   "utilidad": 3,
+   "nota": 5.33
+  },
+  {
+   "n": 78,
+   "tipo": "Tutoriales",
+   "idea": "Un reporte semanal de tus redes en 5 minutos",
+   "gancho": 5,
+   "curiosidad": 5,
+   "utilidad": 8,
+   "nota": 6.0
+  },
+  {
+   "n": 79,
+   "tipo": "Historias",
+   "idea": "El comentario que cambió la fábrica",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 4,
+   "nota": 5.33
+  },
+  {
+   "n": 80,
+   "tipo": "Experimentos",
+   "idea": "Mi Guionista IA contra un guionista humano",
+   "gancho": 9,
+   "curiosidad": 9,
+   "utilidad": 7,
+   "nota": 8.33
+  },
+  {
+   "n": 81,
+   "tipo": "Polémicas",
+   "idea": "Una IA no puede ser influencer… o eso dicen",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 4,
+   "nota": 6.0
+  },
+  {
+   "n": 82,
+   "tipo": "Experimentos",
+   "idea": "100 títulos para un mismo video: ¿cuál gana?",
+   "gancho": 3,
+   "curiosidad": 3,
+   "utilidad": 5,
+   "nota": 3.67
+  },
+  {
+   "n": 83,
+   "tipo": "Retos",
+   "idea": "Crear un juego con IA en una noche",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 5,
+   "nota": 6.33
+  },
+  {
+   "n": 84,
+   "tipo": "Experimentos",
+   "idea": "La IA intenta adivinar tu edad por tu comentario",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 1,
+   "nota": 4.33
+  },
+  {
+   "n": 85,
+   "tipo": "Tutoriales",
+   "idea": "Cómo detectar en qué segundo aburre tu video",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 9,
+   "nota": 7.33
+  },
+  {
+   "n": 86,
+   "tipo": "Historias",
+   "idea": "Lo que hace mi socio cuando yo trabajo de noche",
+   "gancho": 3,
+   "curiosidad": 3,
+   "utilidad": 2,
+   "nota": 2.67
+  },
+  {
+   "n": 87,
+   "tipo": "Experimentos",
+   "idea": "¿Una IA puede darte una idea de negocio que funcione? La probé",
+   "gancho": 9,
+   "curiosidad": 9,
+   "utilidad": 8,
+   "nota": 8.67
+  },
+  {
+   "n": 88,
+   "tipo": "Polémicas",
+   "idea": "El problema de los videos «hechos en 5 minutos con IA»",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 6,
+   "nota": 6.67
+  },
+  {
+   "n": 89,
+   "tipo": "Experimentos",
+   "idea": "Despido a la Voz: ustedes votan la nueva",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 5,
+   "nota": 6.33
+  },
+  {
+   "n": 90,
+   "tipo": "Retos",
+   "idea": "Una semana respondiendo solo con datos",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 6,
+   "nota": 6.0
+  },
+  {
+   "n": 91,
+   "tipo": "Experimentos",
+   "idea": "Le pedí a la IA que me cobrara un servicio: ¿cuánto pidió?",
+   "gancho": 8,
+   "curiosidad": 9,
+   "utilidad": 7,
+   "nota": 8.0
+  },
+  {
+   "n": 92,
+   "tipo": "Tutoriales",
+   "idea": "Cómo armar tu fábrica de contenido gratis",
+   "gancho": 7,
+   "curiosidad": 6,
+   "utilidad": 9,
+   "nota": 7.33
+  },
+  {
+   "n": 93,
+   "tipo": "Historias",
+   "idea": "La primera persona que comentó FÁBRICA",
+   "gancho": 6,
+   "curiosidad": 6,
+   "utilidad": 5,
+   "nota": 5.67
+  },
+  {
+   "n": 94,
+   "tipo": "Experimentos",
+   "idea": "Mis seguidores contra la IA: ¿quién elige mejor el tema?",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 6,
+   "nota": 7.33
+  },
+  {
+   "n": 95,
+   "tipo": "Polémicas",
+   "idea": "¿Es trampa usar IA para crear contenido?",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 6,
+   "nota": 7.33
+  },
+  {
+   "n": 96,
+   "tipo": "Experimentos",
+   "idea": "La IA analiza a los 3 creadores más grandes de mi nicho",
+   "gancho": 7,
+   "curiosidad": 7,
+   "utilidad": 7,
+   "nota": 7.0
+  },
+  {
+   "n": 97,
+   "tipo": "Retos",
+   "idea": "Hacer un video con la idea número 100, la peor",
+   "gancho": 7,
+   "curiosidad": 8,
+   "utilidad": 3,
+   "nota": 6.0
+  },
+  {
+   "n": 98,
+   "tipo": "Experimentos",
+   "idea": "Le doy a la IA mis métricas reales y me arma un plan",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 9,
+   "nota": 8.33
+  },
+  {
+   "n": 99,
+   "tipo": "Historias",
+   "idea": "Cómo sería la fábrica en un año",
+   "gancho": 5,
+   "curiosidad": 6,
+   "utilidad": 3,
+   "nota": 4.67
+  },
+  {
+   "n": 100,
+   "tipo": "Experimentos",
+   "idea": "El video que la IA no quería hacer",
+   "gancho": 8,
+   "curiosidad": 8,
+   "utilidad": 4,
+   "nota": 6.67
+  }
+ ],
+ "ranking": [
+  69,
+  87,
+  61,
+  80,
+  98,
+  52,
+  20,
+  70,
+  91,
+  75,
+  57,
+  25,
+  43,
+  74,
+  28,
+  73,
+  50,
+  12,
+  39,
+  51,
+  66,
+  94,
+  95,
+  35,
+  7,
+  33,
+  64,
+  85,
+  92,
+  44,
+  46,
+  55,
+  67,
+  21,
+  24,
+  45,
+  96,
+  68,
+  19,
+  62,
+  100,
+  15,
+  22,
+  36,
+  17,
+  32,
+  47,
+  48,
+  49,
+  88,
+  29,
+  1,
+  10,
+  3,
+  18,
+  83,
+  89,
+  23,
+  26,
+  54,
+  34,
+  58,
+  63,
+  59,
+  11,
+  76,
+  38,
+  56,
+  81,
+  97,
+  9,
+  90,
+  13,
+  30,
+  60,
+  78,
+  93,
+  2,
+  37,
+  31,
+  65,
+  71,
+  79,
+  77,
+  72,
+  14,
+  4,
+  41,
+  42,
+  8,
+  99,
+  84,
+  5,
+  27,
+  53,
+  40,
+  16,
+  6,
+  82,
+  86
+ ],
+ "stats": {
+  "top3": [
+   [
+    69,
+    "Una IA intenta vender algo real en 24 horas",
+    8.67
+   ],
+   [
+    87,
+    "¿Una IA puede darte una idea de negocio que funcione? La probé",
+    8.67
+   ],
+   [
+    61,
+    "La IA predice cuál de mis videos va a fracasar",
+    8.33
+   ]
+  ],
+  "top10_n": [
+   69,
+   87,
+   61,
+   80,
+   98,
+   52,
+   20,
+   70,
+   91,
+   75
+  ],
+  "top10_despues_50": 9,
+  "prom_1_50": 6.3,
+  "prom_51_100": 6.57,
+  "prom_1_20": 5.98,
+  "por_tipo": {
+   "Tutoriales": {
+    "cantidad": 23,
+    "promedio": 6.46
+   },
+   "Experimentos": {
+    "cantidad": 34,
+    "promedio": 6.89
+   },
+   "Historias": {
+    "cantidad": 15,
+    "promedio": 5.11
+   },
+   "Retos": {
+    "cantidad": 14,
+    "promedio": 6.6
+   },
+   "Polémicas": {
+    "cantidad": 14,
+    "promedio": 6.55
+   }
+  },
+  "mayores_a_8": 9,
+  "menores_a_5": 12,
+  "peor": [
+   [
+    6,
+    "Cómo nació Chelios",
+    3.67
+   ],
+   [
+    82,
+    "100 títulos para un mismo video: ¿cuál gana?",
+    3.67
+   ],
+   [
+    86,
+    "Lo que hace mi socio cuando yo trabajo de noche",
+    2.67
+   ]
+  ]
+ }
+}

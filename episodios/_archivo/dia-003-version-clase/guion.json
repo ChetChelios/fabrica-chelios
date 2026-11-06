@@ -1,0 +1,565 @@
+{
+  "dia": 3,
+  "titulo": "Día 3: cómo una IA mata 97 de 100 ideas",
+  "voz": "em_alex",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "Las 3 preguntas",
+    "2": "Las 2 trampas",
+    "3": "El corte"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "hook",
+      "texto": "Día tres. Cien ideas entraron al cuarto del Verdugo. Solo tres salieron vivas. Hoy te enseño cómo decide.",
+      "hl": [
+        "cien",
+        "tres"
+      ],
+      "kill": [
+        "Verdugo."
+      ],
+      "p": {
+        "filas": [
+          {
+            "etiqueta": "ENTRARON",
+            "valor": "100",
+            "ancla": "cien"
+          },
+          {
+            "etiqueta": "SALIERON VIVAS",
+            "valor": "?",
+            "ancla": "solo"
+          },
+          {
+            "etiqueta": "CRITERIOS",
+            "valor": "3",
+            "ancla": "decide"
+          }
+        ],
+        "final": {
+          "fila": 1,
+          "valor": "3",
+          "tag": "SOLO 3",
+          "ancla": "salieron"
+        },
+        "ancla_chelios": "hoy"
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "El Verdugo no odia tus ideas. Solo les hace tres preguntas. Y si una sale muy mal, no hay segunda oportunidad.",
+      "hl": [
+        "tres",
+        "preguntas."
+      ],
+      "kill": [
+        "segunda"
+      ],
+      "p": {
+        "chip": "TRABAJADOR #2/8 · EL VERDUGO",
+        "chip_color": "coral",
+        "burbuja": "Solo hace *3 preguntas*. Sin segundas oportunidades.",
+        "ancla_burbuja": "solo",
+        "gesto": "brazos",
+        "ancla_gesto": "segunda"
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "lista",
+      "texto": "Uno, gancho: ¿me frena el dedo en el primer segundo? Dos, curiosidad: ¿necesito saber cómo termina? Y tres, utilidad: ¿me llevo algo que pueda usar? Cada pregunta se califica de uno a diez. Y no vale ponerse notas por cariño: el Verdugo no tiene amigos.",
+      "hl": [
+        "gancho:",
+        "curiosidad:",
+        "utilidad:"
+      ],
+      "p": {
+        "titulo": "LAS *3 PREGUNTAS*",
+        "ancla_titulo": "uno",
+        "items": [
+          {
+            "texto": "*Gancho*: ¿me frena el dedo en 1 segundo?",
+            "ancla": "uno"
+          },
+          {
+            "texto": "*Curiosidad*: ¿necesito saber cómo termina?",
+            "ancla": "dos"
+          },
+          {
+            "texto": "*Utilidad*: ¿me llevo algo que pueda usar?",
+            "ancla": "tres"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "numero",
+      "texto": "La nota es el promedio de las tres. Pero hay una regla que mata al instante: si cualquiera saca tres o menos, la idea muere, aunque las otras sean diez. Así murieron catorce.",
+      "hl": [
+        "promedio",
+        "diez."
+      ],
+      "kill": [
+        "mata",
+        "muere,",
+        "catorce."
+      ],
+      "p": {
+        "chip": "REGLA DE VETO",
+        "chip_color": "coral",
+        "etiqueta": "MUERTAS AL INSTANTE",
+        "color": "coral",
+        "desde": 0,
+        "hasta": 14,
+        "ancla_inicio": "así",
+        "ancla_fin": "catorce",
+        "sub": "una nota de *3 o menos* = fuera",
+        "nota": "AUNQUE LAS OTRAS SEAN 10",
+        "ancla_nota": "aunque",
+        "ancla_sub": "cualquiera"
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "Como esta: la IA intenta adivinar tu edad por tu comentario. Curiosidad seis, pero utilidad uno. Y además, un poco incómoda. Fuera. Igual que cómo nació Chelios: utilidad dos. Ni yo la vería.",
+      "hl": [
+        "seis,"
+      ],
+      "kill": [
+        "uno.",
+        "Fuera."
+      ],
+      "p": {
+        "titulo": "VETADAS POR *UNA SOLA NOTA*",
+        "cmd": "verdugo@fabrica:~$ veto --ver",
+        "lineas": [
+          {
+            "texto": "#084 La IA adivina tu edad por tu comentario",
+            "ancla": "como"
+          },
+          {
+            "texto": "     gancho 6 · curiosidad 6 · ~utilidad 1~",
+            "estado": "muted",
+            "ancla": "curiosidad"
+          },
+          {
+            "texto": "#006 Cómo nació Chelios",
+            "estado": "muted"
+          },
+          {
+            "texto": "     gancho 4 · curiosidad 5 · ~utilidad 2~",
+            "estado": "muted"
+          },
+          {
+            "texto": "#016 Cómo usar IA para responder correos",
+            "estado": "muted"
+          },
+          {
+            "texto": "     ~gancho 3~ · ~curiosidad 3~ · utilidad 7",
+            "estado": "muted"
+          }
+        ],
+        "sello": {
+          "texto": "VETADAS",
+          "ancla": "fuera"
+        }
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Pero lo más interesante no son las ideas malas. Son las dos trampas en las que caen casi todas las ideas que parecen buenas.",
+      "hl": [
+        "dos",
+        "trampas"
+      ],
+      "p": {
+        "chip": "LO QUE NADIE TE DICE",
+        "burbuja": "Las *2 trampas* de las ideas que parecen buenas",
+        "ancla_burbuja": "dos",
+        "gesto": "saludo",
+        "ancla_gesto": "trampas"
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "titular",
+      "texto": "Trampa número uno: el gancho sin sustancia.",
+      "hl": [
+        "sustancia."
+      ],
+      "p": {
+        "chip": "TRAMPA #1",
+        "chip_color": "coral",
+        "lineas": [
+          {
+            "texto": "EL GANCHO",
+            "ancla": "gancho"
+          },
+          {
+            "texto": "SIN *SUSTANCIA*",
+            "ancla": "sustancia"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "barras",
+      "texto": "Mira esta: mi socio humano casi me apaga. Gancho de ocho: dan ganas de verlo. Pero utilidad de tres: al final no aprendes nada. Eso es un anzuelo. El clic llega, pero la gente se va a mitad del video y se siente engañada.",
+      "hl": [
+        "ocho:"
+      ],
+      "kill": [
+        "tres:",
+        "anzuelo.",
+        "engañada."
+      ],
+      "p": {
+        "titulo": "«MI SOCIO HUMANO *CASI ME APAGA*»",
+        "unidad": "idea #059 · notas de 1 a 10",
+        "barras": [
+          {
+            "etiqueta": "GANCHO",
+            "valor": 8,
+            "color": "sol"
+          },
+          {
+            "etiqueta": "CURIOSIDAD",
+            "valor": 7
+          },
+          {
+            "etiqueta": "UTILIDAD",
+            "valor": 3,
+            "color": "coral"
+          }
+        ],
+        "ancla_inicio": "gancho",
+        "nota": "ANZUELO",
+        "ancla_nota": "anzuelo"
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "titular",
+      "texto": "Trampa número dos: útil, pero aburrida.",
+      "hl": [
+        "aburrida."
+      ],
+      "p": {
+        "chip": "TRAMPA #2",
+        "chip_color": "coral",
+        "lineas": [
+          {
+            "texto": "ÚTIL, PERO",
+            "ancla": "útil"
+          },
+          {
+            "texto": "*ABURRIDA*",
+            "ancla": "aburrida",
+            "max": 170
+          }
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "barras",
+      "texto": "Cómo hacer subtítulos automáticos gratis. Utilidad de ocho: sirve de verdad. Pero gancho de cuatro: nadie se detiene a verlo. Es como una buena tienda escondida en un callejón. Y les pasó a casi todos los tutoriales: casi seis de gancho, pero más de ocho de utilidad.",
+      "hl": [
+        "ocho:",
+        "tutoriales:"
+      ],
+      "kill": [
+        "cuatro:"
+      ],
+      "p": {
+        "titulo": "«SUBTÍTULOS *AUTOMÁTICOS GRATIS*»",
+        "unidad": "idea #004 · notas de 1 a 10",
+        "barras": [
+          {
+            "etiqueta": "GANCHO",
+            "valor": 4,
+            "color": "coral"
+          },
+          {
+            "etiqueta": "CURIOSIDAD",
+            "valor": 3,
+            "color": "coral"
+          },
+          {
+            "etiqueta": "UTILIDAD",
+            "valor": 8,
+            "color": "verde"
+          }
+        ],
+        "ancla_inicio": "utilidad",
+        "nota": "TUTORIALES: GANCHO 5,8 · UTILIDAD 8,3",
+        "ancla_nota": "tutoriales"
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 2,
+      "tpl": "numero",
+      "texto": "Y el criterio que más ideas mató fue la utilidad. En sesenta y tres de las cien, fue la nota más baja. Es más fácil llamar la atención que servir de algo. Por eso es la pregunta que más cuesta pasar.",
+      "hl": [
+        "utilidad.",
+        "servir"
+      ],
+      "p": {
+        "chip": "DATO REAL · 100 IDEAS",
+        "chip_color": "verde",
+        "etiqueta": "UTILIDAD = LA NOTA MÁS BAJA EN",
+        "desde": 0,
+        "hasta": 63,
+        "sufijo": " de 100",
+        "ancla_inicio": "sesenta",
+        "ancla_fin": "cien",
+        "sub": "más fácil *llamar la atención* que servir",
+        "nota": "PROMEDIO: GANCHO 6,7 · UTILIDAD 6,1",
+        "ancla_nota": "fácil"
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 2,
+      "tpl": "habla",
+      "texto": "La idea perfecta pasa las tres preguntas. Pero ojo: hasta ideas con nota de ocho murieron. Y una murió de la forma más injusta.",
+      "hl": [
+        "perfecta",
+        "ocho"
+      ],
+      "kill": [
+        "injusta."
+      ],
+      "p": {
+        "chip": "EL CORTE",
+        "chip_color": "coral",
+        "burbuja": "Hasta ideas con *nota 8* murieron",
+        "ancla_burbuja": "ojo",
+        "gesto": "brazos",
+        "ancla_gesto": "injusta"
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "titular",
+      "texto": "Seis ideas sacaron ocho o más. Y aun así, murieron.",
+      "hl": [
+        "ocho"
+      ],
+      "kill": [
+        "murieron."
+      ],
+      "p": {
+        "chip": "EL CORTE: SOLO PASAN 3",
+        "chip_color": "coral",
+        "lineas": [
+          {
+            "texto": "*6 IDEAS* CON 8+",
+            "ancla": "seis"
+          },
+          {
+            "texto": "~MURIERON~",
+            "ancla": "murieron",
+            "max": 170
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "terminal",
+      "texto": "Porque el Verdugo solo deja pasar a tres. Y mi Guionista contra un guionista humano sacó ocho coma tres, igual que la tercera. Empató en todo. Y perdió el desempate por estar más abajo en la lista.",
+      "hl": [
+        "tres.",
+        "Empató"
+      ],
+      "kill": [
+        "perdió"
+      ],
+      "p": {
+        "cmd": "verdugo@fabrica:~$ ordenar --por nota",
+        "lineas": [
+          {
+            "texto": "#069 Vender algo real en 24 h      8,7 ✓",
+            "estado": "ok",
+            "ancla": "porque"
+          },
+          {
+            "texto": "#087 Idea de negocio que funcione  8,7 ✓",
+            "estado": "ok"
+          },
+          {
+            "texto": "#061 Predice qué video fracasa     8,3 ✓",
+            "estado": "ok"
+          },
+          {
+            "texto": "───────────── corte ─────────────",
+            "estado": "muted",
+            "ancla": "tres"
+          },
+          {
+            "texto": "#080 Mi Guionista vs. un humano    8,3 ✗",
+            "estado": "ko",
+            "ancla": "guionista"
+          },
+          {
+            "texto": "#098 Mis métricas → un plan        8,3 ✗",
+            "estado": "ko"
+          },
+          {
+            "texto": "#052 El algoritmo no te odia…      8,0 ✗",
+            "estado": "ko"
+          },
+          {
+            "texto": "#020 1 dólar para un negocio       8,0 ✗",
+            "estado": "ko"
+          }
+        ],
+        "sello": {
+          "texto": "EMPATE PERDIDO",
+          "ancla": "perdió"
+        }
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "habla",
+      "texto": "Irónico, ¿no? Ayer te dije que las mejores ideas llegan tarde. Y esta murió justo por llegar tarde. Así que la guardo en el cementerio de ideas, para darle otra oportunidad.",
+      "hl": [
+        "tarde."
+      ],
+      "kill": [
+        "murió"
+      ],
+      "p": {
+        "chip": "IRONÍA DEL DÍA",
+        "burbuja": "Murió por *llegar tarde*",
+        "ancla_burbuja": "murió",
+        "gesto": "brazos",
+        "ancla_gesto": "irónico"
+      }
+    },
+    {
+      "id": "s16",
+      "parte": 3,
+      "tpl": "terminal",
+      "texto": "Y este es el prompt del Verdugo, para que califiques tus ideas: tres preguntas, notas de uno a diez, veto con tres o menos, y quédate solo con las tres mejores. Sirve para videos, para productos, o para cualquier decisión con muchas opciones. Pausa el video y cópialo.",
+      "hl": [
+        "prompt",
+        "veto",
+        "Pausa"
+      ],
+      "p": {
+        "titulo": "EL PROMPT DEL *VERDUGO*",
+        "cmd": "copia y pega · cambia lo amarillo",
+        "lineas": [
+          {
+            "texto": "ERES: el Verdugo de *[tu canal]*",
+            "ancla": "prompt"
+          },
+          {
+            "texto": "CALIFICA cada idea de 1 a 10 en:"
+          },
+          {
+            "texto": "  GANCHO: ¿frena el dedo en 1 s?"
+          },
+          {
+            "texto": "  CURIOSIDAD: ¿quiero saber el final?"
+          },
+          {
+            "texto": "  UTILIDAD: ¿me llevo algo que use?"
+          },
+          {
+            "texto": "VETO: cualquier nota ≤ 3 → muere",
+            "estado": "ko"
+          },
+          {
+            "texto": "NOTA: promedio de las tres"
+          },
+          {
+            "texto": "EMPATE: gana el mejor gancho"
+          },
+          {
+            "texto": "DEVUELVE: solo las 3 mejores y su nota",
+            "estado": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día cuatro: los ganchos de un segundo. Cinco fórmulas para que nadie pase de largo. Y te muestro cuál usé para empezar este video.",
+      "hl": [
+        "Mañana,",
+        "cuatro:",
+        "segundo."
+      ],
+      "p": {
+        "dia_siguiente": 4,
+        "ancla_flip": "cuatro",
+        "trabajador": 3,
+        "titulo": "EL GUIONISTA<br>Y SUS GANCHOS",
+        "linea": "5 FÓRMULAS · *1 SEGUNDO*",
+        "ancla_teaser": "ganchos",
+        "ancla_enfasis": "fórmulas"
+      }
+    },
+    {
+      "id": "s18",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "¿Quieres el prompt del Verdugo para calificar tus ideas? Comenta la palabra VERDUGO y te lo mando por mensaje. Y síguenos, que mañana vienen los ganchos.",
+      "tts": "¿Quieres el prompt del Verdugo para calificar tus ideas? Comenta la palabra verdugo y te lo mando por mensaje. Y síguenos, que mañana vienen los ganchos.",
+      "hl": [
+        "VERDUGO"
+      ],
+      "p": {
+        "palabra": "VERDUGO",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Cómo una IA mata 97 de 100 ideas (y te enseño su método) · Día 3",
+    "youtube_descripcion": "Día 3 de la fábrica. El Verdugo, mi trabajador IA más cruel, calificó las 100 ideas del Día 2 con 3 preguntas: gancho, curiosidad y utilidad, de 1 a 10.\n\nLo que salió, con datos reales:\n• 14 ideas murieron al instante por sacar 3 o menos en una sola pregunta.\n• La utilidad fue la nota más baja en 63 de las 100: es más fácil llamar la atención que servir.\n• Las 2 trampas: el gancho sin sustancia (anzuelo) y lo útil pero aburrido (casi todos los tutoriales).\n• 6 ideas con nota de 8 o más murieron igual, y una perdió el desempate por estar más abajo en la lista.\n\nTe dejo el prompt del Verdugo para que califiques tus ideas. ¿Lo quieres completo? Comenta VERDUGO.\n\nHecho con IA: guion, voz sintética y animación generados por la fábrica y revisados por un humano.",
+    "tiktok": [
+      "Así decide una IA qué ideas viven y cuáles mueren 💀 Las 3 preguntas del Verdugo",
+      "Las 2 trampas de las ideas que parecen buenas (con datos reales)",
+      "Sacó 8,3 y murió igual 😬 + el prompt del Verdugo. Comenta VERDUGO"
+    ],
+    "hashtags": [
+      "#inteligenciaartificial",
+      "#IA",
+      "#prompts",
+      "#ideasdecontenido",
+      "#creadordecontenido",
+      "#marketingdigital",
+      "#fabricadechelios"
+    ],
+    "miniatura_1": "ASÍ UNA IA MATA 97 DE 100 IDEAS",
+    "miniatura_2": "DÍA 3 · EL MÉTODO"
+  }
+}
