@@ -16,7 +16,7 @@ Las fuentes, los efectos y GSAP ya vienen en `motor/`.
 ## 1. ¿Qué día es?
 
 - Día N = (fecha de hoy en Bogotá − `inicio_dia_1` de `config.json`) + 1.
-- Si `episodios/dia-NNN/guion.json` ya existe **y** el release `dia-NNN` ya está en GitHub, no se produce nada: solo se revisa que las publicaciones estén programadas en Zernio.
+- Si `episodios/dia-NNN/guion.json` ya existe **y** la rama `videos-dia-NNN` ya está en GitHub (`git ls-remote --heads origin videos-dia-NNN`), no se produce nada: solo se revisa con `posts_list` que las publicaciones estén programadas en Zernio.
 
 ## 2. Escribir el guion del día
 
@@ -31,6 +31,7 @@ Las fuentes, los efectos y GSAP ya vienen en `motor/`.
    - Cierre con `manana` (el conflicto de mañana) y `cta` (palabra FÁBRICA).
    - Si el texto dice YouTube, TikTok o pone una palabra en mayúsculas, usa un campo `tts` con la palabra escrita como se pronuncia.
    - **Cero números inventados** sobre el canal. Si se muestran métricas, se sacan de Zernio (analytics).
+   - Bloque `publicacion` con: `youtube_titulo` (máx. 100 caracteres, termina en "· Día N"), `youtube_descripcion` (incluye "Hecho con IA…"), `youtube_primer_comentario` (pregunta + "Comenta FÁBRICA"), `tiktok` (3 textos, uno por parte), `hashtags`, `miniatura_1` y `miniatura_2`.
 5. Revisa el humor contra los límites de la biblia: nada de tragedias reales, enfermedades, grupos de personas ni gente real.
 
 ## 3. Producir
@@ -52,10 +53,17 @@ Verifica:
 ## 4. Publicar
 
 ```bash
-python3 publicar.py NNN --fecha AAAA-MM-DD     # crea el release en GitHub y escribe salidas/dia-NNN/zernio.json
+python3 publicar.py NNN --fecha AAAA-MM-DD     # sube los videos a la rama videos-dia-NNN y escribe salidas/dia-NNN/zernio.json
 ```
 
-Después, con el conector de Zernio, envía cada entrada de `zernio.json` con `posts_create_post` (vía `call_tool`), con sus `args` tal cual. Antes de las de TikTok, haz una prueba con `dry_run: true`. Confirma con `posts_list_posts` que quedaron programadas.
+- Los videos quedan públicos en `https://raw.githubusercontent.com/ChetChelios/fabrica-chelios/videos-dia-NNN/dia-NNN/<archivo>`. Desde las sesiones de Claude no se pueden crear releases de GitHub ni subir archivos al almacenamiento de Zernio; las ramas sí funcionan.
+- `--horas 20:30,21:00,21:30,22:00` cambia los horarios de ese día (YouTube primero). Úsalo si la hora normal ya pasó.
+
+Después, con el conector de Zernio:
+1. Comprueba un video con `validate_media` (debe decir `valid: True`).
+2. Haz la prueba de TikTok: `call_tool("posts_create_post", {...args de la parte 1..., "dry_run": true})` → debe decir `canPublish: True`.
+3. Envía cada entrada de `zernio.json` con `call_tool("posts_create_post", args)`, con sus `args` tal cual.
+4. Confirma con `posts_list` (status `scheduled`) que quedaron las 4 publicaciones.
 
 ## 5. Guardar y avisar
 
