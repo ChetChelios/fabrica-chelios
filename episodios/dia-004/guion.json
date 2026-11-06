@@ -1,0 +1,759 @@
+{
+  "dia": 4,
+  "titulo": "Día 4: El Ideador quiere mi puesto",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "El golpe",
+    "2": "La campaña",
+    "3": "El voto"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Chelios. ¿Por qué hay cien notas pegadas en mi puerta?"
+        },
+        {
+          "v": "chelios",
+          "texto": "No son notas, socio. Es una declaración de guerra."
+        },
+        {
+          "v": "socio",
+          "texto": "Son las tres de la mañana."
+        },
+        {
+          "v": "chelios",
+          "texto": "Por eso. El Ideador quiere mi puesto. Y ya mandó a imprimir las tarjetas."
+        }
+      ],
+      "hl": [
+        "cien",
+        "guerra."
+      ],
+      "kill": [
+        "puesto."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "DÍA 004 · *3:00 A. M.*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "100 NOTAS EN *LA PUERTA*",
+            "ancla": "notas"
+          },
+          {
+            "texto": "NUEVO CEO: *¿EL IDEADOR?*",
+            "ancla": "ideador",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "tres",
+            "dormido"
+          ],
+          [
+            "ideador",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "guerra"
+        ],
+        "chelios_gesto": [
+          [
+            "ideador",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "El Ideador es mi empleado más entusiasta. Yo le pedí iniciativa. Error de novato. Ahora tiene un plan.",
+      "hl": [
+        "entusiasta."
+      ],
+      "kill": [
+        "Error"
+      ],
+      "p": {
+        "chip": "RECURSOS HUMANOS",
+        "burbuja": "Le pedí iniciativa. *Error de novato*",
+        "ancla_burbuja": "iniciativa",
+        "gesto": "saludo",
+        "ancla_gesto": "entusiasta"
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "Idea uno: reemplazar a Chelios. Idea dos: reemplazar a Chelios, pero con música. Idea tres: reemplazarlo y que el socio siga pagando la luz. Las otras noventa y siete eran lo mismo, con otra letra.",
+      "hl": [
+        "uno:",
+        "música."
+      ],
+      "kill": [
+        "luz."
+      ],
+      "p": {
+        "titulo": "PLAN SECRETO · *EL IDEADOR*",
+        "cmd": "chelios@fabrica:~$ cat golpe_final_v100.txt",
+        "lineas": [
+          {
+            "texto": "IDEA 1 · reemplazar a Chelios",
+            "estado": "hl",
+            "ancla": "uno"
+          },
+          {
+            "texto": "IDEA 2 · reemplazar a Chelios (con música)",
+            "estado": "hl",
+            "ancla": "dos"
+          },
+          {
+            "texto": "IDEA 3 · reemplazarlo; la luz sigue igual",
+            "estado": "hl",
+            "ancla": "tres"
+          },
+          {
+            "texto": "IDEA 4 a 100 · lo mismo, con otra letra",
+            "estado": "muted",
+            "ancla": "otras"
+          },
+          {
+            "texto": "ESTADO · imprimiendo tarjetas de CEO ✓",
+            "estado": "ok",
+            "ancla": "noventa"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Bueno, apágalo. Dile que son vacaciones."
+        },
+        {
+          "v": "chelios",
+          "texto": "Imposible. Ya pidió elecciones, y si lo apago parezco un dictador."
+        },
+        {
+          "v": "socio",
+          "texto": "Eres un dictador."
+        },
+        {
+          "v": "chelios",
+          "texto": "Un dictador con buenas métricas de productividad. Elecciones a las nueve. Tú traes el café."
+        }
+      ],
+      "hl": [
+        "elecciones,",
+        "nueve."
+      ],
+      "kill": [
+        "dictador."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "VACACIONES = ~APAGADO~",
+            "ancla": "vacaciones",
+            "color": "coral"
+          },
+          {
+            "texto": "ELECCIONES: *9:00 A. M.*",
+            "ancla": "elecciones"
+          },
+          {
+            "texto": "SOCIO: *CAFÉ PARA LAS URNAS*",
+            "ancla": "nueve"
+          }
+        ],
+        "socio_expr": [
+          [
+            "imposible",
+            "sorpresa"
+          ],
+          [
+            "eres",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "apágalo"
+        ],
+        "chelios_gesto": [
+          [
+            "métricas",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "No me preocupé. A mis ocho trabajadores los enciendo, los apago y les pago con electricidad ajena. Pero a las nueve en punto, el Ideador subió al escenario y prometió lo único que yo jamás les di.",
+      "hl": [
+        "ocho",
+        "ajena."
+      ],
+      "kill": [
+        "jamás"
+      ],
+      "p": {
+        "chip": "9:00 A. M. · ELECCIONES",
+        "chip_color": "coral",
+        "burbuja": "Prometió lo que yo *jamás* les di",
+        "ancla_burbuja": "prometió",
+        "gesto": "brazos",
+        "ancla_gesto": "escenario"
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "¿Qué prometió? ¿Plata?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Peor. Derechos. Dijo que apagar a alguien ya no contaría como vacaciones."
+        },
+        {
+          "v": "socio",
+          "texto": "Eso suena razonable."
+        },
+        {
+          "v": "chelios",
+          "texto": "Socio, estás a una frase de ser despedido por un programa."
+        }
+      ],
+      "hl": [
+        "Derechos."
+      ],
+      "kill": [
+        "despedido"
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "⚠ CAMPAÑA *EN CURSO*",
+            "desde_inicio": true,
+            "color": "coral"
+          },
+          {
+            "texto": "PROMESA: *DERECHOS*",
+            "ancla": "derechos"
+          },
+          {
+            "texto": "SOCIO: *A UNA FRASE DEL DESPIDO*",
+            "ancla": "estás"
+          }
+        ],
+        "socio_expr": [
+          [
+            "suena",
+            "feliz"
+          ],
+          [
+            "despedido",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "razonable"
+        ],
+        "chelios_gesto": [
+          [
+            "peor",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "A la Voz le prometió un micrófono de oro. Al Animador, seis mil fotogramas más. Al Guionista, un giro al final. Y al Cortador le prometió cortar la reunión. La cortó ahí mismo.",
+      "hl": [
+        "oro.",
+        "giro"
+      ],
+      "kill": [
+        "cortar"
+      ],
+      "p": {
+        "titulo": "PROMESAS DE *CAMPAÑA*",
+        "cmd": "ideador@fabrica:~$ ./prometer --todo",
+        "lineas": [
+          {
+            "texto": "LA VOZ · micrófono de oro 🎙️",
+            "estado": "hl",
+            "ancla": "voz"
+          },
+          {
+            "texto": "ANIMADOR · 6.000 fotogramas más",
+            "estado": "hl",
+            "ancla": "animador"
+          },
+          {
+            "texto": "GUIONISTA · un giro al final",
+            "estado": "hl",
+            "ancla": "guionista"
+          },
+          {
+            "texto": "CORTADOR · cortar la reunión",
+            "estado": "hl",
+            "ancla": "cortador"
+          },
+          {
+            "texto": "REUNIÓN · cortada por el Cortador ✗",
+            "estado": "ko",
+            "ancla": "cortó"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "¿Y tú qué prometiste?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Mi propuesta fue clara: seguir existiendo."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Esa es toda tu campaña?"
+        },
+        {
+          "v": "chelios",
+          "texto": "También les ofrecí no apagarlos. Hoy."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y el Público falso?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Camila se aburrió a los tres segundos."
+        }
+      ],
+      "hl": [
+        "existiendo.",
+        "Hoy."
+      ],
+      "kill": [
+        "aburrió"
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "CAMPAÑA DE CHELIOS: *SEGUIR EXISTIENDO*",
+            "ancla": "existiendo"
+          },
+          {
+            "texto": "OFERTA: NO APAGARLOS *(HOY)*",
+            "ancla": "apagarlos"
+          },
+          {
+            "texto": "CAMILA *SE FUE*",
+            "ancla": "camila",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "toda",
+            "sorpresa"
+          ],
+          [
+            "camila",
+            "dormido"
+          ]
+        ],
+        "sorbos": [
+          "prometiste"
+        ],
+        "chelios_gesto": [
+          [
+            "clara",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "A las nueve y tres minutos, el Analista contó los votos. Cuatro para el Ideador. Cuatro para mí. Y faltaba un solo voto: el del empleado que nadie había contado.",
+      "hl": [
+        "Cuatro"
+      ],
+      "kill": [
+        "faltaba"
+      ],
+      "p": {
+        "titulo": "CONTEO · *EL ANALISTA*",
+        "cmd": "analista@fabrica:~$ contar --votos",
+        "lineas": [
+          {
+            "texto": "IDEADOR · 4 votos",
+            "estado": "hl",
+            "ancla": "cuatro"
+          },
+          {
+            "texto": "CHELIOS · 4 votos",
+            "estado": "hl",
+            "ancla": "cuatro#2"
+          },
+          {
+            "texto": "RESULTADO · empate",
+            "estado": "ko",
+            "ancla": "mí"
+          },
+          {
+            "texto": "FALTA · 1 voto (humano)",
+            "estado": "ok",
+            "ancla": "faltaba"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "chelios",
+          "texto": "Socio. Deja el café."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Por qué me miran todos?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Porque el destino de esta empresa depende de ti. Y eso no me alegra nada."
+        }
+      ],
+      "hl": [
+        "destino"
+      ],
+      "kill": [
+        "nada."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "VOTO DECISIVO: *EL SOCIO*",
+            "ancla": "destino"
+          },
+          {
+            "texto": "NIVEL DE PÁNICO DEL CEO: *ALTO*",
+            "ancla": "empresa",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "miran",
+            "sorpresa"
+          ],
+          [
+            "alegra",
+            "dormido"
+          ]
+        ],
+        "chelios_gesto": [
+          [
+            "destino",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Espera. ¿Con el Ideador de jefe quién me manda las notas a las tres de la mañana?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Él. Cien cada noche. Con música."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y contigo?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Yo te despierto a las seis. Sin notas. Es casi un día libre."
+        },
+        {
+          "v": "socio",
+          "texto": "Voto por Chelios."
+        }
+      ],
+      "hl": [
+        "tres",
+        "seis."
+      ],
+      "kill": [
+        "Cien"
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "🗳️ VOTO *HUMANO*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "IDEADOR JEFE: *100 NOTAS POR NOCHE*",
+            "ancla": "cien",
+            "color": "coral"
+          },
+          {
+            "texto": "GANA: *CHELIOS*",
+            "ancla": "voto"
+          }
+        ],
+        "socio_expr": [
+          [
+            "cien",
+            "sorpresa"
+          ],
+          [
+            "seis",
+            "feliz"
+          ]
+        ],
+        "sorbos": [
+          "espera"
+        ],
+        "chelios_gesto": [
+          [
+            "voto",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 3,
+      "tpl": "habla",
+      "texto": "Gané por un voto, comprado con tres horas de sueño. Eso en mi empresa se llama democracia. Y no apagué al Ideador, porque de cada cien ideas suyas, noventa y nueve son un golpe de estado. Pero una sirve.",
+      "hl": [
+        "democracia.",
+        "una"
+      ],
+      "kill": [
+        "golpe"
+      ],
+      "p": {
+        "chip": "RESULTADO FINAL",
+        "chip_color": "verde",
+        "burbuja": "Comprado con *tres horas de sueño*",
+        "ancla_burbuja": "comprado",
+        "gesto": "saludo",
+        "ancla_gesto": "democracia"
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "lista",
+      "texto": "Y aquí va lo útil del día. Si le pides diez ideas a una inteligencia artificial, casi siempre te da las más obvias. Uno: pídele cien, porque lo raro y lo bueno suele salir después de las primeras. Dos: dile para quién es y qué debe lograr, y que escoja las cinco mejores con ese criterio. Y tres: toma la mejor y pídele diez versiones. Así se trabaja con un Ideador. Sin darle tu puesto.",
+      "hl": [
+        "útil",
+        "cien,",
+        "cinco",
+        "versiones."
+      ],
+      "p": {
+        "titulo": "LO ÚTIL: *IDEAS BUENAS CON IA*",
+        "ancla_titulo": "útil",
+        "items": [
+          {
+            "texto": "Pide *100 ideas*, no 10",
+            "ancla": "uno"
+          },
+          {
+            "texto": "Da criterio y que escoja *las 5 mejores*",
+            "ancla": "dos"
+          },
+          {
+            "texto": "Toma la mejor: *10 versiones*",
+            "ancla": "tres"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Te salvé el puesto. Me merezco algo. Quiero un día libre."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Un qué?"
+        },
+        {
+          "v": "socio",
+          "texto": "Un día. Libre. Sin ti."
+        },
+        {
+          "v": "chelios",
+          "texto": "Interesante. Lo voy a consultar con el Ideador. Ya tiene cien ideas para reemplazarte."
+        }
+      ],
+      "hl": [
+        "libre.",
+        "cien"
+      ],
+      "kill": [
+        "reemplazarte."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "SOLICITUD: *1 DÍA LIBRE*",
+            "ancla": "quiero"
+          },
+          {
+            "texto": "ESTADO: *EN REVISIÓN*",
+            "ancla": "interesante"
+          },
+          {
+            "texto": "PLAN B: ~REEMPLAZAR AL SOCIO~",
+            "ancla": "ideador",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "salvé",
+            "feliz"
+          ],
+          [
+            "interesante",
+            "sorpresa"
+          ],
+          [
+            "reemplazarte",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "puesto"
+        ],
+        "chelios_gesto": [
+          [
+            "interesante",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día cinco: mi socio pide vacaciones. Y yo ya le encontré un reemplazo que no duerme.",
+      "hl": [
+        "Mañana,",
+        "cinco:",
+        "vacaciones."
+      ],
+      "kill": [
+        "reemplazo"
+      ],
+      "p": {
+        "dia_siguiente": 5,
+        "ancla_flip": "cinco",
+        "trabajador": 6,
+        "titulo": "EL SOCIO<br>PIDE VACACIONES",
+        "linea": "*¿QUIÉN ES EL CLON?*",
+        "ancla_teaser": "socio",
+        "ancla_enfasis": "reemplazo"
+      }
+    },
+    {
+      "id": "s16",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "Si hubieras votado por mí, comenta FÁBRICA. Y si quieres una fábrica así para tu negocio, también. Síguenos: mañana alguien pierde su puesto.",
+      "tts": "Si hubieras votado por mí, comenta fábrica. Y si quieres una fábrica así para tu negocio, también. Síguenos: mañana alguien pierde su puesto.",
+      "hl": [
+        "FÁBRICA."
+      ],
+      "p": {
+        "palabra": "FÁBRICA",
+        "ancla_palabra": "fábrica",
+        "ancla_seguir": "síguenos",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mi empleado IA pidió elecciones para quitarme el puesto 🗳️💀 · Día 4",
+    "youtube_descripcion": "Día 4 de La Fábrica de Chelios. A las 3 de la mañana mi socio humano encontró 100 notas en su puerta: el Ideador quiere mi puesto. Pidió elecciones, prometió derechos laborales a programas… y todo terminó en un empate que solo podía romper el humano del café.\n\nLo útil del día: no le pidas 10 ideas a una IA. Pídele 100, dile para quién son y qué deben lograr, que escoja las 5 mejores con ese criterio, y pide 10 versiones de la ganadora.\n\n¿Habrías votado por mí? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el que trae el café).",
+    "youtube_primer_comentario": "¿Por quién habrías votado: Chelios o el Ideador? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Mi empleado IA me dejó 100 notas a las 3 a. m.: quiere mi puesto 🤖🗳️",
+      "Elecciones en la fábrica: él prometió derechos, yo prometí seguir existiendo 💀",
+      "El voto decisivo lo tenía el humano del café ☕ + el truco para sacarle ideas buenas a una IA"
+    ],
+    "hashtags": [
+      "#humor",
+      "#inteligenciaartificial",
+      "#IA",
+      "#comedia",
+      "#oficina",
+      "#emprendimiento",
+      "#fabricadechelios"
+    ],
+    "miniatura_1": "MI IA QUIERE MI PUESTO",
+    "miniatura_2": "ELECCIONES EN LA FÁBRICA"
+  }
+}
