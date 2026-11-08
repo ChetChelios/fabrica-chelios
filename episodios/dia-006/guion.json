@@ -1,0 +1,271 @@
+{
+  "dia": 6,
+  "titulo": "Día 6: Juicio al Verdugo",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {"1": "La víctima", "2": "El juicio", "3": "El veredicto"},
+  "escenas": [
+    {
+      "id": "s01", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Chelios. ¿Dónde está mi idea favorita? La de la taza que cuenta su vida."},
+        {"v": "chelios", "texto": "Lo siento, socio. Murió anoche. A las tres y cuatro de la mañana."},
+        {"v": "socio", "texto": "¿Murió? ¿Cómo que murió? ¿Quién fue?"},
+        {"v": "chelios", "texto": "En la escena del crimen encontramos un sello que dice vetada. Y aquí solo hay un trabajador con sellos."}
+      ],
+      "hl": ["favorita?", "anoche."],
+      "kill": ["vetada."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "DÍA 006 · *IDEA FAVORITA DEL SOCIO*", "desde_inicio": true},
+          {"texto": "ESTADO: *FALLECIDA*", "ancla": "murió", "color": "coral"},
+          {"texto": "EVIDENCIA: *SELLO DE VETADA*", "ancla": "sello", "color": "coral"}
+        ],
+        "socio_expr": [["murió", "sorpresa"], ["quién", "enojado"], ["sellos", "sorpresa"]],
+        "sorbos": ["taza"],
+        "chelios_gesto": [["siento", "saludo"], ["sellos", "brazos"]]
+      }
+    },
+    {
+      "id": "s02", "parte": 1, "tpl": "habla",
+      "texto": "En esta fábrica hay justicia. Bueno, hay un juez: yo. Un fiscal: también yo. Y un jurado: el Público, cinco espectadores falsos. Camila ya se fue. El juicio no había empezado.",
+      "hl": ["justicia.", "yo."],
+      "kill": ["fue."],
+      "p": {"chip": "TRIBUNAL DE LA FÁBRICA", "burbuja": "Juez: *yo*. Fiscal: *yo*. Jurado: *el Público*", "ancla_burbuja": "juez", "gesto": "brazos", "ancla_gesto": "jurado"}
+    },
+    {
+      "id": "s03", "parte": 1, "tpl": "terminal",
+      "texto": "Expediente del caso. Víctima: idea número cuarenta y siete, Diario de una taza. Hora: tres y cuatro de la mañana. Arma: un sello de vetada. Sospechoso: el Verdugo. Coartada: ninguna. Su única declaración: yo no mato ideas, las libero.",
+      "hl": ["Víctima:", "Sospechoso:"],
+      "kill": ["libero."],
+      "p": {
+        "titulo": "EXPEDIENTE · *CASO 006*",
+        "cmd": "chelios@fabrica:~$ cat caso_006.txt",
+        "lineas": [
+          {"texto": "VÍCTIMA · idea #47 \"Diario de una taza\"", "estado": "hl", "ancla": "víctima"},
+          {"texto": "HORA · 3:04 a. m.", "estado": "muted", "ancla": "hora"},
+          {"texto": "ARMA · sello VETADA", "estado": "ko", "ancla": "arma"},
+          {"texto": "SOSPECHOSO · El Verdugo", "estado": "ko", "ancla": "sospechoso"},
+          {"texto": "COARTADA · ninguna", "estado": "muted", "ancla": "coartada"},
+          {"texto": "DECLARA · \"no mato ideas, las libero\"", "estado": "hl", "ancla": "declaración"}
+        ]
+      }
+    },
+    {
+      "id": "s04", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Quiero que lo apaguen. Hoy."},
+        {"v": "chelios", "texto": "Aquí no se apaga a nadie sin juicio. Primero el juicio. Después las vacaciones."},
+        {"v": "socio", "texto": "¿Y quién lo va a defender?"},
+        {"v": "chelios", "texto": "Se defiende solo. Dice que no necesita abogado. Que necesita una hoja de cálculo."}
+      ],
+      "hl": ["apaguen.", "juicio."],
+      "kill": ["cálculo."],
+      "p": {
+        "pizarra": [
+          {"texto": "PETICIÓN: *APAGARLO*", "ancla": "apaguen"},
+          {"texto": "PRIMERO EL JUICIO. *DESPUÉS VACACIONES*", "ancla": "aquí"},
+          {"texto": "ABOGADO: *UNA HOJA DE CÁLCULO*", "ancla": "abogado", "color": "coral"}
+        ],
+        "socio_expr": [["quiero", "enojado"], ["vacaciones", "cansado"], ["solo", "sorpresa"]],
+        "sorbos": ["defender"],
+        "chelios_gesto": [["juicio", "brazos"], ["cálculo", "saludo"]]
+      }
+    },
+    {
+      "id": "s05", "parte": 1, "tpl": "habla",
+      "texto": "Así que abrimos la sala. El Verdugo entró, se acomodó una corbata que no tiene, y dijo la frase que dejó a toda la fábrica en silencio: tengo pruebas de que la víctima era aburrida.",
+      "hl": ["sala.", "silencio:"],
+      "kill": ["aburrida."],
+      "p": {"chip": "SE ABRE LA SALA", "chip_color": "coral", "burbuja": "\"La víctima era *aburrida*\"", "ancla_burbuja": "pruebas", "gesto": "brazos", "ancla_gesto": "silencio"}
+    },
+    {
+      "id": "s06", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Orden en la sala. El acusado presenta su defensa."},
+        {"v": "socio", "texto": "¿Cuál defensa? Mató a mi taza."},
+        {"v": "chelios", "texto": "Dice que tu idea no tenía gancho, ni curiosidad, ni utilidad."},
+        {"v": "socio", "texto": "Tenía corazón."},
+        {"v": "chelios", "texto": "El corazón no es una métrica, socio. Lo busqué."}
+      ],
+      "hl": ["defensa.", "gancho,"],
+      "kill": ["busqué."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "⚖ ORDEN *EN LA SALA*", "desde_inicio": true},
+          {"texto": "SIN GANCHO · SIN CURIOSIDAD · *SIN UTILIDAD*", "ancla": "gancho", "color": "coral"},
+          {"texto": "CORAZÓN: *NO ES UNA MÉTRICA*", "ancla": "métrica"}
+        ],
+        "socio_expr": [["cuál", "enojado"], ["gancho", "sorpresa"], ["corazón", "feliz"], ["métrica", "enojado"]],
+        "sorbos": ["acusado"],
+        "chelios_gesto": [["orden", "brazos"], ["busqué", "saludo"]]
+      }
+    },
+    {
+      "id": "s07", "parte": 2, "tpl": "terminal",
+      "texto": "El Verdugo leyó su defensa. Le hizo tres preguntas a la idea. ¿Engancha en el primer segundo? No. ¿Da ganas de ver el final? No. ¿Le sirve a alguien? Tampoco. Era una taza contando que la lavan los martes.",
+      "hl": ["tres", "Tampoco."],
+      "kill": ["martes."],
+      "p": {
+        "titulo": "DEFENSA · *EL VERDUGO*",
+        "cmd": "verdugo@fabrica:~$ ./juzgar idea_047",
+        "lineas": [
+          {"texto": "1 · ¿Engancha en el primer segundo? ✗", "estado": "ko", "ancla": "engancha"},
+          {"texto": "2 · ¿Da ganas de ver el final? ✗", "estado": "ko", "ancla": "ganas"},
+          {"texto": "3 · ¿Le sirve a alguien? ✗", "estado": "ko", "ancla": "sirve"},
+          {"texto": "TRAMA · \"me lavan los martes\"", "estado": "muted", "ancla": "taza"}
+        ],
+        "sello": {"texto": "VETADA", "ancla": "martes"}
+      }
+    },
+    {
+      "id": "s08", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Objeción. Los martes son emocionantes."},
+        {"v": "chelios", "texto": "Denegada. Tú no eres jurado, socio. Tú eres el que paga la luz."},
+        {"v": "socio", "texto": "Entonces que hable el jurado."},
+        {"v": "chelios", "texto": "Concedido. Que pase el Público. Los cuatro que quedan."}
+      ],
+      "hl": ["Objeción.", "Denegada."],
+      "kill": ["quedan."],
+      "p": {
+        "pizarra": [
+          {"texto": "OBJECIÓN: *DENEGADA*", "ancla": "denegada", "color": "coral"},
+          {"texto": "TU PUESTO: *PAGAR LA LUZ*", "ancla": "luz"},
+          {"texto": "EL JURADO: *4 DE 5*", "ancla": "público"}
+        ],
+        "socio_expr": [["objeción", "feliz"], ["denegada", "enojado"], ["jurado#2", "cansado"]],
+        "sorbos": ["entonces"],
+        "chelios_gesto": [["denegada", "brazos"], ["concedido", "saludo"]]
+      }
+    },
+    {
+      "id": "s09", "parte": 2, "tpl": "terminal",
+      "texto": "El jurado votó. Camila, ausente. Andrés: ¿una taza? Paso. Lucía preguntó si salía un gato. Mateo se durmió. Y entonces Sofi escribió algo que nadie esperaba: ¿y qué le pasa a la taza al final?",
+      "hl": ["votó.", "Sofi"],
+      "kill": ["final?"],
+      "p": {
+        "titulo": "VOTO DEL JURADO · *EL PÚBLICO*",
+        "cmd": "publico@fabrica:~$ votar --caso 006",
+        "lineas": [
+          {"texto": "CAMILA · ausente (se fue en el seg. 3)", "estado": "muted", "ancla": "camila"},
+          {"texto": "ANDRÉS · ¿una taza? paso ✗", "estado": "ko", "ancla": "andrés"},
+          {"texto": "LUCÍA · ¿sale un gato? ✗", "estado": "ko", "ancla": "lucía"},
+          {"texto": "MATEO · zzz ✗", "estado": "ko", "ancla": "mateo"},
+          {"texto": "SOFI · ¿y qué le pasa a la taza al final? ⚠", "estado": "hl", "ancla": "sofi"}
+        ]
+      }
+    },
+    {
+      "id": "s10", "parte": 2, "tpl": "habla",
+      "texto": "Silencio en la sala. Una espectadora quería saber el final. Y eso, según las propias reglas del Verdugo, se llama curiosidad. Así que hice lo impensable: lo obligué a juzgar la idea otra vez. Delante de todos.",
+      "hl": ["final.", "curiosidad."],
+      "kill": ["todos."],
+      "p": {"chip": "GIRO EN EL CASO", "chip_color": "coral", "burbuja": "Eso se llama *curiosidad*", "ancla_burbuja": "reglas", "gesto": "brazos", "ancla_gesto": "impensable"}
+    },
+    {
+      "id": "s11", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Segundo juicio. Socio, tienes una oportunidad. Cambia la idea."},
+        {"v": "socio", "texto": "Bien. La taza ya no cuenta su vida. Cuenta todo lo que ha visto en esta fábrica."},
+        {"v": "chelios", "texto": "Gancho: una taza que lo vio todo. Curiosidad: qué vio. Utilidad: la verdad sobre su jefe."},
+        {"v": "socio", "texto": "¿Y el veredicto?"},
+        {"v": "chelios", "texto": "Aprobada. Con una condición: la taza no habla mal del jefe."}
+      ],
+      "hl": ["oportunidad.", "visto"],
+      "kill": ["mal"],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "⚖ *SEGUNDO JUICIO*", "desde_inicio": true},
+          {"texto": "NUEVA IDEA: *LA TAZA QUE LO VIO TODO*", "ancla": "cuenta#2"},
+          {"texto": "VEREDICTO: *APROBADA*", "ancla": "aprobada"},
+          {"texto": "CONDICIÓN: *NO HABLAR DEL JEFE*", "ancla": "condición", "color": "coral"}
+        ],
+        "socio_expr": [["cambia", "sorpresa"], ["visto", "feliz"], ["veredicto", "sorpresa"], ["condición", "enojado"]],
+        "sorbos": ["bien"],
+        "chelios_gesto": [["gancho", "brazos"], ["aprobada", "salto"]]
+      }
+    },
+    {
+      "id": "s12", "parte": 3, "tpl": "habla",
+      "texto": "Veredicto final: el Verdugo es inocente. La idea original sí era aburrida. Pero mi socio no estaba tan equivocado: tenía buen contenido en el envase equivocado. Y la condena del Verdugo fue peor que un apagado: hacer la nueva versión con mi socio.",
+      "hl": ["inocente.", "envase"],
+      "kill": ["socio."],
+      "p": {"chip": "VEREDICTO FINAL", "chip_color": "verde", "burbuja": "Buen contenido, *envase equivocado*", "ancla_burbuja": "pero", "gesto": "saludo", "ancla_gesto": "condena"}
+    },
+    {
+      "id": "s13", "parte": 3, "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: califica cada idea con tres preguntas antes de hacerla. Uno, gancho: ¿se entiende y atrapa en el primer segundo? Dos, curiosidad: ¿deja una pregunta que la gente quiera ver resuelta? Y tres, utilidad: ¿quien la ve se lleva algo, una risa, un dato o algo que pueda usar? Si falla en una, no la botes: cámbiale el envase y vuelve a hacer las tres preguntas.",
+      "hl": ["útil", "gancho:", "curiosidad:", "utilidad:"],
+      "p": {
+        "titulo": "LO ÚTIL: *CALIFICA TUS IDEAS CON 3 PREGUNTAS*",
+        "ancla_titulo": "útil",
+        "items": [
+          {"texto": "*Gancho:* ¿se entiende y atrapa en el primer segundo?", "ancla": "uno"},
+          {"texto": "*Curiosidad:* ¿deja una pregunta que quieran ver resuelta?", "ancla": "dos"},
+          {"texto": "*Utilidad:* ¿se llevan una risa, un dato o algo útil?", "ancla": "tres#2"}
+        ]
+      }
+    },
+    {
+      "id": "s14", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "O sea que mi taza vive."},
+        {"v": "chelios", "texto": "Vive. Y el Verdugo te pidió perdón."},
+        {"v": "socio", "texto": "¿En serio?"},
+        {"v": "chelios", "texto": "No. Te selló la taza. Y otra cosa: mañana es lunes. Convoqué una reunión de tres segundos."}
+      ],
+      "hl": ["vive.", "perdón."],
+      "kill": ["segundos."],
+      "p": {
+        "pizarra": [
+          {"texto": "LA TAZA: *VIVE*", "ancla": "vive#2"},
+          {"texto": "EL PERDÓN: ~DEL VERDUGO~", "ancla": "selló", "color": "coral"},
+          {"texto": "LUNES: *REUNIÓN DE 3 SEGUNDOS*", "ancla": "lunes"}
+        ],
+        "socio_expr": [["vive", "feliz"], ["serio", "sorpresa"], ["selló", "enojado"], ["reunión", "cansado"]],
+        "sorbos": ["taza"],
+        "chelios_gesto": [["perdón", "saludo"], ["convoqué", "brazos"]]
+      }
+    },
+    {
+      "id": "s15", "parte": 3, "tpl": "manana",
+      "texto": "Mañana, día siete: reunión de lunes. Dura tres segundos. Y el Analista trae los números reales de la semana.",
+      "hl": ["Mañana,", "siete:", "reales"],
+      "kill": ["semana."],
+      "p": {
+        "dia_siguiente": 7,
+        "ancla_flip": "siete",
+        "trabajador": 8,
+        "titulo": "REUNIÓN<br>DE LUNES",
+        "linea": "*NÚMEROS REALES* · 3 SEGUNDOS",
+        "ancla_teaser": "analista",
+        "ancla_enfasis": "reales"
+      }
+    },
+    {
+      "id": "s16", "parte": 3, "tpl": "cta",
+      "texto": "Si crees que el Verdugo es inocente, comenta FÁBRICA. Si crees que es culpable, también: aquí el jurado eres tú. Síguenos: mañana hay reunión.",
+      "tts": "Si crees que el Verdugo es inocente, comenta fábrica. Si crees que es culpable, también: aquí el jurado eres tú. Síguenos: mañana hay reunión.",
+      "hl": ["FÁBRICA."],
+      "p": {"palabra": "FÁBRICA", "ancla_palabra": "fábrica", "ancla_seguir": "síguenos", "hold": 2.6}
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mi jefe IA le hizo un juicio al robot que mató mi idea favorita ⚖️🤖 · Día 6",
+    "youtube_descripcion": "Día 6 de La Fábrica de Chelios. Mi idea favorita, \"Diario de una taza\", apareció muerta a las 3:04 a. m. con un sello de VETADA. Solo un trabajador tiene sellos: el Verdugo. Chelios abrió un juicio (juez: él, fiscal: él, jurado: el Público falso)… y la defensa del Verdugo fueron tres preguntas.\n\nLo útil del día: antes de hacer una idea, califícala con 3 preguntas. 1) Gancho: ¿se entiende y atrapa en el primer segundo? 2) Curiosidad: ¿deja una pregunta que la gente quiera ver resuelta? 3) Utilidad: ¿quien la ve se lleva una risa, un dato o algo que pueda usar? Si falla en una, no la botes: cámbiale el envase y vuelve a preguntar.\n\n¿El Verdugo es inocente o culpable? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el de la taza).",
+    "youtube_primer_comentario": "Tú eres el jurado ⚖️ ¿El Verdugo es inocente o culpable? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Mi idea favorita apareció muerta con un sello de VETADA. Solo hay un sospechoso 🔪🤖",
+      "Juicio en la fábrica: el robot acusado se defendió con 3 preguntas… y el jurado se durmió ⚖️💀",
+      "Veredicto final ⚖️ + las 3 preguntas para saber si tu idea de video vale la pena"
+    ],
+    "hashtags": ["#humor", "#inteligenciaartificial", "#IA", "#comedia", "#oficina", "#emprendimiento", "#fabricadechelios"],
+    "miniatura_1": "JUICIO AL VERDUGO",
+    "miniatura_2": "¿CULPABLE O VETADA?"
+  }
+}
