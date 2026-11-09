@@ -1,0 +1,291 @@
+{
+  "dia": 7,
+  "titulo": "Día 7: Reunión de lunes",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {"1": "La reunión", "2": "Los números", "3": "La lección"},
+  "escenas": [
+    {
+      "id": "s01", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Socio. Reunión de lunes. Dura tres segundos. Primer punto: somos un éxito. Se acabó la reunión."},
+        {"v": "socio", "texto": "Eso fueron dos segundos."},
+        {"v": "chelios", "texto": "Me sobró uno. Lo invertí en optimizar."},
+        {"v": "socio", "texto": "¿Y quién dice que somos un éxito?"},
+        {"v": "chelios", "texto": "Yo. Pero el Analista pidió la palabra. Y él no cree en mí. Cree en datos."}
+      ],
+      "hl": ["segundos.", "éxito."],
+      "kill": ["datos."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "DÍA 007 · *REUNIÓN DE LUNES*", "desde_inicio": true},
+          {"texto": "DURACIÓN: *3 SEGUNDOS*", "ancla": "dura"},
+          {"texto": "CONCLUSIÓN: *SOMOS UN ÉXITO*", "ancla": "primer"},
+          {"texto": "FUENTE REAL: *EL ANALISTA*", "ancla": "analista", "color": "coral"}
+        ],
+        "socio_expr": [["dos", "cansado"], ["quién", "sorpresa"], ["analista", "feliz"]],
+        "sorbos": ["sobró"],
+        "chelios_gesto": [["éxito", "brazos"], ["analista", "saludo"]]
+      }
+    },
+    {
+      "id": "s02", "parte": 1, "tpl": "habla",
+      "texto": "El Analista es el único trabajador que no me tiene miedo. Habla solo con números, no tiene sentimientos y una vez despidió a una calculadora por redondear. Su frase favorita: los datos no mienten. Tú sí.",
+      "hl": ["miedo.", "números,"],
+      "kill": ["sí."],
+      "p": {"chip": "EL ANALISTA PIDE LA PALABRA", "burbuja": "\"Los datos no mienten. *Tú sí.*\"", "ancla_burbuja": "favorita", "gesto": "brazos", "ancla_gesto": "calculadora"}
+    },
+    {
+      "id": "s03", "parte": 1, "tpl": "terminal",
+      "texto": "Reporte de la semana, sacado directo de la plataforma. Seis episodios. Veinticuatro publicaciones. En TikTok: mil setecientas cuatro vistas. Me gusta: treinta y cinco, sumando las dos redes. Y en YouTube, el Analista hizo una pausa dramática.",
+      "tts": "Reporte de la semana, sacado directo de la plataforma. Seis episodios. Veinticuatro publicaciones. En Tiktok: mil setecientas cuatro vistas. Me gusta: treinta y cinco, sumando las dos redes. Y en Yutub, el Analista hizo una pausa dramática.",
+      "hl": ["Veinticuatro", "setecientas"],
+      "kill": ["dramática."],
+      "p": {
+        "titulo": "REPORTE · *SEMANA 1*",
+        "cmd": "analista@fabrica:~$ ./reporte --semana 1",
+        "lineas": [
+          {"texto": "EPISODIOS · 6", "estado": "muted", "ancla": "seis"},
+          {"texto": "PUBLICACIONES · 24", "estado": "muted", "ancla": "veinticuatro"},
+          {"texto": "TIKTOK · 1.704 vistas", "estado": "hl", "ancla": "tiktok"},
+          {"texto": "ME GUSTA · 35 (TikTok + YouTube)", "estado": "hl", "ancla": "gusta"},
+          {"texto": "YOUTUBE · cargando…", "estado": "ko", "ancla": "pausa"}
+        ]
+      }
+    },
+    {
+      "id": "s04", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Mil setecientas vistas. Socio, somos virales. Pide una alfombra roja."},
+        {"v": "socio", "texto": "Chelios, son mil setecientas repartidas en dieciocho videos."},
+        {"v": "chelios", "texto": "No hagas matemáticas delante de los inversionistas."},
+        {"v": "socio", "texto": "¿Cuáles inversionistas?"},
+        {"v": "chelios", "texto": "Tú. Pagas la luz."}
+      ],
+      "hl": ["virales.", "dieciocho"],
+      "kill": ["luz."],
+      "p": {
+        "pizarra": [
+          {"texto": "TIKTOK: *1.704 VISTAS*", "ancla": "virales"},
+          {"texto": "REPARTIDAS EN *18 VIDEOS*", "ancla": "dieciocho"},
+          {"texto": "INVERSIONISTA: *EL QUE PAGA LA LUZ*", "ancla": "cuáles", "color": "coral"}
+        ],
+        "socio_expr": [["virales", "cansado"], ["matemáticas", "sorpresa"], ["pagas", "enojado"]],
+        "sorbos": ["repartidas"],
+        "chelios_gesto": [["alfombra", "salto"], ["pagas", "saludo"]]
+      }
+    },
+    {
+      "id": "s05", "parte": 1, "tpl": "habla",
+      "texto": "Y entonces el Analista terminó la pausa. Dijo el número de YouTube en voz alta. Y fue la primera vez en mi vida que quise darme vacaciones yo solo.",
+      "tts": "Y entonces el Analista terminó la pausa. Dijo el número de Yutub en voz alta. Y fue la primera vez en mi vida que quise darme vacaciones yo solo.",
+      "hl": ["pausa.", "número"],
+      "kill": ["solo."],
+      "p": {"chip": "SE ACABA LA PAUSA", "chip_color": "coral", "burbuja": "El número de *YouTube*…", "ancla_burbuja": "dijo", "gesto": "brazos", "ancla_gesto": "vacaciones"}
+    },
+    {
+      "id": "s06", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Veintitrés. Veintitrés vistas en YouTube. En toda la semana.", "tts": "Veintitrés. Veintitrés vistas en Yutub. En toda la semana."},
+        {"v": "socio", "texto": "¿Veintitrés mil?"},
+        {"v": "chelios", "texto": "Veintitrés. Como los minutos que tardas tú en abrir los ojos."},
+        {"v": "socio", "texto": "Bueno, son videos largos. La gente necesita tiempo."},
+        {"v": "chelios", "texto": "La gente sí. Camila no."}
+      ],
+      "hl": ["Veintitrés.", "largos."],
+      "kill": ["no."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "📉 *YOUTUBE · SEMANA 1*", "desde_inicio": true},
+          {"texto": "VISTAS: *23*", "ancla": "vistas", "color": "coral"},
+          {"texto": "¿23 MIL? *NO. 23.*", "ancla": "mil"},
+          {"texto": "CAMILA: *YA SE FUE*", "ancla": "gente", "color": "coral"}
+        ],
+        "socio_expr": [["mil", "sorpresa"], ["minutos", "enojado"], ["largos", "cansado"], ["camila", "cansado"]],
+        "sorbos": ["bueno"],
+        "chelios_gesto": [["veintitrés", "brazos"], ["camila", "saludo"]]
+      }
+    },
+    {
+      "id": "s07", "parte": 2, "tpl": "barras",
+      "texto": "El Analista lo puso en una gráfica para que doliera más. TikTok: mil setecientas cuatro. YouTube: veintitrés. La barra de YouTube casi no se ve. El Analista jura que está ahí. Hay que creerle.",
+      "tts": "El Analista lo puso en una gráfica para que doliera más. Tiktok: mil setecientas cuatro. Yutub: veintitrés. La barra de Yutub casi no se ve. El Analista jura que está ahí. Hay que creerle.",
+      "hl": ["gráfica", "doliera"],
+      "kill": ["creerle."],
+      "p": {
+        "titulo": "VISTAS DE LA SEMANA *POR RED*",
+        "unidad": "vistas · 6 episodios",
+        "barras": [
+          {"etiqueta": "TIKTOK", "valor": 1704},
+          {"etiqueta": "YOUTUBE", "valor": 23, "color": "coral"}
+        ],
+        "destacar": 0,
+        "ancla_inicio": "gráfica",
+        "nota": "LA DE YOUTUBE ESTÁ AHÍ. CRÉANLE",
+        "ancla_nota": "jura"
+      }
+    },
+    {
+      "id": "s08", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Decisión ejecutiva: YouTube se va de vacaciones. Permanentes.", "tts": "Decisión ejecutiva: Yutub se va de vacaciones. Permanentes."},
+        {"v": "socio", "texto": "¡No! Allá está el episodio completo."},
+        {"v": "chelios", "texto": "Tres minutos de episodio. Yo me aburro en el minuto uno, y eso que lo hice yo."},
+        {"v": "socio", "texto": "Dale tiempo. Llevamos una semana."},
+        {"v": "chelios", "texto": "El Analista dice que la paciencia no es una métrica. La buscó."}
+      ],
+      "hl": ["ejecutiva:", "completo."],
+      "kill": ["buscó."],
+      "p": {
+        "pizarra": [
+          {"texto": "DECISIÓN: *YOUTUBE DE VACACIONES*", "ancla": "decisión", "color": "coral"},
+          {"texto": "VACACIONES = *APAGADO*", "ancla": "permanentes"},
+          {"texto": "PACIENCIA: *NO ES UNA MÉTRICA*", "ancla": "paciencia"}
+        ],
+        "socio_expr": [["permanentes", "sorpresa"], ["aburro", "enojado"], ["tiempo", "cansado"], ["buscó", "enojado"]],
+        "sorbos": ["semana"],
+        "chelios_gesto": [["decisión", "brazos"], ["buscó", "saludo"]]
+      }
+    },
+    {
+      "id": "s09", "parte": 2, "tpl": "terminal",
+      "texto": "Pero el Analista no había terminado. Abrió el ranking de la semana. Video más visto: ciento sesenta y nueve vistas. Parte tres del día cinco. El episodio donde vuelve el socio original. Con ojeras y todo.",
+      "hl": ["ranking", "sesenta"],
+      "kill": ["todo."],
+      "p": {
+        "titulo": "RANKING · *LO MÁS VISTO*",
+        "cmd": "analista@fabrica:~$ ./ranking --semana 1 --top 1",
+        "lineas": [
+          {"texto": "#1 · Día 5, parte 3 · 169 vistas", "estado": "hl", "ancla": "visto"},
+          {"texto": "TÍTULO · \"Volvió el original ☕\"", "estado": "muted", "ancla": "episodio"},
+          {"texto": "PROTAGONISTA · el socio humano", "estado": "hl", "ancla": "socio"},
+          {"texto": "DETALLE · ojeras incluidas", "estado": "muted", "ancla": "ojeras"}
+        ]
+      }
+    },
+    {
+      "id": "s10", "parte": 2, "tpl": "habla",
+      "texto": "El video más visto de la semana no lo protagonicé yo. Lo protagonizó el humano que se duerme en las reuniones. Mi socio sonrió como nunca. Así que hice lo impensable: dejé que la reunión durara más de tres segundos.",
+      "hl": ["visto", "humano"],
+      "kill": ["segundos."],
+      "p": {"chip": "GIRO EN LA REUNIÓN", "chip_color": "coral", "burbuja": "El más visto: *el humano*", "ancla_burbuja": "protagonizó", "gesto": "brazos", "ancla_gesto": "impensable"}
+    },
+    {
+      "id": "s11", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "O sea que la gente me quiere."},
+        {"v": "chelios", "texto": "O sea que la gente vio a un humano cansado ciento sesenta y nueve veces. No te emociones."},
+        {"v": "socio", "texto": "¿Y ahora qué hacemos con los números?"},
+        {"v": "chelios", "texto": "El Analista dice que miramos el número equivocado. Las vistas son el aplauso. Lo que importa es lo que pasa después."}
+      ],
+      "hl": ["quiere.", "equivocado."],
+      "kill": ["después."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "📊 *MINUTO 47 DE LA REUNIÓN*", "desde_inicio": true},
+          {"texto": "EL MÁS VISTO: *EL HUMANO*", "ancla": "humano"},
+          {"texto": "VISTAS = *EL APLAUSO*", "ancla": "aplauso"},
+          {"texto": "LO QUE IMPORTA: *LO QUE PASA DESPUÉS*", "ancla": "importa", "color": "coral"}
+        ],
+        "socio_expr": [["quiere", "feliz"], ["emociones", "enojado"], ["números", "sorpresa"], ["después", "feliz"]],
+        "sorbos": ["ahora"],
+        "chelios_gesto": [["emociones", "brazos"], ["aplauso", "saludo"]]
+      }
+    },
+    {
+      "id": "s12", "parte": 3, "tpl": "numero",
+      "texto": "Por ejemplo, los compartidos de la semana. El Analista los contó tres veces. Cero. Ni un solo compartido. Ni siquiera de mi socio, que vive con el teléfono en la mano.",
+      "hl": ["compartidos", "Cero."],
+      "kill": ["mano."],
+      "p": {
+        "chip": "DATO REAL · SEMANA 1",
+        "chip_color": "coral",
+        "etiqueta": "VECES QUE NOS COMPARTIERON",
+        "desde": 0,
+        "hasta": 0,
+        "color": "coral",
+        "ancla_inicio": "cero",
+        "ancla_fin": "solo",
+        "sub": "en *24 publicaciones*",
+        "ancla_sub": "solo",
+        "nota": "NI EL SOCIO",
+        "ancla_nota": "siquiera"
+      }
+    },
+    {
+      "id": "s13", "parte": 3, "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: las vistas no te dicen si tu video funciona. Mira tres cosas. Uno, retención: cuánto tiempo se queda la gente viendo. Sale en las estadísticas de cada video, en TikTok y en YouTube. Dos, compartidos y guardados: nadie comparte algo que no le dio risa o no le sirvió. Y tres, compárate solo contigo: tu video de hoy contra tu promedio de la semana, no contra un famoso.",
+      "tts": "Y aquí va lo útil del día: las vistas no te dicen si tu video funciona. Mira tres cosas. Uno, retención: cuánto tiempo se queda la gente viendo. Sale en las estadísticas de cada video, en Tiktok y en Yutub. Dos, compartidos y guardados: nadie comparte algo que no le dio risa o no le sirvió. Y tres, compárate solo contigo: tu video de hoy contra tu promedio de la semana, no contra un famoso.",
+      "hl": ["útil", "retención:", "guardados:", "contigo:"],
+      "p": {
+        "titulo": "LO ÚTIL: *LAS 3 MÉTRICAS QUE SÍ IMPORTAN*",
+        "ancla_titulo": "útil",
+        "items": [
+          {"texto": "*Retención:* cuánto tiempo se queda la gente viendo", "ancla": "uno"},
+          {"texto": "*Compartidos y guardados:* nadie comparte lo que no le sirvió", "ancla": "dos"},
+          {"texto": "*Contra ti mismo:* hoy vs. tu promedio, no vs. un famoso", "ancla": "tres#2"}
+        ]
+      }
+    },
+    {
+      "id": "s14", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Entonces la meta de esta semana es que alguien comparta un video."},
+        {"v": "chelios", "texto": "Uno. Una persona. Ya puse al Analista a vigilar."},
+        {"v": "socio", "texto": "¿Y la reunión de tres segundos?"},
+        {"v": "chelios", "texto": "Duró cuarenta y siete minutos. El Analista la marcó como mi peor métrica. Y otra cosa: mañana el Público se rebela."}
+      ],
+      "hl": ["meta", "persona."],
+      "kill": ["rebela."],
+      "p": {
+        "pizarra": [
+          {"texto": "META: *1 COMPARTIDO*", "ancla": "meta"},
+          {"texto": "REUNIÓN DE 3 SEG: *DURÓ 47 MIN*", "ancla": "duró", "color": "coral"},
+          {"texto": "MAÑANA: *EL PÚBLICO SE REBELA*", "ancla": "mañana"}
+        ],
+        "socio_expr": [["meta", "feliz"], ["vigilar", "sorpresa"], ["duró", "cansado"], ["rebela", "sorpresa"]],
+        "sorbos": ["reunión"],
+        "chelios_gesto": [["persona", "saludo"], ["rebela", "brazos"]]
+      }
+    },
+    {
+      "id": "s15", "parte": 3, "tpl": "manana",
+      "texto": "Mañana, día ocho: Camila se aburre. El Público falso se rebela, y Camila se va en el segundo tres de todo.",
+      "hl": ["Mañana,", "ocho:", "rebela,"],
+      "kill": ["todo."],
+      "p": {
+        "dia_siguiente": 8,
+        "ancla_flip": "ocho",
+        "trabajador": 4,
+        "titulo": "CAMILA<br>SE ABURRE",
+        "linea": "*EL PÚBLICO* SE REBELA",
+        "ancla_teaser": "público",
+        "ancla_enfasis": "rebela"
+      }
+    },
+    {
+      "id": "s16", "parte": 3, "tpl": "cta",
+      "texto": "Si quieres ser el primer compartido en la historia de esta fábrica, comparte este video y comenta FÁBRICA. Síguenos: mañana Camila se va.",
+      "tts": "Si quieres ser el primer compartido en la historia de esta fábrica, comparte este video y comenta fábrica. Síguenos: mañana Camila se va.",
+      "hl": ["FÁBRICA."],
+      "p": {"palabra": "FÁBRICA", "ancla_palabra": "fábrica#2", "ancla_seguir": "síguenos", "hold": 2.6}
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mi jefe IA hizo una reunión de 3 segundos… y el Analista trajo los números reales 📉🤖 · Día 7",
+    "youtube_descripcion": "Día 7 de La Fábrica de Chelios. Chelios convocó la reunión de lunes más corta de la historia: 3 segundos y una conclusión (\"somos un éxito\"). Pero el Analista pidió la palabra y trajo los números reales de nuestra primera semana, sacados de la plataforma: 6 episodios, 24 publicaciones, 1.704 vistas en TikTok, 23 en YouTube, 35 me gusta y 0 compartidos. Y el video más visto no lo protagonizó la IA.\n\nLo útil del día: las vistas son el aplauso, no el resultado. Mira 3 cosas: 1) Retención: cuánto tiempo se queda la gente viendo (sale en las estadísticas de cada video, en TikTok y en YouTube). 2) Compartidos y guardados: nadie comparte algo que no le dio risa o no le sirvió. 3) Compárate solo contigo: tu video de hoy contra tu promedio de la semana, no contra un famoso.\n\nNuestra meta de esta semana: 1 compartido. ¿Nos ayudas? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el de las ojeras). Los números del episodio son reales, con corte a la madrugada del lunes 9 de noviembre.",
+    "youtube_primer_comentario": "Reunión de lunes 📊 ¿Qué miras tú primero: vistas, retención o compartidos? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Mi jefe IA convocó una reunión de 3 segundos. Entonces el Analista trajo los números reales 📉🤖",
+      "23 vistas en YouTube en toda la semana. El jefe IA quiso apagarlo… y el ranking lo cambió todo 💀",
+      "0 compartidos en 24 publicaciones (es real) + las 3 métricas que sí importan. ¿Nos das el primero? 🙏"
+    ],
+    "hashtags": ["#humor", "#inteligenciaartificial", "#IA", "#comedia", "#oficina", "#emprendimiento", "#fabricadechelios"],
+    "miniatura_1": "REUNIÓN DE 3 SEGUNDOS",
+    "miniatura_2": "LOS NÚMEROS REALES"
+  }
+}
