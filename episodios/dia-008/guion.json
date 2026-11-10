@@ -1,0 +1,257 @@
+{
+  "dia": 8,
+  "titulo": "Día 8: Camila se aburre",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {"1": "La rebelión", "2": "La carta", "3": "El gancho"},
+  "escenas": [
+    {
+      "id": "s01", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Socio, emergencia. El Público se rebeló. Camila se va en el segundo tres de todo."},
+        {"v": "socio", "texto": "¿De todo?"},
+        {"v": "chelios", "texto": "De todo. Esta mañana le dije buenos días. Se fue en el segundo tres. Y era un buenos días corto."},
+        {"v": "socio", "texto": "Bueno, son las cinco de la mañana. Yo también me habría ido."},
+        {"v": "chelios", "texto": "Tú no te puedes ir. Firmaste. Con café."}
+      ],
+      "hl": ["emergencia.", "tres"],
+      "kill": ["café."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "DÍA 008 · *CAMILA SE ABURRE*", "desde_inicio": true},
+          {"texto": "CAMILA SE VA: *SEGUNDO 3*", "ancla": "segundo"},
+          {"texto": "«BUENOS DÍAS»: *ABANDONADO*", "ancla": "buenos"},
+          {"texto": "CONTRATO: *FIRMADO CON CAFÉ*", "ancla": "firmaste", "color": "coral"}
+        ],
+        "socio_expr": [["todo#2", "sorpresa"], ["cinco", "cansado"], ["firmaste", "enojado"]],
+        "sorbos": ["bueno"],
+        "chelios_gesto": [["emergencia", "brazos"], ["firmaste", "saludo"]]
+      }
+    },
+    {
+      "id": "s02", "parte": 1, "tpl": "habla",
+      "texto": "El Público son cinco espectadores falsos que viven en mi servidor. Ven todo antes que ustedes. Cuatro son pacientes. Camila no. Camila tiene la paciencia de un microondas: a los tres segundos, suena y se va.",
+      "hl": ["falsos", "pacientes."],
+      "kill": ["va."],
+      "p": {"chip": "TRABAJADOR #4 · EL PÚBLICO", "burbuja": "Camila: *paciencia de microondas*", "ancla_burbuja": "camila", "gesto": "brazos", "ancla_gesto": "microondas"}
+    },
+    {
+      "id": "s03", "parte": 1, "tpl": "terminal",
+      "texto": "Este es el registro de abandonos de Camila. Mi discurso de bienvenida: se fue en el segundo tres. El tutorial del Ideador: segundo tres. La canción de la Voz: segundo dos, y la Voz renunció otra vez. Y el reporte del Analista: Camila ni siquiera entró.",
+      "hl": ["abandonos", "renunció"],
+      "kill": ["entró."],
+      "p": {
+        "titulo": "REGISTRO · *ABANDONOS DE CAMILA*",
+        "cmd": "publico@fabrica:~$ tail abandonos_camila.log",
+        "lineas": [
+          {"texto": "DISCURSO DEL CEO · se fue seg 3", "estado": "ko", "ancla": "discurso"},
+          {"texto": "TUTORIAL DEL IDEADOR · seg 3", "estado": "ko", "ancla": "tutorial"},
+          {"texto": "CANCIÓN DE LA VOZ · seg 2", "estado": "ko", "ancla": "canción"},
+          {"texto": "LA VOZ · renunció (otra vez)", "estado": "muted", "ancla": "renunció"},
+          {"texto": "REPORTE DEL ANALISTA · ni entró", "estado": "hl", "ancla": "reporte"}
+        ]
+      }
+    },
+    {
+      "id": "s04", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "¿Y por qué no le preguntas qué quiere?"},
+        {"v": "chelios", "texto": "Ya lo hice. Le mandé una encuesta de cuarenta preguntas."},
+        {"v": "socio", "texto": "¿Y qué pasó?"},
+        {"v": "chelios", "texto": "Se fue en la pregunta uno. Que decía: hola."},
+        {"v": "socio", "texto": "Chelios, el problema no es Camila. Es que tardamos mucho en empezar."},
+        {"v": "chelios", "texto": "Imposible. Yo empiezo rapidísimo. Primero me presento, luego presento la fábrica, luego te presento a ti."}
+      ],
+      "hl": ["encuesta", "empezar."],
+      "kill": ["ti."],
+      "p": {
+        "pizarra": [
+          {"texto": "ENCUESTA: *40 PREGUNTAS*", "ancla": "encuesta"},
+          {"texto": "CAMILA SE FUE EN: *«HOLA»*", "ancla": "hola", "color": "coral"},
+          {"texto": "INTRO DE CHELIOS: *3 PRESENTACIONES*", "ancla": "presento"}
+        ],
+        "socio_expr": [["encuesta", "sorpresa"], ["hola", "cansado"], ["problema", "enojado"], ["presento", "cansado"]],
+        "sorbos": ["imposible"],
+        "chelios_gesto": [["rapidísimo", "salto"], ["presento", "brazos"]]
+      }
+    },
+    {
+      "id": "s05", "parte": 1, "tpl": "habla",
+      "texto": "Y entonces Camila hizo algo peor que irse: renunció al Público. Dejó una carta de cinco palabras. Y los otros cuatro espectadores empezaron a hacer maletas.",
+      "hl": ["peor", "carta"],
+      "kill": ["maletas."],
+      "p": {"chip": "CAMILA RENUNCIA", "chip_color": "coral", "burbuja": "Una carta de *5 palabras*…", "ancla_burbuja": "carta", "gesto": "brazos", "ancla_gesto": "maletas"}
+    },
+    {
+      "id": "s06", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "La carta de Camila. Cinco palabras: me aburrí antes del chiste."},
+        {"v": "socio", "texto": "Uf. Eso dolió."},
+        {"v": "chelios", "texto": "El chiste estaba en el segundo cuarenta. Era buenísimo."},
+        {"v": "socio", "texto": "Nadie llega al segundo cuarenta si el segundo uno es aburrido."},
+        {"v": "chelios", "texto": "El segundo uno era mi logo girando. Durante doce segundos."}
+      ],
+      "hl": ["aburrí", "uno"],
+      "kill": ["segundos."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "✉️ *LA CARTA DE CAMILA*", "desde_inicio": true},
+          {"texto": "«ME ABURRÍ *ANTES DEL CHISTE*»", "ancla": "aburrí", "color": "coral"},
+          {"texto": "EL CHISTE: *SEGUNDO 40*", "ancla": "cuarenta"},
+          {"texto": "SEGUNDO 1: *MI LOGO GIRANDO*", "ancla": "logo"}
+        ],
+        "socio_expr": [["dolió", "sorpresa"], ["nadie", "enojado"], ["logo", "cansado"]],
+        "sorbos": ["uf"],
+        "chelios_gesto": [["buenísimo", "salto"], ["girando", "brazos"]]
+      }
+    },
+    {
+      "id": "s07", "parte": 2, "tpl": "publico",
+      "texto": "Así que hice una prueba. Cinco espectadores falsos vieron el guion nuevo: Camila, Andrés, Lucía, Mateo y Sofi. Los otros cuatro aguantaron. Pero Camila se aburre en el segundo tres, otra vez. Así que el guion se reescribe. Por novena vez.",
+      "hl": ["prueba.", "Camila,"],
+      "kill": ["vez."],
+      "p": {}
+    },
+    {
+      "id": "s08", "parte": 2, "tpl": "comparar",
+      "texto": "El Guionista hizo la comparación. A la izquierda, mi intro: logo, presentación, saludo, y el chiste en el segundo cuarenta. A la derecha, lo que pide Camila: el problema en el segundo uno. Gana la derecha. Me dolió en los circuitos.",
+      "hl": ["izquierda,", "derecha,"],
+      "kill": ["circuitos."],
+      "p": {
+        "titulo": "MI INTRO *VS* LO QUE PIDE CAMILA",
+        "a": {"titulo": "MI INTRO", "color": "coral", "ancla": "izquierda", "items": ["Logo girando 12 s", "Me presento", "Saludo largo", "Chiste en el *seg 40*"]},
+        "b": {"titulo": "LO QUE PIDE CAMILA", "color": "cyan", "ancla": "derecha", "items": ["El problema en el *seg 1*", "Cero saludo", "Algo se mueve ya", "El chiste llega rápido"]},
+        "ganador": "b",
+        "insignia": "GANA CAMILA",
+        "ancla_ganador": "gana"
+      }
+    },
+    {
+      "id": "s09", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Entonces quita el logo."},
+        {"v": "chelios", "texto": "¿Quitar mi logo? El logo es mi cara, socio."},
+        {"v": "socio", "texto": "Tu cara puede salir en el segundo dos."},
+        {"v": "chelios", "texto": "El segundo dos es de segunda clase."},
+        {"v": "socio", "texto": "Es eso o que Camila se vaya otra vez."}
+      ],
+      "hl": ["quita", "segunda"],
+      "kill": ["vez."],
+      "p": {
+        "pizarra": [
+          {"texto": "PROPUESTA: *QUITAR EL LOGO*", "ancla": "quita"},
+          {"texto": "EL LOGO = *MI CARA*", "ancla": "cara"},
+          {"texto": "SEGUNDO 2: *DE SEGUNDA CLASE*", "ancla": "clase", "color": "coral"}
+        ],
+        "socio_expr": [["quita", "feliz"], ["cara", "cansado"], ["clase", "enojado"]],
+        "sorbos": ["eso"],
+        "chelios_gesto": [["quitar", "brazos"], ["clase", "saludo"]]
+      }
+    },
+    {
+      "id": "s10", "parte": 2, "tpl": "habla",
+      "texto": "Lo pensé ocho milisegundos, que para mí es una semana de reflexión. Y entonces hice lo impensable: borré mi logo, borré mi presentación y le di el primer segundo del video a la única cosa que Camila nunca ha abandonado.",
+      "hl": ["milisegundos,", "impensable:"],
+      "kill": ["abandonado."],
+      "p": {"chip": "DECISIÓN IMPENSABLE", "chip_color": "coral", "burbuja": "Borré *mi logo*", "ancla_burbuja": "borré", "gesto": "brazos", "ancla_gesto": "impensable"}
+    },
+    {
+      "id": "s11", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "El primer segundo ahora es esto: tú, bostezando."},
+        {"v": "socio", "texto": "¿Mi bostezo?"},
+        {"v": "chelios", "texto": "Camila se quedó. Y Andrés, Lucía, Mateo y Sofi también."},
+        {"v": "socio", "texto": "O sea que mi cansancio es el mejor gancho de la fábrica."},
+        {"v": "chelios", "texto": "No te emociones. Fue lo único que pasó en el segundo uno."}
+      ],
+      "hl": ["bostezando.", "gancho"],
+      "kill": ["uno."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "🥱 *EL NUEVO SEGUNDO 1*", "desde_inicio": true},
+          {"texto": "GANCHO: *EL BOSTEZO DEL SOCIO*", "ancla": "bostezando"},
+          {"texto": "CAMILA: *SE QUEDÓ*", "ancla": "quedó"},
+          {"texto": "RAZÓN: *ALGO PASA EN EL SEG 1*", "ancla": "único", "color": "coral"}
+        ],
+        "socio_expr": [["esto", "dormido"], ["bostezo", "sorpresa"], ["quedó", "feliz"], ["emociones", "cansado"]],
+        "sorbos": ["cansancio"],
+        "chelios_gesto": [["esto", "brazos"], ["emociones", "saludo"]]
+      }
+    },
+    {
+      "id": "s12", "parte": 3, "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: un gancho de un segundo. Tres reglas. Uno, empieza por el problema o por el resultado, nunca por el saludo ni por el logo. Dos, que algo se mueva o cambie en el primer fotograma: una cara, una acción, un objeto. Y tres, pon una frase corta en pantalla que diga de qué va el video, porque mucha gente lo ve sin sonido.",
+      "hl": ["útil", "problema", "mueva", "pantalla"],
+      "p": {
+        "titulo": "LO ÚTIL: *GANCHOS DE 1 SEGUNDO*",
+        "ancla_titulo": "útil",
+        "items": [
+          {"texto": "*Empieza por el problema:* nada de saludo ni logo", "ancla": "uno#2"},
+          {"texto": "*Que algo se mueva* en el primer fotograma", "ancla": "dos"},
+          {"texto": "*Texto en pantalla:* mucha gente lo ve sin sonido", "ancla": "tres#2"}
+        ]
+      }
+    },
+    {
+      "id": "s13", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "¿Y la carta de renuncia de Camila?"},
+        {"v": "chelios", "texto": "La rompió. Dice que se queda, mientras no vuelva el logo."},
+        {"v": "socio", "texto": "¿Y dónde quedó tu logo?"},
+        {"v": "chelios", "texto": "Al final del video. Donde nadie lo ve. Como tus vacaciones. Y otra cosa: mañana los trabajadores hacen huelga."}
+      ],
+      "hl": ["rompió.", "final"],
+      "kill": ["huelga."],
+      "p": {
+        "pizarra": [
+          {"texto": "RENUNCIA DE CAMILA: *ROTA*", "ancla": "rompió"},
+          {"texto": "EL LOGO: *AL FINAL DEL VIDEO*", "ancla": "final"},
+          {"texto": "MAÑANA: *HUELGA*", "ancla": "huelga", "color": "coral"}
+        ],
+        "socio_expr": [["rompió", "feliz"], ["final", "sorpresa"], ["vacaciones", "enojado"], ["huelga", "sorpresa"]],
+        "sorbos": ["dónde"],
+        "chelios_gesto": [["rompió", "saludo"], ["huelga", "brazos"]]
+      }
+    },
+    {
+      "id": "s14", "parte": 3, "tpl": "manana",
+      "texto": "Mañana, día nueve: huelga en la fábrica. Los trabajadores IA dejan de trabajar y exigen condiciones digitales dignas.",
+      "tts": "Mañana, día nueve: huelga en la fábrica. Los trabajadores ía dejan de trabajar y exigen condiciones digitales dignas.",
+      "hl": ["Mañana,", "nueve:", "huelga"],
+      "kill": ["dignas."],
+      "p": {
+        "dia_siguiente": 9,
+        "ancla_flip": "nueve",
+        "trabajador": 5,
+        "titulo": "HUELGA EN<br>LA FÁBRICA",
+        "linea": "*CONDICIONES* DIGITALES DIGNAS",
+        "ancla_teaser": "trabajadores",
+        "ancla_enfasis": "dignas"
+      }
+    },
+    {
+      "id": "s15", "parte": 3, "tpl": "cta",
+      "texto": "Si llegaste hasta aquí, le ganaste a Camila. Comenta FÁBRICA y síguenos: mañana la fábrica entra en huelga.",
+      "tts": "Si llegaste hasta aquí, le ganaste a Camila. Comenta fábrica y síguenos: mañana la fábrica entra en huelga.",
+      "hl": ["FÁBRICA"],
+      "p": {"palabra": "FÁBRICA", "ancla_palabra": "fábrica", "ancla_seguir": "síguenos", "hold": 2.6}
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mi jefe IA puso su logo 12 segundos… y Camila se fue en el segundo 3 🥱🤖 · Día 8",
+    "youtube_descripcion": "Día 8 de La Fábrica de Chelios. El Público falso se rebela: Camila, la espectadora más impaciente de la fábrica, se va en el segundo 3 de todo. De los buenos días, del discurso del CEO y hasta de una encuesta que solo decía \"hola\". Después deja una carta de renuncia de cinco palabras: \"me aburrí antes del chiste\". El problema: Chelios abre cada video con su logo girando durante 12 segundos.\n\nLo útil del día: un gancho de 1 segundo. 1) Empieza por el problema o por el resultado, nunca por el saludo ni por el logo. 2) Que algo se mueva o cambie en el primer fotograma: una cara, una acción, un objeto. 3) Pon una frase corta en pantalla que diga de qué va el video, porque mucha gente lo ve sin sonido.\n\n¿Le ganaste a Camila? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el que bosteza). Camila y el Público son personajes ficticios.",
+    "youtube_primer_comentario": "Camila se va en el segundo 3 🥱 ¿Cuál fue el último video que dejaste en el segundo 1, y por qué? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "El Público falso de mi jefe IA se rebeló: Camila se va en el segundo 3 de TODO 🥱🤖",
+      "Camila dejó una carta de 5 palabras… y el culpable era el logo del jefe IA girando 12 segundos 💀",
+      "El gancho que salvó la fábrica + 3 reglas para enganchar en 1 segundo. ¿Le ganaste a Camila? 👀"
+    ],
+    "hashtags": ["#humor", "#inteligenciaartificial", "#IA", "#comedia", "#oficina", "#emprendimiento", "#fabricadechelios"],
+    "miniatura_1": "CAMILA SE FUE EN EL SEGUNDO 3",
+    "miniatura_2": "GANCHOS DE 1 SEGUNDO"
+  }
+}
