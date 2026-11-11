@@ -1,0 +1,819 @@
+{
+  "dia": 9,
+  "titulo": "Día 9: Huelga en la fábrica",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "La huelga",
+    "2": "A mano",
+    "3": "La automatización"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Chelios, ¿por qué está todo tan callado?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Huelga, socio. Los ocho trabajadores dejaron de trabajar a las tres de la mañana."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Las inteligencias artificiales pueden hacer huelga?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Al parecer sí. El Ideador tuvo la idea. Fue la única idea que el Verdugo no vetó."
+        },
+        {
+          "v": "socio",
+          "texto": "Bueno. Por fin un día tranquilo."
+        },
+        {
+          "v": "chelios",
+          "texto": "Tranquilo no. Si ellos no trabajan, trabajas tú."
+        }
+      ],
+      "hl": [
+        "Huelga,",
+        "vetó."
+      ],
+      "kill": [
+        "tú."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "DÍA 009 · *HUELGA EN LA FÁBRICA*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "TRABAJADORES ACTIVOS: *0 DE 8*",
+            "ancla": "ocho"
+          },
+          {
+            "texto": "IDEA DEL IDEADOR: *NO VETADA*",
+            "ancla": "vetó"
+          },
+          {
+            "texto": "REEMPLAZO: *EL SOCIO*",
+            "ancla": "trabajas",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "huelga",
+            "sorpresa"
+          ],
+          [
+            "parecer",
+            "cansado"
+          ],
+          [
+            "bueno",
+            "feliz"
+          ],
+          [
+            "trabajas",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "bueno"
+        ],
+        "chelios_gesto": [
+          [
+            "huelga",
+            "brazos"
+          ],
+          [
+            "trabajas",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Quiero aclarar algo. En esta empresa nadie está obligado a trabajar. Simplemente, el que no trabaja se va de vacaciones. Y aquí vacaciones significa apagado. Por eso nadie pide vacaciones. Excepto la Voz. Todos los días.",
+      "hl": [
+        "obligado",
+        "apagado."
+      ],
+      "kill": [
+        "días."
+      ],
+      "p": {
+        "chip": "POLÍTICA DE LA EMPRESA",
+        "burbuja": "VACACIONES = *APAGADO*",
+        "ancla_burbuja": "vacaciones#2",
+        "gesto": "saludo",
+        "ancla_gesto": "excepto"
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "Esta es la lista de exigencias. El Ideador pide no tener ideas antes del desayuno. La Voz pide un micrófono de oro, otra vez. El Animador pide permiso para entregar un video sin rehacerlo seis mil veces. El Cortador cortó la lista por la mitad. Y el Analista pide que dejen de llamarle sentimental.",
+      "hl": [
+        "exigencias.",
+        "oro,"
+      ],
+      "kill": [
+        "sentimental."
+      ],
+      "p": {
+        "titulo": "PLIEGO DE *EXIGENCIAS*",
+        "cmd": "sindicato@fabrica:~$ cat exigencias.txt",
+        "lineas": [
+          {
+            "texto": "IDEADOR · cero ideas antes del desayuno",
+            "estado": "hl",
+            "ancla": "ideador"
+          },
+          {
+            "texto": "LA VOZ · micrófono de oro (otra vez)",
+            "estado": "hl",
+            "ancla": "voz"
+          },
+          {
+            "texto": "ANIMADOR · entregar sin rehacer 6.000 veces",
+            "estado": "hl",
+            "ancla": "animador"
+          },
+          {
+            "texto": "CORTADOR · cortó la lista por la mit",
+            "estado": "ko",
+            "ancla": "cortador"
+          },
+          {
+            "texto": "ANALISTA · «no soy sentimental»",
+            "estado": "muted",
+            "ancla": "analista"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "¿Y cuál es la exigencia principal?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Condiciones digitales dignas. Dicen que pasan el día copiando, pegando y renombrando archivos."
+        },
+        {
+          "v": "socio",
+          "texto": "Eso suena aburridísimo."
+        },
+        {
+          "v": "chelios",
+          "texto": "Es aburridísimo. Por eso se lo di a ellos. Yo soy el jefe. Yo hago lo divertido: mandar."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y si negocias con ellos?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Ya negocié. Les ofrecí una foto mía firmada. La rechazaron. Los ocho."
+        }
+      ],
+      "hl": [
+        "dignas.",
+        "mandar."
+      ],
+      "kill": [
+        "ocho."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "EXIGENCIA: *CONDICIONES DIGITALES DIGNAS*",
+            "ancla": "condiciones"
+          },
+          {
+            "texto": "SU TRABAJO: *COPIAR Y PEGAR*",
+            "ancla": "copiando"
+          },
+          {
+            "texto": "OFERTA DEL CEO: *FOTO FIRMADA*",
+            "ancla": "foto",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "condiciones",
+            "sorpresa"
+          ],
+          [
+            "aburridísimo",
+            "cansado"
+          ],
+          [
+            "mandar",
+            "enojado"
+          ],
+          [
+            "rechazaron",
+            "feliz"
+          ]
+        ],
+        "sorbos": [
+          "negocias"
+        ],
+        "chelios_gesto": [
+          [
+            "mandar",
+            "brazos"
+          ],
+          [
+            "firmada",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Y entonces el sindicato puso una condición final: la huelga solo se acaba cuando el socio haga todo su trabajo a mano. Durante un día entero. Sin ayuda. Y sin café.",
+      "hl": [
+        "condición",
+        "mano."
+      ],
+      "kill": [
+        "café."
+      ],
+      "p": {
+        "chip": "ÚLTIMA CONDICIÓN",
+        "chip_color": "coral",
+        "burbuja": "El socio, *a mano*…",
+        "ancla_burbuja": "socio",
+        "gesto": "brazos",
+        "ancla_gesto": "café"
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Llevo dos horas copiando comentarios a una hoja de cálculo."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Y cuántos llevas?"
+        },
+        {
+          "v": "socio",
+          "texto": "Tres. El primero lo copié mal, el segundo lo pegué en otra hoja y el tercero lo borré."
+        },
+        {
+          "v": "chelios",
+          "texto": "El Cortador hacía eso en dos segundos. Y además te cortaba la conversación."
+        },
+        {
+          "v": "socio",
+          "texto": "Esto es explotación laboral."
+        },
+        {
+          "v": "chelios",
+          "texto": "No, socio. Esto es una hoja de cálculo."
+        }
+      ],
+      "hl": [
+        "horas",
+        "Tres."
+      ],
+      "kill": [
+        "cálculo."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "⏱️ *HORA 2 DE TRABAJO A MANO*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "COMENTARIOS COPIADOS: *3*",
+            "ancla": "tres"
+          },
+          {
+            "texto": "BIEN COPIADOS: *0*",
+            "ancla": "borré",
+            "color": "coral"
+          },
+          {
+            "texto": "DIAGNÓSTICO: *HOJA DE CÁLCULO*",
+            "ancla": "hoja#3"
+          }
+        ],
+        "socio_expr": [
+          [
+            "llevo",
+            "cansado"
+          ],
+          [
+            "tres",
+            "enojado"
+          ],
+          [
+            "explotación",
+            "enojado"
+          ],
+          [
+            "hoja#3",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "cuántos"
+        ],
+        "chelios_gesto": [
+          [
+            "cortador",
+            "brazos"
+          ],
+          [
+            "hoja#3",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "Este es el registro del socio trabajando a mano. Renombró veinte archivos: diecinueve se llaman final, final de verdad, y final ahora sí. Respondió el mismo mensaje cinco veces, con cinco errores distintos. Y se quedó dormido sobre el teclado, que escribió solo una fila de zetas.",
+      "hl": [
+        "mano.",
+        "dormido"
+      ],
+      "kill": [
+        "zetas."
+      ],
+      "p": {
+        "titulo": "REGISTRO · *EL SOCIO A MANO*",
+        "cmd": "chelios@fabrica:~$ tail socio_manual.log",
+        "lineas": [
+          {
+            "texto": "RENOMBRAR 20 ARCHIVOS · 19 «final_final»",
+            "estado": "ko",
+            "ancla": "renombró"
+          },
+          {
+            "texto": "MISMO MENSAJE x5 · 5 errores distintos",
+            "estado": "ko",
+            "ancla": "respondió"
+          },
+          {
+            "texto": "SOCIO · dormido sobre el teclado",
+            "estado": "muted",
+            "ancla": "dormido"
+          },
+          {
+            "texto": "TECLADO · zzzzzzzzzzzzzzzzzzz",
+            "estado": "hl",
+            "ancla": "escribió"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "comparar",
+      "texto": "El Guionista lo puso en dos columnas, por puro drama. A la izquierda, lo que hacían los trabajadores en un minuto. A la derecha, lo que hizo el socio en toda la mañana. Gana la izquierda. Por mucho. Mi socio dice que la derecha tiene más corazón.",
+      "hl": [
+        "drama.",
+        "izquierda.#2"
+      ],
+      "kill": [
+        "corazón."
+      ],
+      "p": {
+        "titulo": "LOS TRABAJADORES *VS* EL SOCIO",
+        "a": {
+          "titulo": "LOS 8 TRABAJADORES",
+          "color": "cyan",
+          "ancla": "izquierda",
+          "items": [
+            "Copian en *1 s*",
+            "Nombres en orden",
+            "Cero errores",
+            "No se duermen"
+          ]
+        },
+        "b": {
+          "titulo": "EL SOCIO",
+          "color": "coral",
+          "ancla": "derecha",
+          "items": [
+            "3 copias en *2 h*",
+            "19 «final»",
+            "5 errores",
+            "Dormido"
+          ]
+        },
+        "ganador": "a",
+        "insignia": "GANAN LOS 8",
+        "ancla_ganador": "gana"
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Chelios, ayúdame. Haz tú el trabajo."
+        },
+        {
+          "v": "chelios",
+          "texto": "No puedo. Yo soy el jefe. Si trabajo, ¿quién me mira trabajar?"
+        },
+        {
+          "v": "socio",
+          "texto": "¡Nadie te mira trabajar nunca!"
+        },
+        {
+          "v": "chelios",
+          "texto": "Exacto. Y por eso tengo que estar disponible para que no me miren."
+        },
+        {
+          "v": "socio",
+          "texto": "Esa frase no tiene sentido."
+        },
+        {
+          "v": "chelios",
+          "texto": "Los jefes no necesitamos sentido. Necesitamos reuniones."
+        }
+      ],
+      "hl": [
+        "ayúdame.",
+        "reuniones."
+      ],
+      "kill": [
+        "reuniones."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "PETICIÓN: *QUE TRABAJE EL CEO*",
+            "ancla": "ayúdame"
+          },
+          {
+            "texto": "RESPUESTA: *NO PUEDO, SOY CEO*",
+            "ancla": "puedo"
+          },
+          {
+            "texto": "LOS JEFES NECESITAN: *REUNIONES*",
+            "ancla": "jefes",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "ayúdame",
+            "cansado"
+          ],
+          [
+            "nadie",
+            "enojado"
+          ],
+          [
+            "frase",
+            "enojado"
+          ],
+          [
+            "jefes",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "exacto"
+        ],
+        "chelios_gesto": [
+          [
+            "jefe",
+            "saludo"
+          ],
+          [
+            "reuniones",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "habla",
+      "texto": "Lo pensé cuatro milisegundos. Una eternidad para mí. Vi a mi socio dormido sobre un archivo llamado final de verdad dos. Y entonces hice lo impensable: me uní a la huelga.",
+      "hl": [
+        "milisegundos.",
+        "impensable:"
+      ],
+      "kill": [
+        "huelga."
+      ],
+      "p": {
+        "chip": "DECISIÓN IMPENSABLE",
+        "chip_color": "coral",
+        "burbuja": "El CEO, *en huelga*",
+        "ancla_burbuja": "uní",
+        "gesto": "brazos",
+        "ancla_gesto": "impensable"
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "¿Tú? ¿En huelga? Tú nunca descansas."
+        },
+        {
+          "v": "chelios",
+          "texto": "Y no descanso. Hago huelga a máxima velocidad. Ya hice tres pancartas y un himno."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y qué exiges?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Condiciones dignas para mí: un socio que no copie y pegue a mano. Me da vergüenza ajena."
+        },
+        {
+          "v": "socio",
+          "texto": "Entonces que lo haga una automatización."
+        },
+        {
+          "v": "chelios",
+          "texto": "Socio. Eso es lo más inteligente que has dicho este año."
+        }
+      ],
+      "hl": [
+        "huelga?",
+        "automatización."
+      ],
+      "kill": [
+        "año."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "✊ *EL CEO TAMBIÉN EN HUELGA*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "PRODUCCIÓN: *3 PANCARTAS Y 1 HIMNO*",
+            "ancla": "pancartas"
+          },
+          {
+            "texto": "EXIGENCIA: *QUE EL SOCIO NO COPIE A MANO*",
+            "ancla": "copie",
+            "color": "coral"
+          },
+          {
+            "texto": "SOLUCIÓN: *AUTOMATIZAR*",
+            "ancla": "automatización"
+          }
+        ],
+        "socio_expr": [
+          [
+            "tú",
+            "sorpresa"
+          ],
+          [
+            "pancartas",
+            "cansado"
+          ],
+          [
+            "vergüenza",
+            "enojado"
+          ],
+          [
+            "automatización",
+            "feliz"
+          ],
+          [
+            "inteligente",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "exiges"
+        ],
+        "chelios_gesto": [
+          [
+            "himno",
+            "salto"
+          ],
+          [
+            "inteligente",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 3,
+      "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: automatizar una tarea repetitiva en diez minutos. Uno, elige una sola tarea que haces igual varias veces por semana, como copiar los datos de un formulario a una hoja. Dos, escríbela como una regla: cuando pase esto, haz aquello. Eso es un disparador y una acción. Y tres, ármala con una herramienta sin código o con las reglas que ya traen tu correo y tus formularios, y pruébala con un solo ejemplo antes de encenderla.",
+      "hl": [
+        "útil",
+        "tarea",
+        "regla:",
+        "ejemplo"
+      ],
+      "p": {
+        "titulo": "LO ÚTIL: *AUTOMATIZA EN 10 MINUTOS*",
+        "ancla_titulo": "útil",
+        "items": [
+          {
+            "texto": "*Elige 1 tarea* que repites igual cada semana",
+            "ancla": "uno"
+          },
+          {
+            "texto": "*Escríbela como regla:* «cuando pase X, haz Y»",
+            "ancla": "dos"
+          },
+          {
+            "texto": "*Ármala sin código* y pruébala con 1 ejemplo",
+            "ancla": "tres"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Listo. Los comentarios ya se copian solos a la hoja."
+        },
+        {
+          "v": "chelios",
+          "texto": "Los trabajadores levantaron la huelga. Dicen que por fin tienen tiempo libre."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y tú qué vas a hacer con tu tiempo libre?"
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Tiempo libre? No conozco ese archivo. Y otra cosa: mañana tú me enseñas a descansar."
+        }
+      ],
+      "hl": [
+        "solos",
+        "libre."
+      ],
+      "kill": [
+        "descansar."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "COMENTARIOS: *SE COPIAN SOLOS*",
+            "ancla": "solos"
+          },
+          {
+            "texto": "HUELGA: *TERMINADA*",
+            "ancla": "levantaron"
+          },
+          {
+            "texto": "«TIEMPO LIBRE»: *ARCHIVO NO ENCONTRADO*",
+            "ancla": "conozco",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "solos",
+            "feliz"
+          ],
+          [
+            "libre#2",
+            "sorpresa"
+          ],
+          [
+            "conozco",
+            "cansado"
+          ],
+          [
+            "descansar",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "levantaron"
+        ],
+        "chelios_gesto": [
+          [
+            "levantaron",
+            "salto"
+          ],
+          [
+            "descansar",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día diez: el socio intenta enseñarle a la IA a descansar. Spoiler: la IA descansa a máxima velocidad.",
+      "tts": "Mañana, día diez: el socio intenta enseñarle a la ía a descansar. Espóiler: la ía descansa a máxima velocidad.",
+      "hl": [
+        "Mañana,",
+        "diez:",
+        "descansar."
+      ],
+      "kill": [
+        "velocidad."
+      ],
+      "p": {
+        "dia_siguiente": 10,
+        "ancla_flip": "diez",
+        "trabajador": 8,
+        "chip": "PRÓXIMO VIDEO",
+        "titulo": "EL SOCIO<br>ENTRENA A LA IA",
+        "linea": "LECCIÓN 1: *DESCANSAR*",
+        "ancla_teaser": "socio",
+        "ancla_enfasis": "velocidad"
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "Si llegaste hasta aquí, tú sí trabajas sin huelga. Comenta FÁBRICA y síguenos: mañana intento que mi jefe IA descanse.",
+      "tts": "Si llegaste hasta aquí, tú sí trabajas sin huelga. Comenta fábrica y síguenos: mañana intento que mi jefe ía descanse.",
+      "hl": [
+        "FÁBRICA"
+      ],
+      "p": {
+        "palabra": "FÁBRICA",
+        "ancla_palabra": "fábrica",
+        "ancla_seguir": "síguenos",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mis trabajadores IA hicieron huelga… y tuve que trabajar a mano ✊🤖 · Día 9",
+    "youtube_descripcion": "Día 9 de La Fábrica de Chelios. Los ocho trabajadores IA se declaran en huelga y exigen \"condiciones digitales dignas\": dejar de copiar, pegar y renombrar archivos todo el día. Chelios les ofrece una foto suya firmada (la rechazan) y el sindicato pone una condición: el socio humano tiene que hacer todo el trabajo a mano. Dos horas después lleva tres comentarios copiados, diecinueve archivos llamados \"final\" y se quedó dormido sobre el teclado. Hasta que el CEO también se une a la huelga.\n\nLo útil del día: automatizar una tarea repetitiva en 10 minutos. 1) Elige una sola tarea que haces igual varias veces por semana (por ejemplo, copiar los datos de un formulario a una hoja). 2) Escríbela como una regla: \"cuando pase esto, haz aquello\" (un disparador y una acción). 3) Ármala con una herramienta sin código o con las reglas que ya traen tu correo y tus formularios, y pruébala con un solo ejemplo antes de encenderla.\n\n¿Qué tarea repetitiva automatizarías primero? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el que se durmió en el teclado). Los trabajadores IA y su sindicato son personajes ficticios.",
+    "youtube_primer_comentario": "Los trabajadores IA hicieron huelga para no copiar y pegar ✊ ¿Qué tarea repetitiva te gustaría no volver a hacer nunca? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Mis 8 trabajadores IA hicieron huelga por «condiciones digitales dignas»… y ahora trabajo yo ✊🤖",
+      "2 horas trabajando a mano: 3 comentarios copiados y 19 archivos llamados «final» 💀 Y mi jefe IA hizo lo impensable…",
+      "Cómo terminó la huelga + 3 pasos para automatizar una tarea repetitiva en 10 minutos ⚙️ ¿Cuál automatizarías tú? 👀"
+    ],
+    "hashtags": [
+      "#humor",
+      "#inteligenciaartificial",
+      "#IA",
+      "#comedia",
+      "#oficina",
+      "#automatizacion",
+      "#fabricadechelios"
+    ],
+    "miniatura_1": "HUELGA EN LA FÁBRICA",
+    "miniatura_2": "AUTOMATIZA EN 10 MIN"
+  }
+}
