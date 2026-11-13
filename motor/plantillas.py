@@ -1024,12 +1024,21 @@ def t_titular(s):
         html += f'<div id="@@sub" class="abs center mono" style="top:{y + 16:.0f}px;font-size:34px;color:{MUTED};letter-spacing:.06em">{rich(p["sub"])}</div>'
     if con_ch:
         html += f'<div id="@@chw" class="abs" style="left:415px;top:820px;width:250px;height:288px">{chelios("@@ch", 250)}</div>'
-    s.extra["x"] = {"lt": ts, "ts": s.tw(p.get("ancla_sub"), (ts[-1] if ts else 0) + 0.5)}
+    s.extra["x"] = {"lt": ts, "ts": s.tw(p.get("ancla_sub"), (ts[-1] if ts else 0) + 0.5), "lleno": s.inicio_parte}
+    if s.inicio_parte:
+        s.extra["noEnter"] = True
     js = r"""
+if (D.x.lleno) {
+  // inicio de parte / 1.ª escena de noticias: todo visible desde el fotograma 0, con un pulso de entrada
+  D.x.lt.forEach((t, i) => tl.fromTo($("l" + i), { scale: 1.06 }, { scale: 1, duration: 0.5, ease: "expo.out" }, 0.02 + i * 0.08));
+  if (el("chip")) tl.fromTo($("chip"), { scale: 1.1 }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, 0.02);
+  if (el("chw")) rig("ch", { talk: true, amp: 6 });
+} else {
 if (el("chip")) pop("chip", 0.06);
 D.x.lt.forEach((t, i) => tl.fromTo($("l" + i), { opacity: 0, y: 46, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, Math.max(0.04, t)));
 if (el("sub")) blurIn("sub", D.x.ts, 0.3);
 if (el("chw")) { tl.fromTo($("chw"), { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.6)" }, 0.2); rig("ch", { talk: true, amp: 6 }); }
+}
 """
     return {"html": html, "js": js, "sfx": [("whoosh-short", max(0, ts[0]) if ts else 0, 0.18)]}
 

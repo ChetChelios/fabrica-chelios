@@ -87,14 +87,15 @@ def bg_html(total):
 '''
 
 
-def hud_html(total, dia, t_cta):
+def hud_html(total, dia, t_cta, marca="LA FÁBRICA DE CHELIOS", chip_txt=None):
+    chip_txt = chip_txt or f"DÍA {dia:03d}"
     return f'''<template>
   <style>#root {{ position: absolute; inset: 0; }}</style>
   <div id="root" data-composition-id="hud" data-width="1080" data-height="1920">
     <div id="hud-w" class="abs" style="left:0;top:0;width:1080px;height:260px">
       <div class="abs" style="left:64px;top:196px;width:20px;height:20px;border-radius:50%;background:{SUN};box-shadow:0 0 18px {SUN}"></div>
-      <div class="abs mono" style="left:98px;top:188px;font-size:28px;color:{MUTED};letter-spacing:.12em">LA FÁBRICA DE CHELIOS</div>
-      <div class="abs" style="right:64px;top:180px"><span class="chip" style="border:3px solid {SUN};color:{SUN};font-size:28px;padding:8px 20px">DÍA {dia:03d}</span></div>
+      <div class="abs mono" style="left:98px;top:188px;font-size:28px;color:{MUTED};letter-spacing:.12em">{marca}</div>
+      <div class="abs" style="right:64px;top:180px"><span class="chip" style="border:3px solid {SUN};color:{SUN};font-size:28px;padding:8px 20px">{chip_txt}</span></div>
     </div>
   </div>
   <script>
@@ -212,7 +213,8 @@ def montar(guion_path, build_dir, proyecto_dir):
         f0 = int(round(et["start"] * 30))
         f1 = int(round((et["start"] + et["dur"]) * 30)) + 1
         prev = tiempos["escenas"][tiempos["escenas"].index(et) - 1] if tiempos["escenas"].index(et) > 0 else None
-        if prev is not None and prev["parte"] != et["parte"]:
+        # noticias: la 1.ª escena ya se ve llena desde el fotograma 0 (igual que el inicio de cada parte)
+        if (prev is not None and prev["parte"] != et["parte"]) or (prev is None and guion.get("serie") == "noticias"):
             esc = {**esc, "_inicio_parte": True}
         doc, sfx = escena_html(esc, et, env[f0:f1], guion["dia"], env2[f0:f1])
         (pj / "compositions" / f"{et['id']}.html").write_text(doc, encoding="utf-8")
@@ -233,7 +235,7 @@ def montar(guion_path, build_dir, proyecto_dir):
             fx_i += 1
 
     (pj / "compositions" / "bg.html").write_text(bg_html(total), encoding="utf-8")
-    (pj / "compositions" / "hud.html").write_text(hud_html(total, guion["dia"], t_cta), encoding="utf-8")
+    (pj / "compositions" / "hud.html").write_text(hud_html(total, guion["dia"], t_cta, guion.get("hud_marca", "LA FÁBRICA DE CHELIOS"), guion.get("hud_chip")), encoding="utf-8")
     gs = grupos(tiempos["escenas"], guion)
     (pj / "compositions" / "captions.html").write_text(captions_html(gs), encoding="utf-8")
 
