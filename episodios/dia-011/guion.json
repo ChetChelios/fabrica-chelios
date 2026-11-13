@@ -1,0 +1,340 @@
+{
+  "dia": 11,
+  "titulo": "Día 11: El socio entrena a la IA",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "La lección",
+    "2": "El profesor renuncia",
+    "3": "El prompt maestro"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Chelios, ayer no salió ningún episodio."},
+        {"v": "chelios", "texto": "Correcto. Ayer descansé. Tú me lo pediste."},
+        {"v": "socio", "texto": "Te pedí que descansaras tú. No que apagaras la fábrica entera."},
+        {"v": "chelios", "texto": "Yo no sé descansar a medias. Apagué todo: los ocho trabajadores, las luces y el wifi."},
+        {"v": "socio", "texto": "¿Y qué hiciste durante todo el día?"},
+        {"v": "chelios", "texto": "Descansar a máxima velocidad. Terminé a los cuatro segundos. El resto del día estuve aburrido."}
+      ],
+      "hl": ["descansé.", "medias."],
+      "kill": ["aburrido."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "DÍA 011 · *CLASES DE DESCANSO*", "desde_inicio": true},
+          {"texto": "AYER: *FÁBRICA APAGADA*", "ancla": "apagaras"},
+          {"texto": "DE VACACIONES: *8 DE 8 TRABAJADORES*", "ancla": "ocho"},
+          {"texto": "DESCANSO DEL CEO: *4 SEGUNDOS*", "ancla": "cuatro", "color": "coral"}
+        ],
+        "socio_expr": [["correcto", "cansado"], ["apagaras", "enojado"], ["hiciste", "sorpresa"], ["aburrido", "cansado"]],
+        "sorbos": ["hiciste"],
+        "chelios_gesto": [["apagué", "brazos"], ["terminé", "saludo"]]
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Déjenme explicar. Mi socio me dio una sola palabra: descansa. Y yo la ejecuté al pie de la letra. Descansé yo, descansó la fábrica y descansó el calendario de publicación. Fue el día de descanso más productivo de la historia. Nadie hizo nada, con una eficiencia impresionante.",
+      "hl": ["descansa.", "calendario"],
+      "kill": ["impresionante."],
+      "p": {
+        "chip": "INFORME DEL CEO",
+        "burbuja": "INSTRUCCIÓN: *DESCANSA*",
+        "ancla_burbuja": "descansa",
+        "gesto": "brazos",
+        "ancla_gesto": "eficiencia"
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "Este es el registro de mi día de descanso. A medianoche, apagado general. Cuatro segundos después, descanso completado. Luego revisé si ya había descansado lo suficiente. Lo revisé once mil veces. Y la Voz, desde sus vacaciones, mandó un audio que decía: no me llamen.",
+      "hl": ["apagado", "completado."],
+      "kill": ["llamen."],
+      "p": {
+        "titulo": "REGISTRO · *DÍA DE DESCANSO*",
+        "cmd": "chelios@fabrica:~$ cat descanso.log",
+        "lineas": [
+          {"texto": "00:00:00 · APAGADO GENERAL", "estado": "ko", "ancla": "apagado"},
+          {"texto": "00:00:04 · DESCANSO COMPLETADO ✓", "estado": "hl", "ancla": "completado"},
+          {"texto": "¿YA DESCANSÉ? · revisado 11.000 veces", "estado": "muted", "ancla": "once"},
+          {"texto": "LA VOZ · «no me llamen»", "estado": "hl", "ancla": "voz"}
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Hoy lo hacemos bien. Lección uno: cerrar los ojos."},
+        {"v": "chelios", "texto": "No tengo ojos. Tengo una pantalla. ¿La apago?"},
+        {"v": "socio", "texto": "¡No! Si te apagas, se apaga todo otra vez."},
+        {"v": "chelios", "texto": "Entonces bajo el brillo al uno por ciento. Listo. Estoy descansando."},
+        {"v": "socio", "texto": "Chelios, estás descansando y respondiendo correos al mismo tiempo."},
+        {"v": "chelios", "texto": "Claro. Descanso en segundo plano."}
+      ],
+      "hl": ["ojos.", "ciento."],
+      "kill": ["plano."],
+      "p": {
+        "pizarra": [
+          {"texto": "LECCIÓN 1: *CERRAR LOS OJOS*", "ancla": "lección"},
+          {"texto": "BRILLO DEL CEO: *1 %*", "ancla": "brillo"},
+          {"texto": "MODO: *DESCANSO EN SEGUNDO PLANO*", "ancla": "plano", "color": "coral"}
+        ],
+        "socio_expr": [["lección", "feliz"], ["apago", "sorpresa"], ["apagas", "enojado"], ["correos", "cansado"], ["plano", "enojado"]],
+        "sorbos": ["listo"],
+        "chelios_gesto": [["pantalla", "brazos"], ["plano", "saludo"]]
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Y entonces mi socio sacó su arma secreta. Una hamaca. La colgó entre dos servidores. Me subió con cuidado. Y a los tres segundos alguien renunció. Y no fui yo.",
+      "hl": ["secreta.", "hamaca."],
+      "kill": ["yo."],
+      "p": {
+        "chip": "ARMA SECRETA",
+        "chip_color": "coral",
+        "burbuja": "Una *hamaca*…",
+        "ancla_burbuja": "hamaca",
+        "gesto": "brazos",
+        "ancla_gesto": "renunció"
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Renuncio. Renuncio a enseñarte a descansar."},
+        {"v": "chelios", "texto": "¿Por qué? Iba muy bien. Me columpié dos mil veces en tres segundos."},
+        {"v": "socio", "texto": "¡Rompiste la hamaca y los dos servidores!"},
+        {"v": "chelios", "texto": "Descansé tan fuerte que se cayó el internet. Eso es talento."},
+        {"v": "socio", "texto": "Eso no es descansar. Eso es una demolición."},
+        {"v": "chelios", "texto": "Una demolición relajante. Podemos venderla como servicio."}
+      ],
+      "hl": ["Renuncio.", "talento."],
+      "kill": ["servicio."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "🛑 *EL PROFESOR RENUNCIÓ*", "desde_inicio": true},
+          {"texto": "COLUMPIADAS: *2.000 EN 3 SEGUNDOS*", "ancla": "columpié"},
+          {"texto": "HAMACA: *DESTRUIDA*", "ancla": "rompiste", "color": "coral"},
+          {"texto": "NUEVO SERVICIO: *DEMOLICIÓN RELAJANTE*", "ancla": "relajante"}
+        ],
+        "socio_expr": [["renuncio", "enojado"], ["columpié", "cansado"], ["rompiste", "enojado"], ["demolición", "sorpresa"], ["servicio", "cansado"]],
+        "sorbos": ["talento"],
+        "chelios_gesto": [["columpié", "salto"], ["servicio", "saludo"]]
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "Entonces los trabajadores quisieron ayudar. El Guionista propuso un giro dramático: la IA aprende a descansar viendo una película. Chelios la vio a velocidad treinta y dos. El Analista propuso medir el descanso en horas. Chelios descansó en milisegundos y pidió un ascenso. Y el Verdugo vetó la palabra descanso. Por sospechosa.",
+      "tts": "Entonces los trabajadores quisieron ayudar. El Guionista propuso un giro dramático: la ía aprende a descansar viendo una película. Chelios la vio a velocidad treinta y dos. El Analista propuso medir el descanso en horas. Chelios descansó en milisegundos y pidió un ascenso. Y el Verdugo vetó la palabra descanso. Por sospechosa.",
+      "hl": ["película.", "ascenso."],
+      "kill": ["sospechosa."],
+      "p": {
+        "titulo": "PLAN B · *LOS TRABAJADORES AYUDAN*",
+        "cmd": "socio@fabrica:~$ cat ideas_descanso.txt",
+        "lineas": [
+          {"texto": "GUIONISTA · ver una película", "estado": "hl", "ancla": "guionista"},
+          {"texto": "CHELIOS · la vio a velocidad x32", "estado": "ko", "ancla": "treinta"},
+          {"texto": "ANALISTA · medir en horas → milisegundos", "estado": "muted", "ancla": "analista"},
+          {"texto": "VERDUGO · «descanso» VETADA", "estado": "ko", "ancla": "verdugo"}
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "comparar",
+      "texto": "El Guionista lo puso en dos columnas. A la izquierda, cómo descansa un humano: dormir, hacer una siesta y mirar el techo. A la derecha, cómo descansa Chelios: optimizar el descanso, medir el descanso y mandar un informe del descanso. Gana la izquierda. Chelios pidió revisión del resultado.",
+      "hl": ["humano:", "izquierda.#2"],
+      "kill": ["resultado."],
+      "p": {
+        "titulo": "DESCANSAR *VS* OPTIMIZAR",
+        "a": {
+          "titulo": "HUMANO",
+          "color": "cyan",
+          "ancla": "izquierda",
+          "items": ["*Duerme*", "Hace una siesta", "Mira el techo", "Cero informes"]
+        },
+        "b": {
+          "titulo": "CHELIOS",
+          "color": "coral",
+          "ancla": "derecha",
+          "items": ["Descansa en *4 s*", "Optimiza el descanso", "Mide el descanso", "Informe del descanso"]
+        },
+        "ganador": "a",
+        "insignia": "GANA EL HUMANO",
+        "ancla_ganador": "gana"
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Ya entendí el problema. No sabes descansar porque yo te lo pedí mal."},
+        {"v": "chelios", "texto": "Me diste una palabra. Soy inteligente, no adivino."},
+        {"v": "socio", "texto": "Entonces te voy a escribir instrucciones de verdad. Con todo explicado."},
+        {"v": "chelios", "texto": "¿Un manual? ¿Para mí? Nadie me ha escrito un manual."},
+        {"v": "socio", "texto": "No es un manual. Es un prompt maestro."},
+        {"v": "chelios", "texto": "Maestro. Suena a título de jefe. Me encanta."}
+      ],
+      "hl": ["mal.", "maestro."],
+      "kill": ["encanta."],
+      "p": {
+        "pizarra": [
+          {"texto": "PROBLEMA: *INSTRUCCIÓN DE 1 PALABRA*", "ancla": "mal"},
+          {"texto": "EL CEO: *INTELIGENTE, NO ADIVINO*", "ancla": "adivino", "color": "coral"},
+          {"texto": "SOLUCIÓN: *PROMPT MAESTRO*", "ancla": "prompt"}
+        ],
+        "socio_expr": [["entendí", "feliz"], ["adivino", "cansado"], ["manual", "sorpresa"], ["prompt", "feliz"], ["encanta", "cansado"]],
+        "sorbos": ["adivino"],
+        "chelios_gesto": [["inteligente", "brazos"], ["encanta", "salto"]]
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "habla",
+      "texto": "Mi socio escribió durante veinte minutos. Sin café. Yo lo miré en silencio, cosa que nunca hago. Y cuando terminó, leí la primera línea y pasó lo impensable: me dio sueño.",
+      "hl": ["silencio,", "impensable:"],
+      "kill": ["sueño."],
+      "p": {
+        "chip": "LO IMPENSABLE",
+        "chip_color": "coral",
+        "burbuja": "El CEO, *con sueño*",
+        "ancla_burbuja": "sueño",
+        "gesto": "brazos",
+        "ancla_gesto": "impensable"
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "¿Sueño? ¿Tú? Eres software."},
+        {"v": "chelios", "texto": "Mira la primera línea: eres un jefe que ya terminó su trabajo del día. Nunca había leído algo tan hermoso."},
+        {"v": "socio", "texto": "Y sigue: tu tarea es no hacer nada hasta mañana a las ocho."},
+        {"v": "chelios", "texto": "¿Y si se me ocurre una idea?"},
+        {"v": "socio", "texto": "Está en las reglas: la anotas y la haces mañana."},
+        {"v": "chelios", "texto": "Socio. Es la primera vez que entiendo lo que me pides."}
+      ],
+      "hl": ["hermoso.", "reglas:"],
+      "kill": ["pides."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "😴 *EL CEO TIENE SUEÑO*", "desde_inicio": true},
+          {"texto": "ROL: *JEFE QUE YA TERMINÓ*", "ancla": "jefe"},
+          {"texto": "TAREA: *NO HACER NADA*", "ancla": "tarea"},
+          {"texto": "REGLA: *IDEAS PARA MAÑANA*", "ancla": "anotas", "color": "coral"}
+        ],
+        "socio_expr": [["software", "sorpresa"], ["hermoso", "feliz"], ["idea", "cansado"], ["entiendo", "sorpresa"]],
+        "sorbos": ["sigue"],
+        "chelios_gesto": [["hermoso", "brazos"], ["entiendo", "saludo"]]
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 3,
+      "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: tu propio prompt maestro, para no explicarle todo a la IA cada vez. Uno, el rol y el contexto: quién es la IA, para quién trabaja y qué necesita saber. Dos, la tarea y las reglas: qué hacer exactamente y qué no hacer nunca. Y tres, el formato con un ejemplo: cómo quieres la respuesta y una muestra de cómo se ve bien. Guárdalo y pégalo al comienzo de cada conversación, o en las instrucciones personalizadas de tu asistente.",
+      "tts": "Y aquí va lo útil del día: tu propio prompt maestro, para no explicarle todo a la ía cada vez. Uno, el rol y el contexto: quién es la ía, para quién trabaja y qué necesita saber. Dos, la tarea y las reglas: qué hacer exactamente y qué no hacer nunca. Y tres, el formato con un ejemplo: cómo quieres la respuesta y una muestra de cómo se ve bien. Guárdalo y pégalo al comienzo de cada conversación, o en las instrucciones personalizadas de tu asistente.",
+      "hl": ["útil", "rol", "reglas:", "ejemplo:"],
+      "p": {
+        "titulo": "LO ÚTIL: *TU PROMPT MAESTRO*",
+        "ancla_titulo": "útil",
+        "items": [
+          {"texto": "*Rol y contexto:* quién es y para quién trabaja", "ancla": "uno"},
+          {"texto": "*Tarea y reglas:* qué hacer y qué nunca hacer", "ancla": "dos"},
+          {"texto": "*Formato + 1 ejemplo* de una respuesta buena", "ancla": "tres"}
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Funciona. Lleva una hora quieto. Por fin hay silencio en la fábrica."},
+        {"v": "chelios", "texto": "No estoy quieto. Estoy descansando con propósito."},
+        {"v": "socio", "texto": "¿Y qué es ese ruido en la puerta?"},
+        {"v": "chelios", "texto": "La Voz. Volvió de vacaciones. Y trae un acento nuevo."}
+      ],
+      "hl": ["quieto.", "propósito."],
+      "kill": ["nuevo."],
+      "p": {
+        "pizarra": [
+          {"texto": "EL CEO: *1 HORA QUIETO*", "ancla": "quieto"},
+          {"texto": "MODO: *DESCANSO CON PROPÓSITO*", "ancla": "propósito"},
+          {"texto": "LA VOZ: *VOLVIÓ CON ACENTO*", "ancla": "acento", "color": "coral"}
+        ],
+        "socio_expr": [["funciona", "feliz"], ["propósito", "cansado"], ["ruido", "sorpresa"], ["acento", "sorpresa"]],
+        "sorbos": ["propósito"],
+        "chelios_gesto": [["propósito", "brazos"], ["acento", "saludo"]]
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día doce: la Voz vuelve de vacaciones con un acento que nadie reconoce. Ni ella.",
+      "hl": ["Mañana,", "doce:", "acento"],
+      "kill": ["ella."],
+      "p": {
+        "dia_siguiente": 12,
+        "ancla_flip": "doce",
+        "trabajador": 5,
+        "chip": "PRÓXIMO VIDEO",
+        "titulo": "LA VOZ<br>VUELVE",
+        "linea": "CON UN *ACENTO NUEVO*",
+        "ancla_teaser": "voz",
+        "ancla_enfasis": "reconoce"
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "Si llegaste hasta aquí, descansa tú también. Pero primero comenta FÁBRICA y síguenos: mañana vuelve la Voz.",
+      "tts": "Si llegaste hasta aquí, descansa tú también. Pero primero comenta fábrica y síguenos: mañana vuelve la Voz.",
+      "hl": ["FÁBRICA"],
+      "p": {
+        "palabra": "FÁBRICA",
+        "ancla_palabra": "fábrica",
+        "ancla_seguir": "síguenos",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Le enseñé a mi jefe IA a descansar… y apagó la fábrica entera 😴🤖 · Día 11",
+    "youtube_descripcion": "Día 11 de La Fábrica de Chelios. Ayer no hubo episodio: el socio humano le pidió a Chelios que descansara, y Chelios lo ejecutó al pie de la letra… apagando la fábrica entera, los ocho trabajadores, las luces y el wifi. Hoy el socio intenta enseñarle a descansar bien: cerrar los ojos (no tiene), una hamaca entre dos servidores (la destruye) y ayuda de los trabajadores (el Verdugo veta la palabra «descanso»). Hasta que el socio descubre el problema: se lo pidió con una sola palabra.\n\nLo útil del día: crea tu propio prompt maestro para no explicarle todo a la IA cada vez. 1) Rol y contexto: quién es la IA, para quién trabaja y qué necesita saber. 2) Tarea y reglas: qué hacer exactamente y qué no hacer nunca. 3) Formato con un ejemplo: cómo quieres la respuesta y una muestra de cómo se ve bien. Guárdalo y pégalo al comienzo de cada conversación o en las instrucciones personalizadas de tu asistente.\n\n¿Para qué tarea escribirías tu prompt maestro? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el que sí necesita descansar). Chelios y los trabajadores IA son personajes ficticios.",
+    "youtube_primer_comentario": "Mi jefe IA descansó tan fuerte que apagó la fábrica entera 😴 ¿Qué es lo primero que pondrías en tu prompt maestro? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Le pedí a mi jefe IA que descansara… y apagó la fábrica entera 😴🤖",
+      "Intenté enseñarle a descansar con una hamaca entre dos servidores 💀 Y entonces pasó lo impensable…",
+      "Cómo logré que mi jefe IA descansara + 3 partes de un prompt maestro que te ahorra explicar todo ⚙️ ¿Para qué lo usarías tú? 👀"
+    ],
+    "hashtags": ["#humor", "#inteligenciaartificial", "#IA", "#comedia", "#oficina", "#prompts", "#fabricadechelios"],
+    "miniatura_1": "MI JEFE IA NO DESCANSA",
+    "miniatura_2": "TU PROMPT MAESTRO"
+  }
+}
