@@ -6,6 +6,8 @@
 
 El guion es como el de la serie, pero con "serie": "noticias", "slug" (p. ej. "gta6-001"),
 "hud_marca" / "hud_chip" (el letrero de arriba) y todas las escenas en la parte 1.
+Con "formato": "lista" usa el formato editorial de motor/editorial.py (fondo claro, lista numerada y una
+tarjeta por dato, cada una en un estilo visual distinto). Conviene alternar formatos para no aburrir.
 Reglas: cada número en pantalla lleva su fuente en "fuentes" (va a la descripción); nada de imágenes,
 logos ni personajes de otras marcas: solo las gráficas de la fábrica.
 
@@ -26,6 +28,7 @@ sys.path.insert(0, str(RAIZ / "motor"))
 
 import voz  # noqa: E402
 import montar  # noqa: E402
+import editorial  # noqa: E402
 from fabrica import preparar_proyecto  # noqa: E402
 
 
@@ -38,12 +41,24 @@ def producir(guion_path, solo_proyecto=False):
     slug = guion["slug"]
     build, pj, salida = RAIZ / "build" / slug, RAIZ / "build" / f"proyecto-{slug}", RAIZ / "salidas" / slug
     salida.mkdir(parents=True, exist_ok=True)
+    lista = guion.get("formato") == "lista"
     print("1/3  La Voz…")
-    t = voz.construir(guion_path, build)
+    if lista:  # formato lista editorial: la voz lee intro + items + cierre
+        build.mkdir(parents=True, exist_ok=True)
+        gv = build / "guion-voz.json"
+        gv.write_text(json.dumps(editorial.esc_voz(guion), ensure_ascii=False), encoding="utf-8")
+        t = voz.construir(gv, build)
+    else:
+        t = voz.construir(guion_path, build)
     print(f"     {t['total']:.1f} s de narración")
     print("2/3  El Animador…")
+    if pj.exists():
+        shutil.rmtree(pj)
     preparar_proyecto(pj)
-    montar.montar(guion_path, build, pj)
+    if lista:
+        editorial.montar(guion_path, build, pj)
+    else:
+        montar.montar(guion_path, build, pj)
     if solo_proyecto:
         print(f"Proyecto listo en {pj}")
         return

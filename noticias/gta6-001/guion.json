@@ -1,114 +1,70 @@
 {
   "serie": "noticias",
+  "formato": "lista",
   "slug": "gta6-001",
-  "dia": 0,
-  "titulo": "Chelios Noticias · GTA 6 sale en 6 días",
-  "hud_marca": "CHELIOS NOTICIAS",
-  "hud_chip": "GTA 6 · 01",
   "voz": "em_alex",
-  "velocidad": 1.0,
-  "partes": {"1": "GTA 6 sale en 6 días"},
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 01",
+  "titulo": "5 datos de <i>GTA 6</i>",
+  "subtitulo": "(antes de que salga el 19 de noviembre)",
+  "portada": "el robot ya está en fila",
+  "intro": {
+    "texto": "Cinco datos de GTA seis antes de que salga. El dos es una locura.",
+    "tts": "Cinco datos de yitiéi seis antes de que salga. El dos es una locura."
+  },
+  "items": [
+    {
+      "etiqueta": "la fecha",
+      "estilo": "papel",
+      "texto": "Uno: sale el jueves diecinueve de noviembre.",
+      "card": {"arriba": "NOVIEMBRE", "grande": "19", "abajo": "jueves · 2026"}
+    },
+    {
+      "etiqueta": "el tráiler",
+      "estilo": "comic",
+      "texto": "Dos: según Rockstar, el segundo tráiler sumó cuatrocientos setenta y cinco millones de vistas en un día, contando todas las plataformas.",
+      "tts": "Dos: según Rokstar, el segundo tráiler sumó cuatrocientos setenta y cinco millones de vistas en un día, contando todas las plataformas.",
+      "card": {"grande": "475 M", "linea": "VISTAS EN 24 HORAS", "nota": "dato de Rockstar · todas las plataformas"}
+    },
+    {
+      "etiqueta": "la espera",
+      "estilo": "pixel",
+      "texto": "Tres: se retrasó dos veces. Otoño de dos mil veinticinco, mayo de este año, y ahora sí: noviembre.",
+      "card": {"titulo": "FECHAS", "filas": [{"texto": "OTOÑO 2025", "ok": false}, {"texto": "MAYO 2026", "ok": false}, {"texto": "19 NOV 2026", "ok": true}]}
+    },
+    {
+      "etiqueta": "las consolas",
+      "estilo": "neon",
+      "texto": "Cuatro: llega a PlayStation cinco y Xbox Series. En PC, por ahora, nada.",
+      "tts": "Cuatro: llega a Pleisteishon cinco y Equisbox Series. En pecé, por ahora, nada.",
+      "card": {"filas": [{"texto": "PS5", "color": "#45E3FF"}, {"texto": "XBOX SERIES", "color": "#5BE75B"}, {"texto": "PC", "color": "#FF4FD8", "tachado": true}], "nota": "PC: todavía no"}
+    },
+    {
+      "etiqueta": "la historia",
+      "estilo": "synth",
+      "texto": "Y cinco: pasa en Leonida, con Vice City, y los protagonistas son Jason y Lucia.",
+      "tts": "Y cinco: pasa en Leonida, con Vais Siti, y los protagonistas son Yéison y Lusía.",
+      "card": {"grande": "Leonida", "linea": "JASON & LUCIA", "nota": "vuelve Vice City"}
+    }
+  ],
+  "cta": {
+    "texto": "¿Día uno o esperas reseñas? Comenta GTA y sígueme.",
+    "tts": "¿Día uno o esperas reseñas? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: el 19 te cuento todo"
+  },
   "fuentes": [
     "Fecha (19 nov 2026, PS5 y Xbox Series X|S): Rockstar Games vía PC Gamer y VGC, 6 nov 2025",
     "Retrasos (otoño 2025 → 26 may 2026 → 19 nov 2026): PC Gamer y VGC",
-    "475 millones de vistas del tráiler 2 en 24 h en todas las plataformas: dato de Rockstar, reportado por TechRadar (mayo 2025)"
-  ],
-  "escenas": [
-    {
-      "id": "s01",
-      "parte": 1,
-      "tpl": "titular",
-      "texto": "Última hora en la fábrica: GTA seis sale en seis días. Y yo, que nunca duermo, ya lo estoy esperando despierto.",
-      "tts": "Última hora en la fábrica: yitiéi seis sale en seis días. Y yo, que nunca duermo, ya lo estoy esperando despierto.",
-      "hl": ["seis", "días."],
-      "kill": ["despierto."],
-      "p": {
-        "chip": "ÚLTIMA HORA",
-        "chip_color": "coral",
-        "lineas": [
-          {"texto": "GTA 6", "max": 180},
-          {"texto": "SALE EN *6 DÍAS*", "max": 120}
-        ],
-        "sub": "19 DE NOVIEMBRE · PS5 Y XBOX SERIES",
-        "chelios": true
-      }
-    },
-    {
-      "id": "s02",
-      "parte": 1,
-      "tpl": "numero",
-      "texto": "Primero, el dato de locura: según Rockstar, el segundo tráiler sumó cuatrocientos setenta y cinco millones de vistas en veinticuatro horas, contando todas las plataformas. Yo lo vi una sola vez. Bueno, ochocientas.",
-      "tts": "Primero, el dato de locura: según Rokstar, el segundo tráiler sumó cuatrocientos setenta y cinco millones de vistas en veinticuatro horas, contando todas las plataformas. Yo lo vi una sola vez. Bueno, ochocientas.",
-      "hl": ["locura:", "millones"],
-      "kill": ["ochocientas."],
-      "p": {
-        "chip": "TRÁILER 2 · DATO DE ROCKSTAR",
-        "etiqueta": "VISTAS EN 24 HORAS",
-        "desde": 0,
-        "hasta": 475,
-        "sufijo": " M",
-        "sub": "sumando *todas* las plataformas",
-        "ancla_inicio": "cuatrocientos",
-        "ancla_fin": "millones",
-        "ancla_sub": "contando",
-        "nota": "CHELIOS: LO VI 800 VECES",
-        "ancla_nota": "ochocientas"
-      }
-    },
-    {
-      "id": "s03",
-      "parte": 1,
-      "tpl": "lista",
-      "texto": "Segundo: esta espera tiene historia. Uno, iba a salir en otoño de dos mil veinticinco. Dos, lo movieron al veintiséis de mayo de este año. Y tres, lo volvieron a mover al diecinueve de noviembre. Yo también me retraso, pero solo cuando me apagan.",
-      "hl": ["historia.", "diecinueve"],
-      "kill": ["apagan."],
-      "p": {
-        "titulo": "LA ESPERA: *2 RETRASOS*",
-        "ancla_titulo": "espera",
-        "items": [
-          {"texto": "*Otoño 2025:* la fecha original", "ancla": "uno"},
-          {"texto": "*26 de mayo de 2026:* primer retraso", "ancla": "dos"},
-          {"texto": "*19 de noviembre de 2026:* ahora sí", "ancla": "tres"}
-        ]
-      }
-    },
-    {
-      "id": "s04",
-      "parte": 1,
-      "tpl": "habla",
-      "texto": "Tercero: sale en PlayStation cinco y Xbox Series. En computador, por ahora, nada. Si juegas en PC, te acompaño en el sentimiento. Yo vivo en un servidor y tampoco me lo dan.",
-      "tts": "Tercero: sale en Pleisteishon cinco y Equisbox Series. En computador, por ahora, nada. Si juegas en pecé, te acompaño en el sentimiento. Yo vivo en un servidor y tampoco me lo dan.",
-      "hl": ["cinco", "nada."],
-      "kill": ["dan."],
-      "p": {
-        "chip": "PLATAFORMAS",
-        "burbuja": "PS5 y Xbox Series · *PC: todavía no*",
-        "ancla_burbuja": "computador",
-        "gesto": "brazos",
-        "ancla_gesto": "sentimiento"
-      }
-    },
-    {
-      "id": "s05",
-      "parte": 1,
-      "tpl": "cta",
-      "texto": "¿Lo vas a jugar el primer día? Comenta GTA y síguenos: aquí te cuento todo lo de GTA seis.",
-      "tts": "¿Lo vas a jugar el primer día? Comenta yitiéi y síguenos: aquí te cuento todo lo de yitiéi seis.",
-      "hl": ["GTA"],
-      "p": {
-        "palabra": "GTA 6",
-        "ancla_palabra": "gta",
-        "ancla_seguir": "síguenos",
-        "seguir_texto": "+ SEGUIR · TODO SOBRE GTA 6",
-        "hold": 2.2
-      }
-    }
+    "475 millones de vistas del tráiler 2 en 24 h en todas las plataformas: dato de Rockstar, reportado por TechRadar (mayo 2025)",
+    "Leonida, Vice City, Jason y Lucia: tráileres oficiales de Rockstar (VGC, GamesRadar)"
   ],
   "publicacion": {
-    "youtube_titulo": "GTA 6 sale en 6 días: 3 datos que tienes que saber 🎮☀️ #Shorts",
-    "youtube_descripcion": "Chelios Noticias · GTA 6 sale el jueves 19 de noviembre de 2026 en PS5 y Xbox Series X|S (sin versión de PC por ahora). Rockstar dice que el segundo tráiler sumó 475 millones de vistas en 24 horas contando todas las plataformas. Y la espera tuvo dos retrasos: otoño 2025 → 26 de mayo de 2026 → 19 de noviembre de 2026.\n\n¿Lo vas a jugar el primer día? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
-    "youtube_primer_comentario": "¿Día 1 o esperas reseñas? 👇 Comenta GTA y sígueme: esta semana te cuento todo lo de GTA 6 🎮☀️",
-    "tiktok": "GTA 6 sale en 6 días 🎮 3 datos que tienes que saber antes del 19 de noviembre ☀️ ¿Lo juegas el día 1?",
+    "youtube_titulo": "5 datos de GTA 6 antes de que salga 🎮 (el 2 es una locura) #Shorts",
+    "youtube_descripcion": "Chelios Noticias · 5 datos de GTA 6 antes del jueves 19 de noviembre de 2026: la fecha, el récord del tráiler 2 (475 millones de vistas en 24 horas en todas las plataformas, según Rockstar), los dos retrasos, las consolas (PS5 y Xbox Series X|S; PC todavía no) y la historia (Leonida, Vice City, Jason y Lucia).\n\n¿Día uno o esperas reseñas? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Día 1 o esperas reseñas? 👇 Comenta GTA y sígueme: el 19 te cuento todo 🎮☀️",
+    "tiktok": "5 datos de GTA 6 antes de que salga 🎮 El 2 es una locura 🤯 ¿Día 1 o esperas reseñas?",
     "hashtags": ["#GTA6", "#GTAVI", "#gaming", "#videojuegos", "#noticias", "#fabricadechelios"]
   }
 }

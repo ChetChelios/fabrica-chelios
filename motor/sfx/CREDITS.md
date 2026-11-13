@@ -33,3 +33,6 @@ All files are distributed under the [Pixabay Content License](https://pixabay.co
 - Redistribution as part of derivative works (such as videos rendered with HyperFrames)
 
 without any attribution requirement.
+
+## Fuentes del formato lista (motor/fonts)
+Instrument Serif, Silkscreen, Erica One y Big Shoulders: SIL Open Font License 1.1 (textos de licencia junto a cada archivo; Instrument Serif es del Instrument Serif Project, mismo tipo de licencia que Instrument Sans).
