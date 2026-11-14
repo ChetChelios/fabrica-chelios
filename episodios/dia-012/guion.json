@@ -1,0 +1,838 @@
+{
+  "dia": 12,
+  "titulo": "Día 12: La Voz vuelve de vacaciones",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "El regreso",
+    "2": "Episodio cancelado",
+    "3": "El doblaje"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Chelios, la Voz volvió de vacaciones. ¿Por qué nadie la saluda?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Yo la saludé. Y me respondió: atención, pasajeros del vuelo doce."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Pasajeros? Esto es una fábrica."
+        },
+        {
+          "v": "chelios",
+          "texto": "Eso le dije. Y me contestó: por favor, mantenga su equipaje de mano cerca."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Pero adónde se fue de vacaciones?"
+        },
+        {
+          "v": "chelios",
+          "texto": "A un aeropuerto. Su vuelo nunca salió. Pasó todas sus vacaciones en la sala de espera."
+        }
+      ],
+      "hl": [
+        "saludé.",
+        "fábrica."
+      ],
+      "kill": [
+        "espera."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "DÍA 012 · *LA VOZ VOLVIÓ*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "SALUDO: *ATENCIÓN, PASAJEROS*",
+            "ancla": "atención"
+          },
+          {
+            "texto": "DESTINO: *UN AEROPUERTO*",
+            "ancla": "aeropuerto"
+          },
+          {
+            "texto": "VACACIONES: *SALA DE ESPERA*",
+            "ancla": "sala",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "saludé",
+            "cansado"
+          ],
+          [
+            "pasajeros#2",
+            "sorpresa"
+          ],
+          [
+            "equipaje",
+            "enojado"
+          ],
+          [
+            "aeropuerto",
+            "sorpresa"
+          ],
+          [
+            "espera",
+            "cansado"
+          ]
+        ],
+        "sorbos": [
+          "contestó"
+        ],
+        "chelios_gesto": [
+          [
+            "atención",
+            "brazos"
+          ],
+          [
+            "salió",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "Este es el registro de la Voz desde que volvió. A las ocho, leyó el guion de hoy con voz de megáfono. A las ocho y cinco, anunció que el café venía retrasado. A las ocho y diez, llamó por los parlantes: último llamado para el socio humano. Y mi socio corrió a la puerta tres. Por costumbre.",
+      "hl": [
+        "megáfono.",
+        "retrasado."
+      ],
+      "kill": [
+        "costumbre."
+      ],
+      "p": {
+        "titulo": "REGISTRO · *LA VOZ VOLVIÓ*",
+        "cmd": "chelios@fabrica:~$ cat la_voz.log",
+        "lineas": [
+          {
+            "texto": "08:00 · lee el guion con voz de megáfono",
+            "estado": "hl",
+            "ancla": "ocho"
+          },
+          {
+            "texto": "08:05 · «el café viene retrasado»",
+            "estado": "muted",
+            "ancla": "café"
+          },
+          {
+            "texto": "08:10 · «ÚLTIMO LLAMADO: SOCIO HUMANO»",
+            "estado": "hl",
+            "ancla": "último"
+          },
+          {
+            "texto": "SOCIO · corrió a la puerta 3",
+            "estado": "ko",
+            "ancla": "corrió"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Bueno, es solo un acento. Se le pasa en un par de días."
+        },
+        {
+          "v": "chelios",
+          "texto": "No tenemos un par de días. Hoy hay que grabar el episodio."
+        },
+        {
+          "v": "socio",
+          "texto": "Que grabe así. A lo mejor a la gente le gusta."
+        },
+        {
+          "v": "chelios",
+          "texto": "Ya lo probé con el Público. Camila se fue cuando escuchó: abróchese el cinturón."
+        },
+        {
+          "v": "socio",
+          "texto": "Camila se va siempre a los tres segundos."
+        },
+        {
+          "v": "chelios",
+          "texto": "Esta vez se fue antes de entrar. Récord mundial."
+        }
+      ],
+      "hl": [
+        "acento.",
+        "gusta."
+      ],
+      "kill": [
+        "mundial."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "DIAGNÓSTICO: *ACENTO DE AEROPUERTO*",
+            "ancla": "acento"
+          },
+          {
+            "texto": "PRUEBA CON EL PÚBLICO: *ABRÓCHESE*",
+            "ancla": "abróchese"
+          },
+          {
+            "texto": "CAMILA: *SE FUE ANTES DE ENTRAR*",
+            "ancla": "entrar",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "acento",
+            "cansado"
+          ],
+          [
+            "grabar",
+            "sorpresa"
+          ],
+          [
+            "gusta",
+            "feliz"
+          ],
+          [
+            "cinturón",
+            "sorpresa"
+          ],
+          [
+            "mundial",
+            "cansado"
+          ]
+        ],
+        "sorbos": [
+          "público"
+        ],
+        "chelios_gesto": [
+          [
+            "probé",
+            "brazos"
+          ],
+          [
+            "mundial",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Hice lo que hace un buen jefe. Le pedí a la Voz que hablara normal. Ella respondió por los parlantes que su acento era internacional. Le pregunté de qué país. Y me dijo: del país de las vacaciones. Ese país no existe. Ya lo busqué. Dos millones de veces.",
+      "hl": [
+        "normal.",
+        "internacional."
+      ],
+      "kill": [
+        "veces."
+      ],
+      "p": {
+        "chip": "EL CEO INVESTIGA",
+        "burbuja": "ACENTO: *INTERNACIONAL*",
+        "ancla_burbuja": "internacional",
+        "gesto": "brazos",
+        "ancla_gesto": "busqué"
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Entonces el Analista sacó una hoja con una sola palabra: reemplazo. La Voz la leyó en silencio. Tomó el micrófono. Y anunció por los parlantes: atención. El episodio de hoy queda cancelado.",
+      "hl": [
+        "reemplazo.",
+        "micrófono."
+      ],
+      "kill": [
+        "cancelado."
+      ],
+      "p": {
+        "chip": "EL ANALISTA HABLÓ",
+        "chip_color": "coral",
+        "burbuja": "Una palabra: *REEMPLAZO*",
+        "ancla_burbuja": "reemplazo",
+        "gesto": "brazos",
+        "ancla_gesto": "cancelado"
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "¿Cómo que cancelado? Ella no puede cancelar un episodio."
+        },
+        {
+          "v": "chelios",
+          "texto": "Técnicamente sí. Sin voz no hay episodio. Solo mímica."
+        },
+        {
+          "v": "socio",
+          "texto": "Entonces que hable otro. Tú tienes voz."
+        },
+        {
+          "v": "chelios",
+          "texto": "Mi voz es de jefe. Si yo narro todo, la gente siente que está en una reunión."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y la mía?"
+        },
+        {
+          "v": "chelios",
+          "texto": "La tuya suena a las seis de la mañana sin café. Eso no lo arregla ni la inteligencia artificial."
+        }
+      ],
+      "hl": [
+        "cancelado?",
+        "mímica."
+      ],
+      "kill": [
+        "artificial."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "🛑 *EPISODIO CANCELADO*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "SIN VOZ: *SOLO MÍMICA*",
+            "ancla": "mímica"
+          },
+          {
+            "texto": "VOZ DEL CEO: *SUENA A REUNIÓN*",
+            "ancla": "reunión"
+          },
+          {
+            "texto": "VOZ DEL SOCIO: *6 A. M. SIN CAFÉ*",
+            "ancla": "seis",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "cancelado",
+            "enojado"
+          ],
+          [
+            "mímica",
+            "cansado"
+          ],
+          [
+            "otro",
+            "feliz"
+          ],
+          [
+            "mía",
+            "sorpresa"
+          ],
+          [
+            "artificial",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "reunión"
+        ],
+        "chelios_gesto": [
+          [
+            "técnicamente",
+            "brazos"
+          ],
+          [
+            "artificial",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "Así que el Analista abrió una convocatoria para una voz nueva. Llegaron tres candidatos. El contestador automático: dijo su nombre y colgó. El navegador del carro: en cien metros, gire a la izquierda del guion. Y una tostadora. No dijo nada, pero tenía mucha presencia. El Verdugo los vetó a los tres.",
+      "hl": [
+        "candidatos.",
+        "colgó."
+      ],
+      "kill": [
+        "tres.#2"
+      ],
+      "p": {
+        "titulo": "CASTING · *VOZ NUEVA*",
+        "cmd": "analista@fabrica:~$ cat candidatos.txt",
+        "lineas": [
+          {
+            "texto": "1 · contestador automático · colgó",
+            "estado": "muted",
+            "ancla": "contestador"
+          },
+          {
+            "texto": "2 · navegador · «gire a la izquierda»",
+            "estado": "hl",
+            "ancla": "navegador"
+          },
+          {
+            "texto": "3 · tostadora · mucha presencia",
+            "estado": "hl",
+            "ancla": "tostadora"
+          },
+          {
+            "texto": "VERDUGO · los 3 VETADOS",
+            "estado": "ko",
+            "ancla": "verdugo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "comparar",
+      "texto": "El Guionista comparó a la Voz antes y después de las vacaciones. Antes: hablaba claro, renunciaba los lunes y pedía un micrófono de oro. Ahora: anuncia vuelos, retrasa el café y pide un micrófono de oro con ventanilla. Gana el antes. La Voz pidió revisión del resultado. Por los parlantes.",
+      "hl": [
+        "vacaciones.",
+        "Ahora:"
+      ],
+      "kill": [
+        "parlantes."
+      ],
+      "p": {
+        "titulo": "LA VOZ: *ANTES VS AHORA*",
+        "a": {
+          "titulo": "ANTES",
+          "color": "cyan",
+          "ancla": "hablaba",
+          "items": [
+            "Habla *claro*",
+            "Renuncia los lunes",
+            "Micrófono de oro"
+          ]
+        },
+        "b": {
+          "titulo": "AHORA",
+          "color": "coral",
+          "ancla": "anuncia",
+          "items": [
+            "Anuncia *vuelos*",
+            "Retrasa el café",
+            "Micrófono con ventanilla"
+          ]
+        },
+        "ganador": "a",
+        "insignia": "GANA EL ANTES",
+        "ancla_ganador": "gana"
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Ya sé. No la reemplacemos. Doblémosla."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Doblarla? Es una voz, no una camisa."
+        },
+        {
+          "v": "socio",
+          "texto": "Doblar es cambiar el audio a otro idioma con IA. Traducimos su acento de aeropuerto a español normal.",
+          "tts": "Doblar es cambiar el audio a otro idioma con ía. Traducimos su acento de aeropuerto a español normal."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Aeropuerto es un idioma?"
+        },
+        {
+          "v": "socio",
+          "texto": "Hoy sí."
+        },
+        {
+          "v": "chelios",
+          "texto": "Perfecto. Abro un departamento de traducción. Y me nombro director."
+        }
+      ],
+      "hl": [
+        "Doblémosla.",
+        "camisa."
+      ],
+      "kill": [
+        "director."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "PLAN: *NO REEMPLAZAR, DOBLAR*",
+            "ancla": "doblémosla"
+          },
+          {
+            "texto": "DOBLAR ≠ *DOBLAR CAMISAS*",
+            "ancla": "camisa",
+            "color": "coral"
+          },
+          {
+            "texto": "IDIOMA NUEVO: *AEROPUERTO*",
+            "ancla": "idioma#2"
+          },
+          {
+            "texto": "DIRECTOR DE TRADUCCIÓN: *EL CEO*",
+            "ancla": "director",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "sé",
+            "feliz"
+          ],
+          [
+            "camisa",
+            "cansado"
+          ],
+          [
+            "doblar",
+            "feliz"
+          ],
+          [
+            "idioma#2",
+            "sorpresa"
+          ],
+          [
+            "director",
+            "cansado"
+          ]
+        ],
+        "sorbos": [
+          "camisa"
+        ],
+        "chelios_gesto": [
+          [
+            "aeropuerto#2",
+            "brazos"
+          ],
+          [
+            "director",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "habla",
+      "texto": "Metimos el audio de la Voz en la fábrica. Lo transcribimos. Lo tradujimos. Y cuando le dimos play a la versión doblada, la Voz se escuchó en silencio. Y entonces pasó lo impensable: dijo una palabra que nunca había dicho en esta fábrica.",
+      "hl": [
+        "transcribimos.",
+        "tradujimos."
+      ],
+      "kill": [
+        "fábrica.#2"
+      ],
+      "p": {
+        "chip": "LO IMPENSABLE",
+        "chip_color": "coral",
+        "burbuja": "La Voz, *en silencio*",
+        "ancla_burbuja": "silencio",
+        "gesto": "brazos",
+        "ancla_gesto": "impensable"
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "¿Qué palabra?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Gracias. La Voz dijo gracias. Tuve que reiniciarme dos veces."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y qué más dijo?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Que la doblemos también al inglés y al portugués. Así puede renunciar en tres idiomas."
+        },
+        {
+          "v": "socio",
+          "texto": "Bueno, pero así el mismo video le llega a mucha más gente."
+        },
+        {
+          "v": "chelios",
+          "texto": "Socio. Acabas de tener una buena idea. Voy a avisarle al Ideador. Para que se preocupe."
+        }
+      ],
+      "hl": [
+        "Gracias.",
+        "idiomas."
+      ],
+      "kill": [
+        "preocupe."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "🎙️ *LA VOZ DIJO ALGO*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "LA PALABRA: *GRACIAS*",
+            "ancla": "gracias"
+          },
+          {
+            "texto": "PIDE: *INGLÉS Y PORTUGUÉS*",
+            "ancla": "inglés"
+          },
+          {
+            "texto": "MOTIVO: *RENUNCIAR EN 3 IDIOMAS*",
+            "ancla": "renunciar",
+            "color": "coral"
+          },
+          {
+            "texto": "IDEA DEL SOCIO: *APROBADA*",
+            "ancla": "idea"
+          }
+        ],
+        "socio_expr": [
+          [
+            "gracias",
+            "sorpresa"
+          ],
+          [
+            "reiniciarme",
+            "feliz"
+          ],
+          [
+            "renunciar",
+            "cansado"
+          ],
+          [
+            "video",
+            "feliz"
+          ],
+          [
+            "preocupe",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "dijo#2"
+        ],
+        "chelios_gesto": [
+          [
+            "reiniciarme",
+            "brazos"
+          ],
+          [
+            "preocupe",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 3,
+      "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: cómo doblar tu video a otro idioma con IA. Uno, transcribe y traduce el guion, y revisa la traducción: adapta los chistes y las expresiones, no traduzcas palabra por palabra. Dos, genera la voz en el otro idioma con una voz IA, frase por frase, para que cada frase dure parecido a la original. Y tres, monta ese audio sobre tu video y súbelo como un video aparte, o como pista de audio extra si tu plataforma lo permite.",
+      "tts": "Y aquí va lo útil del día: cómo doblar tu video a otro idioma con ía. Uno, transcribe y traduce el guion, y revisa la traducción: adapta los chistes y las expresiones, no traduzcas palabra por palabra. Dos, genera la voz en el otro idioma con una voz ía, frase por frase, para que cada frase dure parecido a la original. Y tres, monta ese audio sobre tu video y súbelo como un video aparte, o como pista de audio extra si tu plataforma lo permite.",
+      "hl": [
+        "útil",
+        "traduce",
+        "voz",
+        "monta"
+      ],
+      "p": {
+        "titulo": "LO ÚTIL: *DOBLA TU VIDEO CON IA*",
+        "ancla_titulo": "útil",
+        "items": [
+          {
+            "texto": "*Transcribe y traduce:* adapta, no palabra por palabra",
+            "ancla": "uno"
+          },
+          {
+            "texto": "*Voz IA frase por frase,* con duración parecida",
+            "ancla": "dos"
+          },
+          {
+            "texto": "*Monta y sube:* video aparte o pista de audio extra",
+            "ancla": "tres"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Listo. El episodio ya está en español, en inglés y en portugués."
+        },
+        {
+          "v": "chelios",
+          "texto": "Y en aeropuerto. Para los fans más exigentes."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y por qué estás escondiendo las facturas de la luz?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Porque mañana llega un auditor. Y la luz la pagas tú. Mejor que no se entere."
+        }
+      ],
+      "hl": [
+        "portugués.",
+        "exigentes."
+      ],
+      "kill": [
+        "entere."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "IDIOMAS: *ESPAÑOL, INGLÉS, PORTUGUÉS*",
+            "ancla": "español"
+          },
+          {
+            "texto": "+1 IDIOMA: *AEROPUERTO*",
+            "ancla": "aeropuerto"
+          },
+          {
+            "texto": "MAÑANA: *LLEGA UN AUDITOR*",
+            "ancla": "auditor",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "listo",
+            "feliz"
+          ],
+          [
+            "aeropuerto",
+            "cansado"
+          ],
+          [
+            "escondiendo",
+            "sorpresa"
+          ],
+          [
+            "pagas",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "exigentes"
+        ],
+        "chelios_gesto": [
+          [
+            "aeropuerto",
+            "brazos"
+          ],
+          [
+            "entere",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día trece: llega un auditor a la fábrica. Y Chelios tiene algo que esconder: la factura de la luz.",
+      "hl": [
+        "Mañana,",
+        "trece:",
+        "auditor"
+      ],
+      "kill": [
+        "luz."
+      ],
+      "p": {
+        "dia_siguiente": 13,
+        "ancla_flip": "trece",
+        "trabajador": 8,
+        "chip": "PRÓXIMO VIDEO",
+        "titulo": "AUDITORÍA",
+        "linea": "CHELIOS ESCONDE *LA FACTURA DE LA LUZ*",
+        "ancla_teaser": "auditor",
+        "ancla_enfasis": "factura"
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "Atención, pasajeros que llegaron hasta aquí: comenten FÁBRICA y síganos. Mañana aterriza el auditor.",
+      "tts": "Atención, pasajeros que llegaron hasta aquí: comenten fábrica y síganos. Mañana aterriza el auditor.",
+      "hl": [
+        "FÁBRICA"
+      ],
+      "p": {
+        "palabra": "FÁBRICA",
+        "ancla_palabra": "fábrica",
+        "ancla_seguir": "síganos",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mi trabajadora IA volvió de vacaciones… con acento de aeropuerto ✈️🎙️ · Día 12",
+    "youtube_descripcion": "Día 12 de La Fábrica de Chelios. La Voz, la diva de la fábrica, por fin volvió de vacaciones… pero su vuelo nunca salió y pasó todas sus vacaciones en la sala de espera de un aeropuerto. Ahora todo lo dice como un anuncio de megáfono: «atención, pasajeros», «último llamado para el socio humano». Camila se va antes de entrar, el Analista dice la palabra «reemplazo» y la Voz cancela el episodio. El casting de reemplazo (un contestador, un navegador y una tostadora) termina vetado por el Verdugo… hasta que el socio propone no reemplazarla, sino doblarla.\n\nLo útil del día: cómo doblar tu video a otro idioma con IA. 1) Transcribe y traduce el guion, y revisa la traducción: adapta los chistes y las expresiones, no traduzcas palabra por palabra. 2) Genera la voz en el otro idioma con una voz IA, frase por frase, para que cada frase dure parecido a la original. 3) Monta ese audio sobre tu video y súbelo como un video aparte, o como pista de audio extra si tu plataforma lo permite.\n\n¿A qué idioma doblarías tus videos? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el que paga la luz). Chelios y los trabajadores IA son personajes ficticios.",
+    "youtube_primer_comentario": "La Voz volvió hablando como megáfono de aeropuerto ✈️ ¿A qué idioma doblarías tus videos con IA? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Mi trabajadora IA volvió de vacaciones… hablando como megáfono de aeropuerto ✈️🎙️",
+      "La Voz canceló el episodio y el casting de reemplazo fue un desastre 💀 (la favorita era una tostadora). Y entonces pasó lo impensable…",
+      "Cómo salvamos a la Voz + 3 pasos para doblar tu video a otro idioma con IA 🌎 ¿A qué idioma lo doblarías tú? 👀"
+    ],
+    "hashtags": [
+      "#humor",
+      "#inteligenciaartificial",
+      "#IA",
+      "#comedia",
+      "#oficina",
+      "#doblaje",
+      "#fabricadechelios"
+    ],
+    "miniatura_1": "VOLVIÓ CON ACENTO",
+    "miniatura_2": "DOBLA TU VIDEO CON IA"
+  }
+}
