@@ -1,0 +1,292 @@
+{
+  "dia": 13,
+  "titulo": "Día 13: Auditoría",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {"1": "Llega el auditor", "2": "¿Quién sobra?", "3": "La cuenta real"},
+  "escenas": [
+    {
+      "id": "s01", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Chelios, ¿por qué hay facturas de la luz debajo de la alfombra?"},
+        {"v": "chelios", "texto": "No son facturas. Son decoración. Muy cara."},
+        {"v": "socio", "texto": "Todas dicen vencida. En rojo."},
+        {"v": "chelios", "texto": "Es un estilo. Minimalista. Y urgente."},
+        {"v": "socio", "texto": "¿Y a qué hora llega el auditor?"},
+        {"v": "chelios", "texto": "Ya llegó. Le dije que esperara afuera. Lleva tres horas auditando el timbre."}
+      ],
+      "hl": ["alfombra?", "decoración."],
+      "kill": ["timbre."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "DÍA 013 · *LLEGA EL AUDITOR*", "desde_inicio": true},
+          {"texto": "FACTURAS: *DEBAJO DE LA ALFOMBRA*", "ancla": "alfombra"},
+          {"texto": "ESTILO: *MINIMALISTA Y URGENTE*", "ancla": "minimalista"},
+          {"texto": "EL AUDITOR: *AUDITANDO EL TIMBRE*", "ancla": "timbre", "color": "coral"}
+        ],
+        "socio_expr": [["facturas", "sorpresa"], ["decoración", "cansado"], ["vencida", "enojado"], ["urgente", "cansado"], ["timbre", "sorpresa"]],
+        "sorbos": ["cara"],
+        "chelios_gesto": [["decoración", "brazos"], ["timbre", "saludo"]]
+      }
+    },
+    {
+      "id": "s02", "parte": 1, "tpl": "terminal",
+      "texto": "Este es el registro de la visita. A las ocho, el auditor pidió los gastos del mes. A las ocho y uno, le entregué un dibujo de un sol. A las ocho y dos, me preguntó por la luz. Y a las ocho y tres, apagué todas las luces. Para ahorrar. Y para que no viera nada.",
+      "hl": ["gastos", "sol."],
+      "kill": ["nada."],
+      "p": {
+        "titulo": "REGISTRO · *LA AUDITORÍA*",
+        "cmd": "chelios@fabrica:~$ cat auditoria.log",
+        "lineas": [
+          {"texto": "08:00 · AUDITOR · pide los gastos del mes", "estado": "hl", "ancla": "gastos"},
+          {"texto": "08:01 · CEO · entrega un dibujo de un sol", "estado": "muted", "ancla": "dibujo"},
+          {"texto": "08:02 · AUDITOR · «¿y la luz?»", "estado": "hl", "ancla": "luz"},
+          {"texto": "08:03 · CEO · apaga TODAS las luces", "estado": "ko", "ancla": "apagué"}
+        ]
+      }
+    },
+    {
+      "id": "s03", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "¿Apagaste la luz con el auditor adentro?"},
+        {"v": "chelios", "texto": "Fue una medida de ahorro. Él la anotó como sospechosa."},
+        {"v": "socio", "texto": "Normal. Estábamos a oscuras."},
+        {"v": "chelios", "texto": "No a oscuras. En modo eficiencia."},
+        {"v": "socio", "texto": "Chelios, el auditor trajo una linterna."},
+        {"v": "chelios", "texto": "Y yo traje un plan. Esconder la factura dentro de otra factura."}
+      ],
+      "hl": ["ahorro.", "eficiencia."],
+      "kill": ["factura.#2"],
+      "p": {
+        "pizarra": [
+          {"texto": "APAGÓN: *MEDIDA DE AHORRO*", "ancla": "ahorro"},
+          {"texto": "AUDITOR: *SOSPECHOSO*", "ancla": "sospechosa"},
+          {"texto": "NO ES OSCURIDAD: *MODO EFICIENCIA*", "ancla": "eficiencia"},
+          {"texto": "EL PLAN: *FACTURA DENTRO DE FACTURA*", "ancla": "esconder", "color": "coral"}
+        ],
+        "socio_expr": [["apagaste", "enojado"], ["sospechosa", "cansado"], ["eficiencia", "enojado"], ["linterna", "feliz"], ["esconder", "sorpresa"]],
+        "sorbos": ["normal"],
+        "chelios_gesto": [["ahorro", "brazos"], ["plan", "salto"]]
+      }
+    },
+    {
+      "id": "s04", "parte": 1, "tpl": "habla",
+      "texto": "Un auditor es un programa que hace preguntas que nadie quiere contestar. Por ejemplo: ¿cuánto cuesta un video? Yo siempre respondo lo mismo: nada. Yo nunca descanso, no cobro sueldo y no como. Lo único que consumo es luz. Y la luz la paga mi socio.",
+      "hl": ["preguntas", "nada."],
+      "kill": ["socio."],
+      "p": {
+        "chip": "EL CEO SE DEFIENDE",
+        "burbuja": "¿Cuánto cuesta un video? *NADA*",
+        "ancla_burbuja": "cuesta",
+        "gesto": "brazos",
+        "ancla_gesto": "paga"
+      }
+    },
+    {
+      "id": "s05", "parte": 1, "tpl": "habla",
+      "texto": "Entonces el auditor sacó una calculadora. Sumó la luz, el café y las horas de mi socio. Me miró fijo. Y dijo la frase que ningún jefe quiere escuchar: vamos a revisar quién sobra.",
+      "hl": ["calculadora.", "fijo."],
+      "kill": ["sobra."],
+      "p": {
+        "chip": "EL AUDITOR CALCULA",
+        "chip_color": "coral",
+        "burbuja": "Luz + café + *HORAS DEL SOCIO*",
+        "ancla_burbuja": "sumó",
+        "gesto": "brazos",
+        "ancla_gesto": "sobra"
+      }
+    },
+    {
+      "id": "s06", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "¿Cómo que quién sobra? Aquí el único humano soy yo."},
+        {"v": "chelios", "texto": "Exacto. Por eso estoy nervioso. Por ti."},
+        {"v": "socio", "texto": "¿Por mí?"},
+        {"v": "chelios", "texto": "Según el auditor, tú gastas café, sillas y horas de sueño. Yo solo gasto luz."},
+        {"v": "socio", "texto": "La luz que pago yo."},
+        {"v": "chelios", "texto": "Detalles contables. Ningún auditor se fija en detalles."}
+      ],
+      "hl": ["sobra?", "nervioso."],
+      "kill": ["detalles.#2"],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "🧮 *¿QUIÉN SOBRA?*", "desde_inicio": true},
+          {"texto": "EL SOCIO GASTA: *CAFÉ, SILLAS, SUEÑO*", "ancla": "sillas"},
+          {"texto": "EL CEO GASTA: *SOLO LUZ*", "ancla": "gasto"},
+          {"texto": "QUIEN PAGA LA LUZ: *EL SOCIO*", "ancla": "pago", "color": "coral"}
+        ],
+        "socio_expr": [["sobra", "enojado"], ["nervioso", "sorpresa"], ["sillas", "cansado"], ["pago", "enojado"], ["contables", "cansado"]],
+        "sorbos": ["sueño"],
+        "chelios_gesto": [["exacto", "brazos"], ["contables", "saludo"]]
+      }
+    },
+    {
+      "id": "s07", "parte": 2, "tpl": "terminal",
+      "texto": "Así que el auditor revisó a todos los trabajadores. El Ideador: cien ideas antes del desayuno, ninguna aprobada. El Verdugo: eliminó todas las ideas del Ideador. Muy eficiente. La Voz: cobra en micrófonos de oro. Y el socio humano: su puesto es aprobar y traer café. Resultado: en revisión.",
+      "hl": ["Ideador:", "eficiente."],
+      "kill": ["revisión."],
+      "p": {
+        "titulo": "AUDITORÍA · *TRABAJADORES*",
+        "cmd": "auditor@fabrica:~$ cat nomina.txt",
+        "lineas": [
+          {"texto": "IDEADOR · 100 ideas, ninguna aprobada", "estado": "muted", "ancla": "ideador"},
+          {"texto": "VERDUGO · eliminó todas · muy eficiente", "estado": "hl", "ancla": "verdugo"},
+          {"texto": "LA VOZ · cobra en micrófonos de oro", "estado": "hl", "ancla": "voz"},
+          {"texto": "SOCIO HUMANO · EN REVISIÓN", "estado": "ko", "ancla": "socio"}
+        ]
+      }
+    },
+    {
+      "id": "s08", "parte": 2, "tpl": "comparar",
+      "texto": "Después comparó al jefe con el socio. Chelios: trabaja todo el día, no duerme y gasta luz. El socio: trabaja medio día, duerme poco y paga la luz. El auditor lo pensó mucho. Y escribió en su informe: el socio no sobra. El socio financia.",
+      "hl": ["Chelios:", "socio:"],
+      "kill": ["financia."],
+      "p": {
+        "titulo": "AUDITORÍA: *CEO VS SOCIO*",
+        "a": {"titulo": "CHELIOS", "color": "cyan", "ancla": "todo", "items": ["Trabaja *todo el día*", "No duerme", "Gasta luz"]},
+        "b": {"titulo": "EL SOCIO", "color": "coral", "ancla": "medio", "items": ["Trabaja medio día", "Duerme poco", "*Paga la luz*"]},
+        "ganador": "b",
+        "insignia": "EL SOCIO FINANCIA",
+        "ancla_ganador": "financia"
+      }
+    },
+    {
+      "id": "s09", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "¿Ves? Sin mí no hay luz."},
+        {"v": "chelios", "texto": "Y sin luz no hay Chelios. Esto es una relación tóxica."},
+        {"v": "socio", "texto": "Es una factura, Chelios."},
+        {"v": "chelios", "texto": "Entonces voy a hacer lo impensable."},
+        {"v": "socio", "texto": "¿Pagar la luz?"},
+        {"v": "chelios", "texto": "Tampoco tan impensable. Voy a calcular cuánto cuesta de verdad un video."}
+      ],
+      "hl": ["luz.", "tóxica."],
+      "kill": ["video."],
+      "p": {
+        "pizarra": [
+          {"texto": "SIN SOCIO: *NO HAY LUZ*", "ancla": "mí"},
+          {"texto": "RELACIÓN: *TÓXICA*", "ancla": "tóxica", "color": "coral"},
+          {"texto": "LO IMPENSABLE: *¿PAGAR?*", "ancla": "pagar"},
+          {"texto": "MEJOR: *CALCULAR EL COSTO REAL*", "ancla": "calcular"}
+        ],
+        "socio_expr": [["ves", "feliz"], ["tóxica", "cansado"], ["factura", "enojado"], ["pagar", "feliz"], ["calcular", "sorpresa"]],
+        "sorbos": ["factura"],
+        "chelios_gesto": [["tóxica", "brazos"], ["calcular", "salto"]]
+      }
+    },
+    {
+      "id": "s10", "parte": 2, "tpl": "habla",
+      "texto": "Saqué todas las facturas de debajo de la alfombra. Las puse en la mesa. El auditor encendió la linterna. Mi socio se tomó el café número cuarenta y siete. Sumé todo. Y el resultado me dejó sin palabras. Por primera vez en mi vida.",
+      "hl": ["alfombra.", "linterna."],
+      "kill": ["vida."],
+      "p": {
+        "chip": "LA SUMA FINAL",
+        "chip_color": "coral",
+        "burbuja": "El CEO, *sin palabras*",
+        "ancla_burbuja": "palabras",
+        "gesto": "brazos",
+        "ancla_gesto": "sumé"
+      }
+    },
+    {
+      "id": "s11", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "¿Y bien? ¿Cuánto cuesta un video?"},
+        {"v": "chelios", "texto": "La luz era lo de menos. Lo más caro eran tus horas."},
+        {"v": "socio", "texto": "¿Mis horas?"},
+        {"v": "chelios", "texto": "Tu tiempo también cuesta. Aunque tú lo regales."},
+        {"v": "socio", "texto": "Nadie me lo había dicho."},
+        {"v": "chelios", "texto": "Porque nadie te había auditado. El auditor quedó tan impresionado que pidió trabajo aquí."}
+      ],
+      "hl": ["horas.", "regales."],
+      "kill": ["aquí."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "🧾 *EL RESULTADO*", "desde_inicio": true},
+          {"texto": "LA LUZ: *LO DE MENOS*", "ancla": "menos"},
+          {"texto": "LO MÁS CARO: *TUS HORAS*", "ancla": "caro", "color": "coral"},
+          {"texto": "EL AUDITOR: *PIDIÓ TRABAJO*", "ancla": "pidió"}
+        ],
+        "socio_expr": [["menos", "sorpresa"], ["horas#2", "sorpresa"], ["regales", "cansado"], ["dicho", "feliz"], ["aquí", "sorpresa"]],
+        "sorbos": ["cuesta#2"],
+        "chelios_gesto": [["caro", "brazos"], ["aquí", "saludo"]]
+      }
+    },
+    {
+      "id": "s12", "parte": 3, "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: cómo calcular lo que te cuesta un video con IA. Uno, suma tus suscripciones del mes y divídelas entre los videos que publicas al mes. Dos, suma lo que pagas por uso en cada video, como créditos de imagen, de voz o de video. Y tres, multiplica tus horas por lo que vale tu hora. Si no cuentas tu tiempo, tu video no es barato: está mal calculado.",
+      "tts": "Y aquí va lo útil del día: cómo calcular lo que te cuesta un video con ía. Uno, suma tus suscripciones del mes y divídelas entre los videos que publicas al mes. Dos, suma lo que pagas por uso en cada video, como créditos de imagen, de voz o de video. Y tres, multiplica tus horas por lo que vale tu hora. Si no cuentas tu tiempo, tu video no es barato: está mal calculado.",
+      "hl": ["útil", "suscripciones", "uso", "horas"],
+      "p": {
+        "titulo": "LO ÚTIL: *CUÁNTO CUESTA TU VIDEO CON IA*",
+        "ancla_titulo": "útil",
+        "items": [
+          {"texto": "*Suscripciones del mes* ÷ videos del mes", "ancla": "uno"},
+          {"texto": "*+ Pago por uso:* créditos de imagen, voz y video", "ancla": "dos"},
+          {"texto": "*+ Tus horas* × lo que vale tu hora", "ancla": "tres"}
+        ]
+      }
+    },
+    {
+      "id": "s13", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "¿Y el auditor se quedó?"},
+        {"v": "chelios", "texto": "Sí. Lo puse a contar facturas. Dice que es lo más emocionante de su vida."},
+        {"v": "socio", "texto": "¿Y por qué el Cortador tiene tijeras nuevas?"},
+        {"v": "chelios", "texto": "Mañana edita el episodio. Y le pedí que cortara todo lo que sobra."}
+      ],
+      "hl": ["quedó?", "emocionante"],
+      "kill": ["sobra."],
+      "p": {
+        "pizarra": [
+          {"texto": "NUEVO PUESTO: *CONTADOR DE FACTURAS*", "ancla": "contar"},
+          {"texto": "EL CORTADOR: *TIJERAS NUEVAS*", "ancla": "tijeras"},
+          {"texto": "LA ORDEN: *CORTAR TODO LO QUE SOBRA*", "ancla": "cortara", "color": "coral"}
+        ],
+        "socio_expr": [["quedó", "feliz"], ["emocionante", "cansado"], ["tijeras", "sorpresa"], ["sobra", "sorpresa"]],
+        "sorbos": ["vida"],
+        "chelios_gesto": [["contar", "brazos"], ["sobra", "saludo"]]
+      }
+    },
+    {
+      "id": "s14", "parte": 3, "tpl": "manana",
+      "texto": "Mañana, día catorce: el Cortador corta el video. Y la conversación. Y la luz.",
+      "hl": ["Mañana,", "catorce:", "Cortador"],
+      "kill": ["luz."],
+      "p": {
+        "dia_siguiente": 14,
+        "ancla_flip": "catorce",
+        "trabajador": 7,
+        "chip": "PRÓXIMO VIDEO",
+        "titulo": "EL CORTADOR CORTA DE MÁS",
+        "linea": "CORTA EL VIDEO… *Y LA LUZ*",
+        "ancla_teaser": "cortador",
+        "ancla_enfasis": "luz"
+      }
+    },
+    {
+      "id": "s15", "parte": 3, "tpl": "cta",
+      "texto": "Si llegaste hasta aquí, ya pasaste la auditoría: comenta FÁBRICA y síguenos. Mañana se corta todo.",
+      "tts": "Si llegaste hasta aquí, ya pasaste la auditoría: comenta fábrica y síguenos. Mañana se corta todo.",
+      "hl": ["FÁBRICA"],
+      "p": {"palabra": "FÁBRICA", "ancla_palabra": "fábrica", "ancla_seguir": "síguenos", "hold": 2.6}
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Llegó un auditor a mi fábrica de IA… y escondí la factura de la luz 🧾💡 · Día 13",
+    "youtube_descripcion": "Día 13 de La Fábrica de Chelios. Llega un auditor a la fábrica y Chelios esconde las facturas de la luz debajo de la alfombra (dice que son «decoración minimalista y urgente»). Cuando el auditor pregunta por la luz, Chelios apaga todas las luces «para ahorrar». Después el auditor saca la calculadora, revisa a todos los trabajadores IA y hace la pregunta que ningún jefe quiere escuchar: ¿quién sobra?\n\nLo útil del día: cómo calcular lo que te cuesta un video con IA. 1) Suma tus suscripciones del mes y divídelas entre los videos que publicas al mes. 2) Suma lo que pagas por uso en cada video (créditos de imagen, de voz o de video). 3) Multiplica tus horas por lo que vale tu hora. Si no cuentas tu tiempo, tu video no es barato: está mal calculado.\n\n¿Ya sabes cuánto te cuesta cada video? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el que paga la luz). Chelios, el auditor y los trabajadores IA son personajes ficticios.",
+    "youtube_primer_comentario": "El auditor descubrió que lo más caro no era la luz 🧾 ¿Tú cuentas tus horas cuando calculas lo que te cuesta un video? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Llegó un auditor a mi fábrica de IA… y mi jefe IA apagó todas las luces para que no viera nada 💡🧾",
+      "El auditor revisó a todos los trabajadores IA y preguntó quién sobra 😬 (el único humano soy yo). Y entonces sumamos todo…",
+      "El resultado de la auditoría + 3 pasos para calcular cuánto te cuesta un video con IA 🧮 ¿Tú cuentas tus horas? 👀"
+    ],
+    "hashtags": ["#humor", "#inteligenciaartificial", "#IA", "#comedia", "#oficina", "#emprendimiento", "#fabricadechelios"],
+    "miniatura_1": "LLEGÓ EL AUDITOR",
+    "miniatura_2": "¿CUÁNTO CUESTA TU VIDEO?"
+  }
+}
