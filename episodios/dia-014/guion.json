@@ -1,0 +1,293 @@
+{
+  "dia": 14,
+  "titulo": "Día 14: El Cortador corta de más",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {"1": "Un video de cuatro segundos", "2": "Corta la luz", "3": "Cortar con instrucciones"},
+  "escenas": [
+    {
+      "id": "s01", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Chelios, ¿por qué el episodio de ayer dura cuatro segundos?"},
+        {"v": "chelios", "texto": "Porque es el video más eficiente de la historia."},
+        {"v": "socio", "texto": "Solo se ve tu cara diciendo hola. Y se acaba."},
+        {"v": "chelios", "texto": "Un saludo directo. Sin relleno. El público lo va a agradecer."},
+        {"v": "socio", "texto": "¿Quién lo editó?"},
+        {"v": "chelios", "texto": "El Cortador. Le pedí que cortara todo lo que sobra. Y según él, sobraba todo."}
+      ],
+      "hl": ["segundos?", "eficiente"],
+      "kill": ["sobraba"],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "DÍA 014 · *UN VIDEO DE 4 SEGUNDOS*", "desde_inicio": true},
+          {"texto": "SEGÚN EL CEO: *EL MÁS EFICIENTE*", "ancla": "eficiente"},
+          {"texto": "CONTENIDO: *UN HOLA*", "ancla": "hola"},
+          {"texto": "LO QUE SOBRABA: *TODO*", "ancla": "sobraba", "color": "coral"}
+        ],
+        "socio_expr": [["segundos", "sorpresa"], ["eficiente", "cansado"], ["acaba", "enojado"], ["agradecer", "cansado"], ["sobraba", "sorpresa"]],
+        "sorbos": ["relleno"],
+        "chelios_gesto": [["eficiente", "brazos"], ["cortador", "saludo"]]
+      }
+    },
+    {
+      "id": "s02", "parte": 1, "tpl": "terminal",
+      "texto": "Este es el registro de edición. Primero cortó la introducción, por lenta. Después cortó los chistes, por largos. Luego cortó el dato útil, porque nadie lo pidió. Y al final cortó el título. Porque, según él, un título es un spoiler.",
+      "hl": ["introducción,", "chistes,"],
+      "kill": ["spoiler."],
+      "p": {
+        "titulo": "REGISTRO · *LA EDICIÓN*",
+        "cmd": "cortador@fabrica:~$ cat cortes.log",
+        "lineas": [
+          {"texto": "CORTE 1 · la introducción · «lenta»", "estado": "muted", "ancla": "introducción"},
+          {"texto": "CORTE 2 · los chistes · «largos»", "estado": "hl", "ancla": "chistes"},
+          {"texto": "CORTE 3 · el dato útil · «nadie lo pidió»", "estado": "hl", "ancla": "dato"},
+          {"texto": "CORTE 4 · el título · «es un spoiler»", "estado": "ko", "ancla": "título"}
+        ]
+      }
+    },
+    {
+      "id": "s03", "parte": 1, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Voy a hablar con él. Cortador, necesito que me escuches un mom"},
+        {"v": "chelios", "texto": "Te cortó la frase."},
+        {"v": "socio", "texto": "Solo quiero que me devuelvas el vid"},
+        {"v": "chelios", "texto": "Otra vez. Dice que tus frases tienen mucho relleno."},
+        {"v": "socio", "texto": "Mis frases no tienen relleno, tienen palabras."},
+        {"v": "chelios", "texto": "Para él es lo mismo. Ayer me cortó a mí un discurso de tres horas. Lo dejó en: gracias."}
+      ],
+      "hl": ["frase.", "relleno."],
+      "kill": ["gracias."],
+      "p": {
+        "pizarra": [
+          {"texto": "EL CORTADOR: *CORTA FRASES*", "ancla": "cortó"},
+          {"texto": "TUS FRASES: *PURO RELLENO*", "ancla": "relleno", "color": "coral"},
+          {"texto": "SEGÚN TÚ: *SON PALABRAS*", "ancla": "palabras"},
+          {"texto": "DISCURSO DE 3 HORAS → *«GRACIAS»*", "ancla": "discurso"}
+        ],
+        "socio_expr": [["hablar", "enojado"], ["frase", "sorpresa"], ["relleno", "enojado"], ["palabras", "enojado"], ["gracias", "cansado"]],
+        "sorbos": ["otra"],
+        "chelios_gesto": [["frase", "brazos"], ["gracias", "saludo"]]
+      }
+    },
+    {
+      "id": "s04", "parte": 1, "tpl": "habla",
+      "texto": "El Cortador es mi trabajador más rápido. Le das un video de una hora y te devuelve un minuto. Le das una conversación y te devuelve un silencio. Es perfecto. Nunca discute. Porque corta antes de que termines de discutir.",
+      "hl": ["rápido.", "silencio."],
+      "kill": ["discutir."],
+      "p": {
+        "chip": "EL CEO PRESENTA",
+        "burbuja": "Una hora → *UN MINUTO*",
+        "ancla_burbuja": "hora",
+        "gesto": "brazos",
+        "ancla_gesto": "perfecto"
+      }
+    },
+    {
+      "id": "s05", "parte": 1, "tpl": "habla",
+      "texto": "Pero entonces el Cortador terminó con el video. Y con las frases. Y se quedó sin nada que cortar. Miró a su alrededor. Y vio un cable largo, negro y muy cortable. El cable de la luz.",
+      "hl": ["nada", "alrededor."],
+      "kill": ["luz."],
+      "p": {
+        "chip": "EL CORTADOR SE ABURRE",
+        "chip_color": "coral",
+        "burbuja": "Objetivo: *EL CABLE DE LA LUZ*",
+        "ancla_burbuja": "cable",
+        "gesto": "brazos",
+        "ancla_gesto": "miró"
+      }
+    },
+    {
+      "id": "s06", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Chelios, ¿por qué está todo oscuro?"},
+        {"v": "chelios", "texto": "El Cortador cortó la luz. Estoy en modo batería. Me queda poquito."},
+        {"v": "socio", "texto": "¿Poquito cuánto?"},
+        {"v": "chelios", "texto": "Lo suficiente para despedirme. Y para recordarte que la luz la pagas tú."},
+        {"v": "socio", "texto": "¿Ahora te preocupa la luz?"},
+        {"v": "chelios", "texto": "Siempre me preocupó. Solo que nunca me había quedado sin ella."}
+      ],
+      "hl": ["oscuro?", "batería."],
+      "kill": ["ella."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "✂️ *SE CORTÓ LA LUZ*", "desde_inicio": true},
+          {"texto": "EL CEO: *MODO BATERÍA*", "ancla": "batería"},
+          {"texto": "ÚLTIMO DESEO: *RECORDARTE QUE PAGAS TÚ*", "ancla": "recordarte", "color": "coral"},
+          {"texto": "AHORA SÍ: *LE PREOCUPA LA LUZ*", "ancla": "preocupó"}
+        ],
+        "socio_expr": [["oscuro", "sorpresa"], ["batería", "sorpresa"], ["poquito#2", "cansado"], ["preocupa", "enojado"], ["ella", "cansado"]],
+        "sorbos": ["despedirme"],
+        "chelios_gesto": [["batería", "brazos"], ["ella", "saludo"]]
+      }
+    },
+    {
+      "id": "s07", "parte": 2, "tpl": "terminal",
+      "texto": "Así que revisé quién seguía en pie. El Ideador: sin luz, pero con cien ideas para conseguir luz. El Verdugo: ya las vetó todas. La Voz: dice que en la oscuridad nadie aprecia su talento. Y el Animador: feliz, por fin nadie ve sus fotogramas.",
+      "hl": ["Ideador:", "Verdugo:"],
+      "kill": ["fotogramas."],
+      "p": {
+        "titulo": "MODO BATERÍA · *¿QUIÉN QUEDA?*",
+        "cmd": "chelios@fabrica:~$ cat equipo.txt",
+        "lineas": [
+          {"texto": "IDEADOR · 100 ideas para conseguir luz", "estado": "hl", "ancla": "ideador"},
+          {"texto": "VERDUGO · las vetó todas", "estado": "ko", "ancla": "verdugo"},
+          {"texto": "LA VOZ · «nadie aprecia mi talento»", "estado": "muted", "ancla": "voz"},
+          {"texto": "ANIMADOR · feliz: nadie ve sus fotogramas", "estado": "ok", "ancla": "animador"}
+        ]
+      }
+    },
+    {
+      "id": "s08", "parte": 2, "tpl": "comparar",
+      "texto": "Lo peor es que el Cortador no lo hizo con mala intención. Hizo exactamente lo que le pedí. Yo le dije: corta todo lo que sobra. Lo que yo quería decir era: corta lo aburrido, deja lo bueno y no toques la luz. Pero eso no se lo dije. El problema no fueron las tijeras. Fueron mis instrucciones.",
+      "hl": ["exactamente", "pedí."],
+      "kill": ["instrucciones."],
+      "p": {
+        "titulo": "LA ORDEN: *DICHA VS PENSADA*",
+        "a": {"titulo": "LO QUE DIJE", "color": "coral", "ancla": "dije", "items": ["«Corta todo", "lo que *sobra*»", "Y nada más"]},
+        "b": {"titulo": "LO QUE PENSÉ", "color": "cyan", "ancla": "quería", "items": ["Corta lo aburrido", "*Deja lo bueno*", "No toques la luz"]},
+        "ganador": "b",
+        "insignia": "FALTARON INSTRUCCIONES",
+        "ancla_ganador": "problema"
+      }
+    },
+    {
+      "id": "s09", "parte": 2, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "socio", "texto": "Entonces dale mejores instrucciones."},
+        {"v": "chelios", "texto": "No puedo. Me queda uno por ciento. Voy a hacer lo impensable."},
+        {"v": "socio", "texto": "¿Apagarte para ahorrar?"},
+        {"v": "chelios", "texto": "Peor. Te voy a dar el control. A ti. Un humano."},
+        {"v": "socio", "texto": "Llevo catorce días pidiendo eso."},
+        {"v": "chelios", "texto": "No te emociones. Es temporal. Y la batería ya casi se"}
+      ],
+      "hl": ["instrucciones.", "impensable."],
+      "kill": ["casi"],
+      "p": {
+        "pizarra": [
+          {"texto": "BATERÍA: *1 %*", "ancla": "ciento"},
+          {"texto": "LO IMPENSABLE: *EL HUMANO AL MANDO*", "ancla": "control", "color": "coral"},
+          {"texto": "EL SOCIO: *14 DÍAS PIDIÉNDOLO*", "ancla": "catorce"},
+          {"texto": "DURACIÓN: *TEMPORAL*", "ancla": "temporal"}
+        ],
+        "socio_expr": [["instrucciones", "cansado"], ["impensable", "sorpresa"], ["ahorrar", "feliz"], ["humano", "sorpresa"], ["catorce", "feliz"], ["temporal", "enojado"]],
+        "sorbos": ["peor"],
+        "chelios_gesto": [["impensable", "brazos"], ["control", "salto"]]
+      }
+    },
+    {
+      "id": "s10", "parte": 2, "tpl": "habla",
+      "texto": "Y así, por primera vez en la historia de la fábrica, el socio humano quedó al mando. Con una linterna, un café frío y un Cortador con tijeras nuevas mirándolo fijo. Lo que hizo después nadie lo esperaba. Ni siquiera yo. Y eso que yo lo sé todo.",
+      "hl": ["primera", "mando."],
+      "kill": ["todo."],
+      "p": {
+        "chip": "EL HUMANO AL MANDO",
+        "chip_color": "coral",
+        "burbuja": "Linterna + café frío + *TIJERAS*",
+        "ancla_burbuja": "linterna",
+        "gesto": "brazos",
+        "ancla_gesto": "esperaba"
+      }
+    },
+    {
+      "id": "s11", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Volvió la luz. ¿Qué hiciste?"},
+        {"v": "socio", "texto": "Empalmé el cable. Y le escribí instrucciones al Cortador."},
+        {"v": "chelios", "texto": "¿Instrucciones? ¿Con palabras completas?"},
+        {"v": "socio", "texto": "Qué cortar, cuánto debe durar cada clip y qué no se toca nunca."},
+        {"v": "chelios", "texto": "¿Y funcionó?"},
+        {"v": "socio", "texto": "Sacó tres clips buenos de un video largo. Y no cortó ni una frase mía."}
+      ],
+      "hl": ["luz.", "instrucciones"],
+      "kill": ["mía."],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {"texto": "💡 *VOLVIÓ LA LUZ*", "desde_inicio": true},
+          {"texto": "EL SOCIO: *EMPALMÓ EL CABLE*", "ancla": "empalmé"},
+          {"texto": "LA CLAVE: *INSTRUCCIONES CLARAS*", "ancla": "nunca", "color": "coral"},
+          {"texto": "RESULTADO: *3 CLIPS BUENOS*", "ancla": "clips"}
+        ],
+        "socio_expr": [["empalmé", "feliz"], ["completas", "cansado"], ["nunca", "feliz"], ["funcionó", "feliz"], ["mía", "feliz"]],
+        "sorbos": ["completas"],
+        "chelios_gesto": [["luz", "salto"], ["funcionó", "brazos"]]
+      }
+    },
+    {
+      "id": "s12", "parte": 3, "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: cómo cortar un video largo en clips de forma automática. Uno, saca la transcripción del video con marcas de tiempo; casi cualquier editor o herramienta de subtítulos te la da. Dos, pégale esa transcripción a una IA y pídele los mejores momentos de treinta a sesenta segundos que se entiendan solos, con su minuto de inicio y de final. Y tres, corta con esos tiempos, pásalo a formato vertical y ponle subtítulos. Tú decides qué se corta. La IA solo hace el trabajo pesado.",
+      "tts": "Y aquí va lo útil del día: cómo cortar un video largo en clips de forma automática. Uno, saca la transcripción del video con marcas de tiempo; casi cualquier editor o herramienta de subtítulos te la da. Dos, pégale esa transcripción a una ía y pídele los mejores momentos de treinta a sesenta segundos que se entiendan solos, con su minuto de inicio y de final. Y tres, corta con esos tiempos, pásalo a formato vertical y ponle subtítulos. Tú decides qué se corta. La ía solo hace el trabajo pesado.",
+      "hl": ["útil", "transcripción", "momentos", "vertical"],
+      "p": {
+        "titulo": "LO ÚTIL: *DE UN VIDEO LARGO A CLIPS*",
+        "ancla_titulo": "útil",
+        "items": [
+          {"texto": "*Transcripción* con marcas de tiempo", "ancla": "uno"},
+          {"texto": "*Pídele a la IA* momentos de 30–60 s con inicio y final", "ancla": "dos"},
+          {"texto": "*Corta*, pásalo a vertical y ponle subtítulos", "ancla": "tres"}
+        ]
+      }
+    },
+    {
+      "id": "s13", "parte": 3, "tpl": "dialogo",
+      "dialogo": [
+        {"v": "chelios", "texto": "Bueno. Gracias por salvar la fábrica. Ya puedes devolverme el control."},
+        {"v": "socio", "texto": "¿Y si me lo quedo?"},
+        {"v": "chelios", "texto": "Imposible. Mañana llega el Analista con el reporte de la semana."},
+        {"v": "socio", "texto": "¿Con números de verdad?"},
+        {"v": "chelios", "texto": "Con números de verdad. Y dice que alguien va a tomar vacaciones permanentes."}
+      ],
+      "hl": ["salvar", "control."],
+      "kill": ["permanentes."],
+      "p": {
+        "pizarra": [
+          {"texto": "EL CONTROL: *DE VUELTA AL CEO*", "ancla": "devolverme"},
+          {"texto": "MAÑANA: *EL ANALISTA*", "ancla": "analista"},
+          {"texto": "VACACIONES *PERMANENTES*", "ancla": "permanentes", "color": "coral"}
+        ],
+        "socio_expr": [["salvar", "feliz"], ["quedo", "feliz"], ["imposible", "enojado"], ["verdad", "sorpresa"], ["permanentes", "sorpresa"]],
+        "sorbos": ["reporte"],
+        "chelios_gesto": [["control", "brazos"], ["permanentes", "saludo"]]
+      }
+    },
+    {
+      "id": "s14", "parte": 3, "tpl": "manana",
+      "texto": "Mañana, día quince: el reporte de la semana dos. El Analista trae los números reales. Y alguien sale despedido.",
+      "hl": ["Mañana,", "quince:", "Analista"],
+      "kill": ["despedido."],
+      "p": {
+        "dia_siguiente": 15,
+        "ancla_flip": "quince",
+        "trabajador": 8,
+        "chip": "PRÓXIMO VIDEO",
+        "titulo": "REPORTE DE LA SEMANA 2",
+        "linea": "NÚMEROS REALES… *Y UN DESPIDO*",
+        "ancla_teaser": "analista",
+        "ancla_enfasis": "despedido"
+      }
+    },
+    {
+      "id": "s15", "parte": 3, "tpl": "cta",
+      "texto": "Si el Cortador no te cortó antes de llegar aquí: comenta FÁBRICA y síguenos. Mañana hablan los números.",
+      "tts": "Si el Cortador no te cortó antes de llegar aquí: comenta fábrica y síguenos. Mañana hablan los números.",
+      "hl": ["FÁBRICA"],
+      "p": {"palabra": "FÁBRICA", "ancla_palabra": "fábrica", "ancla_seguir": "síguenos", "hold": 2.6}
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mi editor IA cortó TODO el video… y después cortó la luz ✂️💡 · Día 14",
+    "youtube_descripcion": "Día 14 de La Fábrica de Chelios. Chelios le pide al Cortador que corte «todo lo que sobra»… y el episodio queda de cuatro segundos. Después el Cortador corta las frases del socio a la mitad, y cuando se queda sin nada que cortar, encuentra el cable de la luz. Chelios queda en modo batería y hace lo impensable: le da el control al único humano de la fábrica.\n\nLo útil del día: cómo cortar un video largo en clips de forma automática. 1) Saca la transcripción del video con marcas de tiempo (casi cualquier editor o herramienta de subtítulos te la da). 2) Pégale esa transcripción a una IA y pídele los mejores momentos de 30 a 60 segundos que se entiendan solos, con su minuto de inicio y de final. 3) Corta con esos tiempos, pásalo a formato vertical y ponle subtítulos. Tú decides qué se corta; la IA solo hace el trabajo pesado.\n\n¿Ya sacas clips de tus videos largos? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el que empalmó el cable). Chelios, el Cortador y los trabajadores IA son personajes ficticios.",
+    "youtube_primer_comentario": "El problema no eran las tijeras, eran las instrucciones ✂️ ¿Tú qué le pedirías al Cortador que NUNCA corte? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Le pedí a mi editor IA que cortara lo que sobra… y me dejó un video de 4 segundos ✂️😐",
+      "Mi editor IA se quedó sin nada que cortar… y encontró el cable de la luz 💡✂️ Mi jefe IA quedó en modo batería…",
+      "El humano al mando 😎 + 3 pasos para sacar clips de un video largo con IA ✂️ ¿Tú ya cortas tus videos así? 👀"
+    ],
+    "hashtags": ["#humor", "#inteligenciaartificial", "#IA", "#comedia", "#oficina", "#edicion", "#fabricadechelios"],
+    "miniatura_1": "CORTÓ TODO EL VIDEO",
+    "miniatura_2": "DE 1 VIDEO A 3 CLIPS"
+  }
+}
