@@ -37,6 +37,19 @@ FUENTES = {
 }
 
 PAPEL, TINTA, GRIS, ACENTO = "#F2EEE6", "#1E1B24", "#A39E96", "#D9583B"
+
+# "tema": "claro" (por defecto, el editorial de papel) o "synth" (noche synthwave tipo Vice City: un solo
+# estilo para toda la serie; las tarjetas usan solo "synth" y "neon").
+TEMAS = {
+    "claro": {"fondo": PAPEL, "tinta": TINTA, "gris": GRIS, "acento": ACENTO,
+              "capa": "background-image:radial-gradient(rgba(30,27,36,.07) 1.6px, transparent 2px);background-size:40px 40px",
+              "sombra": "0 30px 60px rgba(30,27,36,.18), 0 0 0 2px rgba(30,27,36,.06)", "brillo": "none",
+              "portada": "#FFC93C", "rayos": "repeating-conic-gradient(from 0deg at 50% 45%, #FFB61A 0deg 9deg, #FFC93C 9deg 18deg)"},
+    "synth": {"fondo": "#12082B", "tinta": "#FFFFFF", "gris": "#A99BD6", "acento": "#FF4FD8",
+              "capa": ("background:linear-gradient(180deg,#12082B 0%,#1E0B45 55%,#3A0F5C 100%);"),
+              "sombra": "0 0 0 3px #FF4FD8, 0 0 36px rgba(255,79,216,.55)", "brillo": "0 0 24px rgba(255,79,216,.75)",
+              "portada": "#2A0F55", "rayos": "linear-gradient(180deg,#1B0B3A 0%,#5B1E78 45%,#E3477D 75%,#FFB05C 100%)"},
+}
 CW, CH, CX, CY = 600, 840, 420, 560  # tarjeta: ancho, alto, x, y
 
 
@@ -127,8 +140,9 @@ def card_synth(c, p):
 </div>
 <div class="abs" style="left:0;top:540px;width:600px;height:6px;background:#FF9BE6;box-shadow:0 0 18px #FF4FD8"></div>
 <div id="{p}t" class="abs pop" style="left:0;top:70px;width:600px;text-align:center;font:italic 400 110px/1 'Instrument Serif';color:#FFF;text-shadow:0 0 22px rgba(255,79,216,.8)">{c.get("grande", "")}</div>
-<div id="{p}l" class="abs pop" style="left:0;top:600px;width:600px;text-align:center;font:400 46px 'Archivo Black';color:#FFF;text-shadow:0 4px 0 #5B1E78">{c.get("linea", "")}</div>
-<div id="{p}n" class="abs pop" style="left:0;top:690px;width:600px;text-align:center;font:700 30px 'Space Mono';color:#FFE6F4">{c.get("nota", "")}</div>'''
+<div id="{p}l" class="abs pop" style="left:40px;top:590px;width:520px;padding:16px 18px;border-radius:18px;background:rgba(18,8,43,.82);box-shadow:0 0 0 2px #FF4FD8;text-align:center">
+  <div style="font:400 42px/1.1 'Archivo Black';color:#FFF;text-shadow:0 4px 0 #5B1E78">{c.get("linea", "")}</div>
+  <div style="margin-top:10px;font:700 26px/1.2 'Space Mono';color:#FFE6F4">{c.get("nota", "")}</div></div>'''
 
 
 def card_plano(c, p):
@@ -149,6 +163,8 @@ def tarjeta(it, pre):
 
 def montar(guion_path, build_dir, pj):
     guion = json.loads(Path(guion_path).read_text(encoding="utf-8"))
+    T = TEMAS[guion.get("tema", "claro")]
+    PAPEL, TINTA, GRIS, ACENTO = T["fondo"], T["tinta"], T["gris"], T["acento"]
     t = json.loads((Path(build_dir) / "tiempos.json").read_text(encoding="utf-8"))
     pj = Path(pj)
     (pj / "assets" / "fonts").mkdir(parents=True, exist_ok=True)
@@ -243,10 +259,10 @@ def montar(guion_path, build_dir, pj):
     js.append(f'tl.fromTo("#cta2", {{opacity:0, scale:1.4}}, {{opacity:1, scale:1, duration:0.5, ease:"expo.out"}}, {t_cta + 0.7:.3f});')
     js.append(f'tl.fromTo("#cta3", {{opacity:0}}, {{opacity:1, duration:0.4}}, {t_cta + 1.2:.3f});')
 
-    portada = (f'<div id="portada" class="abs" style="left:{CX}px;top:{CY}px;width:{CW}px;height:{CH}px;border-radius:28px;overflow:hidden;background:#FFC93C;box-shadow:0 30px 60px rgba(30,27,36,.18)">'
-               f'<div class="abs" style="inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%, #FFB61A 0deg 9deg, #FFC93C 9deg 18deg)"></div>'
+    portada = (f'<div id="portada" class="abs" style="left:{CX}px;top:{CY}px;width:{CW}px;height:{CH}px;border-radius:28px;overflow:hidden;background:{T["portada"]};box-shadow:{T["sombra"]}">'
+               f'<div class="abs" style="inset:0;background:{T["rayos"]}"></div>'
                f'<div class="abs pop" style="left:130px;top:170px;width:340px;height:391px">{chelios("pc", 340)}</div>'
-               f'<div class="abs" style="left:0;top:620px;width:600px;text-align:center;font:italic 400 64px \'Instrument Serif\';color:{TINTA}">{guion.get("portada", "")}</div></div>')
+               f'<div class="abs" style="left:0;top:620px;width:600px;text-align:center;font:italic 400 64px \'Instrument Serif\';color:{TINTA};text-shadow:{T["brillo"]}">{guion.get("portada", "")}</div></div>')
 
     sfx, fx = [], 0
     for ti in t_items:
@@ -263,7 +279,8 @@ def montar(guion_path, build_dir, pj):
         audios += f'<audio id="fx{fx}" class="clip" src="assets/sfx/{src.name}" data-start="{max(0, ta):.3f}" data-duration="{d}" data-track-index="{2 + fx % 6}" data-volume="{v}"></audio>\n'
         fx += 1
 
-    i_style = f"<i style=\"font:italic 400 124px/1 'Instrument Serif';color:{ACENTO};letter-spacing:0\">"
+    brillo = T["brillo"]
+    i_style = f"<i style=\"font:italic 400 124px/1 'Instrument Serif';color:{ACENTO};letter-spacing:0;text-shadow:{brillo}\">"
     titulo_html = guion["titulo"].replace("<i>", i_style)
     html = f'''<!doctype html>
 <html lang="es" data-resolution="portrait">
@@ -278,7 +295,7 @@ html, body {{ width:1080px; height:1920px; overflow:hidden; background:{PAPEL}; 
 #root {{ position:relative; width:1080px; height:1920px; overflow:hidden; background:{PAPEL}; }}
 .abs {{ position:absolute; }}
 .mono {{ font-family:'Space Mono', monospace; font-weight:700; }}
-.tarjeta {{ border-radius:28px; overflow:hidden; box-shadow:0 30px 60px rgba(30,27,36,.18), 0 0 0 2px rgba(30,27,36,.06); }}
+.tarjeta {{ border-radius:28px; overflow:hidden; box-shadow:{T["sombra"]}; }}
 .sg {{ position:absolute; left:60px; width:960px; top:1470px; text-align:center; font:700 54px/1.15 Outfit; color:{TINTA}; opacity:0; }}
 .sw {{ display:inline; }}
 </style>
@@ -286,7 +303,7 @@ html, body {{ width:1080px; height:1920px; overflow:hidden; background:{PAPEL}; 
 <body>
 <div id="root" data-composition-id="main" data-start="0" data-duration="{total}" data-width="1080" data-height="1920">
   <div id="capa" class="clip" data-start="0" data-duration="{total}" data-track-index="0" style="position:absolute;inset:0">
-    <div class="abs" style="inset:0;background-image:radial-gradient(rgba(30,27,36,.07) 1.6px, transparent 2px);background-size:40px 40px"></div>
+    <div class="abs" style="inset:0;{T["capa"]}"></div>
     <div class="abs mono" style="left:60px;top:150px;font-size:24px;color:{GRIS};letter-spacing:.14em">● {guion.get("marca", "CHELIOS NOTICIAS")}</div>
     <div class="abs mono" style="right:60px;top:146px;font-size:24px;color:{ACENTO};border:2px solid {ACENTO};border-radius:999px;padding:4px 16px">{guion.get("chip", "")}</div>
     <div id="tit" class="abs" style="left:0;top:250px;width:1080px;text-align:center">
@@ -296,7 +313,7 @@ html, body {{ width:1080px; height:1920px; overflow:hidden; background:{PAPEL}; 
     <div id="lista">{lista}{portada}{cards}</div>
     {grid}
     <div id="cta1" class="abs" style="left:0;top:{y_cta:.0f}px;width:1080px;text-align:center;font:italic 400 64px 'Instrument Serif';color:{TINTA}">comenta</div>
-    <div id="cta2" class="abs" style="left:0;top:{y_cta + 60:.0f}px;width:1080px;text-align:center;font:italic 400 230px/1 'Instrument Serif';color:{ACENTO}">{cta["palabra"]}</div>
+    <div id="cta2" class="abs" style="left:0;top:{y_cta + 60:.0f}px;width:1080px;text-align:center;font:italic 400 230px/1 'Instrument Serif';color:{ACENTO};text-shadow:{T["brillo"]}">{cta["palabra"]}</div>
     <div id="cta3" class="abs" style="left:0;top:{y_cta + 300:.0f}px;width:1080px;text-align:center;font:700 38px Outfit;color:{GRIS}">{cta.get("linea", "")}</div>
     {subs}
   </div>

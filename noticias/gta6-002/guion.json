@@ -1,0 +1,119 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-002",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 02",
+  "titulo": "¿Listo para <i>GTA 6</i>?",
+  "subtitulo": "(5 cosas antes del jueves a medianoche)",
+  "portada": "el robot ya precargó",
+  "intro": {
+    "texto": "GTA seis sale este jueves a medianoche. Antes, revisa estas cinco cosas. Ojo con la cuatro.",
+    "tts": "Yitiéi seis sale este jueves a medianoche. Antes, revisa estas cinco cosas. Ojo con la cuatro."
+  },
+  "items": [
+    {
+      "etiqueta": "la hora",
+      "estilo": "synth",
+      "texto": "Uno: se desbloquea a la medianoche del diecinueve, hora local. O sea, en la noche del miércoles al jueves.",
+      "card": {
+        "grande": "00:00",
+        "linea": "JUEVES 19 NOV",
+        "nota": "medianoche · hora local"
+      }
+    },
+    {
+      "etiqueta": "la precarga",
+      "estilo": "neon",
+      "texto": "Dos: la precarga está abierta desde el diez de noviembre en PlayStation y en Xbox. Si lo compraste digital, descárgalo hoy, no el jueves.",
+      "tts": "Dos: la precarga está abierta desde el diez de noviembre en Pleisteishon y en Equisbox. Si lo compraste digital, descárgalo hoy, no el jueves.",
+      "card": {
+        "filas": [
+          {
+            "texto": "PS5",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "XBOX",
+            "color": "#5BE75B"
+          }
+        ],
+        "nota": "precarga abierta desde el 10 nov"
+      }
+    },
+    {
+      "etiqueta": "el espacio",
+      "estilo": "synth",
+      "texto": "Tres: pide hasta doscientos doce gigas, según la consola. Y deja espacio de sobra para las actualizaciones.",
+      "card": {
+        "grande": "212 GB",
+        "linea": "SEGÚN LA CONSOLA",
+        "nota": "deja espacio extra para parches"
+      }
+    },
+    {
+      "etiqueta": "la caja",
+      "estilo": "neon",
+      "texto": "Cuatro: la edición física no trae disco. Trae un código. O sea, igual te toca descargarlo.",
+      "card": {
+        "filas": [
+          {
+            "texto": "CAJA",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "CÓDIGO",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "DISCO",
+            "color": "#FF4FD8",
+            "tachado": true
+          }
+        ],
+        "nota": "trae código, no disco"
+      }
+    },
+    {
+      "etiqueta": "el precio",
+      "estilo": "synth",
+      "texto": "Y cinco: la edición estándar cuesta setenta y nueve con noventa y nueve dólares. La Ultimate, noventa y nueve con noventa y nueve.",
+      "tts": "Y cinco: la edición estándar cuesta setenta y nueve con noventa y nueve dólares. La Óltimeit, noventa y nueve con noventa y nueve.",
+      "card": {
+        "grande": "$79,99",
+        "linea": "EDICIÓN ESTÁNDAR",
+        "nota": "Ultimate: $99,99 (EE. UU.)"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Lo juegas a medianoche o esperas reseñas? Comenta GTA y sígueme.",
+    "tts": "¿Lo juegas a medianoche o esperas reseñas? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: el 19 te cuento todo"
+  },
+  "fuentes": [
+    "Desbloqueo a medianoche hora local del 19 de noviembre en todas las regiones: Rockstar Games, vía TechTimes (17 nov 2026) y Forbes (12 nov 2026)",
+    "Precarga desde el 10 de noviembre en PS5 y Xbox Series X|S: TechTimes y Forbes",
+    "Hasta 212 GB según el dispositivo: página de precarga de Rockstar, vía TechTimes (17 nov 2026)",
+    "Edición física sin disco (trae código): nota de prensa de Rockstar, vía 3DJuegos (jun 2026)",
+    "Precio: 79,99 USD estándar y 99,99 USD Ultimate: Rockstar, vía 3DJuegos y TechTimes"
+  ],
+  "publicacion": {
+    "youtube_titulo": "GTA 6 sale el jueves a medianoche: 5 cosas que debes hacer antes 🎮⏰ #Shorts",
+    "youtube_descripcion": "Chelios Noticias · GTA 6 se desbloquea el jueves 19 de noviembre a medianoche (hora local). Antes, revisa 5 cosas: la hora, la precarga (abierta desde el 10 de noviembre en PS5 y Xbox Series X|S), el espacio (hasta 212 GB según la consola), la caja física (trae código, no disco) y el precio (79,99 USD la estándar y 99,99 USD la Ultimate, precios en EE. UU.).\n\n¿Lo juegas a medianoche o esperas reseñas? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Medianoche o esperas reseñas? 👇 Comenta GTA y sígueme: el 19 te cuento todo 🎮☀️",
+    "tiktok": "GTA 6 sale el jueves a medianoche 🎮⏰ 5 cosas que debes hacer antes (ojo con la 4 👀) ¿Lo juegas a medianoche o esperas reseñas?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
