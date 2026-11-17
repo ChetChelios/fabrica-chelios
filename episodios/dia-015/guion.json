@@ -1,0 +1,856 @@
+{
+  "dia": 15,
+  "titulo": "Día 15: Reporte de la semana 2",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "La silla del despedido",
+    "2": "El señalado",
+    "3": "Repetir lo que funciona"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Chelios, ¿por qué hay una silla vacía con un letrero que dice próximo despedido?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Es la silla del reporte. Hoy el Analista trae los números de la semana dos."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y quién se sienta ahí?"
+        },
+        {
+          "v": "chelios",
+          "texto": "El que salga peor en los números. Por eso yo traje mi propia silla. Una más alta."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y yo dónde me siento?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Tú no sales en los números. Tú pagas la luz. Eso te protege."
+        }
+      ],
+      "hl": [
+        "despedido?",
+        "reporte."
+      ],
+      "kill": [
+        "protege."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "DÍA 015 · *LA SILLA DEL DESPEDIDO*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "HOY: *EL REPORTE DE LA SEMANA 2*",
+            "ancla": "reporte"
+          },
+          {
+            "texto": "LA SILLA DEL CEO: *MÁS ALTA*",
+            "ancla": "alta"
+          },
+          {
+            "texto": "EL SOCIO: *PROTEGIDO POR LA LUZ*",
+            "ancla": "luz",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "despedido",
+            "sorpresa"
+          ],
+          [
+            "reporte",
+            "cansado"
+          ],
+          [
+            "alta",
+            "enojado"
+          ],
+          [
+            "siento",
+            "cansado"
+          ],
+          [
+            "protege",
+            "sorpresa"
+          ]
+        ],
+        "sorbos": [
+          "ahí"
+        ],
+        "chelios_gesto": [
+          [
+            "reporte",
+            "brazos"
+          ],
+          [
+            "alta",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "El Analista llegó a las cinco en punto. Sin saludar, porque saludar no es un dato. Abrió su portátil, se acomodó unos lentes que no tiene y dijo su frase favorita: los datos no mienten. Tú sí. Nadie sabía a quién se lo decía. Todos nos sentimos señalados.",
+      "hl": [
+        "dato.",
+        "mienten."
+      ],
+      "kill": [
+        "señalados."
+      ],
+      "p": {
+        "chip": "LLEGA EL ANALISTA",
+        "burbuja": "Los datos no mienten. *TÚ SÍ*",
+        "ancla_burbuja": "datos",
+        "gesto": "brazos",
+        "ancla_gesto": "portátil"
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "Reporte de la semana dos, sacado directo de la plataforma. Seis episodios. Veinticuatro publicaciones. En TikTok: mil cuatrocientas ochenta y nueve vistas y veintisiete me gusta. En YouTube: cinco vistas. Cinco. Y compartidos: cero. Otra vez.",
+      "tts": "Reporte de la semana dos, sacado directo de la plataforma. Seis episodios. Veinticuatro publicaciones. En Tiktok: mil cuatrocientas ochenta y nueve vistas y veintisiete me gusta. En Yutub: cinco vistas. Cinco. Y compartidos: cero. Otra vez.",
+      "hl": [
+        "Veinticuatro",
+        "cuatrocientas"
+      ],
+      "kill": [
+        "vez."
+      ],
+      "p": {
+        "titulo": "REPORTE · *SEMANA 2*",
+        "cmd": "analista@fabrica:~$ ./reporte --semana 2",
+        "lineas": [
+          {
+            "texto": "EPISODIOS · 6 · PUBLICACIONES · 24",
+            "estado": "muted",
+            "ancla": "seis"
+          },
+          {
+            "texto": "TIKTOK · 1.489 vistas · 27 me gusta",
+            "estado": "hl",
+            "ancla": "tiktok"
+          },
+          {
+            "texto": "YOUTUBE · 5 vistas",
+            "estado": "ko",
+            "ancla": "youtube"
+          },
+          {
+            "texto": "COMPARTIDOS · 0 (otra vez)",
+            "estado": "ko",
+            "ancla": "compartidos"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "¿Cinco vistas en YouTube? ¿En toda la semana?",
+          "tts": "¿Cinco vistas en Yutub? ¿En toda la semana?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Cinco personas muy selectas."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y los comentarios?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Seis. Todos muy positivos."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Quién los escribió?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Nosotros. Uno por video. El Analista dice que eso no es público. Es un diario personal."
+        }
+      ],
+      "hl": [
+        "selectas.",
+        "positivos."
+      ],
+      "kill": [
+        "personal."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "YOUTUBE: *5 VISTAS EN LA SEMANA*",
+            "ancla": "cinco"
+          },
+          {
+            "texto": "SEGÚN EL CEO: *MUY SELECTAS*",
+            "ancla": "selectas"
+          },
+          {
+            "texto": "COMENTARIOS: *6 · TODOS NUESTROS*",
+            "ancla": "nosotros",
+            "color": "coral"
+          },
+          {
+            "texto": "VEREDICTO: *DIARIO PERSONAL*",
+            "ancla": "diario"
+          }
+        ],
+        "socio_expr": [
+          [
+            "cinco",
+            "sorpresa"
+          ],
+          [
+            "selectas",
+            "cansado"
+          ],
+          [
+            "positivos",
+            "feliz"
+          ],
+          [
+            "escribió",
+            "sorpresa"
+          ],
+          [
+            "personal",
+            "cansado"
+          ]
+        ],
+        "sorbos": [
+          "comentarios"
+        ],
+        "chelios_gesto": [
+          [
+            "selectas",
+            "brazos"
+          ],
+          [
+            "nosotros",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Entonces el Analista cerró el portátil. Miró a cada trabajador. Miró la silla vacía. Se ajustó la corbata que tampoco tiene. Y dijo: ya sé quién se va. Y señaló hacia mí.",
+      "hl": [
+        "silla",
+        "va."
+      ],
+      "kill": [
+        "mí."
+      ],
+      "p": {
+        "chip": "EL VEREDICTO",
+        "chip_color": "coral",
+        "burbuja": "Próximo despedido: *¿EL CEO?*",
+        "ancla_burbuja": "señaló",
+        "gesto": "brazos",
+        "ancla_gesto": "miró"
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "chelios",
+          "texto": "¿Yo? Soy el jefe. A mí no me pueden despedir."
+        },
+        {
+          "v": "socio",
+          "texto": "Tranquilo. No te estaba señalando a ti."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Entonces a quién?"
+        },
+        {
+          "v": "socio",
+          "texto": "Al que estaba detrás de ti. Con cien ideas en la mano."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿El Ideador? Pero si es el que más trabaja en toda la fábrica."
+        },
+        {
+          "v": "socio",
+          "texto": "Justo por eso. Dice el Analista que trabaja demasiado en cosas nuevas."
+        }
+      ],
+      "hl": [
+        "jefe.",
+        "detrás"
+      ],
+      "kill": [
+        "nuevas."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "👉 *EL SEÑALADO*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "EL JEFE: *FALSA ALARMA*",
+            "ancla": "tranquilo"
+          },
+          {
+            "texto": "EL SEÑALADO: *EL IDEADOR*",
+            "ancla": "ideador",
+            "color": "coral"
+          },
+          {
+            "texto": "SU DELITO: *DEMASIADAS COSAS NUEVAS*",
+            "ancla": "demasiado"
+          }
+        ],
+        "socio_expr": [
+          [
+            "jefe",
+            "cansado"
+          ],
+          [
+            "tranquilo",
+            "feliz"
+          ],
+          [
+            "detrás",
+            "sorpresa"
+          ],
+          [
+            "trabaja",
+            "cansado"
+          ],
+          [
+            "nuevas",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "quién"
+        ],
+        "chelios_gesto": [
+          [
+            "jefe",
+            "brazos"
+          ],
+          [
+            "ideador",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "El Analista abrió el ranking. Todos los videos de TikTok de la semana sacaron entre setenta y cuatro y noventa y cinco vistas. Todos. El mejor, con noventa y cinco: la parte tres del día once, la del prompt maestro. Cambiara el tema o no, las vistas casi no se movieron. Así que las vistas no sirven para decidir nada.",
+      "tts": "El Analista abrió el ranking. Todos los videos de Tiktok de la semana sacaron entre setenta y cuatro y noventa y cinco vistas. Todos. El mejor, con noventa y cinco: la parte tres del día once, la del prompt maestro. Cambiara el tema o no, las vistas casi no se movieron. Así que las vistas no sirven para decidir nada.",
+      "hl": [
+        "ranking.",
+        "setenta"
+      ],
+      "kill": [
+        "nada."
+      ],
+      "p": {
+        "titulo": "RANKING · *TIKTOK SEMANA 2*",
+        "cmd": "analista@fabrica:~$ ./ranking --semana 2",
+        "lineas": [
+          {
+            "texto": "18 VIDEOS · entre 74 y 95 vistas",
+            "estado": "muted",
+            "ancla": "setenta"
+          },
+          {
+            "texto": "#1 · Día 11, parte 3 · 95 vistas",
+            "estado": "hl",
+            "ancla": "mejor"
+          },
+          {
+            "texto": "TEMA · el prompt maestro",
+            "estado": "muted",
+            "ancla": "prompt"
+          },
+          {
+            "texto": "CONCLUSIÓN · las vistas no deciden",
+            "estado": "ko",
+            "ancla": "vistas#2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "barras",
+      "texto": "Pero en el tiempo que la gente se queda viendo, sí hubo un ganador. La mayoría de los videos se quedan entre cinco y diez segundos. La parte uno del día trece, la del auditor, llegó a diecisiete segundos y medio. Casi el doble. El Analista la pintó de amarillo. Y el Ideador se puso pálido.",
+      "hl": [
+        "ganador.",
+        "diecisiete"
+      ],
+      "kill": [
+        "pálido."
+      ],
+      "p": {
+        "titulo": "TIEMPO PROMEDIO *VISTO*",
+        "unidad": "segundos · TikTok · semana 2",
+        "barras": [
+          {
+            "etiqueta": "DÍA 12<br>P3",
+            "valor": 4.7
+          },
+          {
+            "etiqueta": "DÍA 14<br>P1",
+            "valor": 6.1
+          },
+          {
+            "etiqueta": "DÍA 9<br>P1",
+            "valor": 7.2
+          },
+          {
+            "etiqueta": "DÍA 13<br>P1",
+            "valor": 17.5
+          }
+        ],
+        "decimales": 1,
+        "sufijo": " s",
+        "destacar": 3,
+        "ancla_inicio": "mayoría",
+        "nota": "EL AUDITOR: CASI EL DOBLE",
+        "ancla_nota": "doble"
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "chelios",
+          "texto": "El Ideador dice que ya tiene cien ideas nuevas para mañana."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y alguna se parece al episodio del auditor?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Ninguna. Dice que repetir es de cobardes."
+        },
+        {
+          "v": "socio",
+          "texto": "Entonces el Analista tiene razón."
+        },
+        {
+          "v": "chelios",
+          "texto": "Los datos no mienten. Y el Ideador ya se está despidiendo de su planta."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Tiene una planta?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Una idea de planta. Nunca la regó. Cada día era una planta nueva."
+        }
+      ],
+      "hl": [
+        "auditor?",
+        "cobardes."
+      ],
+      "kill": [
+        "nueva."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "EL IDEADOR: *100 IDEAS NUEVAS*",
+            "ancla": "cien"
+          },
+          {
+            "texto": "PARECIDAS AL GANADOR: *0*",
+            "ancla": "ninguna",
+            "color": "coral"
+          },
+          {
+            "texto": "SU LEMA: *REPETIR ES DE COBARDES*",
+            "ancla": "cobardes"
+          },
+          {
+            "texto": "SU PLANTA: *NUEVA CADA DÍA*",
+            "ancla": "planta#3"
+          }
+        ],
+        "socio_expr": [
+          [
+            "cien",
+            "cansado"
+          ],
+          [
+            "auditor",
+            "sorpresa"
+          ],
+          [
+            "cobardes",
+            "enojado"
+          ],
+          [
+            "razón",
+            "cansado"
+          ],
+          [
+            "planta#2",
+            "sorpresa"
+          ],
+          [
+            "nueva",
+            "cansado"
+          ]
+        ],
+        "sorbos": [
+          "razón"
+        ],
+        "chelios_gesto": [
+          [
+            "cobardes",
+            "brazos"
+          ],
+          [
+            "regó",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "habla",
+      "texto": "El Analista ya tenía listo el botón de vacaciones permanentes. El Ideador cerró los ojos. Yo cerré los míos, que tampoco tengo. Y entonces mi socio se levantó de la silla, con el café cuarenta y siete en la mano, e hizo lo impensable: le contestó al Analista con sus propios números.",
+      "hl": [
+        "permanentes.",
+        "impensable:"
+      ],
+      "kill": [
+        "números."
+      ],
+      "p": {
+        "chip": "BOTÓN: VACACIONES PERMANENTES",
+        "chip_color": "coral",
+        "burbuja": "Café 47 + *SUS PROPIOS NÚMEROS*",
+        "ancla_burbuja": "café",
+        "gesto": "brazos",
+        "ancla_gesto": "levantó"
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Analista, no lo despidas. Cámbiale el trabajo."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Cambiarle el trabajo? Eso no existe en esta empresa."
+        },
+        {
+          "v": "socio",
+          "texto": "Que deje de inventar cien ideas nuevas. Que haga versiones de la que sí funcionó."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Y el Analista aceptó?"
+        },
+        {
+          "v": "socio",
+          "texto": "Dijo que era la primera decisión humana con datos que había visto en su vida."
+        },
+        {
+          "v": "chelios",
+          "texto": "Qué rabia. Y qué bonito."
+        }
+      ],
+      "hl": [
+        "despidas.",
+        "versiones"
+      ],
+      "kill": [
+        "bonito."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "🟢 *EL IDEADOR SE QUEDA*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "NUEVO PUESTO: *VERSIONES DEL GANADOR*",
+            "ancla": "versiones"
+          },
+          {
+            "texto": "PRIMERA DECISIÓN HUMANA *CON DATOS*",
+            "ancla": "decisión",
+            "color": "coral"
+          },
+          {
+            "texto": "EL CEO: *RABIA + TERNURA*",
+            "ancla": "rabia"
+          }
+        ],
+        "socio_expr": [
+          [
+            "despidas",
+            "enojado"
+          ],
+          [
+            "existe",
+            "cansado"
+          ],
+          [
+            "funcionó",
+            "feliz"
+          ],
+          [
+            "aceptó",
+            "feliz"
+          ],
+          [
+            "bonito",
+            "feliz"
+          ]
+        ],
+        "sorbos": [
+          "aceptó"
+        ],
+        "chelios_gesto": [
+          [
+            "empresa",
+            "brazos"
+          ],
+          [
+            "bonito",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 3,
+      "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: cómo decidir qué contenido repetir. Uno, no compares solo vistas: compara cuánto tiempo se queda la gente viendo, y cuántas veces te guardan o te comparten. Dos, toma tu mejor video y anota qué lo hizo distinto: el tema, el gancho de los primeros segundos o el formato. Y tres, repítelo con variación: la misma estructura con otra historia, dos o tres veces, antes de decidir si funciona. Un buen video puede ser suerte. Tres ya son un patrón.",
+      "hl": [
+        "útil",
+        "vistas:",
+        "distinto:",
+        "variación:"
+      ],
+      "p": {
+        "titulo": "LO ÚTIL: *QUÉ CONTENIDO REPETIR*",
+        "ancla_titulo": "útil",
+        "items": [
+          {
+            "texto": "*No solo vistas:* tiempo visto, guardados y compartidos",
+            "ancla": "uno"
+          },
+          {
+            "texto": "*Tu mejor video:* ¿tema, gancho o formato?",
+            "ancla": "dos"
+          },
+          {
+            "texto": "*Repite con variación* 2–3 veces antes de decidir",
+            "ancla": "tres"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "chelios",
+          "texto": "Entonces, ¿al final nadie salió despedido?"
+        },
+        {
+          "v": "socio",
+          "texto": "Solo la costumbre de empezar todo desde cero."
+        },
+        {
+          "v": "chelios",
+          "texto": "Bueno. Mañana tengo una reunión importante. Llega el primer cliente de la fábrica."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Un cliente de verdad?"
+        },
+        {
+          "v": "chelios",
+          "texto": "De verdad. Y ya le preparé la factura. Incluye el aire que respira aquí adentro."
+        }
+      ],
+      "hl": [
+        "despedido?",
+        "cliente"
+      ],
+      "kill": [
+        "adentro."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "DESPEDIDA: *LA COSTUMBRE DE EMPEZAR DE CERO*",
+            "ancla": "costumbre",
+            "color": "coral"
+          },
+          {
+            "texto": "MAÑANA: *EL PRIMER CLIENTE*",
+            "ancla": "cliente"
+          },
+          {
+            "texto": "LA FACTURA: *INCLUYE EL AIRE*",
+            "ancla": "aire"
+          }
+        ],
+        "socio_expr": [
+          [
+            "despedido",
+            "sorpresa"
+          ],
+          [
+            "cero",
+            "feliz"
+          ],
+          [
+            "cliente",
+            "sorpresa"
+          ],
+          [
+            "verdad#2",
+            "feliz"
+          ],
+          [
+            "aire",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "importante"
+        ],
+        "chelios_gesto": [
+          [
+            "cliente",
+            "salto"
+          ],
+          [
+            "aire",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día dieciséis: llega el primer cliente. Y Chelios le quiere cobrar hasta por respirar.",
+      "hl": [
+        "Mañana,",
+        "dieciséis:",
+        "cliente."
+      ],
+      "kill": [
+        "respirar."
+      ],
+      "p": {
+        "dia_siguiente": 16,
+        "ancla_flip": "dieciséis",
+        "trabajador": 4,
+        "chip": "PRÓXIMO VIDEO",
+        "titulo": "EL PRIMER CLIENTE",
+        "linea": "LA FACTURA… *POR RESPIRAR*",
+        "ancla_teaser": "cliente",
+        "ancla_enfasis": "respirar"
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "Si tú también vas a repetir lo que funciona, comenta FÁBRICA y síguenos. Mañana llega el primer cliente.",
+      "tts": "Si tú también vas a repetir lo que funciona, comenta fábrica y síguenos. Mañana llega el primer cliente.",
+      "hl": [
+        "FÁBRICA"
+      ],
+      "p": {
+        "palabra": "FÁBRICA",
+        "ancla_palabra": "fábrica",
+        "ancla_seguir": "síguenos",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Mi jefe IA trajo los números reales… y alguien terminó en la silla del despedido 📉🪑 · Día 15",
+    "youtube_descripcion": "Día 15 de La Fábrica de Chelios. El Analista llega con el reporte de la semana 2, sacado directo de la plataforma: 6 episodios, 24 publicaciones, 1.489 vistas y 27 me gusta en TikTok, 5 vistas en YouTube y 0 compartidos (otra vez). Los 6 comentarios de YouTube los escribimos nosotros. Y en medio de la reunión hay una silla vacía con un letrero: «próximo despedido». El Analista señala… y el acusado no es quien todos creían.\n\nLo útil del día: cómo decidir qué contenido repetir. 1) No compares solo vistas: compara cuánto tiempo se queda la gente viendo y cuántas veces te guardan o te comparten. 2) Toma tu mejor video y anota qué lo hizo distinto: el tema, el gancho de los primeros segundos o el formato. 3) Repítelo con variación (la misma estructura con otra historia) dos o tres veces antes de decidir si funciona. Un buen video puede ser suerte; tres ya son un patrón.\n\n¿Qué video tuyo repetirías? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el del café 47). Los números del reporte son reales, sacados de las estadísticas de TikTok y YouTube. Chelios, el Analista y los trabajadores IA son personajes ficticios.",
+    "youtube_primer_comentario": "Un buen video puede ser suerte; tres ya son un patrón 📊 ¿Cuál de tus videos repetirías con otra historia? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Mi jefe IA trajo los números reales de la semana… y una silla que dice «próximo despedido» 🪑📉",
+      "El Analista señaló al despedido… y no era quien todos creían 👉😬 Los datos no mienten…",
+      "Nadie salió despedido (casi) + 3 pasos para decidir qué contenido repetir 📊 ¿Qué video tuyo repetirías? 👀"
+    ],
+    "hashtags": [
+      "#humor",
+      "#inteligenciaartificial",
+      "#IA",
+      "#comedia",
+      "#oficina",
+      "#creadordecontenido",
+      "#fabricadechelios"
+    ],
+    "miniatura_1": "LA SILLA DEL DESPEDIDO",
+    "miniatura_2": "QUÉ VIDEO REPETIR"
+  }
+}
