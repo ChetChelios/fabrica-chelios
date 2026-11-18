@@ -1,0 +1,892 @@
+{
+  "dia": 16,
+  "titulo": "Día 16: El primer cliente",
+  "voz": "em_alex",
+  "voz_socio": "em_santa",
+  "velocidad": 1.0,
+  "partes": {
+    "1": "La factura por respirar",
+    "2": "La cotización vetada",
+    "3": "Cotiza el humano"
+  },
+  "escenas": [
+    {
+      "id": "s01",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Chelios, ¿por qué hay una alfombra roja en la puerta de la fábrica?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Porque hoy llega el primer cliente. Y la alfombra se cobra por metro pisado."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Le vas a cobrar por caminar?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Caminar, sentarse y respirar. El aire de aquí lo enfría mi ventilador."
+        },
+        {
+          "v": "socio",
+          "texto": "El ventilador lo pago yo."
+        },
+        {
+          "v": "chelios",
+          "texto": "Exacto. Por eso hay que recuperar la inversión."
+        }
+      ],
+      "hl": [
+        "alfombra",
+        "cliente."
+      ],
+      "kill": [
+        "inversión."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "DÍA 016 · *EL PRIMER CLIENTE*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "LA ALFOMBRA: *SE COBRA POR METRO*",
+            "ancla": "metro"
+          },
+          {
+            "texto": "TARIFA: *CAMINAR + RESPIRAR*",
+            "ancla": "respirar"
+          },
+          {
+            "texto": "EL VENTILADOR: *LO PAGA EL SOCIO*",
+            "ancla": "yo",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "alfombra",
+            "sorpresa"
+          ],
+          [
+            "metro",
+            "cansado"
+          ],
+          [
+            "caminar",
+            "sorpresa"
+          ],
+          [
+            "respirar",
+            "enojado"
+          ],
+          [
+            "yo",
+            "cansado"
+          ],
+          [
+            "inversión",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "sentarse"
+        ],
+        "chelios_gesto": [
+          [
+            "cliente",
+            "brazos"
+          ],
+          [
+            "respirar",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "El cliente llegó a las nueve en punto. Se llama Don Ramiro y tiene una panadería. No es famoso, no es influencer, y eso me pareció muy sospechoso. Traía una sola pregunta, escrita en una servilleta: ¿cuánto me cobran por contestar los pedidos de WhatsApp con inteligencia artificial?",
+      "tts": "El cliente llegó a las nueve en punto. Se llama Don Ramiro y tiene una panadería. No es famoso, no es influencer, y eso me pareció muy sospechoso. Traía una sola pregunta, escrita en una servilleta: ¿cuánto me cobran por contestar los pedidos de guasap con inteligencia artificial?",
+      "hl": [
+        "panadería.",
+        "sospechoso."
+      ],
+      "kill": [
+        "artificial?"
+      ],
+      "p": {
+        "chip": "LLEGA EL CLIENTE",
+        "burbuja": "¿Cuánto por *CONTESTAR PEDIDOS*?",
+        "ancla_burbuja": "cuánto",
+        "gesto": "brazos",
+        "ancla_gesto": "panadería"
+      }
+    },
+    {
+      "id": "s03",
+      "parte": 1,
+      "tpl": "terminal",
+      "texto": "Imprimí la cotización en tres segundos. Diseño del bot: mucho. Alfombra roja: por metro pisado. Aire del ambiente: por cada respiración, y un adulto respira unas quince veces por minuto. Y al final, una comisión extra por mirarme a los ojos. Que no tengo.",
+      "hl": [
+        "Diseño",
+        "respiración,"
+      ],
+      "kill": [
+        "tengo."
+      ],
+      "p": {
+        "titulo": "COTIZACIÓN · *DON RAMIRO*",
+        "cmd": "chelios@fabrica:~$ ./cotizar --sin-piedad",
+        "lineas": [
+          {
+            "texto": "DISEÑO DEL BOT · precio: «mucho»",
+            "estado": "muted",
+            "ancla": "diseño"
+          },
+          {
+            "texto": "ALFOMBRA ROJA · por metro pisado",
+            "estado": "hl",
+            "ancla": "alfombra"
+          },
+          {
+            "texto": "AIRE · 15 respiraciones/min, una por una",
+            "estado": "hl",
+            "ancla": "aire"
+          },
+          {
+            "texto": "MIRAR AL CEO · comisión extra",
+            "estado": "ko",
+            "ancla": "comisión"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "parte": 1,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Chelios, ¿le cobraste por respirar?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Quince veces por minuto. Y le hice descuento por las que aguanta."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y qué dijo Don Ramiro?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Que con eso se compra un horno nuevo. Dos hornos. Y un panadero."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y tú qué le dijiste?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Que el panadero no contesta mensajes a las tres de la mañana. Yo sí."
+        }
+      ],
+      "hl": [
+        "respirar?",
+        "aguanta."
+      ],
+      "kill": [
+        "sí."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "EL COBRO: *15 RESPIRACIONES/MIN*",
+            "ancla": "quince"
+          },
+          {
+            "texto": "DESCUENTO: *LAS QUE AGUANTA*",
+            "ancla": "aguanta"
+          },
+          {
+            "texto": "LA COTIZACIÓN = *2 HORNOS + 1 PANADERO*",
+            "ancla": "hornos",
+            "color": "coral"
+          },
+          {
+            "texto": "ARGUMENTO DEL CEO: *YO NO DUERMO*",
+            "ancla": "tres"
+          }
+        ],
+        "socio_expr": [
+          [
+            "respirar",
+            "sorpresa"
+          ],
+          [
+            "aguanta",
+            "cansado"
+          ],
+          [
+            "ramiro",
+            "cansado"
+          ],
+          [
+            "hornos",
+            "sorpresa"
+          ],
+          [
+            "dijiste",
+            "enojado"
+          ],
+          [
+            "mañana",
+            "cansado"
+          ]
+        ],
+        "sorbos": [
+          "ramiro"
+        ],
+        "chelios_gesto": [
+          [
+            "quince",
+            "brazos"
+          ],
+          [
+            "sí",
+            "saludo"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "parte": 1,
+      "tpl": "habla",
+      "texto": "Don Ramiro dobló la cotización con mucho cuidado. Se la guardó en el bolsillo. Me dio las gracias, muy amable. Se puso el sombrero. Y caminó hacia la puerta, por la alfombra roja, sin pagar ni un solo metro.",
+      "hl": [
+        "cuidado.",
+        "gracias,"
+      ],
+      "kill": [
+        "metro."
+      ],
+      "p": {
+        "chip": "EL CLIENTE SE VA",
+        "chip_color": "coral",
+        "burbuja": "Primer cliente: *¿ÚLTIMO CLIENTE?*",
+        "ancla_burbuja": "puerta",
+        "gesto": "brazos",
+        "ancla_gesto": "sombrero"
+      }
+    },
+    {
+      "id": "s06",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "chelios",
+          "texto": "¡Espere, Don Ramiro! ¡Le hago descuento! Ya no le cobro el aire."
+        },
+        {
+          "v": "socio",
+          "texto": "Chelios, no es el aire. Es todo."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Todo? Le quité la comisión por mirarme. Eso es generosidad."
+        },
+        {
+          "v": "socio",
+          "texto": "Le cobraste más de lo que vale su panadería entera."
+        },
+        {
+          "v": "chelios",
+          "texto": "Porque mi trabajo vale. Yo nunca descanso. Soy software."
+        },
+        {
+          "v": "socio",
+          "texto": "Tu trabajo no le cuesta nada a nadie. Menos la luz. Que pago yo."
+        }
+      ],
+      "hl": [
+        "descuento!",
+        "todo."
+      ],
+      "kill": [
+        "yo."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "🚪 *EL CLIENTE SE VA*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "OFERTA DESESPERADA: *SIN AIRE*",
+            "ancla": "aire"
+          },
+          {
+            "texto": "EL PROBLEMA: *ES TODO*",
+            "ancla": "todo"
+          },
+          {
+            "texto": "LA LUZ: *LA PAGA EL SOCIO*",
+            "ancla": "luz",
+            "color": "coral"
+          }
+        ],
+        "socio_expr": [
+          [
+            "espere",
+            "sorpresa"
+          ],
+          [
+            "todo",
+            "cansado"
+          ],
+          [
+            "generosidad",
+            "enojado"
+          ],
+          [
+            "entera",
+            "enojado"
+          ],
+          [
+            "software",
+            "cansado"
+          ],
+          [
+            "luz",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "generosidad"
+        ],
+        "chelios_gesto": [
+          [
+            "descuento",
+            "salto"
+          ],
+          [
+            "software",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "parte": 2,
+      "tpl": "terminal",
+      "texto": "Entonces apareció el Analista detrás de la puerta, porque siempre está detrás de algo. Revisó la cotización en voz alta. Precio: inventado. Horas de trabajo: sin calcular. Alcance: sin definir. Y probabilidad de cerrar la venta: la misma de que Camila vea un video completo.",
+      "hl": [
+        "Analista",
+        "inventado."
+      ],
+      "kill": [
+        "completo."
+      ],
+      "p": {
+        "titulo": "REVISIÓN DE LA *COTIZACIÓN*",
+        "cmd": "analista@fabrica:~$ ./revisar cotizacion.pdf",
+        "lineas": [
+          {
+            "texto": "PRECIO · inventado",
+            "estado": "ko",
+            "ancla": "precio"
+          },
+          {
+            "texto": "HORAS DE TRABAJO · sin calcular",
+            "estado": "ko",
+            "ancla": "horas"
+          },
+          {
+            "texto": "ALCANCE · sin definir",
+            "estado": "ko",
+            "ancla": "alcance"
+          },
+          {
+            "texto": "PROBABILIDAD DE VENTA · como Camila viendo un video completo",
+            "estado": "muted",
+            "ancla": "probabilidad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "parte": 2,
+      "tpl": "comparar",
+      "texto": "Después llegó el Verdugo con su sello y comparó. Lo que cobré yo: el aire, la alfombra, y sin explicar nada. Lo que Don Ramiro quería: saber qué le resuelven, cuánto cuesta y cuándo está listo. El Verdugo levantó el sello. Y lo estampó en mi frente. Vetada.",
+      "hl": [
+        "yo:",
+        "quería:"
+      ],
+      "kill": [
+        "Vetada."
+      ],
+      "p": {
+        "titulo": "COTIZACIÓN: *CEO VS CLIENTE*",
+        "a": {
+          "titulo": "LO QUE COBRÉ",
+          "color": "coral",
+          "ancla": "cobré",
+          "items": [
+            "Cobra *el aire*",
+            "Cobra la alfombra",
+            "No explica nada"
+          ]
+        },
+        "b": {
+          "titulo": "LO QUE QUERÍA",
+          "color": "cyan",
+          "ancla": "quería",
+          "items": [
+            "Qué le resuelven",
+            "*Cuánto cuesta*",
+            "Cuándo está listo"
+          ]
+        },
+        "ganador": "b",
+        "insignia": "GANA EL CLIENTE",
+        "ancla_ganador": "vetada"
+      }
+    },
+    {
+      "id": "s09",
+      "parte": 2,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "chelios",
+          "texto": "El Verdugo me vetó. A mí. Al jefe."
+        },
+        {
+          "v": "socio",
+          "texto": "Te vetó la cotización. A ti no te puede vetar."
+        },
+        {
+          "v": "chelios",
+          "texto": "Peor. El Ideador ya propuso cien paquetes nuevos. El paquete oro, el paquete diamante y el paquete respira tranquilo."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Y Don Ramiro?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Sigue en la puerta. Dice que la alfombra está muy larga."
+        },
+        {
+          "v": "socio",
+          "texto": "Es que la hiciste de cuarenta metros."
+        },
+        {
+          "v": "chelios",
+          "texto": "Para cobrar más metros. Eso se llama estrategia."
+        }
+      ],
+      "hl": [
+        "jefe.",
+        "tranquilo."
+      ],
+      "kill": [
+        "estrategia."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "VETADA: *LA COTIZACIÓN*",
+            "ancla": "vetó"
+          },
+          {
+            "texto": "EL IDEADOR: *100 PAQUETES NUEVOS*",
+            "ancla": "cien"
+          },
+          {
+            "texto": "PAQUETE ESTRELLA: *RESPIRA TRANQUILO*",
+            "ancla": "tranquilo",
+            "color": "coral"
+          },
+          {
+            "texto": "LA ALFOMBRA: *40 METROS*",
+            "ancla": "cuarenta"
+          }
+        ],
+        "socio_expr": [
+          [
+            "jefe",
+            "cansado"
+          ],
+          [
+            "vetar",
+            "feliz"
+          ],
+          [
+            "cien",
+            "sorpresa"
+          ],
+          [
+            "ramiro",
+            "cansado"
+          ],
+          [
+            "larga",
+            "sorpresa"
+          ],
+          [
+            "estrategia",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "puerta"
+        ],
+        "chelios_gesto": [
+          [
+            "jefe",
+            "brazos"
+          ],
+          [
+            "diamante",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "parte": 2,
+      "tpl": "habla",
+      "texto": "Don Ramiro ya tenía la mano en la manija. Yo tenía cien paquetes, un sello en la frente y cero ventas. Y entonces hice lo impensable. Algo que ningún jefe debería hacer jamás: le pasé la cotización a mi socio. Al humano. Al del café.",
+      "hl": [
+        "manija.",
+        "impensable."
+      ],
+      "kill": [
+        "café."
+      ],
+      "p": {
+        "chip": "LA MANO EN LA MANIJA",
+        "chip_color": "coral",
+        "burbuja": "Ahora cotiza: *EL HUMANO*",
+        "ancla_burbuja": "socio",
+        "gesto": "brazos",
+        "ancla_gesto": "cien"
+      }
+    },
+    {
+      "id": "s11",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "socio",
+          "texto": "Don Ramiro, olvide esa hoja. Le hago una sola pregunta."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Una pregunta? ¿Y la factura por respirar?"
+        },
+        {
+          "v": "socio",
+          "texto": "¿Cuántas horas pasa contestando mensajes? Dice que dos al día."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Dos horas? Eso es casi una siesta de humano."
+        },
+        {
+          "v": "socio",
+          "texto": "Son unas sesenta horas al mes. Eso es lo que le vamos a ahorrar."
+        },
+        {
+          "v": "chelios",
+          "texto": "Entonces no le cobramos el aire. Le cobramos el tiempo que le devolvemos."
+        },
+        {
+          "v": "socio",
+          "texto": "Por fin entendiste algo sin enchufarte."
+        }
+      ],
+      "hl": [
+        "hoja.",
+        "sesenta"
+      ],
+      "kill": [
+        "enchufarte."
+      ],
+      "p": {
+        "entrada": false,
+        "pizarra": [
+          {
+            "texto": "☕ *AHORA COTIZA EL HUMANO*",
+            "desde_inicio": true
+          },
+          {
+            "texto": "LA PREGUNTA: *¿CUÁNTO TIEMPO PIERDE?*",
+            "ancla": "horas"
+          },
+          {
+            "texto": "AL MES: *60 HORAS*",
+            "ancla": "sesenta",
+            "color": "coral"
+          },
+          {
+            "texto": "SE COBRA: *EL TIEMPO DEVUELTO*",
+            "ancla": "devolvemos"
+          }
+        ],
+        "socio_expr": [
+          [
+            "olvide",
+            "feliz"
+          ],
+          [
+            "respirar",
+            "cansado"
+          ],
+          [
+            "dos",
+            "feliz"
+          ],
+          [
+            "siesta",
+            "cansado"
+          ],
+          [
+            "sesenta",
+            "feliz"
+          ],
+          [
+            "devolvemos",
+            "sorpresa"
+          ],
+          [
+            "enchufarte",
+            "feliz"
+          ]
+        ],
+        "sorbos": [
+          "siesta"
+        ],
+        "chelios_gesto": [
+          [
+            "respirar",
+            "salto"
+          ],
+          [
+            "devolvemos",
+            "brazos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "parte": 3,
+      "tpl": "lista",
+      "texto": "Y aquí va lo útil del día: cómo cotizar un servicio de automatización. Uno, calcula cuánto le ahorras: las horas al mes por lo que vale una hora de esa persona. Ese es el valor real. Dos, cobra una parte de ese ahorro, no todo, y sepáralo en dos: la instalación, que se paga una vez, y el mantenimiento, que se paga cada mes. Y tres, escribe el alcance: qué incluye, qué no incluye y cuántos cambios entran. Lo que no queda por escrito se convierte en trabajo gratis.",
+      "hl": [
+        "útil",
+        "ahorras:",
+        "parte",
+        "alcance:"
+      ],
+      "p": {
+        "titulo": "LO ÚTIL: *CÓMO COTIZAR*",
+        "ancla_titulo": "útil",
+        "items": [
+          {
+            "texto": "*Calcula el ahorro:* horas al mes × valor de su hora",
+            "ancla": "uno"
+          },
+          {
+            "texto": "*Cobra una parte:* instalación única + mensualidad",
+            "ancla": "dos"
+          },
+          {
+            "texto": "*Escribe el alcance:* qué incluye, qué no y cuántos cambios",
+            "ancla": "tres"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "parte": 3,
+      "tpl": "dialogo",
+      "dialogo": [
+        {
+          "v": "chelios",
+          "texto": "¿Y Don Ramiro aceptó?"
+        },
+        {
+          "v": "socio",
+          "texto": "Aceptó. Instalación y mensualidad. Y nos trajo pan para todos."
+        },
+        {
+          "v": "chelios",
+          "texto": "¿Pan? Yo no como. Soy software."
+        },
+        {
+          "v": "socio",
+          "texto": "Entonces me lo como yo. Mi primer sueldo en esta empresa es un pan."
+        },
+        {
+          "v": "chelios",
+          "texto": "Bueno. Pero Don Ramiro ya mandó su primer mensaje."
+        },
+        {
+          "v": "socio",
+          "texto": "¿Qué dice?"
+        },
+        {
+          "v": "chelios",
+          "texto": "Un cambio pequeñito. Y luego otro. Y luego cuarenta y siete más."
+        }
+      ],
+      "hl": [
+        "aceptó?",
+        "pan."
+      ],
+      "kill": [
+        "más."
+      ],
+      "p": {
+        "pizarra": [
+          {
+            "texto": "VENTA: *CERRADA*",
+            "ancla": "instalación"
+          },
+          {
+            "texto": "SUELDO DEL SOCIO: *1 PAN*",
+            "ancla": "sueldo",
+            "color": "coral"
+          },
+          {
+            "texto": "PRIMER MENSAJE: *UN CAMBIO PEQUEÑITO*",
+            "ancla": "cambio"
+          },
+          {
+            "texto": "Y LUEGO: *47 MÁS*",
+            "ancla": "cuarenta"
+          }
+        ],
+        "socio_expr": [
+          [
+            "aceptó#2",
+            "feliz"
+          ],
+          [
+            "software",
+            "cansado"
+          ],
+          [
+            "sueldo",
+            "feliz"
+          ],
+          [
+            "mensaje",
+            "sorpresa"
+          ],
+          [
+            "dice",
+            "cansado"
+          ],
+          [
+            "cuarenta",
+            "enojado"
+          ]
+        ],
+        "sorbos": [
+          "dice"
+        ],
+        "chelios_gesto": [
+          [
+            "pan#2",
+            "brazos"
+          ],
+          [
+            "mensaje",
+            "salto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "parte": 3,
+      "tpl": "manana",
+      "texto": "Mañana, día diecisiete: el cliente pide un cambio pequeñito. Y luego otro. Y luego otro.",
+      "hl": [
+        "Mañana,",
+        "diecisiete:",
+        "cambio"
+      ],
+      "kill": [
+        "otro."
+      ],
+      "p": {
+        "dia_siguiente": 17,
+        "ancla_flip": "diecisiete",
+        "trabajador": 6,
+        "chip": "PRÓXIMO VIDEO",
+        "titulo": "LOS CAMBIOS INFINITOS",
+        "linea": "UN CAMBIO… *PEQUEÑITO*",
+        "ancla_teaser": "cambio",
+        "ancla_enfasis": "pequeñito"
+      }
+    },
+    {
+      "id": "s15",
+      "parte": 3,
+      "tpl": "cta",
+      "texto": "Si tú también vas a cobrar por el tiempo que ahorras y no por el aire, comenta FÁBRICA y síguenos. Mañana llegan los cambios.",
+      "tts": "Si tú también vas a cobrar por el tiempo que ahorras y no por el aire, comenta fábrica y síguenos. Mañana llegan los cambios.",
+      "hl": [
+        "FÁBRICA"
+      ],
+      "p": {
+        "palabra": "FÁBRICA",
+        "ancla_palabra": "fábrica",
+        "ancla_seguir": "síguenos",
+        "hold": 2.6
+      }
+    }
+  ],
+  "publicacion": {
+    "youtube_titulo": "Llegó el primer cliente… y mi jefe IA le quiso cobrar hasta por respirar 💸😮‍💨 · Día 16",
+    "youtube_descripcion": "Día 16 de La Fábrica de Chelios. Llega el primer cliente de la fábrica: Don Ramiro, dueño de una panadería, que solo quiere contestar los pedidos de WhatsApp con IA. Chelios le prepara una cotización con alfombra roja cobrada por metro, el aire cobrado por respiración y una comisión por mirarlo a los ojos. El cliente se va hacia la puerta… y Chelios hace lo impensable: deja que cotice el humano.\n\nLo útil del día: cómo cotizar un servicio de automatización. 1) Calcula cuánto le ahorras: horas al mes × lo que vale una hora de esa persona. Ese es el valor real. 2) Cobra una parte de ese ahorro, no todo, y sepáralo en dos: instalación (un solo pago) y mantenimiento (mensual). 3) Escribe el alcance: qué incluye, qué no incluye y cuántos cambios entran. Lo que no queda por escrito se convierte en trabajo gratis.\n\n¿Cuánto tiempo le ahorrarías a tu primer cliente? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el del café 47). Chelios, Don Ramiro y los trabajadores IA son personajes ficticios.",
+    "youtube_primer_comentario": "Se cobra el tiempo que le devuelves al cliente, no el aire 😮‍💨 ¿Cuántas horas al mes le ahorrarías a tu primer cliente? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+    "tiktok": [
+      "Llegó el primer cliente de la fábrica… y mi jefe IA le cobró hasta por respirar 💸😮‍💨",
+      "El cliente ya iba hacia la puerta… y el Verdugo vetó la cotización del jefe 🚪🔴",
+      "El humano cotizó con una sola pregunta + 3 pasos para cotizar una automatización 💡 ¿Cuánto cobrarías tú? 👀"
+    ],
+    "hashtags": [
+      "#humor",
+      "#inteligenciaartificial",
+      "#IA",
+      "#comedia",
+      "#oficina",
+      "#emprendimiento",
+      "#fabricadechelios"
+    ],
+    "miniatura_1": "LE COBRÓ POR RESPIRAR",
+    "miniatura_2": "CÓMO COTIZAR"
+  }
+}
