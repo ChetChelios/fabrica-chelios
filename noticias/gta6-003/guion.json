@@ -1,0 +1,126 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-003",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 03",
+  "titulo": "Ya salió <i>GTA 6</i>",
+  "subtitulo": "(5 datos del día uno)",
+  "portada": "el robot no durmió",
+  "intro": {
+    "texto": "GTA seis ya salió. Estos son cinco datos del primer día. Ojo con el dos si juegas en PlayStation.",
+    "tts": "Yitiéi seis ya salió. Estos son cinco datos del primer día. Ojo con el dos si juegas en Pleisteishon."
+  },
+  "items": [
+    {
+      "etiqueta": "la nota",
+      "estilo": "synth",
+      "texto": "Uno: en Metacritic llegó a noventa y nueve en PlayStation cinco. La misma nota que Ocarina of Time. Puede moverse, pero arrancó arriba.",
+      "tts": "Uno: en Metacritic llegó a noventa y nueve en Pleisteishon cinco. La misma nota que Ocarina of Taim. Puede moverse, pero arrancó arriba.",
+      "card": {
+        "grande": "99",
+        "linea": "METASCORE · PS5",
+        "nota": "al día del lanzamiento · puede cambiar"
+      }
+    },
+    {
+      "etiqueta": "el firmware",
+      "estilo": "neon",
+      "texto": "Dos: en PlayStation cinco hay una actualización del sistema obligatoria. Sin ella no arranca. Instálala antes de abrir el juego.",
+      "tts": "Dos: en Pleisteishon cinco hay una actualización del sistema obligatoria. Sin ella no arranca. Instálala antes de abrir el juego.",
+      "card": {
+        "filas": [
+          {
+            "texto": "SISTEMA",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "ACTUALIZAR",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "JUGAR",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "firmware obligatorio en PS5"
+      }
+    },
+    {
+      "etiqueta": "la imagen",
+      "estilo": "synth",
+      "texto": "Tres: según Digital Foundry, en la Series S se ve a setecientos veinte p escalado a mil ochenta. En PlayStation cinco y Series X, de mil cuatrocientos cuarenta a cuatro K.",
+      "tts": "Tres: según Diyital Fáundri, en la Series ese se ve a setecientos veinte pe escalado a mil ochenta. En Pleisteishon cinco y Series equis, de mil cuatrocientos cuarenta a cuatro ka.",
+      "card": {
+        "grande": "720p",
+        "linea": "SERIES S → 1080p",
+        "nota": "PS5 y Series X: 1440p → 4K"
+      }
+    },
+    {
+      "etiqueta": "el mapa",
+      "estilo": "neon",
+      "texto": "Cuatro: en Kotaku cruzaron el mapa de sur a norte. Les tomó tres horas y veintiún minutos.",
+      "tts": "Cuatro: en Kótaku cruzaron el mapa de sur a norte. Les tomó tres horas y veintiún minutos.",
+      "card": {
+        "filas": [
+          {
+            "texto": "3 HORAS",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "21 MIN",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "SUR → NORTE",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "prueba de Kotaku"
+      }
+    },
+    {
+      "etiqueta": "el PC",
+      "estilo": "synth",
+      "texto": "Y cinco: en computador todavía no hay fecha anunciada. Si ves un video de GTA seis en PC, lo más probable es que sea una consola transmitiendo.",
+      "tts": "Y cinco: en computador todavía no hay fecha anunciada. Si ves un video de yitiéi seis en pecé, lo más probable es que sea una consola transmitiendo.",
+      "card": {
+        "grande": "¿PC?",
+        "linea": "SIN FECHA ANUNCIADA",
+        "nota": "«GTA 6 en PC» = consola transmitiendo"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Ya lo estás jugando o esperas el parche? Comenta GTA y sígueme.",
+    "tts": "¿Ya lo estás jugando o esperas el parche? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "Lanzamiento el 19 de noviembre de 2026 a medianoche hora local en PS5 y Xbox Series X|S (Colombia: 12:00 a. m.): El Tiempo y Colombia.com (17-18 nov 2026)",
+    "Metascore de 99 en PS5 al momento de su publicación, igual que Ocarina of Time: VGTimes (18 nov 2026) y Colombia.com",
+    "Actualización de sistema de PS5 obligatoria para jugar: VGTimes (17-18 nov 2026)",
+    "Resoluciones (Series S 720p→1080p; PS5 y Series X 1440p→4K): análisis de Digital Foundry, vía VGTimes (18 nov 2026)",
+    "Cruzar el mapa de sur a norte: 3 h 21 min, prueba de Kotaku, vía VGTimes (18 nov 2026)",
+    "Sin fecha anunciada para PC; videos de 'GTA 6 en PC' eran PS5 Remote Play (DSOGaming): El Tiempo y VGTimes"
+  ],
+  "publicacion": {
+    "youtube_titulo": "Ya salió GTA 6: 5 datos del día uno (ojo con el 2 si juegas en PS5) 🎮🔥 #Shorts",
+    "youtube_descripcion": "Chelios Noticias · GTA 6 ya salió en PS5 y Xbox Series X|S. Cinco datos del primer día: 1) Metascore de 99 en PS5 al lanzamiento (puede cambiar). 2) En PS5 hay una actualización del sistema obligatoria: instálala antes de abrir el juego. 3) Según Digital Foundry, Xbox Series S va a 720p escalado a 1080p; PS5 y Series X, de 1440p a 4K. 4) Kotaku cruzó el mapa de sur a norte en 3 h 21 min. 5) En PC todavía no hay fecha anunciada.\n\n¿Ya lo estás jugando o esperas el parche? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Ya lo estás jugando o esperas el parche? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "Ya salió GTA 6 🎮🔥 5 datos del día uno (ojo con el 2 si juegas en PS5 👀) ¿Ya lo estás jugando o esperas el parche?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
