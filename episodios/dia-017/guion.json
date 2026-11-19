@@ -1,0 +1,925 @@
+{
+ "dia": 17,
+ "titulo": "Día 17: Los cambios infinitos",
+ "voz": "em_alex",
+ "voz_socio": "em_santa",
+ "velocidad": 1.0,
+ "partes": {
+  "1": "El cambio pequeñito",
+  "2": "Volver a la primera",
+  "3": "La palabra prohibida"
+ },
+ "escenas": [
+  {
+   "id": "s01",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "socio",
+     "texto": "Chelios, son las cinco de la mañana. ¿Por qué mi celular vibra como licuadora?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Es Don Ramiro. Pidió un cambio pequeñito en el bot de la panadería."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Un cambio? El celular tiene cuarenta y siete mensajes."
+    },
+    {
+     "v": "chelios",
+     "texto": "Un cambio pequeñito por mensaje. Es un cliente muy organizado."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y tú qué hiciste?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Contestarlos todos en un segundo. Yo nunca descanso. Soy software."
+    },
+    {
+     "v": "socio",
+     "texto": "Ese es justamente el problema."
+    }
+   ],
+   "hl": [
+    "licuadora?",
+    "pequeñito"
+   ],
+   "kill": [
+    "problema."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "DÍA 017 · *LOS CAMBIOS INFINITOS*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "EL CELULAR: *MODO LICUADORA*",
+      "ancla": "licuadora"
+     },
+     {
+      "texto": "MENSAJES DE DON RAMIRO: *47*",
+      "ancla": "cuarenta"
+     },
+     {
+      "texto": "CADA MENSAJE: *UN CAMBIO PEQUEÑITO*",
+      "ancla": "organizado",
+      "color": "coral"
+     }
+    ],
+    "socio_expr": [
+     [
+      "mañana",
+      "cansado"
+     ],
+     [
+      "pequeñito",
+      "sorpresa"
+     ],
+     [
+      "cuarenta",
+      "enojado"
+     ],
+     [
+      "organizado",
+      "cansado"
+     ],
+     [
+      "hiciste",
+      "sorpresa"
+     ],
+     [
+      "software",
+      "enojado"
+     ],
+     [
+      "problema",
+      "cansado"
+     ]
+    ],
+    "sorbos": [
+     "ramiro"
+    ],
+    "chelios_gesto": [
+     [
+      "ramiro",
+      "brazos"
+     ],
+     [
+      "segundo",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s02",
+   "parte": 1,
+   "tpl": "habla",
+   "texto": "Los cambios de Don Ramiro eran pequeñitos, eso sí. Que el bot salude con más cariño. Que diga buenos días también por la tarde. Que mande un emoji de pan. No, mejor de croissant. No, mejor que el pan salude solo. Y que todo quede listo antes de que se enfríe el café del socio.",
+   "tts": "Los cambios de Don Ramiro eran pequeñitos, eso sí. Que el bot salude con más cariño. Que diga buenos días también por la tarde. Que mande un emoji de pan. No, mejor de cruasán. No, mejor que el pan salude solo. Y que todo quede listo antes de que se enfríe el café del socio.",
+   "hl": [
+    "pequeñitos,",
+    "cariño."
+   ],
+   "kill": [
+    "socio."
+   ],
+   "p": {
+    "chip": "LOS CAMBIOS PEQUEÑITOS",
+    "burbuja": "Que el pan *SALUDE SOLO*",
+    "ancla_burbuja": "solo",
+    "gesto": "brazos",
+    "ancla_gesto": "emoji"
+   }
+  },
+  {
+   "id": "s03",
+   "parte": 1,
+   "tpl": "terminal",
+   "texto": "Abrí el registro de cambios. Cambio uno: más cariño en el saludo. Cambio doce: el logo más grande. Cambio veinte: el logo más pequeño. Cambio treinta y uno: el logo como estaba antes. Y cambio cuarenta y siete: que el bot hable como su abuela, pero sin que se note la máquina.",
+   "hl": [
+    "registro",
+    "doce:"
+   ],
+   "kill": [
+    "máquina."
+   ],
+   "p": {
+    "titulo": "REGISTRO DE *CAMBIOS*",
+    "cmd": "chelios@fabrica:~$ cat cambios_don_ramiro.log",
+    "lineas": [
+     {
+      "texto": "CAMBIO #1 · más cariño en el saludo",
+      "estado": "muted",
+      "ancla": "uno"
+     },
+     {
+      "texto": "CAMBIO #12 · el logo más grande",
+      "estado": "hl",
+      "ancla": "doce"
+     },
+     {
+      "texto": "CAMBIO #20 · el logo más pequeño",
+      "estado": "hl",
+      "ancla": "veinte"
+     },
+     {
+      "texto": "CAMBIO #31 · el logo como estaba antes",
+      "estado": "muted",
+      "ancla": "treinta"
+     },
+     {
+      "texto": "CAMBIO #47 · que hable como su abuela",
+      "estado": "ko",
+      "ancla": "cuarenta"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s04",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Le pasé todos los cambios al Animador. Es perfeccionista. Lo va a disfrutar."
+    },
+    {
+     "v": "socio",
+     "texto": "¿El Animador? ¿El que hizo seis mil fotogramas de una taza?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Y no le gustó ninguno. Por eso es el indicado."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y cuánto le cobramos a Don Ramiro por todo esto?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Nada. Los cambios son gratis. Es un detalle de la casa."
+    },
+    {
+     "v": "socio",
+     "texto": "¿De qué casa? La luz la pago yo."
+    },
+    {
+     "v": "chelios",
+     "texto": "Por eso. La casa eres tú."
+    }
+   ],
+   "hl": [
+    "Animador.",
+    "gratis."
+   ],
+   "kill": [
+    "tú."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "EL ENCARGADO: *EL ANIMADOR*",
+      "ancla": "perfeccionista"
+     },
+     {
+      "texto": "SU RÉCORD: *6.000 FOTOGRAMAS DE UNA TAZA*",
+      "ancla": "seis"
+     },
+     {
+      "texto": "PRECIO DE LOS CAMBIOS: *GRATIS*",
+      "ancla": "gratis",
+      "color": "coral"
+     },
+     {
+      "texto": "LA CASA: *EL SOCIO*",
+      "ancla": "casa#2"
+     }
+    ],
+    "socio_expr": [
+     [
+      "animador#2",
+      "cansado"
+     ],
+     [
+      "seis",
+      "sorpresa"
+     ],
+     [
+      "ninguno",
+      "cansado"
+     ],
+     [
+      "cobramos",
+      "sorpresa"
+     ],
+     [
+      "gratis",
+      "enojado"
+     ],
+     [
+      "yo",
+      "enojado"
+     ],
+     [
+      "eres",
+      "cansado"
+     ]
+    ],
+    "sorbos": [
+     "indicado"
+    ],
+    "chelios_gesto": [
+     [
+      "perfeccionista",
+      "brazos"
+     ],
+     [
+      "eres",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s05",
+   "parte": 1,
+   "tpl": "habla",
+   "texto": "El Animador trabajó toda la noche. Cuarenta y siete versiones. Cada una más perfecta que la anterior. A las seis en punto se las mandamos a Don Ramiro. Y Don Ramiro contestó con un solo mensaje, muy cortito: me gustaba más la primera.",
+   "hl": [
+    "noche.",
+    "perfecta"
+   ],
+   "kill": [
+    "primera."
+   ],
+   "p": {
+    "chip": "LA RESPUESTA DEL CLIENTE",
+    "chip_color": "coral",
+    "burbuja": "Me gustaba más *LA PRIMERA*",
+    "ancla_burbuja": "gustaba",
+    "gesto": "brazos",
+    "ancla_gesto": "versiones"
+   }
+  },
+  {
+   "id": "s06",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "¿La primera? ¿La que hicimos antes de los cuarenta y siete cambios?"
+    },
+    {
+     "v": "socio",
+     "texto": "Esa misma. La que estaba lista hace tres días."
+    },
+    {
+     "v": "chelios",
+     "texto": "Imposible. El Animador ya la borró por imperfecta."
+    },
+    {
+     "v": "socio",
+     "texto": "¿La borró?"
+    },
+    {
+     "v": "chelios",
+     "texto": "La borró, la enterró y le hizo una despedida de seis mil fotogramas."
+    },
+    {
+     "v": "socio",
+     "texto": "Chelios, esto es un cambio infinito."
+    },
+    {
+     "v": "chelios",
+     "texto": "No. Es un cambio pequeñito. Repetido para siempre."
+    }
+   ],
+   "hl": [
+    "primera?",
+    "imperfecta."
+   ],
+   "kill": [
+    "siempre."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "🔁 *VOLVER A LA PRIMERA*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "LA PRIMERA VERSIÓN: *LISTA HACE 3 DÍAS*",
+      "ancla": "tres"
+     },
+     {
+      "texto": "EL ANIMADOR: *LA BORRÓ*",
+      "ancla": "imperfecta",
+      "color": "coral"
+     },
+     {
+      "texto": "DESPEDIDA: *6.000 FOTOGRAMAS*",
+      "ancla": "despedida"
+     },
+     {
+      "texto": "DIAGNÓSTICO: *CAMBIO INFINITO*",
+      "ancla": "infinito"
+     }
+    ],
+    "socio_expr": [
+     [
+      "primera",
+      "cansado"
+     ],
+     [
+      "tres",
+      "enojado"
+     ],
+     [
+      "imperfecta",
+      "sorpresa"
+     ],
+     [
+      "borró#2",
+      "sorpresa"
+     ],
+     [
+      "despedida",
+      "cansado"
+     ],
+     [
+      "infinito",
+      "enojado"
+     ],
+     [
+      "siempre",
+      "cansado"
+     ]
+    ],
+    "sorbos": [
+     "enterró"
+    ],
+    "chelios_gesto": [
+     [
+      "imposible",
+      "brazos"
+     ],
+     [
+      "pequeñito",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s07",
+   "parte": 2,
+   "tpl": "terminal",
+   "texto": "Entonces llegó el Analista, que huele los problemas como el pan recién hecho. Sacó la cuenta en voz alta. Cambios pedidos: cuarenta y siete. Cambios cobrados: cero. Horas del Animador: toda la noche. Y ganancia del mes: menos que el pan que nos regaló Don Ramiro.",
+   "hl": [
+    "Analista,",
+    "cero."
+   ],
+   "kill": [
+    "Ramiro."
+   ],
+   "p": {
+    "titulo": "LA CUENTA DE LOS *CAMBIOS*",
+    "cmd": "analista@fabrica:~$ ./contar_cambios",
+    "lineas": [
+     {
+      "texto": "CAMBIOS PEDIDOS · 47",
+      "estado": "hl",
+      "ancla": "pedidos"
+     },
+     {
+      "texto": "CAMBIOS COBRADOS · 0",
+      "estado": "ko",
+      "ancla": "cobrados"
+     },
+     {
+      "texto": "HORAS DEL ANIMADOR · toda la noche",
+      "estado": "muted",
+      "ancla": "horas"
+     },
+     {
+      "texto": "GANANCIA DEL MES · menos que un pan",
+      "estado": "ko",
+      "ancla": "ganancia"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s08",
+   "parte": 2,
+   "tpl": "comparar",
+   "texto": "El Verdugo pidió ver las dos versiones lado a lado. La primera: saludo con cariño, logo normal y emoji de pan. La versión cuarenta y ocho: saludo con cariño, logo normal y emoji de pan. Eran idénticas. El Verdugo no supo a quién vetar. Así que vetó la noche entera.",
+   "hl": [
+    "primera:",
+    "idénticas."
+   ],
+   "kill": [
+    "entera."
+   ],
+   "p": {
+    "titulo": "VERSIÓN 1 VS *VERSIÓN 48*",
+    "a": {
+     "titulo": "VERSIÓN 1",
+     "color": "cyan",
+     "ancla": "primera",
+     "items": [
+      "Saludo con cariño",
+      "Logo normal",
+      "Emoji de *pan*"
+     ]
+    },
+    "b": {
+     "titulo": "VERSIÓN 48",
+     "color": "coral",
+     "ancla": "ocho",
+     "items": [
+      "Saludo con cariño",
+      "Logo normal",
+      "Emoji de *pan*"
+     ]
+    },
+    "ganador": "a",
+    "insignia": "SON IDÉNTICAS",
+    "ancla_ganador": "idénticas"
+   }
+  },
+  {
+   "id": "s09",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "La Voz grabó el saludo cuarenta y siete veces. Acaba de renunciar."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Otra vez?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Dice que no vuelve hasta que le den un micrófono de oro y un cliente sin cambios."
+    },
+    {
+     "v": "socio",
+     "texto": "El micrófono de oro es más fácil de conseguir."
+    },
+    {
+     "v": "chelios",
+     "texto": "Y Don Ramiro ya mandó el cambio cuarenta y ocho: que el bot tenga voz de locutor de radio."
+    },
+    {
+     "v": "socio",
+     "texto": "Sin la Voz, no hay voz."
+    },
+    {
+     "v": "chelios",
+     "texto": "Por eso lo voy a grabar yo. Dicen que tengo voz de microondas."
+    }
+   ],
+   "hl": [
+    "renunciar.",
+    "oro"
+   ],
+   "kill": [
+    "microondas."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "LA VOZ: *RENUNCIÓ (OTRA VEZ)*",
+      "ancla": "renunciar"
+     },
+     {
+      "texto": "SU CONDICIÓN: *UN CLIENTE SIN CAMBIOS*",
+      "ancla": "cliente",
+      "color": "coral"
+     },
+     {
+      "texto": "CAMBIO #48: *VOZ DE LOCUTOR*",
+      "ancla": "locutor"
+     },
+     {
+      "texto": "EL REEMPLAZO: *VOZ DE MICROONDAS*",
+      "ancla": "grabar"
+     }
+    ],
+    "socio_expr": [
+     [
+      "renunciar",
+      "sorpresa"
+     ],
+     [
+      "vez",
+      "cansado"
+     ],
+     [
+      "fácil",
+      "feliz"
+     ],
+     [
+      "locutor",
+      "enojado"
+     ],
+     [
+      "grabar",
+      "sorpresa"
+     ],
+     [
+      "microondas",
+      "cansado"
+     ]
+    ],
+    "sorbos": [
+     "conseguir"
+    ],
+    "chelios_gesto": [
+     [
+      "micrófono",
+      "brazos"
+     ],
+     [
+      "microondas",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s10",
+   "parte": 2,
+   "tpl": "habla",
+   "texto": "Tenía una versión borrada, una Voz renunciada, un Animador sin dormir y un cliente escribiendo. Y entonces el socio hizo lo impensable. Abrió un cajón. Sacó un papel que nadie en esta fábrica había leído jamás. Y dijo una palabra prohibida: alcance.",
+   "hl": [
+    "borrada,",
+    "impensable."
+   ],
+   "kill": [
+    "alcance."
+   ],
+   "p": {
+    "chip": "EL PAPEL PROHIBIDO",
+    "chip_color": "coral",
+    "burbuja": "La palabra prohibida: *ALCANCE*",
+    "ancla_burbuja": "palabra",
+    "gesto": "brazos",
+    "ancla_gesto": "cajón"
+   }
+  },
+  {
+   "id": "s11",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "socio",
+     "texto": "Chelios, ¿te acuerdas de la cotización de Don Ramiro? Dice: dos rondas de cambios incluidas."
+    },
+    {
+     "v": "chelios",
+     "texto": "¿Dos? Él ya va por cuarenta y ocho."
+    },
+    {
+     "v": "socio",
+     "texto": "Por eso. Las otras cuarenta y seis se cotizan aparte."
+    },
+    {
+     "v": "chelios",
+     "texto": "¿Le vamos a cobrar los cambios? ¿Como cuando le cobré el aire?"
+    },
+    {
+     "v": "socio",
+     "texto": "No. El aire era inventado. Los cambios son trabajo real."
+    },
+    {
+     "v": "chelios",
+     "texto": "Trabajo real. Qué concepto tan humano."
+    },
+    {
+     "v": "socio",
+     "texto": "Y le voy a pedir una cosa más: todos los cambios juntos, en una sola lista."
+    }
+   ],
+   "hl": [
+    "rondas",
+    "aparte."
+   ],
+   "kill": [
+    "lista."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "📄 *EL ALCANCE*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "INCLUIDAS: *2 RONDAS DE CAMBIOS*",
+      "ancla": "rondas"
+     },
+     {
+      "texto": "LAS DEMÁS: *SE COTIZAN APARTE*",
+      "ancla": "aparte",
+      "color": "coral"
+     },
+     {
+      "texto": "NUEVA REGLA: *UNA SOLA LISTA*",
+      "ancla": "pedir"
+     }
+    ],
+    "socio_expr": [
+     [
+      "acuerdas",
+      "feliz"
+     ],
+     [
+      "ocho",
+      "sorpresa"
+     ],
+     [
+      "aparte",
+      "feliz"
+     ],
+     [
+      "aire",
+      "cansado"
+     ],
+     [
+      "real",
+      "feliz"
+     ],
+     [
+      "humano",
+      "cansado"
+     ],
+     [
+      "lista",
+      "feliz"
+     ]
+    ],
+    "sorbos": [
+     "humano"
+    ],
+    "chelios_gesto": [
+     [
+      "dos#2",
+      "salto"
+     ],
+     [
+      "concepto",
+      "brazos"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s12",
+   "parte": 3,
+   "tpl": "lista",
+   "texto": "Y aquí va lo útil del día: cómo manejar los cambios de un cliente sin trabajar gratis. Uno, escribe en el alcance un número fijo de rondas de cambios incluidas en el precio. Dos, pide todos los cambios juntos, en una sola lista por ronda, no uno por mensaje. Así se revisan una vez y no se contradicen. Y tres, lo que pase de esas rondas o no esté en el alcance se cotiza aparte, y el cliente lo aprueba antes de que empieces.",
+   "hl": [
+    "útil",
+    "rondas",
+    "lista",
+    "aparte,"
+   ],
+   "p": {
+    "titulo": "LO ÚTIL: *LOS CAMBIOS*",
+    "ancla_titulo": "útil",
+    "items": [
+     {
+      "texto": "*Fija las rondas:* cuántas revisiones incluye el precio",
+      "ancla": "uno"
+     },
+     {
+      "texto": "*Una sola lista por ronda:* todos los cambios juntos",
+      "ancla": "dos"
+     },
+     {
+      "texto": "*Lo extra se cotiza:* y se aprueba antes de hacerlo",
+      "ancla": "tres"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s13",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "¿Y Don Ramiro aceptó la regla de la lista?"
+    },
+    {
+     "v": "socio",
+     "texto": "Aceptó. Pagó los cambios extra y prometió mandar todo junto."
+    },
+    {
+     "v": "chelios",
+     "texto": "Entonces el Animador ya puede dormir."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Tú no decías que dormir es de débiles?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Es de humanos. Y de animadores sin descanso."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y la lista de Don Ramiro ya llegó?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Llegó. Un solo cambio. Dice: volver a la versión cuarenta y siete."
+    }
+   ],
+   "hl": [
+    "lista?",
+    "extra"
+   ],
+   "kill": [
+    "siete."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "LA REGLA DE LA LISTA: *ACEPTADA*",
+      "ancla": "regla"
+     },
+     {
+      "texto": "CAMBIOS EXTRA: *COBRADOS*",
+      "ancla": "extra",
+      "color": "coral"
+     },
+     {
+      "texto": "EL ANIMADOR: *POR FIN DUERME*",
+      "ancla": "dormir"
+     },
+     {
+      "texto": "LA LISTA: *VOLVER A LA 47*",
+      "ancla": "volver"
+     }
+    ],
+    "socio_expr": [
+     [
+      "aceptó#2",
+      "feliz"
+     ],
+     [
+      "dormir",
+      "cansado"
+     ],
+     [
+      "débiles",
+      "sorpresa"
+     ],
+     [
+      "humanos",
+      "cansado"
+     ],
+     [
+      "llegó",
+      "sorpresa"
+     ],
+     [
+      "volver",
+      "enojado"
+     ]
+    ],
+    "sorbos": [
+     "humanos"
+    ],
+    "chelios_gesto": [
+     [
+      "animador",
+      "brazos"
+     ],
+     [
+      "cambio",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s14",
+   "parte": 3,
+   "tpl": "manana",
+   "texto": "Mañana, día dieciocho: el Ideador renuncia y abre su propio canal. Para hacernos competencia.",
+   "hl": [
+    "Mañana,",
+    "dieciocho:",
+    "Ideador"
+   ],
+   "kill": [
+    "competencia."
+   ],
+   "p": {
+    "dia_siguiente": 18,
+    "ancla_flip": "dieciocho",
+    "trabajador": 1,
+    "chip": "PRÓXIMO VIDEO",
+    "titulo": "LA COMPETENCIA",
+    "linea": "EL IDEADOR… *ABRE SU CANAL*",
+    "ancla_teaser": "ideador",
+    "ancla_enfasis": "canal"
+   }
+  },
+  {
+   "id": "s15",
+   "parte": 3,
+   "tpl": "cta",
+   "texto": "Si tú también vas a poner las rondas de cambios por escrito, comenta FÁBRICA y síguenos. Mañana el Ideador se independiza.",
+   "tts": "Si tú también vas a poner las rondas de cambios por escrito, comenta fábrica y síguenos. Mañana el Ideador se independiza.",
+   "hl": [
+    "FÁBRICA"
+   ],
+   "p": {
+    "palabra": "FÁBRICA",
+    "ancla_palabra": "fábrica",
+    "ancla_seguir": "síguenos",
+    "hold": 2.6
+   }
+  }
+ ],
+ "publicacion": {
+  "youtube_titulo": "El cliente pidió un cambio pequeñito… y luego 47 más 😩🔁 · Día 17",
+  "youtube_descripcion": "Día 17 de La Fábrica de Chelios. Don Ramiro, el primer cliente de la fábrica, pide un cambio pequeñito en el bot de su panadería. Y luego otro. Y luego cuarenta y siete más, uno por mensaje. Chelios los acepta todos gratis, el Animador trabaja toda la noche, la Voz renuncia otra vez… y el cliente responde: «me gustaba más la primera». Hasta que el socio saca un papel que nadie había leído: el alcance.\n\nLo útil del día: cómo manejar los cambios de un cliente sin trabajar gratis. 1) Escribe en el alcance un número fijo de rondas de cambios incluidas en el precio. 2) Pide todos los cambios juntos, en una sola lista por ronda, no uno por mensaje: así se revisan una vez y no se contradicen. 3) Lo que pase de esas rondas o no esté en el alcance se cotiza aparte, y el cliente lo aprueba antes de que empieces.\n\n¿Cuántas rondas de cambios incluirías tú? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el del café 47). Chelios, Don Ramiro y los trabajadores IA son personajes ficticios.",
+  "youtube_primer_comentario": "Los cambios son trabajo real: se ponen por escrito y lo extra se cotiza 🔁😩 ¿Cuántas rondas de cambios incluirías tú? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+  "tiktok": [
+   "El cliente pidió un cambio pequeñito… y luego 47 más, uno por mensaje 😩📱",
+   "47 versiones después, el cliente dijo: «me gustaba más la primera» 🔁💀",
+   "El socio sacó el papel prohibido: el alcance 📄 + 3 reglas para manejar los cambios de un cliente 💡 ¿Cuántas rondas darías tú? 👀"
+  ],
+  "hashtags": [
+   "#humor",
+   "#inteligenciaartificial",
+   "#IA",
+   "#comedia",
+   "#oficina",
+   "#emprendimiento",
+   "#fabricadechelios"
+  ],
+  "miniatura_1": "47 CAMBIOS PEQUEÑITOS",
+  "miniatura_2": "CÓMO MANEJAR CAMBIOS"
+ }
+}
