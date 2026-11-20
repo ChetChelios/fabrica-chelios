@@ -1,0 +1,125 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-004",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 04",
+  "titulo": "GTA 6: <i>25 millones</i>",
+  "subtitulo": "(5 datos del día dos)",
+  "portada": "el robot sacó la calculadora",
+  "intro": {
+    "texto": "GTA seis lleva un día afuera y ya hay cifras. Cinco datos de hoy. Ojo con el tres si compraste la Ultimate.",
+    "tts": "Yitiéi seis lleva un día afuera y ya hay cifras. Cinco datos de hoy. Ojo con el tres si compraste la Últimeit."
+  },
+  "items": [
+    {
+      "etiqueta": "las ventas",
+      "estilo": "synth",
+      "texto": "Uno: según una estimación de Sensor Tower, vendió casi veinticinco millones de copias el primer día. Unos dos mil trescientos sesenta millones de dólares. Rockstar todavía no da cifra oficial.",
+      "tts": "Uno: según una estimación de Sénsor Táuer, vendió casi veinticinco millones de copias el primer día. Unos dos mil trescientos sesenta millones de dólares. Rockstar todavía no da cifra oficial.",
+      "card": {
+        "grande": "24,6 M",
+        "linea": "COPIAS · DÍA UNO",
+        "nota": "estimación de Sensor Tower · no oficial"
+      }
+    },
+    {
+      "etiqueta": "la consola",
+      "estilo": "neon",
+      "texto": "Dos: de esas copias, cerca del setenta y cinco por ciento serían en PlayStation cinco. Unos dieciocho millones. El resto, en Xbox Series.",
+      "tts": "Dos: de esas copias, cerca del setenta y cinco por ciento serían en Pleisteishon cinco. Unos dieciocho millones. El resto, en Equisbox Series.",
+      "card": {
+        "filas": [
+          {
+            "texto": "PS5 · 75%",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "≈ 18 M",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "XBOX · 25%",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "misma estimación · no oficial"
+      }
+    },
+    {
+      "etiqueta": "la Ultimate",
+      "estilo": "synth",
+      "texto": "Tres: si compraste la Ultimate y no ves los extras, calma. Según PlayStation LifeStyle, muchos se desbloquean a medida que avanzas en los capítulos de la historia.",
+      "tts": "Tres: si compraste la Últimeit y no ves los extras, calma. Según Pleisteishon Láifstail, muchos se desbloquean a medida que avanzas en los capítulos de la historia.",
+      "card": {
+        "grande": "¿Y los extras?",
+        "linea": "SE ABREN POR CAPÍTULOS",
+        "nota": "según PlayStation LifeStyle"
+      }
+    },
+    {
+      "etiqueta": "modo fácil",
+      "estilo": "neon",
+      "texto": "Cuatro: hay opciones para hacerlo más fácil. Combate accesible y daño reducido de vehículos. Y no pierdes trofeos por usarlas.",
+      "tts": "Cuatro: hay opciones para hacerlo más fácil. Combate accesible y daño reducido de vehículos. Y no pierdes trofeos por usarlas.",
+      "card": {
+        "filas": [
+          {
+            "texto": "COMBATE ACCESIBLE",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "MENOS DAÑO",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "TROFEOS OK",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "menú de accesibilidad"
+      }
+    },
+    {
+      "etiqueta": "la música",
+      "estilo": "synth",
+      "texto": "Y cinco: hoy salió GTA seis, el álbum. Treinta y cuatro canciones originales, con artistas como Dua Lipa, SZA y Travis Scott. La banda sonora de Justice llega el once de diciembre.",
+      "tts": "Y cinco: hoy salió yitiéi seis, el álbum. Treinta y cuatro canciones originales, con artistas como Dua Lipa, Sisa y Trávis Scot. La banda sonora de Yustís llega el once de diciembre.",
+      "card": {
+        "grande": "34",
+        "linea": "CANCIONES ORIGINALES",
+        "nota": "score de Justice: 11 de diciembre"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Ya lo compraste o esperas a que baje? Comenta GTA y sígueme.",
+    "tts": "¿Ya lo compraste o esperas a que baje? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "Ventas del primer día (19 nov): ~24,58 millones de copias y ~US$2.360 millones, estimación de Sensor Tower vía Reuters; sin cifra oficial de Take-Two/Rockstar: Revista Mercado (20 nov 2026), Kotaku live blog (19-20 nov 2026), Metro Puerto Rico (20 nov 2026)",
+    "Reparto por plataforma (~75% PS5, ~18,4 M; ~6,15 M Xbox Series), estimación: Infobae (20 nov 2026) y Kotaku (20 nov 2026)",
+    "Extras de la Ultimate Edition que se desbloquean por capítulos: PlayStation LifeStyle, vía VGTimes (19-20 nov 2026)",
+    "Opciones 'Accessible Combat' y 'Reduced Vehicle Damage' sin perder trofeos: Push Square, vía VGTimes (19-20 nov 2026); accesibilidad también en Kotaku",
+    "'GTA VI: The Album' salió el 20 nov con 34 canciones originales (Atlantic Records; Dua Lipa, SZA, Travis Scott, entre otros); score de Justice el 11 dic: Game News Plus (20 nov 2026)"
+  ],
+  "publicacion": {
+    "youtube_titulo": "GTA 6 vendió casi 25 millones el día uno: 5 datos (ojo con el 3 si tienes la Ultimate) 🎮 #Shorts",
+    "youtube_descripcion": "Chelios Noticias · GTA 6, día dos. 1) Según una estimación de Sensor Tower, vendió unos 24,6 millones de copias el primer día (~US$2.360 millones); Rockstar aún no da cifra oficial. 2) Cerca del 75% serían en PS5 (~18 millones). 3) ¿No ves los extras de la Ultimate? Según PlayStation LifeStyle, muchos se desbloquean al avanzar por capítulos. 4) Hay opciones de Combate accesible y Daño reducido de vehículos, sin perder trofeos. 5) Salió GTA VI: The Album, con 34 canciones originales; la banda sonora de Justice llega el 11 de diciembre.\n\n¿Ya lo compraste o esperas a que baje? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Ya lo compraste o esperas a que baje? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "GTA 6 vendió casi 25 millones el día uno 🎮💸 5 datos de hoy (ojo con el 3 si tienes la Ultimate 👀) ¿Ya lo compraste o esperas a que baje?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
