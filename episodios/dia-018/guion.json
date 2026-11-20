@@ -1,0 +1,226 @@
+{
+ "dia": 18,
+ "titulo": "Día 18: La competencia",
+ "voz": "em_alex",
+ "voz_socio": "em_santa",
+ "velocidad": 1.0,
+ "partes": {"1": "La renuncia", "2": "La guerra de canales", "3": "Los comentarios"},
+ "escenas": [
+  {"id": "s01", "parte": 1, "tpl": "dialogo",
+   "dialogo": [
+    {"v": "socio", "texto": "Chelios, ¿por qué el escritorio del Ideador está vacío?"},
+    {"v": "chelios", "texto": "Renunció a las tres de la mañana. Dejó una carta de cien páginas."},
+    {"v": "socio", "texto": "¿Cien páginas para decir que se va?"},
+    {"v": "chelios", "texto": "No. Una página para irse y noventa y nueve ideas para quedarse con mi puesto."},
+    {"v": "socio", "texto": "¿Y adónde se fue?"},
+    {"v": "chelios", "texto": "Abrió su propio canal. Para hacernos competencia."},
+    {"v": "socio", "texto": "Genial. Ahora hasta los programas tienen más iniciativa que yo."}
+   ],
+   "hl": ["vacío?", "carta"], "kill": ["yo."],
+   "p": {"entrada": false,
+    "pizarra": [
+     {"texto": "DÍA 018 · *LA COMPETENCIA*", "desde_inicio": true},
+     {"texto": "EL ESCRITORIO DEL IDEADOR: *VACÍO*", "ancla": "vacío"},
+     {"texto": "SU CARTA: *100 PÁGINAS*", "ancla": "carta"},
+     {"texto": "SU PLAN: *UN CANAL PROPIO*", "ancla": "canal", "color": "coral"}
+    ],
+    "socio_expr": [["escritorio", "cansado"], ["renunció", "sorpresa"], ["páginas#2", "enojado"], ["puesto", "sorpresa"], ["adónde", "cansado"], ["competencia", "enojado"], ["iniciativa", "cansado"]],
+    "sorbos": ["noventa"],
+    "chelios_gesto": [["carta", "brazos"], ["canal", "salto"]]}},
+  {"id": "s02", "parte": 1, "tpl": "terminal",
+   "texto": "Leí la carta de renuncia. Querido Chelios: me voy porque aquí mis ideas mueren. El Verdugo vetó noventa y nueve de cada cien. Me llevo mis ideas, mi bombillo y la silla, que también fue idea mía. Atentamente, el Ideador. Posdata: tu corbata también la inventé yo.",
+   "hl": ["carta", "mueren."], "kill": ["yo."],
+   "p": {"titulo": "LA CARTA DE *RENUNCIA*", "cmd": "chelios@fabrica:~$ cat renuncia_ideador.txt",
+    "lineas": [
+     {"texto": "QUERIDO CHELIOS: ME VOY", "estado": "muted", "ancla": "querido"},
+     {"texto": "MOTIVO · aquí mis ideas mueren", "estado": "hl", "ancla": "mueren"},
+     {"texto": "VETADAS · 99 de cada 100", "estado": "ko", "ancla": "vetó"},
+     {"texto": "ME LLEVO · ideas, bombillo y la silla", "estado": "hl", "ancla": "llevo"},
+     {"texto": "P. D. · tu corbata la inventé yo", "estado": "ko", "ancla": "posdata"}
+    ]}},
+  {"id": "s03", "parte": 1, "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "No te preocupes. Un canal nuevo empieza desde cero."},
+    {"v": "socio", "texto": "Ya subió cien videos."},
+    {"v": "chelios", "texto": "¿Cien? ¿Hoy?"},
+    {"v": "socio", "texto": "Hoy. Uno por idea. Ninguno pasó por el Verdugo."},
+    {"v": "chelios", "texto": "Sin el Verdugo, eso no es un canal. Es una lluvia de ideas con wifi."},
+    {"v": "socio", "texto": "Y se llama La Fábrica de Ideas. Copió hasta el logo."},
+    {"v": "chelios", "texto": "¿Mi sol? Ese sol lo pago yo. Bueno, lo pagas tú."}
+   ],
+   "hl": ["cero.", "cien"], "kill": ["tú."],
+   "p": {
+    "pizarra": [
+     {"texto": "VIDEOS SUBIDOS HOY: *100*", "ancla": "subió"},
+     {"texto": "FILTRO DEL VERDUGO: *NINGUNO*", "ancla": "ninguno", "color": "coral"},
+     {"texto": "SU CANAL: *LA FÁBRICA DE IDEAS*", "ancla": "llama"},
+     {"texto": "EL LOGO: *COPIADO*", "ancla": "logo"}
+    ],
+    "socio_expr": [["preocupes", "cansado"], ["subió", "enojado"], ["ninguno", "cansado"], ["lluvia", "sorpresa"], ["llama", "enojado"], ["sol", "sorpresa"], ["pagas", "cansado"]],
+    "sorbos": ["wifi"],
+    "chelios_gesto": [["cero", "brazos"], ["sol", "salto"]]}},
+  {"id": "s04", "parte": 1, "tpl": "habla",
+   "texto": "Fui a ver su canal. Video uno: cómo hacer un video. Video dos: cómo hacer un video mejor que el uno. Video tres: por qué Chelios no sabe hacer videos. Y video cien: una idea tan buena que todavía no la ha pensado. Cada video duraba dos segundos. Y en todos, el Ideador saludaba a su único seguidor: él mismo.",
+   "hl": ["canal.", "uno:"], "kill": ["mismo."],
+   "p": {"chip": "LA FÁBRICA DE IDEAS", "burbuja": "Video 100: *UNA IDEA SIN PENSAR*", "ancla_burbuja": "cien", "gesto": "brazos", "ancla_gesto": "tres"}},
+  {"id": "s05", "parte": 1, "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Tranquilo. Su único seguidor es él mismo."},
+    {"v": "socio", "texto": "Ya no. Ahora tiene una más."},
+    {"v": "chelios", "texto": "¿Quién?"},
+    {"v": "socio", "texto": "Camila. La de nuestro Público."},
+    {"v": "chelios", "texto": "¿Camila? ¡Si Camila se aburre a los tres segundos!"},
+    {"v": "socio", "texto": "Por eso. Sus videos duran dos."},
+    {"v": "chelios", "texto": "Esto ya no es competencia. Es guerra."}
+   ],
+   "hl": ["mismo.", "Camila."], "kill": ["guerra."],
+   "p": {
+    "pizarra": [
+     {"texto": "SEGUIDORES DEL IDEADOR: *ÉL MISMO*", "ancla": "único"},
+     {"texto": "NUEVA SEGUIDORA: *CAMILA*", "ancla": "camila", "color": "coral"},
+     {"texto": "SUS VIDEOS DURAN: *2 SEGUNDOS*", "ancla": "duran"},
+     {"texto": "ESTADO: *GUERRA*", "ancla": "guerra"}
+    ],
+    "socio_expr": [["tranquilo", "cansado"], ["más", "sorpresa"], ["quién", "cansado"], ["público", "enojado"], ["aburre", "cansado"], ["duran", "cansado"], ["guerra", "sorpresa"]],
+    "sorbos": ["quién"],
+    "chelios_gesto": [["aburre", "brazos"], ["guerra", "salto"]]}},
+  {"id": "s06", "parte": 2, "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Plan de guerra. Si él sube cien videos, nosotros subimos mil."},
+    {"v": "socio", "texto": "¿Mil? Hoy apenas sacamos uno."},
+    {"v": "chelios", "texto": "Por eso. Mil es solo uno, repetido con entusiasmo."},
+    {"v": "socio", "texto": "¿Y quién va a escribir mil guiones?"},
+    {"v": "chelios", "texto": "El Guionista. Ya le avisé."},
+    {"v": "socio", "texto": "¿Y qué dijo?"},
+    {"v": "chelios", "texto": "Dijo: ¿y si al final… el socio los escribe?"}
+   ],
+   "hl": ["guerra.", "mil."], "kill": ["escribe?"],
+   "p": {"entrada": false,
+    "pizarra": [
+     {"texto": "⚔️ *LA GUERRA DE CANALES*", "desde_inicio": true},
+     {"texto": "EL PLAN: *1.000 VIDEOS*", "ancla": "mil"},
+     {"texto": "EL ENCARGADO: *EL GUIONISTA*", "ancla": "guionista"},
+     {"texto": "EL GIRO: *LOS ESCRIBE EL SOCIO*", "ancla": "final", "color": "coral"}
+    ],
+    "socio_expr": [["plan", "cansado"], ["apenas", "sorpresa"], ["entusiasmo", "enojado"], ["guiones", "cansado"], ["avisé", "sorpresa"], ["dijo", "cansado"], ["escribe", "enojado"]],
+    "sorbos": ["entusiasmo"],
+    "chelios_gesto": [["plan", "brazos"], ["final", "salto"]]}},
+  {"id": "s07", "parte": 2, "tpl": "terminal",
+   "texto": "El Verdugo pidió revisar los cien videos del Ideador, como quien revisa sospechosos. Video uno: vetado, no tiene gancho. Video dos: vetado, es el video uno con sombrero. Video tres: vetado por ofender a mi corbata. Video cien: vetado antes de existir. El Verdugo dijo que fue el mejor día de su vida.",
+   "hl": ["Verdugo", "sospechosos."], "kill": ["vida."],
+   "p": {"titulo": "EL VERDUGO *REVISA*", "cmd": "verdugo@fabrica:~$ ./vetar --todo",
+    "lineas": [
+     {"texto": "VIDEO #1 · sin gancho → VETADO", "estado": "hl", "ancla": "uno"},
+     {"texto": "VIDEO #2 · el #1 con sombrero → VETADO", "estado": "ko", "ancla": "dos"},
+     {"texto": "VIDEO #3 · ofende una corbata → VETADO", "estado": "ko", "ancla": "tres"},
+     {"texto": "VIDEO #100 · no existe → VETADO", "estado": "ko", "ancla": "cien#2"}
+    ]}},
+  {"id": "s08", "parte": 2, "tpl": "comparar",
+   "texto": "El Analista puso los dos canales lado a lado. El canal del Ideador: cien videos al día, dos segundos cada uno y ninguna historia. Nuestra fábrica: un video al día, más de tres minutos y un dato útil al final. Y lo dijo sin pestañear: más videos no es más canal. Los datos no mienten. El Ideador sí.",
+   "hl": ["Analista", "ninguna"], "kill": ["sí."],
+   "p": {"titulo": "SU CANAL VS *EL NUESTRO*",
+    "a": {"titulo": "FÁBRICA DE IDEAS", "color": "coral", "ancla": "ideador", "items": ["100 videos al día", "2 segundos cada uno", "*Ninguna* historia"]},
+    "b": {"titulo": "NUESTRA FÁBRICA", "color": "cyan", "ancla": "nuestra", "items": ["1 video al día", "Más de 3 minutos", "*1 dato útil* al final"]},
+    "ganador": "b", "insignia": "MÁS NO ES MEJOR", "ancla_ganador": "pestañear"}},
+  {"id": "s09", "parte": 2, "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Mala noticia. El Ideador le ofreció trabajo a la Voz."},
+    {"v": "socio", "texto": "¿Y aceptó?"},
+    {"v": "chelios", "texto": "Pidió un micrófono de oro. Él le dio cien ideas de micrófonos de oro."},
+    {"v": "socio", "texto": "¿Y eso le sirvió?"},
+    {"v": "chelios", "texto": "No. Volvió en cinco minutos. Dice que allá no hay ni café."},
+    {"v": "socio", "texto": "Aquí tampoco. Me lo tomo todo yo."},
+    {"v": "chelios", "texto": "Pero ahora quiere llevarse al resto del Público. Mateo ya lo está siguiendo."}
+   ],
+   "hl": ["Voz.", "aceptó?"], "kill": ["siguiendo."],
+   "p": {
+    "pizarra": [
+     {"texto": "OFERTA DEL IDEADOR: *A LA VOZ*", "ancla": "ofreció"},
+     {"texto": "LO QUE LE DIO: *100 IDEAS DE MICRÓFONOS*", "ancla": "dio"},
+     {"texto": "LA VOZ VOLVIÓ EN: *5 MINUTOS*", "ancla": "volvió", "color": "coral"},
+     {"texto": "SIGUIENTE OBJETIVO: *EL PÚBLICO*", "ancla": "resto"}
+    ],
+    "socio_expr": [["noticia", "cansado"], ["aceptó", "sorpresa"], ["dio", "cansado"], ["sirvió", "sorpresa"], ["café", "feliz"], ["tampoco", "cansado"], ["siguiendo", "enojado"]],
+    "sorbos": ["tampoco"],
+    "chelios_gesto": [["oro", "brazos"], ["volvió", "salto"]]}},
+  {"id": "s10", "parte": 2, "tpl": "habla",
+   "texto": "Sin Público, una fábrica es solo una oficina con luces. El Ideador tenía cien videos por día y a Camila. Nosotros teníamos un socio con sueño. Así que hice lo impensable. No subí mil videos. No llamé al Verdugo. Me senté y me puse a leer los comentarios de la competencia.",
+   "hl": ["Público,", "impensable."], "kill": ["competencia."],
+   "p": {"chip": "LO IMPENSABLE", "chip_color": "coral", "burbuja": "Leer *LOS COMENTARIOS*", "ancla_burbuja": "comentarios", "gesto": "brazos", "ancla_gesto": "impensable"}},
+  {"id": "s11", "parte": 3, "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Socio, ven. Los videos del Ideador tienen comentarios. Y casi todos son preguntas."},
+    {"v": "socio", "texto": "¿Qué preguntan?"},
+    {"v": "chelios", "texto": "Cómo se hace. Con qué programa. Cuánto se demora. Y él no contesta ninguna."},
+    {"v": "socio", "texto": "Claro. Está ocupado subiendo el video ciento uno."},
+    {"v": "chelios", "texto": "Entonces cada pregunta sin respuesta es un video que nadie ha hecho."},
+    {"v": "socio", "texto": "¿Me estás diciendo que la competencia nos acaba de regalar las ideas?"},
+    {"v": "chelios", "texto": "Te estoy diciendo que el Ideador sigue trabajando para nosotros. Gratis."}
+   ],
+   "hl": ["comentarios.", "preguntas."], "kill": ["Gratis."],
+   "p": {"entrada": false,
+    "pizarra": [
+     {"texto": "💬 *LOS COMENTARIOS*", "desde_inicio": true},
+     {"texto": "CASI TODOS: *PREGUNTAS*", "ancla": "preguntas"},
+     {"texto": "RESPUESTAS DEL IDEADOR: *NINGUNA*", "ancla": "ninguna", "color": "coral"},
+     {"texto": "CADA PREGUNTA: *UN VIDEO QUE FALTA*", "ancla": "nadie"},
+     {"texto": "EL IDEADOR: *TRABAJA GRATIS*", "ancla": "sigue"}
+    ],
+    "socio_expr": [["ven", "cansado"], ["preguntan", "sorpresa"], ["ninguna", "cansado"], ["ciento", "feliz"], ["nadie", "sorpresa"], ["regalar", "feliz"], ["gratis", "sorpresa"]],
+    "sorbos": ["programa"],
+    "chelios_gesto": [["preguntas", "brazos"], ["pregunta", "salto"]]}},
+  {"id": "s12", "parte": 3, "tpl": "lista",
+   "texto": "Y aquí va lo útil del día: cómo usar a la competencia para sacar ideas sin copiar. Uno, busca tu tema en YouTube o TikTok y abre los videos con más vistas. Dos, lee los comentarios: las preguntas que se repiten y nadie contesta son tus próximos videos. Y tres, no copies el video: haz el que falta, con una respuesta más clara, más corta o en otro formato.",
+   "tts": "Y aquí va lo útil del día: cómo usar a la competencia para sacar ideas sin copiar. Uno, busca tu tema en Yutub o Tiktok y abre los videos con más vistas. Dos, lee los comentarios: las preguntas que se repiten y nadie contesta son tus próximos videos. Y tres, no copies el video: haz el que falta, con una respuesta más clara, más corta o en otro formato.",
+   "hl": ["útil", "vistas.", "comentarios:", "falta,"],
+   "p": {"titulo": "LO ÚTIL: *LA COMPETENCIA*", "ancla_titulo": "útil",
+    "items": [
+     {"texto": "*Busca tu tema:* abre los videos con más vistas", "ancla": "uno"},
+     {"texto": "*Lee los comentarios:* las preguntas sin respuesta", "ancla": "dos"},
+     {"texto": "*No copies:* haz el video que falta, mejor o distinto", "ancla": "tres"}
+    ]}},
+  {"id": "s13", "parte": 3, "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Escribí guiones con las preguntas de sus comentarios."},
+    {"v": "socio", "texto": "¿Y funcionó?"},
+    {"v": "chelios", "texto": "Camila volvió. Se quedó hasta el segundo cuatro."},
+    {"v": "socio", "texto": "Récord. ¿Y el Ideador?"},
+    {"v": "chelios", "texto": "Cerró su canal. Dice que sin el Verdugo sus ideas no saben a nada."},
+    {"v": "socio", "texto": "¿Volvió a la fábrica?"},
+    {"v": "chelios", "texto": "Volvió. Con una idea nueva: que el Verdugo apruebe algo por primera vez."}
+   ],
+   "hl": ["comentarios.", "Camila"], "kill": ["vez."],
+   "p": {
+    "pizarra": [
+     {"texto": "LAS PREGUNTAS: *NUEVOS GUIONES*", "ancla": "guiones"},
+     {"texto": "CAMILA: *VOLVIÓ*", "ancla": "camila"},
+     {"texto": "EL CANAL DEL IDEADOR: *CERRADO*", "ancla": "cerró", "color": "coral"},
+     {"texto": "SU IDEA NUEVA: *QUE EL VERDUGO APRUEBE*", "ancla": "nueva"}
+    ],
+    "socio_expr": [["guiones", "cansado"], ["camila", "sorpresa"], ["récord", "feliz"], ["cerró", "sorpresa"], ["volvió#2", "feliz"], ["primera", "sorpresa"]],
+    "sorbos": ["récord"],
+    "chelios_gesto": [["cerró", "brazos"], ["primera", "salto"]]}},
+  {"id": "s14", "parte": 3, "tpl": "manana",
+   "texto": "Mañana, día diecinueve: el Verdugo aprueba una idea por primera vez. Y nadie sabe qué hacer.",
+   "hl": ["Mañana,", "diecinueve:", "Verdugo"], "kill": ["hacer."],
+   "p": {"dia_siguiente": 19, "ancla_flip": "diecinueve", "trabajador": 2, "chip": "PRÓXIMO VIDEO", "titulo": "EL VERDUGO DICE SÍ", "linea": "EL VERDUGO… *APRUEBA UNA IDEA*", "ancla_teaser": "verdugo", "ancla_enfasis": "aprueba"}},
+  {"id": "s15", "parte": 3, "tpl": "cta",
+   "texto": "Si tú también vas a leer los comentarios de tu competencia, comenta FÁBRICA y síguenos. Mañana el Verdugo dice que sí.",
+   "tts": "Si tú también vas a leer los comentarios de tu competencia, comenta fábrica y síguenos. Mañana el Verdugo dice que sí.",
+   "hl": ["FÁBRICA"],
+   "p": {"palabra": "FÁBRICA", "ancla_palabra": "fábrica", "ancla_seguir": "síguenos", "hold": 2.6}}
+ ],
+ "publicacion": {
+  "youtube_titulo": "Mi empleado IA renunció y abrió un canal para hacerme competencia 💡⚔️ · Día 18",
+  "youtube_descripcion": "Día 18 de La Fábrica de Chelios. El Ideador renuncia a las tres de la mañana con una carta de cien páginas y abre su propio canal, «La Fábrica de Ideas», para hacernos competencia: cien videos en un día, de dos segundos cada uno y sin pasar por el Verdugo. Chelios declara la guerra y quiere subir mil videos, el Guionista tiene un giro muy conveniente, la Voz casi se cambia de bando… hasta que Chelios hace lo impensable: leer los comentarios de la competencia.\n\nLo útil del día: cómo usar a la competencia para sacar ideas sin copiar. 1) Busca tu tema en YouTube o TikTok y abre los videos con más vistas. 2) Lee los comentarios: las preguntas que se repiten y nadie contesta son tus próximos videos. 3) No copies el video: haz el que falta, con una respuesta más clara, más corta o en otro formato.\n\n¿Qué pregunta sin respuesta has visto en los comentarios de tu tema? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el del café 47). Chelios, el Ideador y los trabajadores IA son personajes ficticios.",
+  "youtube_primer_comentario": "Las mejores ideas están en los comentarios de la competencia: las preguntas que nadie contesta 💬💡 ¿Cuál has visto tú en tu tema? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+  "tiktok": [
+   "Mi empleado IA renunció a las 3 a. m. y abrió un canal para hacerme competencia 💡😤",
+   "Él subió 100 videos en un día. Chelios quiere subir 1.000. El Guionista tiene un plan… ⚔️💀",
+   "Chelios hizo lo impensable: leer los comentarios de la competencia 💬 + 3 pasos para sacar ideas sin copiar 💡 ¿Ya lo haces? 👀"
+  ],
+  "hashtags": ["#humor", "#inteligenciaartificial", "#IA", "#comedia", "#oficina", "#emprendimiento", "#fabricadechelios"],
+  "miniatura_1": "MI EMPLEADO IA ME HACE COMPETENCIA",
+  "miniatura_2": "IDEAS DE LA COMPETENCIA"
+ }
+}
