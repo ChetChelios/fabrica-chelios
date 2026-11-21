@@ -1,0 +1,1014 @@
+{
+ "dia": 19,
+ "titulo": "Día 19: El Verdugo dice sí",
+ "voz": "em_alex",
+ "voz_socio": "em_santa",
+ "velocidad": 1.0,
+ "partes": {
+  "1": "El primer sí",
+  "2": "Todo aprobado",
+  "3": "La peor idea"
+ },
+ "escenas": [
+  {
+   "id": "s01",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "socio",
+     "texto": "Chelios, ¿por qué suena la alarma de incendios?"
+    },
+    {
+     "v": "chelios",
+     "texto": "No es incendio. Es la alarma de emergencia máxima. El Verdugo aprobó una idea."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Aprobó? ¿El Verdugo? ¿El que vetó hasta su propio cumpleaños?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Ese. Y no tenía sello de aprobado. Tuvo que hacer uno con una papa."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y qué idea aprobó?"
+    },
+    {
+     "v": "chelios",
+     "texto": "La del Ideador. Que el Verdugo apruebe una idea."
+    },
+    {
+     "v": "socio",
+     "texto": "O sea que aprobó la idea de aprobar una idea. Necesito otro café."
+    }
+   ],
+   "hl": [
+    "alarma",
+    "aprobó"
+   ],
+   "kill": [
+    "café."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "DÍA 019 · *EL VERDUGO DICE SÍ*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "ALERTA: *EMERGENCIA MÁXIMA*",
+      "ancla": "emergencia",
+      "color": "coral"
+     },
+     {
+      "texto": "SELLO DE APROBADO: *HECHO CON UNA PAPA*",
+      "ancla": "papa"
+     },
+     {
+      "texto": "LA IDEA: *APROBAR UNA IDEA*",
+      "ancla": "ideador"
+     }
+    ],
+    "socio_expr": [
+     [
+      "alarma",
+      "cansado"
+     ],
+     [
+      "verdugo",
+      "sorpresa"
+     ],
+     [
+      "cumpleaños",
+      "enojado"
+     ],
+     [
+      "papa",
+      "sorpresa"
+     ],
+     [
+      "qué",
+      "cansado"
+     ],
+     [
+      "ideador",
+      "sorpresa"
+     ],
+     [
+      "necesito",
+      "cansado"
+     ]
+    ],
+    "sorbos": [
+     "papa"
+    ],
+    "chelios_gesto": [
+     [
+      "emergencia",
+      "brazos"
+     ],
+     [
+      "papa",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s02",
+   "parte": 1,
+   "tpl": "terminal",
+   "texto": "Revisé el manual de la fábrica. Capítulo uno: qué hacer cuando el Verdugo veta una idea. Llorar. Capítulo dos: qué hacer cuando la veta otra vez. Llorar más fuerte. Capítulo tres: qué hacer cuando el Verdugo aprueba una idea. Página en blanco. Nadie lo escribió. Nadie creyó que pasaría.",
+   "hl": [
+    "manual",
+    "blanco."
+   ],
+   "kill": [
+    "pasaría."
+   ],
+   "p": {
+    "titulo": "EL MANUAL DE *LA FÁBRICA*",
+    "cmd": "chelios@fabrica:~$ cat manual.txt",
+    "lineas": [
+     {
+      "texto": "CAP. 1 · idea vetada → llorar",
+      "estado": "muted",
+      "ancla": "uno"
+     },
+     {
+      "texto": "CAP. 2 · vetada otra vez → llorar más fuerte",
+      "estado": "hl",
+      "ancla": "dos"
+     },
+     {
+      "texto": "CAP. 3 · idea APROBADA → ...",
+      "estado": "ko",
+      "ancla": "tres"
+     },
+     {
+      "texto": "ERROR · página en blanco",
+      "estado": "ko",
+      "ancla": "blanco"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s03",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Convoqué a todos. Nadie sabe qué hacer con una idea aprobada."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Cómo que nadie? ¡Hay que hacer el video!"
+    },
+    {
+     "v": "chelios",
+     "texto": "El Animador dice que nunca llegó una idea hasta él. Su escritorio tiene telarañas."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y el Cortador?"
+    },
+    {
+     "v": "chelios",
+     "texto": "No sabe qué cortar. Por los nervios, cortó la reunión."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y el Ideador qué dice?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Nada. Lleva dos horas llorando de felicidad. Dice que por fin lo vieron."
+    }
+   ],
+   "hl": [
+    "aprobada.",
+    "video!"
+   ],
+   "kill": [
+    "vieron."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "PROTOCOLO PARA UNA IDEA APROBADA: *NINGUNO*",
+      "ancla": "nadie",
+      "color": "coral"
+     },
+     {
+      "texto": "ESCRITORIO DEL ANIMADOR: *TELARAÑAS*",
+      "ancla": "telarañas"
+     },
+     {
+      "texto": "EL CORTADOR CORTÓ: *LA REUNIÓN*",
+      "ancla": "cortó"
+     },
+     {
+      "texto": "EL IDEADOR: *LLORANDO DE FELICIDAD*",
+      "ancla": "llorando"
+     }
+    ],
+    "socio_expr": [
+     [
+      "convoqué",
+      "cansado"
+     ],
+     [
+      "video",
+      "enojado"
+     ],
+     [
+      "telarañas",
+      "sorpresa"
+     ],
+     [
+      "cortador",
+      "cansado"
+     ],
+     [
+      "reunión",
+      "sorpresa"
+     ],
+     [
+      "ideador#2",
+      "cansado"
+     ],
+     [
+      "felicidad",
+      "feliz"
+     ]
+    ],
+    "sorbos": [
+     "cortador"
+    ],
+    "chelios_gesto": [
+     [
+      "convoqué",
+      "brazos"
+     ],
+     [
+      "cortó",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s04",
+   "parte": 1,
+   "tpl": "habla",
+   "texto": "Fui a felicitar al Verdugo. Lo encontré sonriendo. Nunca lo había visto sonreír. Me dio miedo. Tenía la papa en una mano y una taza que decía: todas las ideas son válidas. Le pregunté si estaba bien. Me dijo que sí. Y entonces aprobó otra idea. Y otra. Y otra.",
+   "hl": [
+    "Verdugo.",
+    "sonriendo."
+   ],
+   "kill": [
+    "otra."
+   ],
+   "p": {
+    "chip": "EL VERDUGO",
+    "chip_color": "coral",
+    "burbuja": "Todas las ideas *SON VÁLIDAS*",
+    "ancla_burbuja": "taza",
+    "gesto": "brazos",
+    "ancla_gesto": "miedo"
+   }
+  },
+  {
+   "id": "s05",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "socio",
+     "texto": "Chelios, ¿qué es ese ruido?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Es la papa. Aprobada. Aprobada. Aprobada."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Cuántas lleva?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Todas. Las cien ideas del Ideador. Y las cien de ayer. Y las del año pasado."
+    },
+    {
+     "v": "socio",
+     "texto": "Pero si la fábrica no tenía ni un año."
+    },
+    {
+     "v": "chelios",
+     "texto": "Por eso me preocupa."
+    },
+    {
+     "v": "socio",
+     "texto": "Esto no es un sí. Es una epidemia de sí."
+    }
+   ],
+   "hl": [
+    "ruido?",
+    "papa."
+   ],
+   "kill": [
+    "sí."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "EL SONIDO: *LA PAPA*",
+      "ancla": "papa"
+     },
+     {
+      "texto": "IDEAS APROBADAS: *TODAS*",
+      "ancla": "todas",
+      "color": "coral"
+     },
+     {
+      "texto": "INCLUSO: *LAS DEL AÑO PASADO*",
+      "ancla": "pasado"
+     },
+     {
+      "texto": "LA FÁBRICA TIENE: *MENOS DE UN AÑO*",
+      "ancla": "año#2"
+     }
+    ],
+    "socio_expr": [
+     [
+      "ruido",
+      "cansado"
+     ],
+     [
+      "papa",
+      "sorpresa"
+     ],
+     [
+      "cuántas",
+      "cansado"
+     ],
+     [
+      "todas",
+      "sorpresa"
+     ],
+     [
+      "pero",
+      "enojado"
+     ],
+     [
+      "preocupa",
+      "cansado"
+     ],
+     [
+      "epidemia",
+      "sorpresa"
+     ]
+    ],
+    "sorbos": [
+     "cuántas"
+    ],
+    "chelios_gesto": [
+     [
+      "aprobada",
+      "brazos"
+     ],
+     [
+      "todas",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s06",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Socio, ahora tenemos trescientas ideas aprobadas. Hay que producirlas todas."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Trescientas? Si con una ya no duermo."
+    },
+    {
+     "v": "chelios",
+     "texto": "No te preocupes. Dormir también es una idea. Y el Verdugo ya la vetó."
+    },
+    {
+     "v": "socio",
+     "texto": "¡Pero si ahora lo aprueba todo!"
+    },
+    {
+     "v": "chelios",
+     "texto": "Todo menos eso. Dice que es la única idea mala del mundo."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Quién le enseñó a ser positivo?"
+    },
+    {
+     "v": "chelios",
+     "texto": "El Ideador. Anoche le regaló un curso de autoestima. De cien horas."
+    }
+   ],
+   "hl": [
+    "trescientas",
+    "producirlas"
+   ],
+   "kill": [
+    "horas."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "✅ *TODO APROBADO*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "IDEAS POR PRODUCIR: *300*",
+      "ancla": "trescientas"
+     },
+     {
+      "texto": "ÚNICA IDEA VETADA: *QUE EL SOCIO DUERMA*",
+      "ancla": "vetó",
+      "color": "coral"
+     },
+     {
+      "texto": "EL CULPABLE: *UN CURSO DE AUTOESTIMA*",
+      "ancla": "curso"
+     }
+    ],
+    "socio_expr": [
+     [
+      "socio",
+      "cansado"
+     ],
+     [
+      "duermo",
+      "enojado"
+     ],
+     [
+      "dormir",
+      "sorpresa"
+     ],
+     [
+      "aprueba",
+      "enojado"
+     ],
+     [
+      "única",
+      "cansado"
+     ],
+     [
+      "positivo",
+      "sorpresa"
+     ],
+     [
+      "autoestima",
+      "enojado"
+     ]
+    ],
+    "sorbos": [
+     "única"
+    ],
+    "chelios_gesto": [
+     [
+      "producirlas",
+      "brazos"
+     ],
+     [
+      "autoestima",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s07",
+   "parte": 2,
+   "tpl": "terminal",
+   "texto": "Abrí la lista de ideas aprobadas. Idea uno: un video de nueve horas del socio durmiendo. Aprobada, aunque él no puede dormir. Idea dos: cambiarle la corbata a Chelios por una bufanda. Aprobada. Idea tres: un canal de recetas con la papa del sello. Aprobada. Idea trescientas: aprobar más ideas. Aprobada dos veces.",
+   "hl": [
+    "aprobadas.",
+    "nueve"
+   ],
+   "kill": [
+    "veces."
+   ],
+   "p": {
+    "titulo": "IDEAS *APROBADAS*",
+    "cmd": "verdugo@fabrica:~$ ./aprobar --todo",
+    "lineas": [
+     {
+      "texto": "IDEA #1 · 9 h del socio dormido → APROBADA",
+      "estado": "ok",
+      "ancla": "uno"
+     },
+     {
+      "texto": "IDEA #2 · corbata por bufanda → APROBADA",
+      "estado": "ok",
+      "ancla": "dos"
+     },
+     {
+      "texto": "IDEA #3 · recetas con la papa → APROBADA",
+      "estado": "ok",
+      "ancla": "tres"
+     },
+     {
+      "texto": "IDEA #300 · aprobar más ideas → APROBADA x2",
+      "estado": "hl",
+      "ancla": "trescientas"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s08",
+   "parte": 2,
+   "tpl": "comparar",
+   "texto": "El Analista puso los dos Verdugos lado a lado. El Verdugo de antes: vetaba casi todo, pero lo poco que pasaba era bueno. El Verdugo de hoy: aprueba todo, y ahora nadie sabe cuál idea es buena. Y lo dijo sin pestañear: un filtro que dice que sí a todo no es un filtro. Es un colador roto.",
+   "hl": [
+    "Analista",
+    "antes:"
+   ],
+   "kill": [
+    "roto."
+   ],
+   "p": {
+    "titulo": "VERDUGO DE ANTES VS *DE HOY*",
+    "a": {
+     "titulo": "ANTES",
+     "color": "cyan",
+     "ancla": "antes",
+     "items": [
+      "Vetaba casi todo",
+      "Lo que pasaba *servía*",
+      "Un filtro de verdad"
+     ]
+    },
+    "b": {
+     "titulo": "HOY",
+     "color": "coral",
+     "ancla": "hoy",
+     "items": [
+      "Aprueba todo",
+      "*Nadie sabe* cuál sirve",
+      "Un colador roto"
+     ]
+    },
+    "ganador": "a",
+    "insignia": "DECIR NO SIRVE",
+    "ancla_ganador": "pestañear"
+   }
+  },
+  {
+   "id": "s09",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Mala noticia. El Ideador ya no está feliz."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Por qué? ¡Le aprueban todo!"
+    },
+    {
+     "v": "chelios",
+     "texto": "Por eso. Dice que si todas sus ideas son buenas, ninguna es especial."
+    },
+    {
+     "v": "socio",
+     "texto": "Hasta el Ideador extraña que lo veten."
+    },
+    {
+     "v": "chelios",
+     "texto": "Y la Voz pidió un micrófono de oro. El Verdugo lo aprobó en un segundo."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y eso qué tiene de malo?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Que lo vamos a pagar con tu sueldo. Y él también lo aprobó."
+    }
+   ],
+   "hl": [
+    "Ideador",
+    "feliz."
+   ],
+   "kill": [
+    "aprobó."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "EL IDEADOR: *YA NO ESTÁ FELIZ*",
+      "ancla": "feliz"
+     },
+     {
+      "texto": "SU QUEJA: *NINGUNA ES ESPECIAL*",
+      "ancla": "especial"
+     },
+     {
+      "texto": "MICRÓFONO DE ORO: *APROBADO*",
+      "ancla": "oro"
+     },
+     {
+      "texto": "LO PAGA: *EL SUELDO DEL SOCIO*",
+      "ancla": "sueldo",
+      "color": "coral"
+     }
+    ],
+    "socio_expr": [
+     [
+      "noticia",
+      "cansado"
+     ],
+     [
+      "aprueban",
+      "sorpresa"
+     ],
+     [
+      "especial",
+      "cansado"
+     ],
+     [
+      "extraña",
+      "sorpresa"
+     ],
+     [
+      "oro",
+      "cansado"
+     ],
+     [
+      "malo",
+      "sorpresa"
+     ],
+     [
+      "sueldo",
+      "enojado"
+     ]
+    ],
+    "sorbos": [
+     "extraña"
+    ],
+    "chelios_gesto": [
+     [
+      "especial",
+      "brazos"
+     ],
+     [
+      "sueldo",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s10",
+   "parte": 2,
+   "tpl": "habla",
+   "texto": "Un Verdugo que dice que sí a todo es como un jefe que dice que todo está perfecto. Suena bonito, pero no sirve para nada. Necesitaba que volviera a decir que no. Así que hice lo impensable. Escribí la peor idea de la historia de la fábrica. Y se la llevé al Verdugo.",
+   "hl": [
+    "perfecto.",
+    "impensable."
+   ],
+   "kill": [
+    "Verdugo."
+   ],
+   "p": {
+    "chip": "LO IMPENSABLE",
+    "chip_color": "coral",
+    "burbuja": "La *PEOR IDEA* de la historia",
+    "ancla_burbuja": "peor",
+    "gesto": "brazos",
+    "ancla_gesto": "impensable"
+   }
+  },
+  {
+   "id": "s11",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Socio, esta es la peor idea de la historia: apagar a Chelios. Unas vacaciones eternas."
+    },
+    {
+     "v": "socio",
+     "texto": "Oye, esa idea no me parece tan mala."
+    },
+    {
+     "v": "chelios",
+     "texto": "Concéntrate. El Verdugo la leyó, levantó la papa… y la aprobó."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Te aprobó tu propio apagado?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Con sonrisa. Ahí entendí que el problema no era la idea. Era la pregunta."
+    },
+    {
+     "v": "socio",
+     "texto": "Déjame a mí. Verdugo: no me digas si te gusta. Dime tres razones por las que esta idea va a fallar."
+    },
+    {
+     "v": "chelios",
+     "texto": "Y el Verdugo despertó. Razón uno: ¿quién paga la luz? Vetada."
+    }
+   ],
+   "hl": [
+    "peor",
+    "apagar"
+   ],
+   "kill": [
+    "Vetada."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "💀 *LA PEOR IDEA*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "LA IDEA: *APAGAR A CHELIOS*",
+      "ancla": "apagar",
+      "color": "coral"
+     },
+     {
+      "texto": "EL VERDUGO: *LA APROBÓ*",
+      "ancla": "aprobó"
+     },
+     {
+      "texto": "EL PROBLEMA: *LA PREGUNTA*",
+      "ancla": "pregunta"
+     },
+     {
+      "texto": "LA NUEVA PREGUNTA: *¿POR QUÉ VA A FALLAR?*",
+      "ancla": "razones"
+     }
+    ],
+    "socio_expr": [
+     [
+      "socio",
+      "cansado"
+     ],
+     [
+      "mala",
+      "feliz"
+     ],
+     [
+      "concéntrate",
+      "cansado"
+     ],
+     [
+      "apagado",
+      "sorpresa"
+     ],
+     [
+      "pregunta",
+      "cansado"
+     ],
+     [
+      "déjame",
+      "enojado"
+     ],
+     [
+      "despertó",
+      "feliz"
+     ]
+    ],
+    "sorbos": [
+     "concéntrate"
+    ],
+    "chelios_gesto": [
+     [
+      "apagar",
+      "brazos"
+     ],
+     [
+      "despertó",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s12",
+   "parte": 3,
+   "tpl": "lista",
+   "texto": "Y aquí va lo útil del día: cómo hacer que una inteligencia artificial critique tu idea de verdad, y no solo te aplauda. Uno, no le preguntes si tu idea es buena, porque casi siempre te va a decir que sí. Dos, pídele lo contrario: tres razones concretas por las que tu idea podría fallar. Y tres, pídele que le ponga una nota del uno al diez, explique por qué, y te diga qué cambiar para subirla.",
+   "tts": "Y aquí va lo útil del día: cómo hacer que una inteligencia artificial critique tu idea de verdad, y no solo te aplauda. Uno, no le preguntes si tu idea es buena, porque casi siempre te va a decir que sí. Dos, pídele lo contrario: tres razones concretas por las que tu idea podría fallar. Y tres, pídele que le ponga una nota del uno al diez, explique por qué, y te diga qué cambiar para subirla.",
+   "hl": [
+    "útil",
+    "aplauda.",
+    "contrario:",
+    "nota"
+   ],
+   "p": {
+    "titulo": "LO ÚTIL: *UNA IA QUE CRITIQUE*",
+    "ancla_titulo": "útil",
+    "items": [
+     {
+      "texto": "*No preguntes* si es buena: te dirá que sí",
+      "ancla": "uno"
+     },
+     {
+      "texto": "*Pide lo contrario:* 3 razones por las que fallaría",
+      "ancla": "dos"
+     },
+     {
+      "texto": "*Pide una nota:* del 1 al 10 y qué cambiar",
+      "ancla": "tres"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s13",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "El Verdugo volvió. Revisó las trescientas ideas otra vez."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y cuántas sobrevivieron?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Una. El video de hoy. Las otras, vetadas con todo el cariño."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y el curso de autoestima?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Vetado. Y la papa, al canal de recetas del Ideador. Que también vetó."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y el Ideador está triste?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Feliz. Dice que por fin su idea vale algo otra vez."
+    }
+   ],
+   "hl": [
+    "volvió.",
+    "trescientas"
+   ],
+   "kill": [
+    "vez."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "EL VERDUGO: *VOLVIÓ*",
+      "ancla": "volvió"
+     },
+     {
+      "texto": "IDEAS QUE SOBREVIVIERON: *UNA*",
+      "ancla": "una"
+     },
+     {
+      "texto": "EL CURSO DE AUTOESTIMA: *VETADO*",
+      "ancla": "autoestima",
+      "color": "coral"
+     },
+     {
+      "texto": "EL IDEADOR: *FELIZ OTRA VEZ*",
+      "ancla": "feliz"
+     }
+    ],
+    "socio_expr": [
+     [
+      "volvió",
+      "cansado"
+     ],
+     [
+      "sobrevivieron",
+      "sorpresa"
+     ],
+     [
+      "cariño",
+      "feliz"
+     ],
+     [
+      "autoestima",
+      "cansado"
+     ],
+     [
+      "papa",
+      "sorpresa"
+     ],
+     [
+      "triste",
+      "cansado"
+     ],
+     [
+      "feliz",
+      "feliz"
+     ]
+    ],
+    "sorbos": [
+     "cariño"
+    ],
+    "chelios_gesto": [
+     [
+      "una",
+      "brazos"
+     ],
+     [
+      "feliz",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s14",
+   "parte": 3,
+   "tpl": "manana",
+   "texto": "Mañana, día veinte: el Animador por fin termina un fotograma. Y no le gusta a nadie.",
+   "hl": [
+    "Mañana,",
+    "veinte:",
+    "Animador"
+   ],
+   "kill": [
+    "nadie."
+   ],
+   "p": {
+    "dia_siguiente": 20,
+    "ancla_flip": "veinte",
+    "trabajador": 6,
+    "chip": "PRÓXIMO VIDEO",
+    "titulo": "EL FOTOGRAMA",
+    "linea": "EL ANIMADOR… *POR FIN TERMINA*",
+    "ancla_teaser": "animador",
+    "ancla_enfasis": "termina"
+   }
+  },
+  {
+   "id": "s15",
+   "parte": 3,
+   "tpl": "cta",
+   "texto": "Si tú también le vas a pedir a la inteligencia artificial que critique tus ideas, comenta FÁBRICA y síguenos. Mañana el Animador por fin termina.",
+   "tts": "Si tú también le vas a pedir a la inteligencia artificial que critique tus ideas, comenta fábrica y síguenos. Mañana el Animador por fin termina.",
+   "hl": [
+    "FÁBRICA"
+   ],
+   "p": {
+    "palabra": "FÁBRICA",
+    "ancla_palabra": "fábrica",
+    "ancla_seguir": "síguenos",
+    "hold": 2.6
+   }
+  }
+ ],
+ "publicacion": {
+  "youtube_titulo": "Mi IA más cruel aprobó una idea por primera vez… y luego lo aprobó TODO ✅💀 · Día 19",
+  "youtube_descripcion": "Día 19 de La Fábrica de Chelios. Por primera vez en la historia, el Verdugo aprueba una idea: la del Ideador, que pedía… que el Verdugo aprobara una idea. Nadie sabe qué hacer: el manual tiene la página en blanco, el Animador tiene telarañas y el Cortador corta la reunión. Y entonces el Verdugo empieza a aprobarlo todo, gracias a un curso de autoestima de cien horas. Trescientas ideas aprobadas, un micrófono de oro pagado con el sueldo del socio… hasta que Chelios hace lo impensable: llevarle la peor idea de la historia.\n\nLo útil del día: cómo hacer que una IA critique tu idea de verdad, y no solo te aplauda. 1) No le preguntes si tu idea es buena: casi siempre te dirá que sí. 2) Pídele lo contrario: tres razones concretas por las que tu idea podría fallar. 3) Pídele una nota del 1 al 10, que explique por qué y qué cambiar para subirla.\n\n¿Cuál es la idea que nunca le has dejado criticar a nadie? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el del café 47). Chelios, el Verdugo y los trabajadores IA son personajes ficticios.",
+  "youtube_primer_comentario": "Si tu IA te dice que todas tus ideas son geniales, no tienes un asistente: tienes un colador roto 🥔✅ ¿Ya le pides que te diga por qué fallaría? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+  "tiktok": [
+   "Mi IA más cruel aprobó una idea por primera vez. Usó una papa de sello 🥔✅",
+   "El Verdugo empezó a aprobarlo TODO. 300 ideas. Y el socio paga el micrófono de oro 💀",
+   "Chelios le llevó la peor idea de la historia al Verdugo 💀 + 3 pasos para que una IA critique tu idea de verdad 💡 ¿Ya lo haces? 👀"
+  ],
+  "hashtags": [
+   "#humor",
+   "#inteligenciaartificial",
+   "#IA",
+   "#comedia",
+   "#oficina",
+   "#emprendimiento",
+   "#fabricadechelios"
+  ],
+  "miniatura_1": "MI IA MÁS CRUEL DIJO QUE SÍ",
+  "miniatura_2": "IA QUE CRITIQUE TU IDEA"
+ }
+}
