@@ -1,0 +1,125 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-005",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 05",
+  "titulo": "GTA 6: <i>ya es oficial</i>",
+  "subtitulo": "(5 datos del día tres)",
+  "portada": "el robot recibió la cifra oficial",
+  "intro": {
+    "texto": "Ya hay cifras oficiales de GTA seis, y son más grandes de lo que se estimaba. Cinco datos de hoy. Ojo con el cinco si juegas en PC.",
+    "tts": "Ya hay cifras oficiales de yitiéi seis, y son más grandes de lo que se estimaba. Cinco datos de hoy. Ojo con el cinco si juegas en pecé."
+  },
+  "items": [
+    {
+      "etiqueta": "las copias",
+      "estilo": "synth",
+      "texto": "Uno: Take-Two confirmó treinta y dos millones y medio de copias vendidas antes del lanzamiento. Ayer la estimación hablaba de veinticinco. Es récord.",
+      "tts": "Uno: Teiktú confirmó treinta y dos millones y medio de copias vendidas antes del lanzamiento. Ayer la estimación hablaba de veinticinco. Es récord.",
+      "card": {
+        "grande": "32,5 M",
+        "linea": "COPIAS · CIFRA OFICIAL",
+        "nota": "Take-Two · 20 de noviembre"
+      }
+    },
+    {
+      "etiqueta": "el dinero",
+      "estilo": "neon",
+      "texto": "Dos: hasta el cierre del día del lanzamiento, unos tres mil setecientos noventa millones de dólares. Más que toda la taquilla de Avengers Endgame.",
+      "tts": "Dos: hasta el cierre del día del lanzamiento, unos tres mil setecientos noventa millones de dólares. Más que toda la taquilla de Avényers Endgueim.",
+      "card": {
+        "filas": [
+          {
+            "texto": "US$3.790 M",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "EN UN DÍA",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "> ENDGAME",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "Endgame: US$2.940 M en total"
+      }
+    },
+    {
+      "etiqueta": "las horas",
+      "estilo": "synth",
+      "texto": "Tres: según Circana, el sesenta y uno por ciento de los jugadores activos de PlayStation cinco en Estados Unidos jugó GTA seis el día uno. Promedio: quinientos trece minutos. Más de ocho horas.",
+      "tts": "Tres: según Sircana, el sesenta y uno por ciento de los jugadores activos de Pleisteishon cinco en Estados Unidos jugó yitiéi seis el día uno. Promedio: quinientos trece minutos. Más de ocho horas.",
+      "card": {
+        "grande": "513 min",
+        "linea": "PROMEDIO DEL DÍA UNO · PS5",
+        "nota": "Circana · jugadores de EE. UU."
+      }
+    },
+    {
+      "etiqueta": "las notas",
+      "estilo": "neon",
+      "texto": "Cuatro: la crítica le da noventa y nueve en Metacritic. Los usuarios, cinco coma seis. Se quejan de los treinta cuadros por segundo y de tareas repetitivas.",
+      "tts": "Cuatro: la crítica le da noventa y nueve en Metacritic. Los usuarios, cinco coma seis. Se quejan de los treinta cuadros por segundo y de tareas repetitivas.",
+      "card": {
+        "filas": [
+          {
+            "texto": "CRÍTICA · 99",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "USUARIOS · 5,6",
+            "color": "#FF4FD8"
+          },
+          {
+            "texto": "58 MIL VOTOS",
+            "color": "#45E3FF"
+          }
+        ],
+        "nota": "Metacritic · 21 nov · cambia"
+      }
+    },
+    {
+      "etiqueta": "ojo en PC",
+      "estilo": "synth",
+      "texto": "Y cinco: GTA seis no tiene versión de PC anunciada. Si ves una descarga o una página de Steam que dice lo contrario, es estafa. No la instales.",
+      "tts": "Y cinco: yitiéi seis no tiene versión de pecé anunciada. Si ves una descarga o una página de Stim que dice lo contrario, es estafa. No la instales.",
+      "card": {
+        "grande": "PC: NO",
+        "linea": "SIN VERSIÓN ANUNCIADA",
+        "nota": "descargas de \"GTA 6 PC\" = estafa"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Le darías noventa y nueve o cinco coma seis? Comenta GTA y sígueme.",
+    "tts": "¿Le darías noventa y nueve o cinco coma seis? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "32,5 millones de copias en preventa/prelanzamiento, cifra oficial de Take-Two (récord): Kotaku (20 nov 2026), Vida Extra (20 nov 2026), Hipertextual (20 nov 2026), VGTimes (21 nov 2026). Estimación previa de Sensor Tower: 24,58 M (Kotaku/Infobae, 20 nov 2026)",
+    "US$3.790 millones hasta el cierre del día del lanzamiento (19 nov), según Take-Two; taquilla total de Avengers: Endgame US$2.940 millones: Kotaku (20 nov 2026), Hipertextual (20 nov 2026)",
+    "61% de los jugadores activos de PS5 en EE. UU. jugó GTA VI el 19 nov; promedio de 513 minutos en PS5 (494 en Xbox): Circana vía Mat Piscatella, citado por Kotaku (20 nov 2026)",
+    "Metacritic: 99 de la crítica (152 reseñas) y 5,6 de usuarios (58.121 votos), consultado el 21 nov; quejas sobre 30 FPS y tareas repetitivas: Game News Plus (21 nov 2026)",
+    "Sin versión de PC anunciada: Vida Extra (20 nov 2026); 'port' falso de PC usado en estafas y página sospechosa de Steam (SteamDB advierte que puede ser maliciosa): VGTimes (20 nov 2026)"
+  ],
+  "publicacion": {
+    "youtube_titulo": "GTA 6 ya es oficial: 32,5 millones y US$3.790 millones en un día 🎮 5 datos (ojo con el 5) #Shorts",
+    "youtube_descripcion": "Chelios Noticias · GTA 6, día tres. 1) Take-Two confirmó 32,5 millones de copias vendidas antes del lanzamiento, un récord (la estimación de ayer era de unos 25 millones). 2) Hasta el cierre del día del lanzamiento, unos US$3.790 millones: más que toda la taquilla de Avengers: Endgame (US$2.940 millones). 3) Según Circana, el 61% de los jugadores activos de PS5 en EE. UU. jugó GTA 6 el 19 de noviembre, con un promedio de 513 minutos. 4) En Metacritic: 99 de la crítica y 5,6 de los usuarios (más de 58 mil votos, al 21 de noviembre). 5) No hay versión de PC anunciada: las descargas y páginas de Steam de \"GTA 6 PC\" son estafas.\n\n¿Le darías 99 o 5,6? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Le darías 99 o 5,6? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "GTA 6 ya es oficial: 32,5 millones de copias y US$3.790 millones en un día 🎮💸 5 datos de hoy (ojo con el 5 si juegas en PC 👀) ¿Le darías 99 o 5,6?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
