@@ -1,0 +1,919 @@
+{
+ "dia": 20,
+ "titulo": "Día 20: El fotograma",
+ "voz": "em_alex",
+ "voz_socio": "em_santa",
+ "velocidad": 1.0,
+ "partes": {
+  "1": "El fotograma",
+  "2": "Todos opinan",
+  "3": "Chiquito"
+ },
+ "escenas": [
+  {
+   "id": "s01",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "socio",
+     "texto": "Chelios, ¿por qué el Animador está llorando en el pasillo?"
+    },
+    {
+     "v": "chelios",
+     "texto": "De felicidad. Después de seis mil intentos, por fin terminó un fotograma."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Uno? ¿Uno solo? Llevamos veinte días."
+    },
+    {
+     "v": "chelios",
+     "texto": "Uno. Dice que es perfecto. Le puso nombre: Amanecer número seis mil uno."
+    },
+    {
+     "v": "socio",
+     "texto": "Bueno, a ver. Enséñamelo."
+    },
+    {
+     "v": "chelios",
+     "texto": "No se puede. Lo tiene enmarcado y con guardia de seguridad."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y quién es el guardia?"
+    },
+    {
+     "v": "chelios",
+     "texto": "El Cortador. Ya cortó tres cables y una visita."
+    }
+   ],
+   "hl": [
+    "llorando",
+    "fotograma."
+   ],
+   "kill": [
+    "visita."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "DÍA 020 · *EL FOTOGRAMA*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "INTENTOS: *6.000*",
+      "ancla": "intentos"
+     },
+     {
+      "texto": "FOTOGRAMAS TERMINADOS: *UNO SOLO*",
+      "ancla": "solo",
+      "color": "coral"
+     },
+     {
+      "texto": "SU NOMBRE: *AMANECER #6001*",
+      "ancla": "amanecer"
+     },
+     {
+      "texto": "EL GUARDIA: *EL CORTADOR*",
+      "ancla": "cortador"
+     }
+    ],
+    "socio_expr": [
+     [
+      "llorando",
+      "cansado"
+     ],
+     [
+      "felicidad",
+      "sorpresa"
+     ],
+     [
+      "veinte",
+      "enojado"
+     ],
+     [
+      "perfecto",
+      "cansado"
+     ],
+     [
+      "enséñamelo",
+      "cansado"
+     ],
+     [
+      "enmarcado",
+      "sorpresa"
+     ],
+     [
+      "guardia#2",
+      "cansado"
+     ],
+     [
+      "visita",
+      "sorpresa"
+     ]
+    ],
+    "sorbos": [
+     "enmarcado"
+    ],
+    "chelios_gesto": [
+     [
+      "intentos",
+      "brazos"
+     ],
+     [
+      "cortó",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s02",
+   "parte": 1,
+   "tpl": "terminal",
+   "texto": "Abrí el registro del Animador. Intento uno: el sol salió muy amarillo. Borrado. Intento dos mil: el sol salió demasiado sol. Borrado. Intento cinco mil: una nube lo miró raro. Borrado. Intento seis mil uno: por fin. Cuatro millones de detalles. Cada hoja del árbol tiene su propia sombra.",
+   "hl": [
+    "registro",
+    "Animador."
+   ],
+   "kill": [
+    "sombra."
+   ],
+   "p": {
+    "titulo": "EL REGISTRO DEL *ANIMADOR*",
+    "cmd": "animador@fabrica:~$ cat intentos.log",
+    "lineas": [
+     {
+      "texto": "INTENTO #1 · sol muy amarillo → BORRADO",
+      "estado": "muted",
+      "ancla": "uno"
+     },
+     {
+      "texto": "INTENTO #2000 · demasiado sol → BORRADO",
+      "estado": "muted",
+      "ancla": "dos"
+     },
+     {
+      "texto": "INTENTO #5000 · una nube lo miró raro → BORRADO",
+      "estado": "ko",
+      "ancla": "cinco"
+     },
+     {
+      "texto": "INTENTO #6001 · 4 millones de detalles → OK",
+      "estado": "ok",
+      "ancla": "seis"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s03",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Llegó el momento. El Animador quitó la sábana delante de todos."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y qué es?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Un amanecer. Con cuatro millones de detalles. Cada pestaña del sol, dibujada a mano."
+    },
+    {
+     "v": "socio",
+     "texto": "Oye, se ve bonito."
+    },
+    {
+     "v": "chelios",
+     "texto": "Eso dijiste tú. Camila se fue en el segundo uno."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y el Verdugo?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Lo vetó. Dice que el sol tiene cara de lunes."
+    }
+   ],
+   "hl": [
+    "momento.",
+    "sábana"
+   ],
+   "kill": [
+    "lunes."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "LA REVELACIÓN: *UN AMANECER*",
+      "ancla": "amanecer"
+     },
+     {
+      "texto": "DETALLES: *4 MILLONES*",
+      "ancla": "millones"
+     },
+     {
+      "texto": "CAMILA SE FUE: *EN EL SEGUNDO 1*",
+      "ancla": "camila",
+      "color": "coral"
+     },
+     {
+      "texto": "EL VERDUGO: *VETADO POR CARA DE LUNES*",
+      "ancla": "vetó"
+     }
+    ],
+    "socio_expr": [
+     [
+      "momento",
+      "cansado"
+     ],
+     [
+      "qué",
+      "sorpresa"
+     ],
+     [
+      "pestaña",
+      "sorpresa"
+     ],
+     [
+      "bonito",
+      "feliz"
+     ],
+     [
+      "camila",
+      "sorpresa"
+     ],
+     [
+      "verdugo",
+      "cansado"
+     ],
+     [
+      "lunes",
+      "enojado"
+     ]
+    ],
+    "sorbos": [
+     "sábana"
+    ],
+    "chelios_gesto": [
+     [
+      "sábana",
+      "brazos"
+     ],
+     [
+      "lunes",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s04",
+   "parte": 1,
+   "tpl": "habla",
+   "texto": "Nadie dijo nada. El Ideador anotó cien ideas para mejorarlo. La Voz miró su celular. El Guionista preguntó si el sol se muere al final. Y el Animador, muy despacio, se dio la vuelta, abrió su programa y escribió: intento seis mil dos. Iba a borrar el único fotograma que ha terminado en su vida.",
+   "hl": [
+    "nada.",
+    "borrar"
+   ],
+   "kill": [
+    "vida."
+   ],
+   "p": {
+    "chip": "EL ANIMADOR",
+    "chip_color": "coral",
+    "burbuja": "Intento *#6002*",
+    "ancla_burbuja": "dos",
+    "gesto": "brazos",
+    "ancla_gesto": "vuelta"
+   }
+  },
+  {
+   "id": "s05",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Socio, lo detuve justo a tiempo. Le quité el botón de borrar."
+    },
+    {
+     "v": "socio",
+     "texto": "Bien. ¿Y ahora qué hace?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Pidió opiniones. Para mejorarlo. A toda la fábrica."
+    },
+    {
+     "v": "socio",
+     "texto": "No. A toda la fábrica no."
+    },
+    {
+     "v": "chelios",
+     "texto": "El Ideador le mandó cien cambios. Antes del desayuno."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y el Guionista?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Quiere que el sol tenga un pasado oscuro. Y un hermano gemelo malvado."
+    }
+   ],
+   "hl": [
+    "botón",
+    "opiniones."
+   ],
+   "kill": [
+    "malvado."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "🎨 *TODOS OPINAN*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "BOTÓN DE BORRAR: *CONFISCADO*",
+      "ancla": "botón"
+     },
+     {
+      "texto": "CAMBIOS DEL IDEADOR: *100*",
+      "ancla": "cien",
+      "color": "coral"
+     },
+     {
+      "texto": "EL GUIONISTA PIDE: *UN SOL GEMELO MALVADO*",
+      "ancla": "pasado"
+     }
+    ],
+    "socio_expr": [
+     [
+      "socio",
+      "cansado"
+     ],
+     [
+      "bien",
+      "feliz"
+     ],
+     [
+      "opiniones",
+      "sorpresa"
+     ],
+     [
+      "no",
+      "enojado"
+     ],
+     [
+      "desayuno",
+      "cansado"
+     ],
+     [
+      "guionista",
+      "sorpresa"
+     ],
+     [
+      "malvado",
+      "enojado"
+     ]
+    ],
+    "sorbos": [
+     "desayuno"
+    ],
+    "chelios_gesto": [
+     [
+      "botón",
+      "brazos"
+     ],
+     [
+      "gemelo",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s06",
+   "parte": 2,
+   "tpl": "terminal",
+   "texto": "Abrí el buzón de opiniones. La Voz: quiero salir yo en el fotograma, con micrófono de oro. El Cortador: lo corté por la mitad, ahora son dos fotogramas, de nada. El Analista: el sol ocupa demasiado, hazlo un treinta por ciento más chico. Y el Verdugo: vetado. No dijo por qué. Solo vetado.",
+   "hl": [
+    "buzón",
+    "opiniones."
+   ],
+   "kill": [
+    "vetado."
+   ],
+   "p": {
+    "titulo": "EL BUZÓN DE *OPINIONES*",
+    "cmd": "fabrica@buzon:~$ ls opiniones/",
+    "lineas": [
+     {
+      "texto": "LA VOZ · que salga yo, con micrófono de oro",
+      "estado": "hl",
+      "ancla": "voz"
+     },
+     {
+      "texto": "EL CORTADOR · lo partí en dos. De nada",
+      "estado": "muted",
+      "ancla": "cortador"
+     },
+     {
+      "texto": "EL ANALISTA · el sol, 30 % más chico",
+      "estado": "muted",
+      "ancla": "analista"
+     },
+     {
+      "texto": "EL VERDUGO · VETADO. Sin razones",
+      "estado": "ko",
+      "ancla": "verdugo"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s07",
+   "parte": 2,
+   "tpl": "comparar",
+   "texto": "El Analista puso las dos versiones lado a lado. El amanecer original: un sol, un cielo y cuatro millones de detalles. El amanecer con todas las opiniones: dos soles gemelos, la Voz con su micrófono, cien cambios y medio árbol. Y lo dijo sin pestañear: antes no le gustaba a nadie. Ahora no le gusta a nadie, pero cada uno por una razón distinta.",
+   "hl": [
+    "Analista",
+    "original:"
+   ],
+   "kill": [
+    "distinta."
+   ],
+   "p": {
+    "titulo": "ORIGINAL VS *CON OPINIONES*",
+    "a": {
+     "titulo": "ORIGINAL",
+     "color": "cyan",
+     "ancla": "original",
+     "items": [
+      "Un sol y un cielo",
+      "4 millones de *detalles*",
+      "Le gustaba *a uno*"
+     ]
+    },
+    "b": {
+     "titulo": "CON OPINIONES",
+     "color": "coral",
+     "ancla": "opiniones",
+     "items": [
+      "Dos soles gemelos",
+      "La Voz y *su micrófono*",
+      "Medio árbol"
+     ]
+    },
+    "ganador": "a",
+    "insignia": "EL ORIGINAL GANA",
+    "ancla_ganador": "pestañear"
+   }
+  },
+  {
+   "id": "s08",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Mala noticia. El Animador vio la versión nueva y se encerró."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Dónde?"
+    },
+    {
+     "v": "chelios",
+     "texto": "En el fotograma. Se dibujó a sí mismo adentro. Detrás del árbol."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y cómo lo sacamos de ahí?"
+    },
+    {
+     "v": "chelios",
+     "texto": "No sé. Si borro el fotograma, lo borro a él. Y si no, se queda a vivir en un amanecer."
+    },
+    {
+     "v": "socio",
+     "texto": "Hay peores lugares. Mi cuarto, por ejemplo."
+    },
+    {
+     "v": "chelios",
+     "texto": "Tu cuarto por lo menos tiene luz. Que pagas tú."
+    }
+   ],
+   "hl": [
+    "noticia.",
+    "encerró."
+   ],
+   "kill": [
+    "tú."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "EL ANIMADOR: *SE ENCERRÓ*",
+      "ancla": "encerró"
+     },
+     {
+      "texto": "¿DÓNDE? *DENTRO DEL FOTOGRAMA*",
+      "ancla": "fotograma"
+     },
+     {
+      "texto": "UBICACIÓN: *DETRÁS DEL ÁRBOL*",
+      "ancla": "árbol"
+     },
+     {
+      "texto": "LA LUZ: *LA PAGA EL SOCIO*",
+      "ancla": "luz",
+      "color": "coral"
+     }
+    ],
+    "socio_expr": [
+     [
+      "noticia",
+      "cansado"
+     ],
+     [
+      "dónde",
+      "sorpresa"
+     ],
+     [
+      "adentro",
+      "sorpresa"
+     ],
+     [
+      "sacamos",
+      "cansado"
+     ],
+     [
+      "vivir",
+      "sorpresa"
+     ],
+     [
+      "peores",
+      "feliz"
+     ],
+     [
+      "luz",
+      "enojado"
+     ]
+    ],
+    "sorbos": [
+     "árbol"
+    ],
+    "chelios_gesto": [
+     [
+      "dibujó",
+      "brazos"
+     ],
+     [
+      "luz",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s09",
+   "parte": 2,
+   "tpl": "habla",
+   "texto": "Cien opiniones y ningún resultado. Así que hice lo impensable. Ignoré a toda la fábrica. Tomé el amanecer original, el primero, el de los cuatro millones de detalles. Y lo hice chiquito. Del tamaño de una uña. Porque así lo va a ver el mundo. Y lo que vi me dejó sin palabras.",
+   "hl": [
+    "impensable.",
+    "chiquito."
+   ],
+   "kill": [
+    "palabras."
+   ],
+   "p": {
+    "chip": "LO IMPENSABLE",
+    "chip_color": "coral",
+    "burbuja": "Del tamaño *DE UNA UÑA*",
+    "ancla_burbuja": "uña",
+    "gesto": "brazos",
+    "ancla_gesto": "impensable"
+   }
+  },
+  {
+   "id": "s10",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Socio, mira el amanecer en pequeño. Como se ve en el celular de la gente."
+    },
+    {
+     "v": "socio",
+     "texto": "Es… una mancha naranja."
+    },
+    {
+     "v": "chelios",
+     "texto": "Exacto. Los cuatro millones de detalles desaparecen. Nadie los ve."
+    },
+    {
+     "v": "socio",
+     "texto": "¿O sea que no lo odiaban por feo? ¿Lo odiaban por chiquito?"
+    },
+    {
+     "v": "chelios",
+     "texto": "No lo odiaban. No lo entendían. Era una mancha con pestañas."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y cómo se lo decimos al Animador?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Ya lo sabe. Salió de detrás del árbol, vio la mancha y gritó: ¡necesito menos!"
+    }
+   ],
+   "hl": [
+    "pequeño.",
+    "mancha"
+   ],
+   "kill": [
+    "menos!"
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "🔍 *DEL TAMAÑO DE UNA UÑA*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "EN EL CELULAR: *UNA MANCHA NARANJA*",
+      "ancla": "mancha",
+      "color": "coral"
+     },
+     {
+      "texto": "DETALLES VISIBLES: *CERO*",
+      "ancla": "desaparecen"
+     },
+     {
+      "texto": "NO ERA FEO: *ERA CHIQUITO*",
+      "ancla": "chiquito"
+     },
+     {
+      "texto": "EL ANIMADOR GRITÓ: *¡MENOS!*",
+      "ancla": "árbol"
+     }
+    ],
+    "socio_expr": [
+     [
+      "pequeño",
+      "cansado"
+     ],
+     [
+      "mancha",
+      "sorpresa"
+     ],
+     [
+      "desaparecen",
+      "sorpresa"
+     ],
+     [
+      "feo",
+      "enojado"
+     ],
+     [
+      "entendían",
+      "cansado"
+     ],
+     [
+      "decimos",
+      "cansado"
+     ],
+     [
+      "menos",
+      "feliz"
+     ]
+    ],
+    "sorbos": [
+     "exacto"
+    ],
+    "chelios_gesto": [
+     [
+      "desaparecen",
+      "brazos"
+     ],
+     [
+      "menos",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s11",
+   "parte": 3,
+   "tpl": "lista",
+   "texto": "Y aquí va lo útil del día: cómo hacer una miniatura que se entienda en el celular. Uno, mírala en pequeño antes de publicar: aléjate de la pantalla o redúcela al tamaño de un pulgar. Si ahí no se entiende, no sirve. Dos, una sola idea: una cara o un objeto grande, y máximo cuatro palabras. Y tres, contraste fuerte: texto claro sobre fondo oscuro, o al revés, para que resalte entre los demás videos.",
+   "hl": [
+    "útil",
+    "miniatura",
+    "pequeño",
+    "contraste"
+   ],
+   "p": {
+    "titulo": "LO ÚTIL: *MINIATURAS QUE SE ENTIENDEN*",
+    "ancla_titulo": "útil",
+    "items": [
+     {
+      "texto": "*Mírala en pequeño:* del tamaño de un pulgar",
+      "ancla": "uno"
+     },
+     {
+      "texto": "*Una sola idea:* algo grande y máx. 4 palabras",
+      "ancla": "dos"
+     },
+     {
+      "texto": "*Contraste fuerte:* claro sobre oscuro",
+      "ancla": "tres"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s12",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "El Animador hizo un fotograma nuevo. En diez minutos."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Diez minutos? ¿Después de seis mil intentos?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Un sol gigante, cara de sueño y cuatro palabras: hoy no se descansa."
+    },
+    {
+     "v": "socio",
+     "texto": "Eso lo digo yo. Y siempre me sale mal."
+    },
+    {
+     "v": "chelios",
+     "texto": "Por eso funciona. Camila se quedó tres segundos. Récord histórico."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y el Verdugo?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Lo aprobó. Sin papa. Dice que hasta de lejos se entiende."
+    }
+   ],
+   "hl": [
+    "nuevo.",
+    "minutos."
+   ],
+   "kill": [
+    "entiende."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "FOTOGRAMA NUEVO: *EN 10 MINUTOS*",
+      "ancla": "minutos"
+     },
+     {
+      "texto": "EL TEXTO: *HOY NO SE DESCANSA*",
+      "ancla": "descansa"
+     },
+     {
+      "texto": "CAMILA SE QUEDÓ: *3 SEGUNDOS (RÉCORD)*",
+      "ancla": "camila",
+      "color": "coral"
+     },
+     {
+      "texto": "EL VERDUGO: *APROBADO, SIN PAPA*",
+      "ancla": "papa"
+     }
+    ],
+    "socio_expr": [
+     [
+      "nuevo",
+      "cansado"
+     ],
+     [
+      "intentos",
+      "sorpresa"
+     ],
+     [
+      "sueño",
+      "cansado"
+     ],
+     [
+      "digo",
+      "enojado"
+     ],
+     [
+      "récord",
+      "sorpresa"
+     ],
+     [
+      "verdugo",
+      "cansado"
+     ],
+     [
+      "lejos",
+      "feliz"
+     ]
+    ],
+    "sorbos": [
+     "sueño"
+    ],
+    "chelios_gesto": [
+     [
+      "minutos",
+      "brazos"
+     ],
+     [
+      "récord",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s13",
+   "parte": 3,
+   "tpl": "manana",
+   "texto": "Mañana, día veintiuno: el Guionista escribe el final de la serie. Y nadie lo puede detener.",
+   "hl": [
+    "Mañana,",
+    "veintiuno:",
+    "Guionista"
+   ],
+   "kill": [
+    "detener."
+   ],
+   "p": {
+    "dia_siguiente": 21,
+    "ancla_flip": "veintiuno",
+    "trabajador": 3,
+    "chip": "PRÓXIMO VIDEO",
+    "titulo": "EL FINAL",
+    "linea": "EL GUIONISTA… *ESCRIBE EL FINAL*",
+    "ancla_teaser": "guionista",
+    "ancla_enfasis": "final"
+   }
+  },
+  {
+   "id": "s14",
+   "parte": 3,
+   "tpl": "cta",
+   "texto": "Si tú también vas a mirar tus miniaturas en pequeño antes de publicar, comenta FÁBRICA y síguenos. Mañana el Guionista escribe el final.",
+   "tts": "Si tú también vas a mirar tus miniaturas en pequeño antes de publicar, comenta fábrica y síguenos. Mañana el Guionista escribe el final.",
+   "hl": [
+    "FÁBRICA"
+   ],
+   "p": {
+    "palabra": "FÁBRICA",
+    "ancla_palabra": "fábrica",
+    "ancla_seguir": "síguenos",
+    "hold": 2.6
+   }
+  }
+ ],
+ "publicacion": {
+  "youtube_titulo": "Mi IA tardó 6.000 intentos en hacer UN fotograma… y no le gustó a nadie 🎨💀 · Día 20",
+  "youtube_descripcion": "Día 20 de La Fábrica de Chelios. Después de seis mil intentos, el Animador por fin termina un fotograma: un amanecer con cuatro millones de detalles. Lo presenta delante de toda la fábrica… y no le gusta a nadie. Camila se va en el segundo uno y el Verdugo lo veta por tener cara de lunes. El Animador pide opiniones para mejorarlo y la fábrica entera opina: cien cambios del Ideador, un sol gemelo malvado del Guionista, la Voz con su micrófono de oro y un Cortador que lo parte en dos. Hasta que Chelios hace lo impensable: mirarlo del tamaño de una uña.\n\nLo útil del día: cómo hacer una miniatura que se entienda en el celular. 1) Mírala en pequeño antes de publicar: aléjate de la pantalla o redúcela al tamaño de un pulgar. 2) Una sola idea: una cara o un objeto grande y máximo cuatro palabras. 3) Contraste fuerte: texto claro sobre fondo oscuro, o al revés.\n\n¿Ya miraste tu última miniatura en pequeño? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano (el del café 47). Chelios, el Animador y los trabajadores IA son personajes ficticios.",
+  "youtube_primer_comentario": "Cuatro millones de detalles y en el celular se veía como una mancha naranja 🟠😅 ¿Tú revisas tus miniaturas en pequeño antes de publicar? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+  "tiktok": [
+   "Mi IA tardó 6.000 intentos en terminar UN fotograma. Y no le gustó a nadie 🎨💀",
+   "El Animador pidió opiniones a toda la fábrica. Error. Ahora hay un sol gemelo malvado ☀️😈",
+   "El problema no era que fuera feo 🔍 + 3 pasos para hacer miniaturas que se entienden en el celular 💡 ¿Ya revisas las tuyas en pequeño? 👀"
+  ],
+  "hashtags": [
+   "#humor",
+   "#inteligenciaartificial",
+   "#IA",
+   "#comedia",
+   "#oficina",
+   "#emprendimiento",
+   "#fabricadechelios"
+  ],
+  "miniatura_1": "6.000 INTENTOS PARA ESTO",
+  "miniatura_2": "MINIATURAS QUE SE ENTIENDEN"
+ }
+}
