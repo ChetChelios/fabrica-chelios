@@ -1,0 +1,125 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-006",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 06",
+  "titulo": "GTA 6 <i>rompió todo</i>",
+  "subtitulo": "(5 datos de la semana uno)",
+  "portada": "el robot se quedó sin internet",
+  "intro": {
+    "texto": "GTA seis rompió internet, Twitch y hasta los colegios. Cinco datos de su primera semana. Ojo con el cinco si juegas en Xbox.",
+    "tts": "Yitiéi seis rompió internet, Tuich y hasta los colegios. Cinco datos de su primera semana. Ojo con el cinco si juegas en Equisbox."
+  },
+  "items": [
+    {
+      "etiqueta": "el festival",
+      "estilo": "synth",
+      "texto": "Uno: el sábado Rockstar hizo su festival de GTA seis en Miami, con Travis Scott. Y donará todo lo de las entradas a nueve organizaciones benéficas de la ciudad.",
+      "tts": "Uno: el sábado Rockstar hizo su festival de yitiéi seis en Miami, con Travis Scott. Y donará todo lo de las entradas a nueve organizaciones benéficas de la ciudad.",
+      "card": {
+        "grande": "100%",
+        "linea": "DE LAS ENTRADAS · A CARIDAD",
+        "nota": "9 organizaciones de Miami · Rockstar"
+      }
+    },
+    {
+      "etiqueta": "los streams",
+      "estilo": "neon",
+      "texto": "Dos: en el lanzamiento, siete coma nueve millones de personas lo vieron en directo al mismo tiempo. Más de cuatro veces el récord anterior de Valorant.",
+      "tts": "Dos: en el lanzamiento, siete coma nueve millones de personas lo vieron en directo al mismo tiempo. Más de cuatro veces el récord anterior de Valorant.",
+      "card": {
+        "filas": [
+          {
+            "texto": "7,9 M EN VIVO",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "TWITCH 3,3 M",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "YOUTUBE 3,2 M",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "Streams Charts · pico"
+      }
+    },
+    {
+      "etiqueta": "el internet",
+      "estilo": "synth",
+      "texto": "Tres: la víspera del lanzamiento, el intercambio de internet DE CIX marcó su récord mundial: treinta y tres terabits por segundo.",
+      "tts": "Tres: la víspera del lanzamiento, el intercambio de internet De Six marcó su récord mundial: treinta y tres terabits por segundo.",
+      "card": {
+        "grande": "33 Tbps",
+        "linea": "RÉCORD DE TRÁFICO · DE-CIX",
+        "nota": "18 de noviembre · víspera del estreno"
+      }
+    },
+    {
+      "etiqueta": "los colegios",
+      "estilo": "neon",
+      "texto": "Cuatro: en el Reino Unido, colegios de Birmingham y Belfast sortearon premios entre los alumnos que no faltaran. Uno mandó un minibús a recoger a los que no llegaron.",
+      "tts": "Cuatro: en el Reino Unido, colegios de Bírmingam y Bélfast sortearon premios entre los alumnos que no faltaran. Uno mandó un minibús a recoger a los que no llegaron.",
+      "card": {
+        "filas": [
+          {
+            "texto": "SORTEOS",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "MINIBÚS",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "CERO FALTAS",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "ITV · TechRadar"
+      }
+    },
+    {
+      "etiqueta": "ojo en Xbox",
+      "estilo": "synth",
+      "texto": "Y cinco: en Xbox hay reportes de suspensiones de unos dos días por clips que se subieron solos. Microsoft no lo ha explicado. Por si acaso, desactiva las subidas automáticas.",
+      "tts": "Y cinco: en Equisbox hay reportes de suspensiones de unos dos días por clips que se subieron solos. Maicrosof no lo ha explicado. Por si acaso, desactiva las subidas automáticas.",
+      "card": {
+        "grande": "OFF",
+        "linea": "SUBIDAS AUTOMÁTICAS",
+        "nota": "Captura y compartir · reportes de jugadores"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Faltaste a clase o al trabajo por GTA seis? Comenta GTA y sígueme.",
+    "tts": "¿Faltaste a clase o al trabajo por yitiéi seis? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "Festival 'Grand Theft Auto VI: The Festival' el sábado 21 nov 2026 en Mana Wynwood (Miami); actuaron Travis Scott y Don Toliver ('CAN'T SAY'): HappyGamer (22 nov 2026). Rockstar anunció en X que todo lo recaudado por entradas irá a nueve organizaciones benéficas de Miami (The Miami Foundation, Hermanos de la Calle, Live Healthy Little Havana, etc.): DancehallMag (20 nov 2026)",
+    "Pico de 7,91 millones de espectadores simultáneos (Twitch 3,31 M, YouTube 3,22 M, Kick 1,50 M), más de 4 veces el récord previo de Valorant (1,74 M): Streams Charts, citado por Beebom y Sacnilk (19 nov 2026)",
+    "Récord de DE-CIX: 33,03 Tbps el 18 nov 2026 a las 20:20 CET (anterior 33,01 Tbps el 10 nov, precargas); descarga de unos 210 GB: Beebom, CircleID y GTA Boom (19 nov 2026)",
+    "Ninestiles Academy (Birmingham) usa un minibús para recoger alumnos ausentes y sortea vales por asistencia: ITV News (19 nov 2026). Belfast Boys' Model sortea dos tarjetas regalo de 70 libras entre quienes asistan el 19 y 20 nov: TechRadar (18 nov 2026); resumen en VGTimes (21 nov 2026)",
+    "Jugadores de Xbox Series X|S reportan suspensiones de unos dos días tras clips subidos automáticamente; sin explicación de Microsoft; recomendación de poner 'Automatic uploads' en 'Don't upload' (Ajustes > Preferencias > Captura y compartir): Beebom (21 nov 2026), Wisevoter (21 nov 2026), VGTimes (21 nov 2026)"
+  ],
+  "publicacion": {
+    "youtube_titulo": "GTA 6 rompió todo: 7,9 millones en vivo y récord de internet 🎮 5 datos (ojo con el 5) #Shorts",
+    "youtube_descripcion": "Chelios Noticias · GTA 6, semana uno. 1) El sábado 21 de noviembre Rockstar hizo su festival de GTA 6 en Miami (con Travis Scott y Don Toliver) y prometió donar todo lo de las entradas a nueve organizaciones benéficas de la ciudad. 2) Pico de 7,91 millones de espectadores simultáneos en streams (Streams Charts): más de 4 veces el récord anterior de Valorant. 3) DE-CIX marcó su récord mundial de tráfico, 33 Tbps, la víspera del lanzamiento; el juego pesa unos 210 GB. 4) Colegios de Birmingham y Belfast sortearon premios para que los alumnos no faltaran; uno mandó un minibús a recoger a los ausentes. 5) Jugadores de Xbox reportan suspensiones de unos dos días por clips subidos automáticamente; Microsoft no lo ha explicado. Por si acaso: Ajustes > Preferencias > Captura y compartir > Subidas automáticas: no subir.\n\n¿Faltaste a clase o al trabajo por GTA 6? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Faltaste a clase o al trabajo por GTA 6? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "GTA 6 rompió todo: 7,9 millones viéndolo en vivo, récord de internet y colegios sorteando premios para que nadie falte 🎮📶 5 datos (ojo con el 5 si juegas en Xbox 👀) ¿Faltaste por GTA 6?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
