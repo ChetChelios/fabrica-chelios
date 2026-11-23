@@ -1,0 +1,125 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-007",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 07",
+  "titulo": "Llegó el <i>primer parche</i>",
+  "subtitulo": "(5 cosas que arregla)",
+  "portada": "el robot también se actualizó",
+  "intro": {
+    "texto": "GTA seis recibió hoy su primer parche. Cinco cosas que tienes que saber. Ojo con el tres si te quedaste trabado en la historia.",
+    "tts": "Yitiéi seis recibió hoy su primer parche. Cinco cosas que tienes que saber. Ojo con el tres si te quedaste trabado en la historia."
+  },
+  "items": [
+    {
+      "etiqueta": "el tamaño",
+      "estilo": "synth",
+      "texto": "Uno: es la versión uno punto cero cero dos. En PlayStation cinco pesa unos seiscientos megas. En Xbox, según dataminers, cerca de uno coma seis gigas.",
+      "tts": "Uno: es la versión uno punto cero cero dos. En Pleisteishon cinco pesa unos seiscientos megas. En Equisbox, según deitamáiners, cerca de uno coma seis gigas.",
+      "card": {
+        "grande": "600 MB",
+        "linea": "PS5 · VERSIÓN 1.002.002",
+        "nota": "Xbox: ~1,6 GB según dataminers"
+      }
+    },
+    {
+      "etiqueta": "por oleadas",
+      "estilo": "neon",
+      "texto": "Dos: en PlayStation llega por oleadas para no tumbar los servidores. Primero a un tercio de los jugadores, luego a dos tercios y a todos en unas seis horas. Si no te sale, espera.",
+      "tts": "Dos: en Pleisteishon llega por oleadas para no tumbar los servidores. Primero a un tercio de los jugadores, luego a dos tercios y a todos en unas seis horas. Si no te sale, espera.",
+      "card": {
+        "filas": [
+          {
+            "texto": "33% AL INICIO",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "66% EN ~3 H",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "100% EN ~6 H",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "PS5 · datos de dataminers"
+      }
+    },
+    {
+      "etiqueta": "las llamadas",
+      "estilo": "synth",
+      "texto": "Tres: arregla llamadas de teléfono que no llegaban y no te dejaban avanzar en la historia. Rockstar no dijo si la llamada perdida llega sola al cargar tu partida.",
+      "tts": "Tres: arregla llamadas de teléfono que no llegaban y no te dejaban avanzar en la historia. Rocstar no dijo si la llamada perdida llega sola al cargar tu partida.",
+      "card": {
+        "grande": "RING",
+        "linea": "LLAMADAS QUE NO LLEGABAN",
+        "nota": "bloqueaban misiones · corregido"
+      }
+    },
+    {
+      "etiqueta": "las estrellas",
+      "estilo": "neon",
+      "texto": "Cuatro: ya puedes perder el nivel de búsqueda cuando antes se quedaba pegado. Y el clima vuelve a cambiar: había partidas con el mismo clima por horas.",
+      "tts": "Cuatro: ya puedes perder el nivel de búsqueda cuando antes se quedaba pegado. Y el clima vuelve a cambiar: había partidas con el mismo clima por horas.",
+      "card": {
+        "filas": [
+          {
+            "texto": "BÚSQUEDA ✓",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "CLIMA ✓",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "GIMNASIO ✓",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "notas oficiales de Rockstar"
+      }
+    },
+    {
+      "etiqueta": "el guardado",
+      "estilo": "synth",
+      "texto": "Y cinco: corrige el autoguardado que fallaba y varios cierres inesperados. Rockstar dice que la lista se sigue actualizando, así que vienen más arreglos.",
+      "tts": "Y cinco: corrige el autoguardado que fallaba y varios cierres inesperados. Rocstar dice que la lista se sigue actualizando, así que vienen más arreglos.",
+      "card": {
+        "grande": "7",
+        "linea": "ARREGLOS OFICIALES",
+        "nota": "autoguardado y cierres incluidos"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Qué error te tocó a ti? Comenta GTA y sígueme.",
+    "tts": "¿Qué error te tocó a ti? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "Actualización 01.002.002 en PS5 (1.0.2.2 en Xbox Series X|S), 23 nov 2026; PS5 ~600 MB (PlayStation LifeStyle), 603 MB (Vandal, vía cuenta PlayStation Game Size) y 603,8 MB (VICE, vía dataminer Tex2); Xbox ~1,6 GB según Tex2 (VICE): PlayStation LifeStyle, VICE y Vandal (23 nov 2026)",
+    "Despliegue escalonado en PS5: 33% al inicio, 66% a las ~3 h y 100% a las ~6 h, para evitar saturar servidores; cifras de dataminers: VICE y Vandal (23 nov 2026); escalonado por región: PlayStation LifeStyle (23 nov 2026)",
+    "Arreglo de llamadas de teléfono que no se activaban, incluidas las necesarias para avanzar en la historia; Rockstar no aclara si la llamada llega al cargar una partida afectada: VICE (23 nov 2026), VGTimes (23 nov 2026), notas en soporte de Rockstar",
+    "Arreglos: no se podía perder el nivel de búsqueda; clima que no cambiaba durante largos periodos; barra de pesas del gimnasio inutilizable: notas oficiales de Rockstar vía VGTimes (23 nov 2026)",
+    "Siete arreglos en total, incluidos autoguardado y varios cierres inesperados; Rockstar indica que la lista se sigue actualizando: VGTimes (23 nov 2026) y VICE (23 nov 2026)"
+  ],
+  "publicacion": {
+    "youtube_titulo": "Llegó el primer parche de GTA 6: 5 cosas que arregla (ojo con el 3) 🎮🔧 #Shorts",
+    "youtube_descripcion": "Chelios Noticias · GTA 6 recibió hoy, 23 de noviembre, su primera actualización (01.002.002). 1) En PS5 pesa unos 600 MB; en Xbox, cerca de 1,6 GB según dataminers. 2) En PS5 llega por oleadas: 33% de jugadores al inicio, 66% a las ~3 horas y 100% en ~6 horas (datos de dataminers). Si no te aparece, espera. 3) Arregla llamadas de teléfono que no llegaban y bloqueaban el avance de la historia; Rockstar no aclaró si la llamada perdida llega sola al cargar la partida. 4) Ya se puede perder el nivel de búsqueda, el clima vuelve a cambiar y la barra de pesas del gimnasio funciona. 5) Corrige el autoguardado y varios cierres inesperados; Rockstar dice que la lista se sigue actualizando.\n\n¿Qué error te tocó a ti? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Qué error te tocó a ti? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "Llegó el primer parche de GTA 6 🔧🎮 5 cosas que arregla (ojo con el 3 si te quedaste trabado en la historia 👀) ¿Qué error te tocó a ti?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
