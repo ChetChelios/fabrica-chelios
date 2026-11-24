@@ -1,0 +1,125 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-008",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 08",
+  "titulo": "GTA 6: <i>39 millones</i>",
+  "subtitulo": "(récord en PlayStation)",
+  "portada": "el robot jugó 17 horas",
+  "intro": {
+    "texto": "Sony soltó los números de GTA seis y es el lanzamiento más grande de su historia. Cinco datos. Ojo con el cuatro si no lo reservaste.",
+    "tts": "Sony soltó los números de yitiéi seis y es el lanzamiento más grande de su historia. Cinco datos. Ojo con el cuatro si no lo reservaste."
+  },
+  "items": [
+    {
+      "etiqueta": "los jugadores",
+      "estilo": "synth",
+      "texto": "Uno: según Sony, más de treinta y nueve millones de personas lo jugaron en PlayStation cinco entre el diecinueve y el veintidós de noviembre. Récord en la historia de PlayStation.",
+      "tts": "Uno: según Sony, más de treinta y nueve millones de personas lo jugaron en Pleisteishon cinco entre el diecinueve y el veintidós de noviembre. Récord en la historia de Pleisteishon.",
+      "card": {
+        "grande": "39 M",
+        "linea": "JUGADORES ÚNICOS · PS5",
+        "nota": "19 al 22 de noviembre · dato de Sony"
+      }
+    },
+    {
+      "etiqueta": "las horas",
+      "estilo": "neon",
+      "texto": "Dos: entre todos sumaron seiscientos ochenta y tres millones de horas. Eso da un promedio de diecisiete horas por jugador en cuatro días.",
+      "tts": "Dos: entre todos sumaron seiscientos ochenta y tres millones de horas. Eso da un promedio de diecisiete horas por jugador en cuatro días.",
+      "card": {
+        "filas": [
+          {
+            "texto": "683 M HORAS",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "17,4 H C/U",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "4 DÍAS",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "PS5 · dato de Sony"
+      }
+    },
+    {
+      "etiqueta": "las consolas",
+      "estilo": "synth",
+      "texto": "Tres: fue el primer juego en el setenta por ciento de las PlayStation cinco que se conectaron por primera vez esos días. Mucha gente compró la consola solo para esto.",
+      "tts": "Tres: fue el primer juego en el setenta por ciento de las Pleisteishon cinco que se conectaron por primera vez esos días. Mucha gente compró la consola solo para esto.",
+      "card": {
+        "grande": "70%",
+        "linea": "PS5 NUEVAS · PRIMER JUEGO",
+        "nota": "también récord de jugadores a la vez"
+      }
+    },
+    {
+      "etiqueta": "el paquete",
+      "estilo": "neon",
+      "texto": "Cuatro: el paquete Vintage Vice City, que era el regalo por reservar, ahora se vende aparte. Cuesta cuatro dólares con noventa y nueve en PlayStation y Xbox. Trae el carro Stanier, un garaje y ropa ochentera.",
+      "tts": "Cuatro: el paquete Vintach Vais Siti, que era el regalo por reservar, ahora se vende aparte. Cuesta cuatro dólares con noventa y nueve en Pleisteishon y Equisbox. Trae el carro Stánier, un garaje y ropa ochentera.",
+      "card": {
+        "filas": [
+          {
+            "texto": "US$ 4,99",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "CARRO",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "GARAJE",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "+ ropa 80s · antes era bono"
+      }
+    },
+    {
+      "etiqueta": "los minijuegos",
+      "estilo": "synth",
+      "texto": "Y cinco: si buscas los dardos o el boliche, no están. Rob Nelson, de Rockstar, dijo que si no quedaba al nivel, mejor no hacerlo. Sí hay billar, gimnasio y tiros al aro.",
+      "tts": "Y cinco: si buscas los dardos o el boliche, no están. Rob Nelson, de Rocstar, dijo que si no quedaba al nivel, mejor no hacerlo. Sí hay billar, gimnasio y tiros al aro.",
+      "card": {
+        "grande": "SIN DARDOS",
+        "linea": "NI BOLICHE",
+        "nota": "sí: billar, pesas y básquet"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Cuántas horas llevas tú? Comenta GTA y sígueme.",
+    "tts": "¿Cuántas horas llevas tú? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "Más de 39 millones de jugadores únicos en PS5 entre el 19 y el 22 de nov 2026, mayor lanzamiento en la historia de PlayStation: datos de Sony (PlayStation Blog, 23 nov 2026), vía Infobae (24 nov 2026) y Elotrolado (24 nov 2026)",
+    "683 millones de horas jugadas en PS5, promedio de 17,4 horas por jugador: datos de Sony vía Infobae y Elotrolado (24 nov 2026)",
+    "Primer juego en el 70% de las PS5 conectadas por primera vez en ese periodo; nuevo récord de jugadores concurrentes en PlayStation (sin cifra): datos de Sony vía Infobae y Elotrolado (24 nov 2026)",
+    "Vintage Vice City Pack, antes bono de reserva, a la venta por separado por US$4,99 en PS5 y Xbox Series X|S; incluye Vapid Stanier, garaje en Shore Court y ropa: Power Up Gaming (23 nov 2026), Player.One y VGTimes (23 nov 2026)",
+    "Sin dardos ni bolos; sí billar, pesas y baloncesto (solo tiros): Rob Nelson, Rockstar North, a VGC (19 nov 2026), recogido por VGTimes (23 nov 2026)"
+  ],
+  "publicacion": {
+    "youtube_titulo": "GTA 6 rompió el récord de PlayStation: 39 millones de jugadores (ojo con el 4) 🎮🔥 #Shorts",
+    "youtube_descripcion": "Chelios Noticias · Sony publicó los primeros números de GTA 6 en PS5. 1) Más de 39 millones de jugadores únicos entre el 19 y el 22 de noviembre: el lanzamiento más grande en la historia de PlayStation. 2) 683 millones de horas jugadas, unas 17,4 horas por jugador. 3) Fue el primer juego en el 70% de las PS5 que se conectaron por primera vez esos días. 4) El Vintage Vice City Pack, que era el bono por reservar, ahora se vende aparte por US$4,99 en PS5 y Xbox Series X|S. 5) No hay dardos ni bolos: Rob Nelson (Rockstar North) dijo a VGC que si no quedaba al nivel, mejor no hacerlo; sí hay billar, pesas y tiros de básquet.\n\n¿Cuántas horas llevas tú? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Cuántas horas llevas tú? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "GTA 6 rompió el récord de PlayStation 🎮🔥 39 millones de jugadores en 4 días (ojo con el 4 si no lo reservaste 👀) ¿Cuántas horas llevas tú?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
