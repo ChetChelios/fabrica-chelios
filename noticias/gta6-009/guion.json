@@ -1,0 +1,126 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-009",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 09",
+  "titulo": "GTA 6 <i>sin consola</i>",
+  "subtitulo": "(y 3.007 ports borrados)",
+  "portada": "el robot juega en la nube",
+  "intro": {
+    "texto": "GTA seis ya se puede jugar en la nube y Take-Two borró miles de ports de PC. Cinco datos. Ojo con el cinco si lo buscas para computador.",
+    "tts": "Yitiéi seis ya se puede jugar en la nube y Teiktú borró miles de ports de pecé. Cinco datos. Ojo con el cinco si lo buscas para computador."
+  },
+  "items": [
+    {
+      "etiqueta": "la nube",
+      "estilo": "synth",
+      "texto": "Uno: ya puedes jugarlo en streaming en PlayStation cinco y en PlayStation Portal. El juego corre en los servidores de Sony, no en tu consola.",
+      "tts": "Uno: ya puedes jugarlo en estrímin en Pleisteishon cinco y en Pleisteishon Pórtal. El juego corre en los servidores de Sony, no en tu consola.",
+      "card": {
+        "grande": "NUBE",
+        "linea": "PS5 · PS PORTAL",
+        "nota": "servidores de Sony · no es Remote Play"
+      }
+    },
+    {
+      "etiqueta": "la letra pequeña",
+      "estilo": "neon",
+      "texto": "Dos: necesitas PS Plus Premium y tener el juego comprado. No está en el catálogo de PS Plus, así que no es gratis.",
+      "tts": "Dos: necesitas Peése Plus Prémium y tener el juego comprado. No está en el catálogo de Peése Plus, así que no es gratis.",
+      "card": {
+        "filas": [
+          {
+            "texto": "PREMIUM",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "+ COMPRADO",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "NO GRATIS",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "no está en el catálogo de PS Plus"
+      }
+    },
+    {
+      "etiqueta": "el espacio",
+      "estilo": "synth",
+      "texto": "Tres: la ventaja es que no tienes que liberar los doscientos doce gigas que ocupa en PlayStation cinco. Lo juegas sin descargarlo.",
+      "tts": "Tres: la ventaja es que no tienes que liberar los doscientos doce gigas que ocupa en Pleisteishon cinco. Lo juegas sin descargarlo.",
+      "card": {
+        "grande": "212 GB",
+        "linea": "QUE NO DESCARGAS",
+        "nota": "jugando en streaming"
+      }
+    },
+    {
+      "etiqueta": "las cartas",
+      "estilo": "neon",
+      "texto": "Cuatro: Panini y Rockstar van a sacar cartas coleccionables de verdad, basadas en las del juego. Salen en diciembre. Y hay cartas doradas únicas: solo existe una de cada una.",
+      "tts": "Cuatro: Panini y Rocstar van a sacar cartas coleccionables de verdad, basadas en las del juego. Salen en diciembre. Y hay cartas doradas únicas: solo existe una de cada una.",
+      "card": {
+        "filas": [
+          {
+            "texto": "DICIEMBRE",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "BRONCE /49",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "ORO 1/1",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "plata /25 · dato de Panini"
+      }
+    },
+    {
+      "etiqueta": "ojo en PC",
+      "estilo": "synth",
+      "texto": "Y cinco: Take-Two hizo borrar de GitHub tres mil siete copias de un port no oficial para PC. Sigue sin haber versión oficial para computador, así que si te ofrecen descargarlo, no es de Rockstar.",
+      "tts": "Y cinco: Teiktú hizo borrar de Guítjab tres mil siete copias de un port no oficial para pecé. Sigue sin haber versión oficial para computador, así que si te ofrecen descargarlo, no es de Rocstar.",
+      "card": {
+        "grande": "3.007",
+        "linea": "REPOS BORRADOS",
+        "nota": "aviso DMCA de Take-Two"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Lo jugarías en la nube o prefieres descargarlo? Comenta GTA y sígueme.",
+    "tts": "¿Lo jugarías en la nube o prefieres descargarlo? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "Streaming en la nube de GTA 6 en PS5 y PlayStation Portal con PS Plus Premium, desde los servidores de Sony (no Remote Play): Push Square (24 nov 2026) y Engadget (24 nov 2026)",
+    "Requiere PS Plus Premium y tener el juego comprado; no está en el catálogo de PS Plus: Push Square (24 nov 2026); ficha de PlayStation Store citada por Engadget (24 nov 2026)",
+    "Sin necesidad de liberar 212 GB en PS5 al jugar en streaming: Engadget (24 nov 2026); 212 GB = tamaño de instalación, página de precarga de Rockstar",
+    "Colección 'GTA VI: Sports Trading Card Collection' de Panini America con Rockstar, a la venta en diciembre de 2026; Legend Bronze /49, Legend Silver /25 y doradas únicas 1/1: anuncio de Panini America del 24 nov, vía Parade (24 nov 2026) y VGTimes (25 nov 2026)",
+    "GitHub retiró 3.007 repositorios (proyecto Leonida y forks) por un aviso DMCA de Take-Two publicado el 24 nov 2026: Decrypt (25 nov 2026), VGTimes (25 nov 2026), GamesRadar+ (24 nov 2026)",
+    "Sin versión oficial anunciada para PC: Fox 5 NY (19 nov 2026); sin confirmación de Rockstar a 25 nov 2026"
+  ],
+  "publicacion": {
+    "youtube_titulo": "GTA 6 sin descargarlo: ya se juega en la nube (ojo con el 5 si lo buscas en PC) 🎮☁️ #Shorts",
+    "youtube_descripcion": "Chelios Noticias · GTA 6 ya se puede jugar en streaming. 1) En PS5 y PlayStation Portal, desde los servidores de Sony (no es Remote Play). 2) Necesitas PS Plus Premium y tener el juego comprado: no está en el catálogo de PS Plus. 3) Así no tienes que liberar los 212 GB que ocupa en PS5. 4) Panini America y Rockstar sacan cartas coleccionables reales en diciembre, con ediciones limitadas /49, /25 y doradas únicas 1/1. 5) Take-Two hizo retirar de GitHub 3.007 repositorios de un port no oficial para PC; sigue sin haber versión oficial para PC, así que cualquier descarga que te ofrezcan no es de Rockstar.\n\n¿Lo jugarías en la nube o prefieres descargarlo? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Nube o descarga? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "GTA 6 ya se juega en la nube ☁️🎮 sin descargar 212 GB. 5 datos de hoy (ojo con el 5 si lo buscas en PC 👀) ¿Nube o descarga?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
