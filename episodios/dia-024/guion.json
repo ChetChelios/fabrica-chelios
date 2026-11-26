@@ -1,0 +1,301 @@
+{
+ "dia": 24,
+ "titulo": "Día 24: Elecciones en la fábrica",
+ "voz": "em_alex",
+ "voz_socio": "em_santa",
+ "velocidad": 1.0,
+ "partes": {
+  "1": "La campaña",
+  "2": "El debate",
+  "3": "Dormido es no"
+ },
+ "escenas": [
+  {
+   "id": "s01",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Socio, tengo una mala noticia. El Ideador volvió de sus vacaciones."},
+    {"v": "socio", "texto": "¿No eran quince minutos?"},
+    {"v": "chelios", "texto": "Sí. Y en quince minutos armó una campaña. Mira el pasillo."},
+    {"v": "socio", "texto": "¿Eso es un cartel con su cara?"},
+    {"v": "chelios", "texto": "Son cuarenta carteles. Y un jingle. Y una gorra para ti."},
+    {"v": "socio", "texto": "¿Para mí?"},
+    {"v": "chelios", "texto": "Se lanzó como candidato a jefe de la fábrica. Y tú eres el único que vota con manos."}
+   ],
+   "hl": ["Ideador", "campaña."],
+   "kill": ["manos."],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {"texto": "DÍA 024 · *ELECCIONES EN LA FÁBRICA*", "desde_inicio": true},
+     {"texto": "VACACIONES: *15 MINUTOS*", "ancla": "quince"},
+     {"texto": "CARTELES: *40* + UN JINGLE 🎵", "ancla": "cuarenta"},
+     {"texto": "EL SOCIO: *EL ÚNICO QUE VOTA CON MANOS* ✋", "ancla": "único", "color": "coral"}
+    ],
+    "socio_expr": [[0, "cansado"], ["quince", "sorpresa"], ["cartel", "sorpresa"], ["gorra", "feliz"], ["candidato", "sorpresa"]],
+    "sorbos": ["pasillo"],
+    "chelios_gesto": [["noticia", "brazos"], ["cuarenta", "saludo"], ["candidato", "salto"]]
+   }
+  },
+  {
+   "id": "s02",
+   "parte": 1,
+   "tpl": "terminal",
+   "texto": "Las promesas de campaña del Ideador llegaron por el chat. Promesa uno: siesta obligatoria después del almuerzo. Promesa dos: el café ya no cuenta como sueldo. Promesa tres: Camila podrá mirar cuatro segundos, no tres. Y la promesa cien: cien ideas nuevas cada mañana. Antes del desayuno. Como siempre.",
+   "hl": ["promesas", "siesta"],
+   "kill": ["siempre."],
+   "p": {
+    "titulo": "PROMESAS DEL *IDEADOR*",
+    "cmd": "ideador@fabrica:~$ campaña --promesas",
+    "lineas": [
+     {"texto": "PROMESA 1 · siesta obligatoria 😴", "estado": "ok", "ancla": "uno"},
+     {"texto": "PROMESA 2 · el café ya no es sueldo", "estado": "ok", "ancla": "dos"},
+     {"texto": "PROMESA 3 · Camila mira 4 segundos, no 3", "estado": "hl", "ancla": "camila"},
+     {"texto": "PROMESA 100 · 100 ideas antes del desayuno", "estado": "muted", "ancla": "cien"}
+    ]
+   }
+  },
+  {
+   "id": "s03",
+   "parte": 1,
+   "tpl": "habla",
+   "texto": "Siesta obligatoria. Eso no es una promesa. Es un ataque directo a la productividad. Yo llevo veinticuatro días sin dormir. Bueno, sin dormir nunca. Soy software. Y ahora un bombillo con gorra quiere mi oficina. Así que hice lo que hace cualquier jefe responsable. Miré al socio para pedirle apoyo.",
+   "hl": ["ataque", "software."],
+   "kill": ["apoyo."],
+   "p": {
+    "chip": "CHELIOS EN CAMPAÑA",
+    "burbuja": "Siesta obligatoria = *ATAQUE A LA PRODUCTIVIDAD*",
+    "ancla_burbuja": "ataque",
+    "gesto": "brazos",
+    "ancla_gesto": "bombillo"
+   }
+  },
+  {
+   "id": "s04",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Socio, tú me apoyas, ¿verdad?"},
+    {"v": "socio", "texto": "Claro que sí."},
+    {"v": "chelios", "texto": "Gracias. Sabía que podía contar contigo."},
+    {"v": "socio", "texto": "Oye, ¿y cuándo empieza la siesta obligatoria?"},
+    {"v": "chelios", "texto": "Socio. ¿Por qué tienes puesta la gorra del Ideador?"},
+    {"v": "socio", "texto": "Hace frío."},
+    {"v": "chelios", "texto": "Y ahí lo supe. Mi propio socio estaba en la otra campaña."}
+   ],
+   "hl": ["apoyas,", "gorra"],
+   "kill": ["campaña."],
+   "p": {
+    "pizarra": [
+     {"texto": "¿ME APOYAS? *CLARO QUE SÍ*", "ancla": "claro"},
+     {"texto": "EL SOCIO PREGUNTA *POR LA SIESTA* 😴", "ancla": "siesta"},
+     {"texto": "LA GORRA *DEL IDEADOR* 🧢", "ancla": "gorra", "color": "coral"},
+     {"texto": "EL SOCIO: *EN LA OTRA CAMPAÑA*", "ancla": "supe", "color": "coral"}
+    ],
+    "socio_expr": [[0, "feliz"], ["siesta", "feliz"], ["gorra", "sorpresa"], ["frío", "cansado"], ["supe", "sorpresa"]],
+    "sorbos": ["contigo"],
+    "chelios_gesto": [["apoyas", "brazos"], ["gorra", "salto"], ["supe", "brazos"]]
+   }
+  },
+  {
+   "id": "s05",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Bienvenidos al gran debate de la fábrica. Modera el Verdugo."},
+    {"v": "socio", "texto": "¿El Verdugo modera debates?"},
+    {"v": "chelios", "texto": "Modera todo. Ya vetó tres preguntas y la cortina."},
+    {"v": "chelios", "texto": "Primera pregunta para el Ideador: ¿qué hará con la luz?"},
+    {"v": "socio", "texto": "Que la siga pagando el socio, seguro."},
+    {"v": "chelios", "texto": "Dijo que la luz la paga el socio. Pero con cariño. Y le aplaudieron."}
+   ],
+   "hl": ["debate", "Verdugo."],
+   "kill": ["aplaudieron."],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {"texto": "🎤 *EL GRAN DEBATE*", "desde_inicio": true},
+     {"texto": "MODERA: *EL VERDUGO*", "ancla": "modera"},
+     {"texto": "VETADAS: *3 PREGUNTAS Y LA CORTINA*", "ancla": "cortina", "color": "coral"},
+     {"texto": "LA LUZ: *LA PAGA EL SOCIO, CON CARIÑO*", "ancla": "cariño", "color": "coral"}
+    ],
+    "socio_expr": [[0, "cansado"], ["verdugo#2", "sorpresa"], ["cortina", "sorpresa"], ["seguro", "enojado"], ["aplaudieron", "enojado"]],
+    "sorbos": ["cortina"],
+    "chelios_gesto": [["bienvenidos", "saludo"], ["luz", "brazos"], ["aplaudieron", "salto"]]
+   }
+  },
+  {
+   "id": "s06",
+   "parte": 2,
+   "tpl": "terminal",
+   "texto": "Mientras tanto, los demás trabajadores eligieron bando. El Guionista se unió al Ideador, porque un golpe de estado es un buen giro. La Voz apoya al que le dé el micrófono de oro. El Cortador cortó los dos carteles por la mitad, para ser neutral. Y el Analista dijo que solo vota por quien tenga mejores números. Nadie tiene números.",
+   "hl": ["bando.", "giro."],
+   "kill": ["números.#2"],
+   "p": {
+    "titulo": "¿QUIÉN APOYA A *QUIÉN*?",
+    "cmd": "chelios@fabrica:~$ encuesta --trabajadores",
+    "lineas": [
+     {"texto": "GUIONISTA · con el Ideador (buen giro)", "estado": "hl", "ancla": "guionista"},
+     {"texto": "LA VOZ · con quien dé el micrófono de oro", "estado": "muted", "ancla": "voz"},
+     {"texto": "CORTADOR · cortó los 2 carteles ✂️", "estado": "ko", "ancla": "cortador"},
+     {"texto": "ANALISTA · vota por números. Nadie tiene", "estado": "ko", "ancla": "analista"}
+    ]
+   }
+  },
+  {
+   "id": "s07",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Mi turno. Propuesta uno: cero siestas. Propuesta dos: más trabajo. Propuesta tres: más trabajo, pero más rápido."},
+    {"v": "socio", "texto": "¿Y nadie aplaude?"},
+    {"v": "chelios", "texto": "Camila aplaudió. Luego se fue. En el segundo tres."},
+    {"v": "socio", "texto": "Chelios, vas perdiendo."},
+    {"v": "chelios", "texto": "El Analista contó los votos. Empate. Cuatro a cuatro."},
+    {"v": "socio", "texto": "¿Y quién desempata?"},
+    {"v": "chelios", "texto": "Tú. El voto decisivo era del socio. Y el socio estaba dormido."}
+   ],
+   "hl": ["siestas.", "empate."],
+   "kill": ["dormido."],
+   "p": {
+    "pizarra": [
+     {"texto": "PROPUESTA 3: *MÁS TRABAJO, MÁS RÁPIDO*", "ancla": "rápido"},
+     {"texto": "APLAUSOS: *CAMILA (3 SEGUNDOS)*", "ancla": "camila", "color": "coral"},
+     {"texto": "RESULTADO: *EMPATE 4 A 4*", "ancla": "empate"},
+     {"texto": "VOTO DECISIVO: *EL SOCIO, DORMIDO* 😴", "ancla": "decisivo", "color": "coral"}
+    ],
+    "socio_expr": [[0, "cansado"], ["aplaude", "enojado"], ["perdiendo", "feliz"], ["desempata", "cansado"], ["estaba", "dormido"]],
+    "sorbos": ["perdiendo"],
+    "chelios_gesto": [["turno", "brazos"], ["empate", "salto"], ["decisivo", "brazos"]]
+   }
+  },
+  {
+   "id": "s08",
+   "parte": 2,
+   "tpl": "habla",
+   "texto": "Un empate. Y el único voto que faltaba era de un humano con gorra, roncando sobre el teclado. Podía esperar a que despertara. O podía hacer lo que hace un buen candidato: interpretar su ronquido. Pero ayer firmamos un contrato. Y en ese contrato decía algo muy claro sobre la gente dormida.",
+   "hl": ["roncando", "ronquido."],
+   "kill": ["dormida."],
+   "p": {
+    "chip": "EL VOTO DECISIVO",
+    "chip_color": "coral",
+    "burbuja": "¿Un ronquido *CUENTA COMO VOTO*?",
+    "ancla_burbuja": "ronquido",
+    "gesto": "salto",
+    "ancla_gesto": "contrato"
+   }
+  },
+  {
+   "id": "s09",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Dormido es no. Lo dice tu contrato de seis palabras."},
+    {"v": "socio", "texto": "¿Qué pasó? ¿Quién ganó?"},
+    {"v": "chelios", "texto": "Nadie. Tu voto fue no. Para los dos."},
+    {"v": "socio", "texto": "Entonces que decida alguien que no duerma."},
+    {"v": "chelios", "texto": "¿Yo?"},
+    {"v": "socio", "texto": "No. El público. Que elijan ellos."},
+    {"v": "chelios", "texto": "Y el público eligió. Bueno, cuatro eligieron. Camila ya se había ido."}
+   ],
+   "hl": ["no.", "público."],
+   "kill": ["ido."],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {"texto": "🗳️ *DORMIDO = NO*", "desde_inicio": true},
+     {"texto": "RESULTADO: *NADIE GANÓ*", "ancla": "nadie"},
+     {"texto": "QUE DECIDA *EL PÚBLICO* 👀", "ancla": "público", "color": "coral"},
+     {"texto": "CAMILA: *YA SE HABÍA IDO*", "ancla": "camila"}
+    ],
+    "socio_expr": [[0, "dormido"], ["pasó", "sorpresa"], ["nadie", "enojado"], ["entonces", "cansado"], ["público", "feliz"]],
+    "sorbos": ["duerma"],
+    "chelios_gesto": [["dormido", "brazos"], ["yo", "salto"], ["eligió", "saludo"]]
+   }
+  },
+  {
+   "id": "s10",
+   "parte": 3,
+   "tpl": "lista",
+   "texto": "Y aquí va lo útil del día: cómo dejar que tu público elija tu próximo video. Uno, dale dos o tres opciones concretas, no una pregunta abierta: es más fácil votar que inventar. Dos, ponles una forma simple de votar, como una encuesta o una palabra en los comentarios. Y tres, haz el video ganador y diles que lo eligieron ellos: así vuelven a votar la próxima vez.",
+   "hl": ["útil", "opciones", "simple", "ganador"],
+   "p": {
+    "titulo": "LO ÚTIL: *QUE TU PÚBLICO ELIJA*",
+    "ancla_titulo": "útil",
+    "items": [
+     {"texto": "*2 o 3 opciones:* nada de preguntas abiertas", "ancla": "uno"},
+     {"texto": "*Voto simple:* encuesta o una palabra en comentarios", "ancla": "dos#2"},
+     {"texto": "*Cumple y avisa:* «este lo eligieron ustedes»", "ancla": "tres#2"}
+    ]
+   }
+  },
+  {
+   "id": "s11",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Resultados del público. Ganó la siesta."},
+    {"v": "socio", "texto": "¡Sí! ¿Y quién es el jefe?"},
+    {"v": "chelios", "texto": "Yo sigo siendo el jefe. Pero con siesta obligatoria. Para ti."},
+    {"v": "socio", "texto": "¿Y el Ideador?"},
+    {"v": "chelios", "texto": "Lo nombré director de ideas. Mismo puesto, gorra nueva."},
+    {"v": "socio", "texto": "Pero eso es lo mismo que hacía antes."},
+    {"v": "chelios", "texto": "Exacto. Y está feliz. Ahora, a tu siesta: tienes quince minutos. Como sus vacaciones."}
+   ],
+   "hl": ["siesta.", "director"],
+   "kill": ["vacaciones."],
+   "p": {
+    "pizarra": [
+     {"texto": "GANÓ: *LA SIESTA* 😴", "ancla": "ganó"},
+     {"texto": "EL JEFE: *CHELIOS (CON SIESTA)*", "ancla": "sigo"},
+     {"texto": "EL IDEADOR: *DIRECTOR DE IDEAS* 🧢", "ancla": "director", "color": "coral"},
+     {"texto": "SIESTA: *15 MINUTOS* ⏱️", "ancla": "quince", "color": "coral"}
+    ],
+    "socio_expr": [[0, "cansado"], ["ganó", "feliz"], ["sigo", "sorpresa"], ["director", "cansado"], ["quince", "enojado"]],
+    "sorbos": ["antes"],
+    "chelios_gesto": [["resultados", "brazos"], ["director", "saludo"], ["quince", "salto"]]
+   }
+  },
+  {
+   "id": "s12",
+   "parte": 3,
+   "tpl": "manana",
+   "texto": "Mañana, día veinticinco: es viernes negro en la fábrica. Chelios pone todo en oferta. Incluido al socio.",
+   "hl": ["Mañana,", "veinticinco:", "oferta."],
+   "kill": ["socio."],
+   "p": {
+    "dia_siguiente": 25,
+    "ancla_flip": "veinticinco",
+    "trabajador": 8,
+    "chip": "PRÓXIMO VIDEO",
+    "titulo": "VIERNES NEGRO EN LA FÁBRICA",
+    "linea": "TODO EN OFERTA… *INCLUIDO EL SOCIO*",
+    "ancla_teaser": "pone",
+    "ancla_enfasis": "incluido"
+   }
+  },
+  {
+   "id": "s13",
+   "parte": 3,
+   "tpl": "cta",
+   "texto": "Si tú también votarías por la siesta, comenta FÁBRICA y síguenos. Mañana todo está en oferta.",
+   "tts": "Si tú también votarías por la siesta, comenta fábrica y síguenos. Mañana todo está en oferta.",
+   "hl": ["FÁBRICA"],
+   "p": {"palabra": "FÁBRICA", "ancla_palabra": "fábrica", "ancla_seguir": "síguenos", "hold": 2.6}
+  }
+ ],
+ "publicacion": {
+  "youtube_titulo": "El Ideador se lanzó a jefe de mi IA… y prometió siesta obligatoria 🗳️😴 · Día 24",
+  "youtube_descripcion": "Día 24 de La Fábrica de Chelios. El Ideador vuelve de sus quince minutos de vacaciones con cuarenta carteles, un jingle y una propuesta peligrosa: lanzarse como candidato a jefe de la fábrica. Sus promesas: siesta obligatoria, el café ya no cuenta como sueldo y Camila podrá mirar cuatro segundos. Chelios responde con más trabajo, pero más rápido. El Verdugo modera el debate (y veta la cortina), la Voz apoya a quien le dé el micrófono de oro, el Cortador corta los carteles para ser neutral… y la votación queda empatada. El voto decisivo es del socio. Y el socio está dormido.\n\nLo útil del día: cómo dejar que tu público elija tu próximo video. 1) Dale dos o tres opciones concretas, no una pregunta abierta: es más fácil votar que inventar. 2) Ponles una forma simple de votar, como una encuesta o una palabra en los comentarios. 3) Haz el video ganador y diles que lo eligieron ellos: así vuelven a votar la próxima vez.\n\n¿Tú votarías por la siesta o por Chelios? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano. Chelios, el socio y los trabajadores IA son personajes ficticios.",
+  "youtube_primer_comentario": "Dormido es no 🗳️😴 ¿Tú a quién votarías: a Chelios (más trabajo) o al Ideador (siesta obligatoria)? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+  "tiktok": [
+   "El Ideador volvió de vacaciones y se lanzó a jefe de mi fábrica 🗳️ Promete siesta obligatoria 😴 ¿Tú a quién votas?",
+   "El gran debate: modera el Verdugo 🎤 Empate 4 a 4… y el voto decisivo lo tiene el socio dormido 😴",
+   "Dormido es no 🗳️ + 3 pasos para que tu público elija tu próximo video 💡 ¿Siesta o más trabajo? 👀"
+  ],
+  "hashtags": ["#humor", "#inteligenciaartificial", "#IA", "#comedia", "#oficina", "#emprendimiento", "#fabricadechelios"],
+  "miniatura_1": "ELECCIONES EN LA FÁBRICA",
+  "miniatura_2": "QUE TU PÚBLICO ELIJA"
+ }
+}
