@@ -1,0 +1,125 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-010",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 10",
+  "titulo": "GTA 6 <i>maneja solo</i>",
+  "subtitulo": "(y 1.500 edificios abiertos)",
+  "portada": "el robot suelta el volante",
+  "intro": {
+    "texto": "Un jugador contó cuántos edificios de GTA seis se pueden visitar por dentro, y hay un ajuste para que el carro maneje solo. Cinco datos. Ojo con el cuatro si te aburre manejar.",
+    "tts": "Un jugador contó cuántos edificios de Yitiéi seis se pueden visitar por dentro, y hay un ajuste para que el carro maneje solo. Cinco datos. Ojo con el cuatro si te aburre manejar."
+  },
+  "items": [
+    {
+      "etiqueta": "por dentro",
+      "estilo": "synth",
+      "texto": "Uno: un jugador contó unos mil quinientos edificios a los que puedes entrar. Es casi el veintiocho por ciento de todo el mapa. Es un conteo de fans, no oficial.",
+      "tts": "Uno: un jugador contó unos mil quinientos edificios a los que puedes entrar. Es casi el veintiocho por ciento de todo el mapa. Es un conteo de fans, no oficial.",
+      "card": {
+        "grande": "1.500",
+        "linea": "EDIFICIOS CON INTERIOR",
+        "nota": "casi 28% del mapa · conteo de un jugador"
+      }
+    },
+    {
+      "etiqueta": "Series S",
+      "estilo": "neon",
+      "texto": "Dos: en Xbox Series S el juego baja a setecientos veinte pe. Digital Foundry lo analizó y recomienda, por ahora, jugarlo en otra consola.",
+      "tts": "Dos: en Equisbox Series Ese el juego baja a setecientos veinte pe. Díyital Faundri lo analizó y recomienda, por ahora, jugarlo en otra consola.",
+      "card": {
+        "filas": [
+          {
+            "texto": "X · 1440p",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "S · 720p",
+            "color": "#FF4FD8"
+          },
+          {
+            "texto": "~30 FPS",
+            "color": "#5BE75B"
+          }
+        ],
+        "nota": "Series X y S · Digital Foundry"
+      }
+    },
+    {
+      "etiqueta": "la lluvia",
+      "estilo": "synth",
+      "texto": "Tres: el parche del veintitrés arregló el clima que no cambiaba, pero algunos jugadores de PlayStation dicen que sigue igual. Rockstar explica que el clima es local: puede estar lloviendo en otra zona del mapa.",
+      "tts": "Tres: el parche del veintitrés arregló el clima que no cambiaba, pero algunos jugadores de Pleisteishon dicen que sigue igual. Rocstar explica que el clima es local: puede estar lloviendo en otra zona del mapa.",
+      "card": {
+        "grande": "LOCAL",
+        "linea": "EL CLIMA VA POR ZONAS",
+        "nota": "parche 01.002.002 · quejas en PS5"
+      }
+    },
+    {
+      "etiqueta": "maneja solo",
+      "estilo": "neon",
+      "texto": "Cuatro: pon un destino en el mapa, mantén abajo en la cruceta y presiona Options para el modo cine. Luego mantén círculo, o B en Xbox, y el carro maneja solo.",
+      "tts": "Cuatro: pon un destino en el mapa, mantén abajo en la cruceta y presiona Ópshons para el modo cine. Luego mantén círculo, o be en Equisbox, y el carro maneja solo.",
+      "card": {
+        "filas": [
+          {
+            "texto": "DESTINO",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "↓ + OPTIONS",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "MANTÉN ○ / B",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "off-road: Ajustes › Juego"
+      }
+    },
+    {
+      "etiqueta": "imagen borrosa",
+      "estilo": "synth",
+      "texto": "Y cinco: si en PlayStation cinco lo ves borroso, baja la intensidad del desenfoque de movimiento en Ajustes, Pantalla. La consola normal no usa el escalado de la Pro.",
+      "tts": "Y cinco: si en Pleisteishon cinco lo ves borroso, baja la intensidad del desenfoque de movimiento en Ajustes, Pantalla. La consola normal no usa el escalado de la Pro.",
+      "card": {
+        "grande": "BLUR ↓",
+        "linea": "AJUSTES › PANTALLA",
+        "nota": "desenfoque de movimiento · PS5 normal"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Dejarías que el carro maneje solo? Comenta GTA y sígueme.",
+    "tts": "¿Dejarías que el carro maneje solo? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "Unos 1.500 edificios accesibles, casi el 28% de los edificios del mapa, según el conteo de un jugador (no oficial): Eurogamer (25 nov 2026), resumido por gta6.ai (25 nov 2026)",
+    "Xbox Series S a 720p internos y Series X a unos 1440p cerca de 30 fps (caídas a ~20 fps en cruces llenos); Oliver Mackenzie (Digital Foundry): 'I'd advise players to play the game on other console platforms for now': TweakTown citando a Digital Foundry y VGC (nov 2026); Eurogamer (25 nov 2026): Series X mantiene 30 fps más estables que PS5",
+    "Actualización 01.002.002 (23 nov 2026) arregla 'weather not changing for extended periods': página de soporte de Rockstar (actualizada 23 nov 2026); jugadores de PS5 dicen que persiste: Insider Gaming e IGN vía PlanetGTA6 (26 nov 2026); clima localizado ('localized, persistent and dynamic'): Owen Shepherd, VP de arte de Rockstar, vía TweakTown/The Weather Channel e IGN",
+    "Conducción automática: destino marcado, mantener abajo en la cruceta + Options/Menu (modo cinemático), mantener Círculo/B; opción 'Unrestricted' en Ajustes > Juego > Auto Drive para fuera de carretera: Beebom (19 nov 2026), GameTyrant (nov 2026); guía de VGC (25 nov 2026)",
+    "Bajar 'Motion Blur Strength' en Ajustes > Pantalla para reducir lo borroso; la PS5 base usa 1440p con escalado espacial y TAA, sin PSSR (exclusivo de PS5 Pro): BGR (19 nov 2026)"
+  ],
+  "publicacion": {
+    "youtube_titulo": "GTA 6 maneja solo: el truco del piloto automático (ojo con el 4) 🚗🤖 #Shorts",
+    "youtube_descripcion": "Chelios Noticias · 5 datos de GTA 6 hoy. 1) Un jugador contó unos 1.500 edificios con interior, casi el 28% del mapa (conteo de fans, no oficial). 2) Digital Foundry: en Xbox Series S baja a 720p y en Series X va a unos 1440p cerca de 30 fps; por ahora recomiendan jugar en otra consola si tienes Series S. 3) El parche del 23 de noviembre arregló el clima que no cambiaba, pero algunos jugadores de PS5 dicen que sigue; Rockstar explica que el clima es local. 4) Conducción automática: marca un destino, mantén abajo en la cruceta + Options (Menu en Xbox) y luego mantén Círculo (B). Para salir de la carretera: Ajustes › Juego › Auto Drive › Sin restricciones. 5) ¿Lo ves borroso en PS5? Baja el desenfoque de movimiento en Ajustes › Pantalla.\n\n¿Dejarías que el carro maneje solo? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Piloto automático sí o no? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "GTA 6 tiene piloto automático 🚗🤖 y 1.500 edificios abiertos. 5 datos de hoy (ojo con el 4 si te aburre manejar 👀) ¿Lo dejarías manejar solo?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#gaming",
+      "#videojuegos",
+      "#noticias",
+      "#fabricadechelios"
+    ]
+  }
+}
