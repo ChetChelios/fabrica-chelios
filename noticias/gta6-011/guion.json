@@ -1,0 +1,125 @@
+{
+  "serie": "noticias",
+  "formato": "lista",
+  "tema": "synth",
+  "slug": "gta6-011",
+  "voz": "em_alex",
+  "velocidad": 1.05,
+  "marca": "CHELIOS NOTICIAS",
+  "chip": "GTA 6 · 11",
+  "titulo": "GTA 6: <i>53 millones</i>",
+  "subtitulo": "(y su primer descuento)",
+  "portada": "calculadora en llamas",
+  "intro": {
+    "texto": "GTA seis cumple una semana con cifras enormes, y hoy salió su primer descuento. Cinco datos. Ojo con el tres si lo vas a comprar.",
+    "tts": "Yitiéi seis cumple una semana con cifras enormes, y hoy salió su primer descuento. Cinco datos. Ojo con el tres si lo vas a comprar."
+  },
+  "items": [
+    {
+      "etiqueta": "una semana",
+      "estilo": "synth",
+      "texto": "Uno: Alinea Analytics calcula unos cincuenta y tres millones de copias en la primera semana. Es una estimación, no un dato oficial.",
+      "tts": "Uno: Alinea Analítics calcula unos cincuenta y tres millones de copias en la primera semana. Es una estimación, no un dato oficial.",
+      "card": {
+        "grande": "53 M",
+        "linea": "COPIAS · PRIMERA SEMANA",
+        "nota": "estimación de Alinea · no oficial"
+      }
+    },
+    {
+      "etiqueta": "maratones",
+      "estilo": "neon",
+      "texto": "Dos: según esa firma, casi siete millones ya pasan de cincuenta horas, y unos doscientos cincuenta mil, de cien.",
+      "tts": "Dos: según esa firma, casi siete millones ya pasan de cincuenta horas, y unos doscientos cincuenta mil, de cien.",
+      "card": {
+        "filas": [
+          {
+            "texto": "7 M · +50 H",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "250K · +100 H",
+            "color": "#FF4FD8"
+          },
+          {
+            "texto": "EN 7 DÍAS",
+            "color": "#5BE75B"
+          }
+        ],
+        "nota": "estimación de Alinea · no oficial"
+      }
+    },
+    {
+      "etiqueta": "viernes negro",
+      "estilo": "synth",
+      "texto": "Tres: primera rebaja. En Estados Unidos, una tienda lo dejó en sesenta y nueve con noventa y nueve dólares: diez menos, por primera vez. Compra solo en tiendas de confianza.",
+      "tts": "Tres: primera rebaja. En Estados Unidos, una tienda lo dejó en sesenta y nueve con noventa y nueve dólares: diez menos, por primera vez. Compra solo en tiendas de confianza.",
+      "card": {
+        "grande": "−US$ 10",
+        "linea": "PRIMER DESCUENTO",
+        "nota": "US$ 79,99 → 69,99 · solo algunas tiendas"
+      }
+    },
+    {
+      "etiqueta": "en caja",
+      "estilo": "neon",
+      "texto": "Cuatro: en Reino Unido vendió treinta y dos millones de libras en caja en su semana de estreno. Según NielsenIQ, solo dieciséis juegos desde mil novecientos noventa y cinco abrieron mejor.",
+      "tts": "Cuatro: en Reino Unido vendió treinta y dos millones de libras en caja en su semana de estreno. Según Nílsenaikiú, solo dieciséis juegos desde mil novecientos noventa y cinco abrieron mejor.",
+      "card": {
+        "filas": [
+          {
+            "texto": "£ 32 M",
+            "color": "#5BE75B"
+          },
+          {
+            "texto": "EN CAJAS · UK",
+            "color": "#45E3FF"
+          },
+          {
+            "texto": "SOLO 16 MÁS",
+            "color": "#FF4FD8"
+          }
+        ],
+        "nota": "semana del estreno · NielsenIQ"
+      }
+    },
+    {
+      "etiqueta": "clima atascado",
+      "estilo": "synth",
+      "texto": "Y cinco: si en PlayStation cinco el clima no cambia, jugadores lo arreglan borrando la caché desde el modo seguro. Es un truco de fans, no oficial.",
+      "tts": "Y cinco: si en Pleisteishon cinco el clima no cambia, jugadores lo arreglan borrando la caché desde el modo seguro. Es un truco de fans, no oficial.",
+      "card": {
+        "grande": "CACHÉ",
+        "linea": "BÓRRALA EN MODO SEGURO",
+        "nota": "PS5 · truco de jugadores · no oficial"
+      }
+    }
+  ],
+  "cta": {
+    "texto": "¿Ya le metiste más de cincuenta horas? Comenta GTA y sígueme.",
+    "tts": "¿Ya le metiste más de cincuenta horas? Comenta yitiéi y sígueme.",
+    "palabra": "GTA",
+    "linea": "y sígueme: cada día, lo nuevo de GTA 6"
+  },
+  "fuentes": [
+    "Unos 53 millones de copias vendidas tras una semana (75,7% en PS5), estimación de terceros, no oficial: Alinea Analytics, Rhys Elliott, 'Grand Theft Auto 6, a week in' (27 nov 2026)",
+    "Casi 7 millones de jugadores con más de 50 horas y unos 250.000 con más de 100 horas (estimación): Alinea Analytics (27 nov 2026)",
+    "Primer descuento en EE. UU.: de US$79,99 a US$69,99, '$10 off MSRP for the first time ever' en una tienda de códigos: GamesRadar, blog en vivo de Black Friday GTA 6 deals (26–27 nov 2026)",
+    "Reino Unido, semana del estreno: GTA 6 vendió unos £32 millones en formato físico; Dorian Bloch (NielsenIQ): solo 16 juegos desde 1995 generaron más ingresos en caja en su semana de estreno: Brit Brief citando datos de NielsenIQ (27 nov 2026)",
+    "Clima atascado en PS5 tras el parche 01.002.002; truco de jugadores: borrar la caché del sistema desde el modo seguro, 'takes like two minutes' (no oficial): GamesRadar, Anna Koselke (26 nov 2026)"
+  ],
+  "publicacion": {
+    "youtube_titulo": "GTA 6: 53 millones en una semana y su primer descuento (ojo con el 3) 💸 #Shorts",
+    "youtube_descripcion": "Chelios Noticias · 5 datos de GTA 6 hoy. 1) Alinea Analytics estima unos 53 millones de copias vendidas en la primera semana (estimación, no oficial). 2) Según la misma firma, casi 7 millones de jugadores ya pasan de 50 horas y unos 250.000 de 100 horas. 3) Viernes negro: primera rebaja en EE. UU., de US$79,99 a US$69,99 en algunas tiendas; compra solo en tiendas oficiales o de confianza. 4) Reino Unido: unos £32 millones en copias en caja en la semana del estreno; según NielsenIQ, solo 16 juegos desde 1995 abrieron con más. 5) ¿El clima no cambia en PS5? Jugadores dicen que se arregla borrando la caché del sistema desde el modo seguro (truco de fans, no oficial).\n\n¿Ya le metiste más de 50 horas? Comenta GTA.\n\nHecho con IA: guion, voz sintética y animación de La Fábrica de Chelios. Video informativo de un fan, sin imágenes del juego; no está afiliado a Rockstar Games ni a Take-Two.",
+    "youtube_primer_comentario": "¿Cuántas horas llevas? 👇 Comenta GTA y sígueme: cada día, lo nuevo de GTA 6 🎮☀️",
+    "tiktok": "GTA 6: 53 millones de copias en una semana (estimación) y su primer descuento de viernes negro 💸 5 datos de hoy (ojo con el 3 si lo vas a comprar 👀) ¿Cuántas horas llevas?",
+    "hashtags": [
+      "#GTA6",
+      "#GTAVI",
+      "#BlackFriday",
+      "#gaming",
+      "#videojuegos",
+      "#fabricadechelios"
+    ]
+  }
+}
