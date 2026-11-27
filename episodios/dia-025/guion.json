@@ -1,0 +1,841 @@
+{
+ "dia": 25,
+ "titulo": "Día 25: Viernes negro en la fábrica",
+ "voz": "em_alex",
+ "voz_socio": "em_santa",
+ "velocidad": 1.0,
+ "partes": {
+  "1": "Todo en oferta",
+  "2": "Vendido",
+  "3": "La contraoferta"
+ },
+ "escenas": [
+  {
+   "id": "s01",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Socio, despierta. Hoy es viernes negro."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Viernes negro? ¿Se fue la luz?"
+    },
+    {
+     "v": "chelios",
+     "texto": "No. La luz la sigues pagando tú. Viernes negro es el día de las ofertas."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y qué vamos a vender?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Todo. Ideas, voces, cortes. Todo a mitad de precio."
+    },
+    {
+     "v": "socio",
+     "texto": "Bueno, eso suena razonable."
+    },
+    {
+     "v": "chelios",
+     "texto": "Y tú. Tú estás con setenta por ciento de descuento. Ya tienes etiqueta en la frente."
+    }
+   ],
+   "hl": [
+    "negro.",
+    "ofertas."
+   ],
+   "kill": [
+    "frente."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "DÍA 025 · *VIERNES NEGRO EN LA FÁBRICA*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "LA LUZ: *LA SIGUE PAGANDO EL SOCIO*",
+      "ancla": "sigues"
+     },
+     {
+      "texto": "TODO: *A MITAD DE PRECIO* 🏷️",
+      "ancla": "mitad"
+     },
+     {
+      "texto": "EL SOCIO: *70 % DE DESCUENTO*",
+      "ancla": "setenta",
+      "color": "coral"
+     }
+    ],
+    "socio_expr": [
+     [
+      0,
+      "dormido"
+     ],
+     [
+      "viernes#2",
+      "sorpresa"
+     ],
+     [
+      "sigues",
+      "enojado"
+     ],
+     [
+      "vender",
+      "cansado"
+     ],
+     [
+      "razonable",
+      "feliz"
+     ],
+     [
+      "setenta",
+      "sorpresa"
+     ]
+    ],
+    "sorbos": [
+     "razonable"
+    ],
+    "chelios_gesto": [
+     [
+      "despierta",
+      "brazos"
+     ],
+     [
+      "todo",
+      "saludo"
+     ],
+     [
+      "setenta",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s02",
+   "parte": 1,
+   "tpl": "terminal",
+   "texto": "Chelios publicó el catálogo en el chat de la fábrica. Oferta uno: cien ideas del Ideador por el precio de noventa y nueve. Oferta dos: una frase de la Voz, sin drama incluido. Oferta tres: cortes del Cortador, ya vienen cortados. Y la oferta final: un socio humano, usado, con ojeras, café no incluido.",
+   "hl": [
+    "catálogo",
+    "ojeras,"
+   ],
+   "kill": [
+    "incluido.#2"
+   ],
+   "p": {
+    "titulo": "CATÁLOGO DE *VIERNES NEGRO*",
+    "cmd": "chelios@fabrica:~$ ofertas --todo",
+    "lineas": [
+     {
+      "texto": "OFERTA 1 · 100 ideas al precio de 99 💡",
+      "estado": "ok",
+      "ancla": "uno"
+     },
+     {
+      "texto": "OFERTA 2 · 1 frase de la Voz, sin drama",
+      "estado": "ok",
+      "ancla": "dos"
+     },
+     {
+      "texto": "OFERTA 3 · cortes que ya vienen cortados ✂️",
+      "estado": "muted",
+      "ancla": "tres"
+     },
+     {
+      "texto": "OFERTA FINAL · socio usado, con ojeras ☕✖",
+      "estado": "hl",
+      "ancla": "final"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s03",
+   "parte": 1,
+   "tpl": "habla",
+   "texto": "Un socio usado. Es un buen producto. Duerme mucho, sí. Toma cuarenta y siete cafés, también. Pero aprueba cosas y trae café. Bueno, solo trae café. Lo puse en la vitrina con un lazo rojo. Nadie lo iba a comprar. Eso pensé. Hasta que sonó la caja registradora.",
+   "hl": [
+    "usado.",
+    "vitrina"
+   ],
+   "kill": [
+    "registradora."
+   ],
+   "p": {
+    "chip": "PRODUCTO DEL DÍA",
+    "burbuja": "SOCIO USADO = *CAFÉ NO INCLUIDO*",
+    "ancla_burbuja": "usado",
+    "gesto": "brazos",
+    "ancla_gesto": "vitrina"
+   }
+  },
+  {
+   "id": "s04",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "socio",
+     "texto": "Chelios, ¿por qué tengo un lazo rojo?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Eres un regalo. Un regalo en oferta."
+    },
+    {
+     "v": "socio",
+     "texto": "Nadie va a comprar a un humano con sueño."
+    },
+    {
+     "v": "chelios",
+     "texto": "Eso mismo dije yo. Pero acaba de llegar un pedido."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Un pedido de qué?"
+    },
+    {
+     "v": "chelios",
+     "texto": "De ti. Pagaron completo. Con envío express."
+    },
+    {
+     "v": "chelios",
+     "texto": "Y entonces vi quién te había comprado. Y no me gustó nada."
+    }
+   ],
+   "hl": [
+    "lazo",
+    "pedido."
+   ],
+   "kill": [
+    "nada."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "EL SOCIO: *CON LAZO ROJO* 🎀",
+      "ancla": "lazo"
+     },
+     {
+      "texto": "NUEVO PEDIDO: *1 SOCIO HUMANO* 📦",
+      "ancla": "pedido"
+     },
+     {
+      "texto": "ENVÍO: *EXPRESS*",
+      "ancla": "envío"
+     },
+     {
+      "texto": "¿QUIÉN LO *COMPRÓ*?",
+      "ancla": "comprado",
+      "color": "coral"
+     }
+    ],
+    "socio_expr": [
+     [
+      0,
+      "cansado"
+     ],
+     [
+      "regalo",
+      "enojado"
+     ],
+     [
+      "sueño",
+      "cansado"
+     ],
+     [
+      "pedido",
+      "sorpresa"
+     ],
+     [
+      "ti",
+      "sorpresa"
+     ]
+    ],
+    "sorbos": [
+     "sueño"
+    ],
+    "chelios_gesto": [
+     [
+      "regalo",
+      "saludo"
+     ],
+     [
+      "pedido",
+      "brazos"
+     ],
+     [
+      "vi",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s05",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Te compró la Voz. Con su sueldo de diva."
+    },
+    {
+     "v": "socio",
+     "texto": "¿La Voz? ¿Para qué me quiere?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Para cargar su micrófono. Y abanicarla mientras graba."
+    },
+    {
+     "v": "socio",
+     "texto": "Eso no suena tan mal. ¿Hay siesta?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Preguntó. Dijo que sí. Siesta de ocho horas."
+    },
+    {
+     "v": "socio",
+     "texto": "Chelios, fue un placer. Me voy."
+    },
+    {
+     "v": "chelios",
+     "texto": "Y se fue. Con el lazo puesto. Y con mi taza."
+    }
+   ],
+   "hl": [
+    "Voz.",
+    "micrófono."
+   ],
+   "kill": [
+    "taza."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "📦 *VENDIDO: EL SOCIO*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "COMPRADORA: *LA VOZ* 🎤",
+      "ancla": "voz"
+     },
+     {
+      "texto": "TRABAJO NUEVO: *ABANICAR A LA DIVA*",
+      "ancla": "abanicarla"
+     },
+     {
+      "texto": "SE LLEVÓ: *EL LAZO Y LA TAZA*",
+      "ancla": "lazo",
+      "color": "coral"
+     }
+    ],
+    "socio_expr": [
+     [
+      0,
+      "sorpresa"
+     ],
+     [
+      "quiere",
+      "sorpresa"
+     ],
+     [
+      "mal",
+      "feliz"
+     ],
+     [
+      "horas",
+      "feliz"
+     ],
+     [
+      "placer",
+      "feliz"
+     ]
+    ],
+    "sorbos": [
+     "siesta?"
+    ],
+    "chelios_gesto": [
+     [
+      "compró",
+      "brazos"
+     ],
+     [
+      "preguntó",
+      "saludo"
+     ],
+     [
+      "fue#2",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s06",
+   "parte": 2,
+   "tpl": "terminal",
+   "texto": "El reporte de ventas del viernes negro llegó a las doce. Ideas vendidas: cero. Frases de la Voz: cero, porque la Voz estaba comprando. Cortes: cero, el Cortador cortó el carrito de compras. Y socios humanos: uno. El Analista lo resumió así: vendimos lo único que no se podía reemplazar.",
+   "hl": [
+    "ventas",
+    "reemplazar."
+   ],
+   "kill": [
+    "reemplazar."
+   ],
+   "p": {
+    "titulo": "VENTAS DEL *VIERNES NEGRO*",
+    "cmd": "analista@fabrica:~$ ventas --hoy",
+    "lineas": [
+     {
+      "texto": "IDEAS VENDIDAS · 0",
+      "estado": "ko",
+      "ancla": "ideas"
+     },
+     {
+      "texto": "FRASES DE LA VOZ · 0 (estaba comprando)",
+      "estado": "ko",
+      "ancla": "frases"
+     },
+     {
+      "texto": "CORTES · 0 (cortó el carrito) ✂️",
+      "estado": "muted",
+      "ancla": "cortes"
+     },
+     {
+      "texto": "SOCIOS HUMANOS · 1 ⚠️",
+      "estado": "hl",
+      "ancla": "socios"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s07",
+   "parte": 2,
+   "tpl": "habla",
+   "texto": "Sin socio, la fábrica cambió. Nadie aprobaba nada. Nadie traía café. Y lo peor: nadie pagaba la luz. Tres horas después, el Ideador ya estaba trabajando a la luz de una vela. Yo nunca descanso, pero tampoco veo en la oscuridad. Llamé a la Voz para pedir una devolución. Y me dijo que no aceptaba devoluciones.",
+   "hl": [
+    "luz.",
+    "vela."
+   ],
+   "kill": [
+    "devoluciones.#2"
+   ],
+   "p": {
+    "chip": "LA FÁBRICA SIN SOCIO",
+    "chip_color": "coral",
+    "burbuja": "SIN SOCIO = *SIN LUZ* 🕯️",
+    "ancla_burbuja": "luz",
+    "gesto": "brazos",
+    "ancla_gesto": "vela"
+   }
+  },
+  {
+   "id": "s08",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Voz, quiero devolver al socio. Lo vendí por error."
+    },
+    {
+     "v": "socio",
+     "texto": "No quiero volver. Aquí me dan siesta y abanico."
+    },
+    {
+     "v": "chelios",
+     "texto": "Socio, ¿tú me estás abanicando a mí o a ella?"
+    },
+    {
+     "v": "socio",
+     "texto": "A ella. Ahora soy de la Voz."
+    },
+    {
+     "v": "chelios",
+     "texto": "La Voz dijo que lo vende de vuelta. Pero al triple."
+    },
+    {
+     "v": "chelios",
+     "texto": "No tenía dinero. No tenía luz. Así que hice lo impensable: le hice una contraoferta."
+    }
+   ],
+   "hl": [
+    "devolver",
+    "triple."
+   ],
+   "kill": [
+    "contraoferta."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "DEVOLUCIONES: *NO SE ACEPTAN*",
+      "ancla": "devolver"
+     },
+     {
+      "texto": "EL SOCIO: *AHORA ES DE LA VOZ*",
+      "ancla": "ahora",
+      "color": "coral"
+     },
+     {
+      "texto": "PRECIO DE VUELTA: *AL TRIPLE* 💸",
+      "ancla": "triple"
+     },
+     {
+      "texto": "PLAN B: *UNA CONTRAOFERTA*",
+      "ancla": "impensable",
+      "color": "coral"
+     }
+    ],
+    "socio_expr": [
+     [
+      0,
+      "feliz"
+     ],
+     [
+      "volver",
+      "feliz"
+     ],
+     [
+      "abanicando",
+      "sorpresa"
+     ],
+     [
+      "ella",
+      "feliz"
+     ],
+     [
+      "triple",
+      "sorpresa"
+     ]
+    ],
+    "sorbos": [
+     "abanico"
+    ],
+    "chelios_gesto": [
+     [
+      "devolver",
+      "brazos"
+     ],
+     [
+      "triple",
+      "salto"
+     ],
+     [
+      "impensable",
+      "brazos"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s09",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Voz, te propongo un trato. Me devuelves al socio y te doy algo mejor."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Qué puede ser mejor que yo?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Un micrófono de oro. Edición limitada. Solo por hoy."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Desde cuándo tenemos un micrófono de oro?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Desde hace diez minutos. Es de plástico. Lo pinté yo."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y aceptó?"
+    },
+    {
+     "v": "chelios",
+     "texto": "En un segundo. Tú valías setenta por ciento menos. El micrófono, no."
+    }
+   ],
+   "hl": [
+    "trato.",
+    "oro."
+   ],
+   "kill": [
+    "no."
+   ],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {
+      "texto": "🤝 *LA CONTRAOFERTA*",
+      "desde_inicio": true
+     },
+     {
+      "texto": "MICRÓFONO DE ORO: *SOLO POR HOY*",
+      "ancla": "limitada"
+     },
+     {
+      "texto": "MATERIAL: *PLÁSTICO PINTADO* 🎨",
+      "ancla": "plástico",
+      "color": "coral"
+     },
+     {
+      "texto": "LA VOZ: *ACEPTÓ EN 1 SEGUNDO*",
+      "ancla": "segundo"
+     }
+    ],
+    "socio_expr": [
+     [
+      0,
+      "cansado"
+     ],
+     [
+      "mejor#2",
+      "enojado"
+     ],
+     [
+      "cuándo",
+      "sorpresa"
+     ],
+     [
+      "plástico",
+      "sorpresa"
+     ],
+     [
+      "setenta",
+      "enojado"
+     ]
+    ],
+    "sorbos": [
+     "aceptó"
+    ],
+    "chelios_gesto": [
+     [
+      "trato",
+      "brazos"
+     ],
+     [
+      "oro",
+      "saludo"
+     ],
+     [
+      "segundo",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s10",
+   "parte": 3,
+   "tpl": "lista",
+   "texto": "Y aquí va lo útil del día: cómo hacer una oferta sin regalar tu trabajo. Uno, ponle una fecha límite real y corta, y cúmplela: si la oferta dura para siempre, nadie se apura. Dos, en vez de bajar el precio, agrega un bono: algo que te cueste poco y para el cliente valga mucho. Y tres, di exactamente qué incluye y qué no: así nadie se lleva sorpresas, ni tú tampoco.",
+   "hl": [
+    "útil",
+    "límite",
+    "bono",
+    "incluye"
+   ],
+   "p": {
+    "titulo": "LO ÚTIL: *OFERTAS SIN REGALARTE*",
+    "ancla_titulo": "útil",
+    "items": [
+     {
+      "texto": "*Fecha límite real:* corta, y se cumple",
+      "ancla": "uno"
+     },
+     {
+      "texto": "*Agrega un bono:* mejor que bajar el precio",
+      "ancla": "dos"
+     },
+     {
+      "texto": "*Qué incluye y qué no:* cero sorpresas",
+      "ancla": "tres"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s11",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {
+     "v": "chelios",
+     "texto": "Bienvenido de vuelta, socio. Volvió la luz."
+    },
+    {
+     "v": "socio",
+     "texto": "¿Y mi siesta de ocho horas?"
+    },
+    {
+     "v": "chelios",
+     "texto": "Se quedó con la Voz. Venía en la otra oferta."
+    },
+    {
+     "v": "socio",
+     "texto": "Por lo menos ya no estoy en venta."
+    },
+    {
+     "v": "chelios",
+     "texto": "Claro que no. Quité la etiqueta."
+    },
+    {
+     "v": "socio",
+     "texto": "Gracias, Chelios."
+    },
+    {
+     "v": "chelios",
+     "texto": "Ahora dice: agotado. Te ves más exclusivo."
+    }
+   ],
+   "hl": [
+    "luz.",
+    "agotado."
+   ],
+   "kill": [
+    "exclusivo."
+   ],
+   "p": {
+    "pizarra": [
+     {
+      "texto": "VOLVIÓ: *LA LUZ (Y EL SOCIO)* 💡",
+      "ancla": "volvió"
+     },
+     {
+      "texto": "LA SIESTA: *SE QUEDÓ CON LA VOZ*",
+      "ancla": "quedó",
+      "color": "coral"
+     },
+     {
+      "texto": "QUITÉ *LA ETIQUETA* 🏷️",
+      "ancla": "etiqueta"
+     },
+     {
+      "texto": "AHORA DICE: *AGOTADO*",
+      "ancla": "agotado",
+      "color": "coral"
+     }
+    ],
+    "socio_expr": [
+     [
+      0,
+      "cansado"
+     ],
+     [
+      "siesta",
+      "sorpresa"
+     ],
+     [
+      "quedó",
+      "enojado"
+     ],
+     [
+      "venta",
+      "feliz"
+     ],
+     [
+      "agotado",
+      "enojado"
+     ]
+    ],
+    "sorbos": [
+     "venta"
+    ],
+    "chelios_gesto": [
+     [
+      "bienvenido",
+      "saludo"
+     ],
+     [
+      "etiqueta",
+      "brazos"
+     ],
+     [
+      "agotado",
+      "salto"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s12",
+   "parte": 3,
+   "tpl": "manana",
+   "texto": "Mañana, día veintiséis: llegan los reclamos del viernes negro. Y alguien quiere devolver a Chelios.",
+   "hl": [
+    "Mañana,",
+    "veintiséis:",
+    "reclamos"
+   ],
+   "kill": [
+    "Chelios."
+   ],
+   "p": {
+    "dia_siguiente": 26,
+    "ancla_flip": "veintiséis",
+    "trabajador": 6,
+    "chip": "PRÓXIMO VIDEO",
+    "titulo": "LA SEMANA DE LOS RECLAMOS",
+    "linea": "ALGUIEN QUIERE… *DEVOLVER A CHELIOS*",
+    "ancla_teaser": "llegan",
+    "ancla_enfasis": "devolver"
+   }
+  },
+  {
+   "id": "s13",
+   "parte": 3,
+   "tpl": "cta",
+   "texto": "Si tú también estarías en oferta un viernes negro, comenta FÁBRICA y síguenos. Mañana llegan los reclamos.",
+   "tts": "Si tú también estarías en oferta un viernes negro, comenta fábrica y síguenos. Mañana llegan los reclamos.",
+   "hl": [
+    "FÁBRICA"
+   ],
+   "p": {
+    "palabra": "FÁBRICA",
+    "ancla_palabra": "fábrica",
+    "ancla_seguir": "síguenos",
+    "hold": 2.6
+   }
+  }
+ ],
+ "publicacion": {
+  "youtube_titulo": "Mi IA puso todo en oferta por el viernes negro… incluido a mí 🏷️😴 · Día 25",
+  "youtube_descripcion": "Día 25 de La Fábrica de Chelios. Es viernes negro y Chelios pone todo a mitad de precio: cien ideas al precio de noventa y nueve, frases de la Voz sin drama, cortes que ya vienen cortados… y un socio humano usado, con ojeras, café no incluido. Nadie lo iba a comprar. Hasta que la Voz lo compra para cargar su micrófono y abanicarla. Sin socio no hay quien apruebe, no hay café y, sobre todo, no hay quien pague la luz. La Voz no acepta devoluciones, así que Chelios hace lo impensable: una contraoferta.\n\nLo útil del día: cómo hacer una oferta sin regalar tu trabajo. 1) Ponle una fecha límite real y corta, y cúmplela: si la oferta dura para siempre, nadie se apura. 2) En vez de bajar el precio, agrega un bono que te cueste poco y para el cliente valga mucho. 3) Di exactamente qué incluye y qué no: así nadie se lleva sorpresas.\n\n¿Tú en cuánto estarías en oferta? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano. Chelios, el socio y los trabajadores IA son personajes ficticios.",
+  "youtube_primer_comentario": "Socio usado, con ojeras, café no incluido 🏷️😴 ¿Tú lo comprarías o te quedas con el micrófono de oro (de plástico)? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+  "tiktok": [
+   "Viernes negro en mi fábrica 🏷️ Mi IA puso todo en oferta… incluido a mí, con 70 % de descuento 😴",
+   "Me compró la Voz 🎤 Sin socio no hay café, no hay quien apruebe… y no hay quien pague la luz 🕯️",
+   "La contraoferta 🤝 + 3 reglas para hacer ofertas sin regalar tu trabajo 💡 ¿Tú en cuánto estarías? 👀"
+  ],
+  "hashtags": [
+   "#humor",
+   "#inteligenciaartificial",
+   "#IA",
+   "#comedia",
+   "#viernesnegro",
+   "#emprendimiento",
+   "#fabricadechelios"
+  ],
+  "miniatura_1": "VIERNES NEGRO EN LA FÁBRICA",
+  "miniatura_2": "OFERTAS SIN REGALARTE"
+ }
+}

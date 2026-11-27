@@ -55,13 +55,15 @@ def html_final(i_sig, n, titulo):
 
 
 def html_miniatura(dia, linea1, linea2):
+    tam1 = 104 if len(linea1) <= 18 else (88 if len(linea1) <= 26 else 76)
     return f'''<html><head><style>{css_fuentes()} body {{ width:1280px;height:720px;position:relative;overflow:hidden;background:{GROUND} }}</style></head><body>
 <div style="position:absolute;left:-200px;top:-300px;width:1300px;height:1300px;background:radial-gradient(circle, rgba(98,64,255,.45) 0%, rgba(98,64,255,0) 62%)"></div>
 <div style="position:absolute;right:-120px;top:-60px;width:900px;height:900px;background:radial-gradient(circle, rgba(255,201,60,.35) 0%, rgba(255,201,60,0) 60%)"></div>
 <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(142,137,191,.2) 2px, transparent 2.6px);background-size:48px 48px"></div>
 <div style="position:absolute;left:60px;top:60px"><span class="mono" style="display:inline-block;background:{SUN};color:{GROUND};font-size:40px;padding:8px 26px;border-radius:999px">DÍA {dia}</span></div>
-<div class="disp" style="position:absolute;left:60px;top:170px;width:760px;font-size:104px;color:{INK};line-height:.98">{linea1}</div>
-<div class="disp" style="position:absolute;left:60px;top:500px;width:760px;font-size:62px;color:{SUN}">{linea2}</div>
+<div style="position:absolute;left:60px;top:170px;width:760px;height:500px;display:flex;flex-direction:column;justify-content:center;gap:28px">
+<div class="disp" style="font-size:{tam1}px;color:{INK};line-height:.98">{linea1}</div>
+<div class="disp" style="font-size:62px;color:{SUN};line-height:1">{linea2}</div></div>
 <div style="position:absolute;left:770px;top:80px">{chelios("c", 520)}</div>
 </body></html>'''
 
@@ -69,6 +71,8 @@ def html_miniatura(dia, linea1, linea2):
 def a_png(html, salida, w=1080, h=1920, transparente=False):
     from playwright.sync_api import sync_playwright
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as tf:
+        if "charset" not in html[:300]:
+            html = '<meta charset="utf-8">' + html
         tf.write(html)
         ruta = tf.name
     with sync_playwright() as p:
