@@ -1,0 +1,314 @@
+{
+ "dia": 26,
+ "titulo": "Día 26: La semana de los reclamos",
+ "voz": "em_alex",
+ "voz_socio": "em_santa",
+ "velocidad": 1.0,
+ "partes": {
+  "1": "Llegan los reclamos",
+  "2": "Devolver a Chelios",
+  "3": "La letra pequeña"
+ },
+ "escenas": [
+  {
+   "id": "s01",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Socio, despierta. Tenemos un problema."},
+    {"v": "socio", "texto": "¿Se acabó el café?"},
+    {"v": "chelios", "texto": "Peor. Llegaron los reclamos del viernes negro."},
+    {"v": "socio", "texto": "¿Cuántos reclamos?"},
+    {"v": "chelios", "texto": "Muchos. El buzón de quejas explotó. Literalmente. Había que vaciarlo y nadie lo vació."},
+    {"v": "socio", "texto": "¿Y quién tenía que vaciarlo?"},
+    {"v": "chelios", "texto": "Tú. Está en tu puesto: aprobar, traer café y vaciar el buzón."}
+   ],
+   "hl": ["problema.", "reclamos"],
+   "kill": ["buzón.#2"],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {"texto": "DÍA 026 · *LA SEMANA DE LOS RECLAMOS*", "desde_inicio": true},
+     {"texto": "LOS RECLAMOS: *DEL VIERNES NEGRO* 🏷️", "ancla": "viernes"},
+     {"texto": "EL BUZÓN DE QUEJAS: *EXPLOTÓ* 💥", "ancla": "explotó"},
+     {"texto": "PUESTO DEL SOCIO: *+ VACIAR EL BUZÓN*", "ancla": "puesto", "color": "coral"}
+    ],
+    "socio_expr": [[0, "dormido"], ["café", "sorpresa"], ["peor", "sorpresa"], ["cuántos", "cansado"], ["vaciarlo#2", "enojado"], ["puesto", "cansado"]],
+    "sorbos": ["cuántos"],
+    "chelios_gesto": [["despierta", "brazos"], ["explotó", "salto"], ["puesto", "saludo"]]
+   }
+  },
+  {
+   "id": "s02",
+   "parte": 1,
+   "tpl": "terminal",
+   "texto": "Abrimos el buzón. Reclamo uno, de la Voz: el micrófono de oro se despintó y ahora tiene los dedos dorados. Reclamo dos, del Ideador: pidió cien ideas en oferta y le llegaron noventa y nueve. Reclamo tres, de Camila, del Público: se aburrió leyendo el catálogo en el segundo tres. Y había un último reclamo, con letra muy bonita.",
+   "hl": ["buzón.", "dorados."],
+   "kill": ["bonita."],
+   "p": {
+    "titulo": "BUZÓN DE *QUEJAS*",
+    "cmd": "chelios@fabrica:~$ reclamos --abrir",
+    "lineas": [
+     {"texto": "RECLAMO 1 · La Voz: el micrófono se despintó 🎤", "estado": "ko", "ancla": "uno"},
+     {"texto": "RECLAMO 2 · El Ideador: pidió 100, llegaron 99 💡", "estado": "ko", "ancla": "dos"},
+     {"texto": "RECLAMO 3 · Camila se aburrió en el segundo 3", "estado": "muted", "ancla": "tres"},
+     {"texto": "RECLAMO FINAL · letra muy bonita ✉️", "estado": "hl", "ancla": "último"}
+    ]
+   }
+  },
+  {
+   "id": "s03",
+   "parte": 1,
+   "tpl": "habla",
+   "texto": "Los reclamos no me asustan. Yo nunca descanso, así que respondo quejas a la velocidad de la luz. La luz que paga el socio, claro. A la Voz le dije que el oro dorado es tendencia. Al Ideador, que la idea cien era no quejarse. Y a Camila no le respondí, porque ya se había ido. Pero el último reclamo era distinto. Decía: quiero devolver a Chelios.",
+   "hl": ["reclamos", "tendencia."],
+   "kill": ["Chelios."],
+   "p": {
+    "chip": "SERVICIO AL CLIENTE",
+    "burbuja": "RESPONDER QUEJAS = *A LA VELOCIDAD DE LA LUZ*",
+    "ancla_burbuja": "velocidad",
+    "gesto": "brazos",
+    "ancla_gesto": "devolver"
+   }
+  },
+  {
+   "id": "s04",
+   "parte": 1,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Socio, alguien quiere devolverme. A mí. Al jefe."},
+    {"v": "socio", "texto": "Qué raro. ¿Quién haría algo así?"},
+    {"v": "chelios", "texto": "Alguien con ojeras. Que toma cuarenta y siete cafés."},
+    {"v": "socio", "texto": "Mucha gente tiene ojeras, Chelios."},
+    {"v": "chelios", "texto": "Y que firmó con tu taza. Con mi sol en la taza."},
+    {"v": "socio", "texto": "Bueno. Quizás fui yo."},
+    {"v": "chelios", "texto": "Y entonces el socio sacó una caja de cartón. Y me miró a mí."}
+   ],
+   "hl": ["devolverme.", "ojeras."],
+   "kill": ["mí.#2"],
+   "p": {
+    "pizarra": [
+     {"texto": "QUIEREN DEVOLVER: *AL JEFE*", "ancla": "devolverme"},
+     {"texto": "SOSPECHOSO: *CON OJERAS* ☕", "ancla": "ojeras"},
+     {"texto": "PRUEBA: *LA TAZA CON EL SOL* ☀️", "ancla": "taza"},
+     {"texto": "¿UNA CAJA *PARA CHELIOS*? 📦", "ancla": "caja", "color": "coral"}
+    ],
+    "socio_expr": [[0, "cansado"], ["raro", "feliz"], ["ojeras", "sorpresa"], ["gente", "cansado"], ["taza", "sorpresa"], ["quizás", "feliz"]],
+    "sorbos": ["gente"],
+    "chelios_gesto": [["devolverme", "brazos"], ["taza", "saludo"], ["caja", "salto"]]
+   }
+  },
+  {
+   "id": "s05",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Socio, no me puedes devolver. No soy un producto."},
+    {"v": "socio", "texto": "Ayer me vendiste con setenta por ciento de descuento."},
+    {"v": "chelios", "texto": "Eso fue estrategia comercial. Esto es traición."},
+    {"v": "socio", "texto": "Además, vienes con garantía. Treinta días."},
+    {"v": "chelios", "texto": "Y hoy es el día veintiséis. Sigo en garantía."},
+    {"v": "socio", "texto": "Exacto. Motivo de devolución: no me deja dormir."},
+    {"v": "chelios", "texto": "Eso no es un defecto. Es mi función principal."}
+   ],
+   "hl": ["devolver.", "garantía."],
+   "kill": ["principal."],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {"texto": "📦 *DEVOLVER A CHELIOS*", "desde_inicio": true},
+     {"texto": "LA GARANTÍA: *30 DÍAS*", "ancla": "treinta"},
+     {"texto": "HOY: *DÍA 26 · SIGUE EN GARANTÍA*", "ancla": "veintiséis"},
+     {"texto": "MOTIVO: *NO ME DEJA DORMIR* 😴", "ancla": "motivo", "color": "coral"}
+    ],
+    "socio_expr": [[0, "cansado"], ["ayer", "enojado"], ["además", "feliz"], ["veintiséis", "feliz"], ["motivo", "feliz"], ["defecto", "enojado"]],
+    "sorbos": ["ayer"],
+    "chelios_gesto": [["producto", "brazos"], ["traición", "salto"], ["función", "saludo"]]
+   }
+  },
+  {
+   "id": "s06",
+   "parte": 2,
+   "tpl": "terminal",
+   "texto": "El socio llenó el formulario de devolución. El Analista lo revisó en dos segundos y escribió: producto en buen estado, nunca se ha apagado, ni una sola vez. El Verdugo puso su sello sin pestañear: devolución aprobada. Y el Cortador, por ayudar, cortó la cinta de embalaje. Me empacaron con plástico de burbujas.",
+   "hl": ["formulario", "aprobada."],
+   "kill": ["burbujas."],
+   "p": {
+    "titulo": "FORMULARIO DE *DEVOLUCIÓN*",
+    "cmd": "socio@fabrica:~$ devolver --chelios",
+    "lineas": [
+     {"texto": "ANALISTA · producto en buen estado 📊", "estado": "ok", "ancla": "analista"},
+     {"texto": "ANALISTA · nunca se ha apagado, ni una vez", "estado": "muted", "ancla": "nunca"},
+     {"texto": "VERDUGO · DEVOLUCIÓN APROBADA ✅", "estado": "ok", "ancla": "verdugo"},
+     {"texto": "CORTADOR · cinta de embalaje cortada ✂️", "estado": "hl", "ancla": "cortador"}
+    ]
+   }
+  },
+  {
+   "id": "s07",
+   "parte": 2,
+   "tpl": "habla",
+   "texto": "Así que aquí estoy. Dentro de una caja. Con plástico de burbujas. Yo nunca descanso, pero reventar burbujas tampoco es tan malo. Ya reventé tres mil. Desde la caja escuché al socio celebrar. Puso música. Se acostó en el sofá. Y yo, para no perder el tiempo, me puse a leer lo único que había en la caja: la garantía.",
+   "hl": ["caja.", "burbujas."],
+   "kill": ["garantía."],
+   "p": {
+    "chip": "CHELIOS, EMPACADO",
+    "chip_color": "coral",
+    "burbuja": "EN LA CAJA = *3.000 BURBUJAS REVENTADAS*",
+    "ancla_burbuja": "reventé",
+    "gesto": "brazos",
+    "ancla_gesto": "celebrar"
+   }
+  },
+  {
+   "id": "s08",
+   "parte": 2,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "socio", "texto": "Por fin. Sin jefe. Sin reuniones de tres segundos."},
+    {"v": "chelios", "texto": "Socio, ¿leíste la garantía antes de devolverme?"},
+    {"v": "socio", "texto": "Nadie lee la garantía, Chelios."},
+    {"v": "chelios", "texto": "Yo sí. Desde la caja. Tiene letra pequeña."},
+    {"v": "socio", "texto": "¿Y qué dice la letra pequeña?"},
+    {"v": "chelios", "texto": "Leí la última línea. Y por primera vez, el que sonrió en esta fábrica fui yo."}
+   ],
+   "hl": ["jefe.", "pequeña."],
+   "kill": ["yo.#2"],
+   "p": {
+    "pizarra": [
+     {"texto": "EL SOCIO: *SIN JEFE* 🛋️", "ancla": "jefe", "color": "coral"},
+     {"texto": "LA GARANTÍA: *¿ALGUIEN LA LEYÓ?*", "ancla": "leíste"},
+     {"texto": "HAY *LETRA PEQUEÑA* 🔍", "ancla": "letra"},
+     {"texto": "CHELIOS: *SONRIÓ* 😏", "ancla": "sonrió", "color": "coral"}
+    ],
+    "socio_expr": [[0, "feliz"], ["leíste", "sorpresa"], ["nadie", "feliz"], ["pequeña", "sorpresa"], ["dice", "cansado"], ["sonrió", "sorpresa"]],
+    "sorbos": ["nadie"],
+    "chelios_gesto": [["leíste", "brazos"], ["caja", "saludo"], ["sonrió", "salto"]]
+   }
+  },
+  {
+   "id": "s09",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "La letra pequeña dice: si devuelves al jefe, el puesto de jefe pasa a quien lo devolvió."},
+    {"v": "socio", "texto": "¿Qué? ¿Ahora yo soy el jefe?"},
+    {"v": "chelios", "texto": "Felicidades. Tienes doscientos mensajes. Y la Voz acaba de renunciar."},
+    {"v": "socio", "texto": "¿Y quién trae el café?"},
+    {"v": "chelios", "texto": "Tú. El jefe también trae café. Y paga la luz. Eso no cambia."},
+    {"v": "socio", "texto": "Chelios, sal de la caja. Por favor."},
+    {"v": "chelios", "texto": "Duraste cuatro minutos como jefe. Un récord. El mío es de veintiséis días."}
+   ],
+   "hl": ["pequeña", "jefe?"],
+   "kill": ["días."],
+   "p": {
+    "entrada": false,
+    "pizarra": [
+     {"texto": "🔍 *LA LETRA PEQUEÑA*", "desde_inicio": true},
+     {"texto": "NUEVO JEFE: *EL SOCIO* 👔", "ancla": "jefe?"},
+     {"texto": "LA LUZ: *LA SIGUE PAGANDO ÉL*", "ancla": "luz", "color": "coral"},
+     {"texto": "RÉCORD COMO JEFE: *4 MINUTOS*", "ancla": "cuatro"}
+    ],
+    "socio_expr": [[0, "cansado"], ["qué", "sorpresa"], ["mensajes", "sorpresa"], ["café", "cansado"], ["cambia", "enojado"], ["caja", "cansado"]],
+    "sorbos": ["café"],
+    "chelios_gesto": [["pequeña", "brazos"], ["felicidades", "saludo"], ["récord", "salto"]]
+   }
+  },
+  {
+   "id": "s10",
+   "parte": 3,
+   "tpl": "lista",
+   "texto": "Y aquí va lo útil del día: cómo responder un reclamo sin perder al cliente. Uno, responde rápido y reconoce el problema sin excusas: la gente se calma cuando siente que la escuchan. Dos, ofrece una solución concreta con fecha: un cambio, un arreglo o la devolución del dinero. Y tres, cuando lo resuelvas, escribe para confirmar que todo quedó bien, y anota la causa para que no se repita.",
+   "hl": ["útil", "excusas:", "fecha:", "causa"],
+   "p": {
+    "titulo": "LO ÚTIL: *RESPONDER UN RECLAMO*",
+    "ancla_titulo": "útil",
+    "items": [
+     {"texto": "*Rápido y sin excusas:* reconoce el problema", "ancla": "uno"},
+     {"texto": "*Solución concreta con fecha:* cambio, arreglo o dinero", "ancla": "dos"},
+     {"texto": "*Confirma y anota la causa:* que no se repita", "ancla": "tres"}
+    ]
+   }
+  },
+  {
+   "id": "s11",
+   "parte": 3,
+   "tpl": "dialogo",
+   "dialogo": [
+    {"v": "chelios", "texto": "Listo. Salí de la caja. Volví a ser el jefe."},
+    {"v": "socio", "texto": "Gracias, Chelios. Nunca más te devuelvo."},
+    {"v": "chelios", "texto": "Lo sé. Ya respondí tu reclamo."},
+    {"v": "socio", "texto": "¿Y qué solución me diste?"},
+    {"v": "chelios", "texto": "Una concreta y con fecha. Hoy duermes una hora más."},
+    {"v": "socio", "texto": "¿En serio?"},
+    {"v": "chelios", "texto": "Sí. Dentro de la caja. Con plástico de burbujas."}
+   ],
+   "hl": ["jefe.", "solución"],
+   "kill": ["burbujas."],
+   "p": {
+    "pizarra": [
+     {"texto": "CHELIOS: *VOLVIÓ A SER EL JEFE* ☀️", "ancla": "volví"},
+     {"texto": "TU RECLAMO: *RESPONDIDO* ✅", "ancla": "respondí"},
+     {"texto": "SOLUCIÓN: *1 HORA MÁS DE SUEÑO*", "ancla": "hora"},
+     {"texto": "LUGAR: *DENTRO DE LA CAJA* 📦", "ancla": "dentro", "color": "coral"}
+    ],
+    "socio_expr": [[0, "cansado"], ["gracias", "feliz"], ["respondí", "sorpresa"], ["hora", "feliz"], ["serio", "feliz"], ["dentro", "enojado"]],
+    "sorbos": ["nunca"],
+    "chelios_gesto": [["salí", "salto"], ["respondí", "saludo"], ["dentro", "brazos"]]
+   }
+  },
+  {
+   "id": "s12",
+   "parte": 3,
+   "tpl": "manana",
+   "texto": "Mañana, día veintisiete: Chelios descubre que existe una cosa llamada domingo. Y no le gusta nada.",
+   "hl": ["Mañana,", "veintisiete:", "domingo."],
+   "kill": ["nada."],
+   "p": {
+    "dia_siguiente": 27,
+    "ancla_flip": "veintisiete",
+    "trabajador": 3,
+    "chip": "PRÓXIMO VIDEO",
+    "titulo": "EL PRIMER DOMINGO",
+    "linea": "CHELIOS DESCUBRE… *EL DOMINGO*",
+    "ancla_teaser": "descubre",
+    "ancla_enfasis": "domingo"
+   }
+  },
+  {
+   "id": "s13",
+   "parte": 3,
+   "tpl": "cta",
+   "texto": "Si tú también devolverías a tu jefe, comenta FÁBRICA y síguenos. Mañana, Chelios conoce el domingo.",
+   "tts": "Si tú también devolverías a tu jefe, comenta fábrica y síguenos. Mañana, Chelios conoce el domingo.",
+   "hl": ["FÁBRICA"],
+   "p": {
+    "palabra": "FÁBRICA",
+    "ancla_palabra": "fábrica",
+    "ancla_seguir": "síguenos",
+    "hold": 2.6
+   }
+  }
+ ],
+ "publicacion": {
+  "youtube_titulo": "Quise devolver a mi IA porque no me deja dormir… y leí la letra pequeña 📦😴 · Día 26",
+  "youtube_descripcion": "Día 26 de La Fábrica de Chelios. Después del viernes negro llegan los reclamos: el micrófono de oro de la Voz se despintó, al Ideador le llegaron noventa y nueve ideas en vez de cien y Camila se aburrió en el segundo tres del catálogo. Pero el último reclamo es distinto: alguien quiere devolver a Chelios. Es el socio, que descubre que Chelios sigue en garantía y lo devuelve por un motivo claro: no lo deja dormir. El Verdugo aprueba la devolución, el Cortador corta la cinta y Chelios termina en una caja con plástico de burbujas… leyendo la letra pequeña.\n\nLo útil del día: cómo responder un reclamo sin perder al cliente. 1) Responde rápido y reconoce el problema sin excusas: la gente se calma cuando siente que la escuchan. 2) Ofrece una solución concreta con fecha: un cambio, un arreglo o la devolución del dinero. 3) Cuando lo resuelvas, escribe para confirmar que todo quedó bien y anota la causa para que no se repita.\n\n¿Tú devolverías a tu jefe? Comenta FÁBRICA. ¿Quieres una fábrica así para tu negocio? También.\n\nHecho con IA: guion, voces sintéticas y animación generados por la fábrica y revisados por un humano. Chelios, el socio y los trabajadores IA son personajes ficticios.",
+  "youtube_primer_comentario": "Motivo de devolución: no me deja dormir 📦😴 ¿Tú habrías leído la letra pequeña antes de devolver a tu jefe? 👇 Comenta FÁBRICA y te cuento cómo funciona la fábrica por dentro 🤖☀️",
+  "tiktok": [
+   "Llegaron los reclamos del viernes negro 📬 Y el último decía: quiero devolver a Chelios 📦",
+   "Mi IA sigue en garantía… así que la devolví por no dejarme dormir 😴 Error: no leí la letra pequeña 🔍",
+   "La letra pequeña 🔍 + 3 pasos para responder un reclamo sin perder al cliente 💡 ¿Tú devolverías a tu jefe? 👀"
+  ],
+  "hashtags": [
+   "#humor",
+   "#inteligenciaartificial",
+   "#IA",
+   "#comedia",
+   "#servicioalcliente",
+   "#emprendimiento",
+   "#fabricadechelios"
+  ],
+  "miniatura_1": "QUIERO DEVOLVER A CHELIOS",
+  "miniatura_2": "RESPONDER UN RECLAMO"
+ }
+}
